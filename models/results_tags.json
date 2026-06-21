@@ -1,0 +1,226 @@
+{
+  "tags": {
+    "TFIDF_LogReg": {
+      "subset_accuracy": 0.0781,
+      "hamming_loss": 0.0682,
+      "f1_micro": 0.4111,
+      "f1_macro": 0.2607,
+      "precision_micro": 0.6123,
+      "recall_micro": 0.3095,
+      "jaccard_samples": 0.2913,
+      "best_C": 10
+    },
+    "TFIDF_LinearSVM": {
+      "subset_accuracy": 0.0749,
+      "hamming_loss": 0.0723,
+      "f1_micro": 0.4235,
+      "f1_macro": 0.3075,
+      "precision_micro": 0.5477,
+      "recall_micro": 0.3452,
+      "jaccard_samples": 0.3022,
+      "best_C": 3
+    }
+  },
+  "per_tag_f1": {
+    "*special": {
+      "f1": 0.41,
+      "support_test": 94
+    },
+    "2-sat": {
+      "f1": 0.0,
+      "support_test": 7
+    },
+    "binary search": {
+      "f1": 0.14,
+      "support_test": 274
+    },
+    "bitmasks": {
+      "f1": 0.5,
+      "support_test": 152
+    },
+    "brute force": {
+      "f1": 0.212,
+      "support_test": 402
+    },
+    "chinese remainder theorem": {
+      "f1": 0.0,
+      "support_test": 5
+    },
+    "combinatorics": {
+      "f1": 0.435,
+      "support_test": 165
+    },
+    "communication": {
+      "f1": 1.0,
+      "support_test": 1
+    },
+    "constructive algorithms": {
+      "f1": 0.409,
+      "support_test": 394
+    },
+    "data structures": {
+      "f1": 0.399,
+      "support_test": 424
+    },
+    "dfs and similar": {
+      "f1": 0.432,
+      "support_test": 204
+    },
+    "divide and conquer": {
+      "f1": 0.0,
+      "support_test": 75
+    },
+    "dp": {
+      "f1": 0.365,
+      "support_test": 501
+    },
+    "dsu": {
+      "f1": 0.114,
+      "support_test": 80
+    },
+    "expression parsing": {
+      "f1": 0.0,
+      "support_test": 12
+    },
+    "fft": {
+      "f1": 0.0,
+      "support_test": 16
+    },
+    "flows": {
+      "f1": 0.0,
+      "support_test": 34
+    },
+    "games": {
+      "f1": 0.731,
+      "support_test": 50
+    },
+    "geometry": {
+      "f1": 0.637,
+      "support_test": 91
+    },
+    "graph matchings": {
+      "f1": 0.0,
+      "support_test": 27
+    },
+    "graphs": {
+      "f1": 0.508,
+      "support_test": 239
+    },
+    "greedy": {
+      "f1": 0.523,
+      "support_test": 700
+    },
+    "hashing": {
+      "f1": 0.054,
+      "support_test": 36
+    },
+    "implementation": {
+      "f1": 0.394,
+      "support_test": 571
+    },
+    "interactive": {
+      "f1": 0.964,
+      "support_test": 58
+    },
+    "math": {
+      "f1": 0.525,
+      "support_test": 702
+    },
+    "matrices": {
+      "f1": 0.0,
+      "support_test": 30
+    },
+    "meet-in-the-middle": {
+      "f1": 0.0,
+      "support_test": 11
+    },
+    "number theory": {
+      "f1": 0.502,
+      "support_test": 181
+    },
+    "probabilities": {
+      "f1": 0.578,
+      "support_test": 55
+    },
+    "schedules": {
+      "f1": 0.0,
+      "support_test": 4
+    },
+    "shortest paths": {
+      "f1": 0.127,
+      "support_test": 53
+    },
+    "sortings": {
+      "f1": 0.257,
+      "support_test": 258
+    },
+    "string suffix structures": {
+      "f1": 0.105,
+      "support_test": 17
+    },
+    "strings": {
+      "f1": 0.599,
+      "support_test": 157
+    },
+    "ternary search": {
+      "f1": 0.0,
+      "support_test": 16
+    },
+    "trees": {
+      "f1": 0.727,
+      "support_test": 186
+    },
+    "two pointers": {
+      "f1": 0.035,
+      "support_test": 158
+    }
+  },
+  "classes": [
+    "*special",
+    "2-sat",
+    "binary search",
+    "bitmasks",
+    "brute force",
+    "chinese remainder theorem",
+    "combinatorics",
+    "communication",
+    "constructive algorithms",
+    "data structures",
+    "dfs and similar",
+    "divide and conquer",
+    "dp",
+    "dsu",
+    "expression parsing",
+    "fft",
+    "flows",
+    "games",
+    "geometry",
+    "graph matchings",
+    "graphs",
+    "greedy",
+    "hashing",
+    "implementation",
+    "interactive",
+    "math",
+    "matrices",
+    "meet-in-the-middle",
+    "number theory",
+    "probabilities",
+    "schedules",
+    "shortest paths",
+    "sortings",
+    "string suffix structures",
+    "strings",
+    "ternary search",
+    "trees",
+    "two pointers"
+  ],
+  "n_drop": 35,
+  "rating_tr": 8673,
+  "rating_te": 2192,
+  "tag_tr": 8792,
+  "tag_te": 2203,
+  "tfidf_dim": 27950,
+  "unified_dim": 28068,
+  "n_labels": 38
+}

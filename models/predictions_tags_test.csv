@@ -1,0 +1,2204 @@
+contestId,index,name,tags_true,tags_pred_svm
+2229,I,The Endians,"dp, trees","dfs and similar, dp, greedy, trees"
+2229,H,Wowee Binary String,"combinatorics, dp, strings","combinatorics, dp"
+2229,G,Roadworks,"binary search, data structures, dp, greedy, two pointers",
+2229,F,Load Unbalancing,"binary search, bitmasks, dp, greedy","greedy, sortings"
+2229,E,Deconstruction Tree,"combinatorics, data structures, dp, graphs, trees","dp, trees"
+2229,D,Me When Median Problem,"binary search, greedy",binary search
+2229,C2,We Be Flipping (Hard Version),"constructive algorithms, dp, greedy","dp, greedy, implementation"
+2229,C1,We Be Flipping (Easy Version),"constructive algorithms, greedy","greedy, implementation"
+2229,B,Absolute Cinema,"greedy, math","brute force, greedy, sortings"
+2229,A,Slimes on a Line,"brute force, greedy, math",greedy
+2226,G,Stop Spot,"implementation, strings, trees","combinatorics, math"
+2226,F,Inversion Invasion,"math, number theory","combinatorics, data structures, dp, math"
+2226,E,Mental Monumental (Hard Version),"data structures, greedy, math, two pointers","constructive algorithms, greedy, math"
+2226,D,Reserved Reversals,"constructive algorithms, dp, greedy, math",greedy
+2226,C,Mental Monumental (Easy Version),"binary search, data structures, greedy, math, two pointers","constructive algorithms, greedy, number theory"
+2226,B,Everything Everywhere,"greedy, math, number theory","constructive algorithms, data structures, greedy"
+2226,A,Disturbing Distribution,"greedy, math","dp, greedy, implementation, math"
+2223,F,Zhily and Colorful Strings,"divide and conquer, fft, math",combinatorics
+2223,E,Zhily and Permutation,"data structures, divide and conquer, trees","data structures, sortings"
+2223,D,Zhily and Cycle,"graphs, greedy","constructive algorithms, graphs"
+2223,C,Zhily and Signpost,"chinese remainder theorem, dfs and similar, math, number theory, trees","implementation, trees"
+2223,B,Zhily and Barknights,"binary search, data structures, dp, math, sortings, two pointers","combinatorics, dp, math, probabilities"
+2223,A,Zhily and Bracket Swapping,"constructive algorithms, greedy","constructive algorithms, greedy"
+2222,H,Counting Sort?,"brute force, combinatorics, dp","combinatorics, dp"
+2222,G,Statistics on Tree,"binary search, brute force, dfs and similar, divide and conquer, graphs, trees","data structures, dfs and similar, dp, trees"
+2222,F,Building Tree,"data structures, divide and conquer, dsu, graphs, implementation","brute force, constructive algorithms, data structures, graphs, greedy"
+2222,E,Seek the Truth,"binary search, bitmasks, constructive algorithms, interactive","bitmasks, constructive algorithms, interactive, math"
+2222,D,Permutation Construction,"constructive algorithms, data structures, sortings","constructive algorithms, data structures, sortings"
+2222,C,Median Partition,"dp, math","dp, greedy"
+2222,B,Artistic Balance Tree,"greedy, sortings","dp, greedy"
+2222,A,A Wonderful Contest,"brute force, dp, math","brute force, math"
+2211,G,Rational Bubble Sort,"constructive algorithms, geometry, greedy",greedy
+2211,F,Learning Binary Search,"combinatorics, divide and conquer, dp, math",combinatorics
+2211,E,Minimum Path Cover,"brute force, dp, greedy, interactive, math, number theory, trees","constructive algorithms, dp, graphs, greedy, interactive, number theory, trees"
+2211,D,AND-array,"bitmasks, combinatorics, math","bitmasks, constructive algorithms, greedy, math"
+2211,C2,Equal Multisets (Hard Version),"constructive algorithms, dsu, greedy","data structures, implementation"
+2211,C1,Equal Multisets (Easy Version),"binary search, brute force, greedy, two pointers","data structures, greedy, sortings"
+2211,B,Mickey Mouse Constructive,"constructive algorithms, dp, greedy, math",greedy
+2211,A,Antimedian Deletion,"implementation, math",greedy
+2210,F,A Simple Problem,"binary search, data structures, greedy, math, trees","data structures, greedy, math"
+2210,E,Binary Strings are Simple?,"constructive algorithms, implementation, interactive, number theory","interactive, math"
+2210,D,A Simple RBS Problem,"constructive algorithms, math, strings, trees",greedy
+2210,C2,A Simple GCD Problem (Hard Version),"dp, greedy, number theory","data structures, math, number theory"
+2210,C1,A Simple GCD Problem (Easy Version),"greedy, number theory","greedy, number theory"
+2210,B,Simply Sitting on Chairs,"data structures, greedy",greedy
+2210,A,A Simple Sequence,"constructive algorithms, dp, greedy, number theory","constructive algorithms, math"
+2208,E,Counting Cute Arrays,"combinatorics, dp","dp, math"
+2208,D2,Tree Orientation (Hard Version),"dfs and similar, dsu, graphs, greedy, sortings, trees","constructive algorithms, dfs and similar, graphs"
+2208,D1,Tree Orientation (Easy Version),"constructive algorithms, dfs and similar, dsu, graphs, greedy, matrices, trees","brute force, constructive algorithms, dfs and similar, graphs"
+2208,C,Stamina and Tasks,"dp, greedy, math",
+2208,B,Cyclists,"brute force, games, greedy, implementation, math, sortings","constructive algorithms, greedy, sortings"
+2208,A,Bingo Candies,"constructive algorithms, math","constructive algorithms, math"
+2197,B,Array and Permutation,"implementation, schedules, sortings, two pointers","brute force, greedy, implementation"
+2197,A,Friendly Numbers,"binary search, brute force, expression parsing, math, schedules","brute force, math"
+2196,F,Indivisible,"brute force, constructive algorithms, graphs","brute force, constructive algorithms, graphs, greedy"
+2196,E2,Fuzzy Concatenation (Hard version),"binary search, bitmasks, data structures, dp, greedy, string suffix structures","binary search, greedy, implementation, strings"
+2196,E1,Fuzzy Concatenation (Easy Version),"binary search, bitmasks, brute force, data structures, greedy, string suffix structures","dp, greedy, implementation, strings"
+2196,D,Double Bracket Sequence,"data structures, dp, expression parsing, flows, greedy, strings","greedy, implementation"
+2196,C2,Interactive Graph (Hard Version),"combinatorics, dfs and similar, dp, graphs, interactive","constructive algorithms, dfs and similar, graphs, greedy, interactive"
+2196,C1,Interactive Graph (Simple Version),"binary search, combinatorics, dfs and similar, dp, graphs, interactive","constructive algorithms, dfs and similar, graphs, greedy, interactive"
+2196,B,Another Problem about Beautiful Pairs,"brute force, math, two pointers","brute force, combinatorics, math"
+2196,A,Game with a Fraction,"games, math","games, greedy"
+2193,H,Remove the Grail Tree,"dfs and similar, dp, graphs, greedy, implementation, trees","brute force, constructive algorithms, dfs and similar, dp, graphs, trees"
+2193,G,Paths in a Tree,"dfs and similar, interactive, sortings, trees","constructive algorithms, graphs, interactive, trees"
+2193,F,Pizza Delivery,"dp, greedy","binary search, brute force, graphs"
+2193,E,Product Queries,"dp, math, number theory, shortest paths","binary search, brute force, greedy, math, sortings"
+2193,D,Monster Game,"binary search, sortings, two pointers","binary search, brute force, data structures, greedy, math"
+2193,C,Replace and Sum,"data structures, greedy","brute force, data structures, greedy, sortings"
+2193,B,Reverse a Permutation,greedy,"brute force, constructive algorithms, greedy, implementation, math"
+2193,A,DBMB and the Array,"brute force, math","brute force, greedy, math"
+2188,B,Seats,greedy,greedy
+2188,A,Divisible Permutation,constructive algorithms,"constructive algorithms, math"
+2187,G,Many Cartesian Trees,"greedy, sortings, trees","constructive algorithms, dfs and similar, trees"
+2187,F2,Al Fine (Counting Version),"dp, trees","combinatorics, dp, math, trees"
+2187,F1,Al Fine (Maximizing Version),"binary search, data structures, divide and conquer, trees","brute force, dfs and similar, greedy, trees"
+2187,E,Doors and Keys,"brute force, data structures, dp",greedy
+2187,D,Cool Problem,"bitmasks, dp, math","combinatorics, dp, implementation, math"
+2187,C,Jerry and Tom,"data structures, dfs and similar, dsu, games, graphs, greedy, trees","brute force, dfs and similar, games, graphs"
+2187,B,Shortest Statement Ever,"bitmasks, constructive algorithms, dp, greedy","bitmasks, brute force, constructive algorithms, greedy, math"
+2187,A,Restricted Sorting,"greedy, sortings","binary search, greedy"
+2170,F,Build XOR on a Segment,"bitmasks, dp","bitmasks, data structures, dp"
+2170,E,Binary Strings and Blocks,"combinatorics, data structures, dp",dp
+2170,D,Almost Roman,"constructive algorithms, greedy, implementation","greedy, implementation, strings"
+2170,C,Quotient and Remainder,"binary search, greedy, two pointers","brute force, greedy"
+2170,B,Addition on a Segment,"greedy, math","brute force, greedy, math, sortings"
+2170,A,Maximum Neighborhood,"bitmasks, brute force, greedy, implementation, math","greedy, math"
+2167,G,Mukhammadali and the Smooth Array,"data structures, dp","brute force, greedy, math"
+2167,F,"Tree, TREE!!!","dfs and similar, dp, math, trees","data structures, dfs and similar, dp, greedy, math, trees"
+2167,E,khba Loves to Sleep!,"binary search, data structures, geometry, greedy, implementation",greedy
+2167,D,Yet Another Array Problem,"brute force, implementation, math, number theory","brute force, constructive algorithms, greedy, math, number theory"
+2167,C,Isamatdin and His Magic Wand!,"constructive algorithms, greedy, implementation, sortings","greedy, sortings"
+2167,B,Your Name,"sortings, strings","implementation, strings"
+2167,A,Square?,"math, sortings","implementation, math"
+2163,E,Plegma,"bitmasks, combinatorics, communication, interactive","communication, constructive algorithms, interactive"
+2163,D2,Diadrash (Hard Version),"binary search, interactive, math, sortings","constructive algorithms, greedy, implementation, interactive"
+2163,D1,Diadrash (Easy Version),"binary search, brute force, divide and conquer, implementation, interactive","constructive algorithms, greedy, implementation, interactive"
+2163,C,Monopati,"brute force, combinatorics, dp, math, two pointers",
+2163,B,Siga ta Kymata,"constructive algorithms, greedy, implementation, math","constructive algorithms, data structures, greedy"
+2163,A,Souvlaki VS. Kalamaki,"brute force, greedy, math, sortings","dp, games, greedy"
+2161,H,Cycle Sort,data structures,math
+2161,G,Bitwise And Equals,"bitmasks, greedy","bitmasks, greedy, math"
+2161,F,SubMST,"combinatorics, graphs, trees","combinatorics, dfs and similar, dp, trees"
+2161,E,Left is Always Right,"combinatorics, implementation, math","combinatorics, dp, math"
+2161,D,Locked Out,"binary search, data structures, dp, greedy","greedy, implementation"
+2161,C,Loyalty,"constructive algorithms, greedy, sortings, two pointers","greedy, sortings"
+2161,B,Make Connected,"brute force, implementation","brute force, implementation"
+2161,A,Round Trip,"games, greedy, implementation, math","greedy, implementation"
+2159,F,Grand Finale: Snakes,"binary search, interactive, ternary search","greedy, interactive"
+2159,E,Super-Short-Polynomial-San,"math, meet-in-the-middle","combinatorics, data structures, math"
+2159,D2,Inverse Minimum Partition (Hard Version),"dp, greedy, math","binary search, data structures, dp, greedy"
+2159,D1,Inverse Minimum Partition (Easy Version),"binary search, brute force, dp, geometry, greedy, math, two pointers","binary search, greedy"
+2159,C,Twin Polynomials,"combinatorics, graph matchings, math","combinatorics, dp, math"
+2159,B,Rectangles,"brute force, data structures, dp, dsu, greedy, implementation, two pointers","brute force, data structures, implementation, two pointers"
+2159,A,MAD Interactive Problem,"constructive algorithms, implementation, interactive",interactive
+2153,F,Odd Queries on Odd Array,"bitmasks, brute force, data structures, implementation, trees","data structures, implementation"
+2153,E,Zero Trailing Factorial,"brute force, math, number theory","greedy, math, number theory"
+2153,D,Not Alone,"dp, greedy","brute force, greedy"
+2153,C,Symmetrical Polygons,"constructive algorithms, geometry, greedy, implementation, sortings","brute force, geometry, greedy, sortings"
+2153,B,Bitwise Reversion,"bitmasks, greedy","bitmasks, constructive algorithms, greedy"
+2153,A,Circle of Apple Trees,"greedy, sortings",dp
+2151,C,Incremental Stay,"greedy, implementation, math",greedy
+2151,A,Incremental Subarray,"math, strings",
+2148,G,Farmer John's Last Wish,"binary search, data structures, math, number theory","greedy, math"
+2148,F,Gravity Falls,"greedy, implementation, sortings","constructive algorithms, greedy"
+2148,E,Split,"binary search, data structures, two pointers",math
+2148,D,Destruction of the Dandelion Fields,"constructive algorithms, greedy, sortings","implementation, math"
+2148,C,Pacer,"greedy, math",
+2148,B,Lasers,geometry,"binary search, greedy, implementation"
+2148,A,Sublime Sequence,"brute force, hashing, math",math
+2145,G,Cost of Coloring,"combinatorics, divide and conquer, dp, fft, math",
+2145,F,Long Journey,"dfs and similar, divide and conquer, dp, graphs, greedy, math, matrices, number theory",greedy
+2145,E,Predicting Popularity,"binary search, data structures, greedy, sortings","data structures, implementation"
+2145,D,Inversion Value of a Permutation,"constructive algorithms, dfs and similar, dp",constructive algorithms
+2145,C,Monocarp's String,"binary search, greedy, strings","greedy, math"
+2145,B,Deck of Cards,"greedy, implementation","data structures, greedy, implementation"
+2145,A,Candies for Nephews,math,"greedy, math"
+2132,G,Famous Choreographer,"hashing, implementation, strings","brute force, constructive algorithms, dp, greedy"
+2132,F,Rada and the Chamomile Valley,"dfs and similar, graphs, shortest paths","dfs and similar, graphs, implementation, trees"
+2132,E,Arithmetics Competition,"binary search, data structures, greedy, sortings, ternary search","data structures, greedy, sortings"
+2132,D,From 1 to Infinity,"binary search, dp, implementation, math","binary search, implementation"
+2132,C2,The Cunning Seller (hard version),"binary search, greedy, math","dp, greedy, math"
+2132,C1,The Cunning Seller (easy version),"greedy, math","brute force, dp, greedy"
+2132,B,The Secret Number,math,"brute force, math"
+2132,A,Homework,"brute force, implementation, strings","implementation, strings"
+2126,G2,Big Wins!  (hard version),"binary search, data structures, divide and conquer, dsu, trees, two pointers","binary search, data structures"
+2126,G1,Big Wins! (easy version),"binary search, data structures, dp, dsu, two pointers",binary search
+2126,F,"1-1-1, Free Tree!","brute force, data structures, dfs and similar, graphs, implementation, trees","data structures, dfs and similar, divide and conquer, dp, trees"
+2126,E,"G-C-D, Unlucky!","math, number theory","brute force, math, number theory"
+2126,D,This Is the Last Time,"data structures, greedy, sortings","dp, greedy, math"
+2126,C,I Will Definitely Make It,"greedy, sortings","greedy, math"
+2126,B,No Casino in the Mountains,"dp, greedy","brute force, dp"
+2126,A,Only One Digit,"brute force, implementation, math",
+2123,G,Modular Sorting,"brute force, data structures, greedy, math, number theory, sortings","data structures, greedy"
+2123,F,Minimize Fixed Points,"constructive algorithms, number theory","greedy, math, number theory"
+2123,E,MEX Count,"binary search, data structures, greedy, sortings, two pointers",
+2123,D,Binary String Battle,"constructive algorithms, games, greedy",games
+2123,C,Prefix Min and Suffix Max,"brute force, data structures","greedy, math"
+2123,B,Tournament,greedy,"data structures, greedy"
+2123,A,Blackboard Game,math,"games, math, number theory"
+2120,G,Eulerian Line Graph,"graphs, greedy, math","constructive algorithms, dfs and similar, graphs, trees"
+2120,F,Superb Graphs,"2-sat, graphs","graphs, greedy"
+2120,E,Lanes of Cars,"binary search, dp, ternary search","greedy, implementation"
+2120,D,Matrix game,"combinatorics, math","brute force, math"
+2120,C,Divine Tree,"constructive algorithms, greedy, math, sortings, trees","constructive algorithms, dfs and similar, trees"
+2120,B,Square Pool,geometry,"brute force, geometry"
+2120,A,Square of Rectangles,"geometry, math","brute force, math"
+2119,F,Volcanic Eruptions,"dfs and similar, dp, greedy, shortest paths, trees","data structures, dfs and similar, dp, trees"
+2119,E,And Constraint,"bitmasks, dp, greedy","bitmasks, constructive algorithms, greedy"
+2119,D,Token Removing,"combinatorics, dp, math","combinatorics, dp, math"
+2119,C,A Good Problem,"bitmasks, constructive algorithms, math","bitmasks, constructive algorithms, greedy, math"
+2119,B,Line Segments,"geometry, greedy, math","greedy, math"
+2119,A,Add or XOR,"bitmasks, greedy, math","graphs, greedy"
+2103,F,Maximize Nor,"bitmasks, data structures, dp, implementation, sortings","bitmasks, math"
+2103,E,Keep the Sum,"constructive algorithms, implementation, two pointers","constructive algorithms, greedy, math"
+2103,D,Local Construction,"constructive algorithms, dfs and similar, implementation, two pointers",constructive algorithms
+2103,C,Median Splits,"binary search, greedy, implementation, sortings","brute force, constructive algorithms, greedy, implementation, math"
+2103,B,Binary Typewriter,"greedy, math","greedy, implementation"
+2103,A,Common Multiple,"brute force, greedy, implementation, math","greedy, sortings"
+2101,F,Shoo Shatters the Sunshine,"combinatorics, dp, trees","combinatorics, dfs and similar, dp, trees"
+2101,E,Kia Bakes a Cake,"data structures, dp, greedy, trees","greedy, trees"
+2101,D,Mani and Segments,"data structures, implementation, sortings, two pointers","data structures, dp, greedy"
+2101,C,23 Kingdom,"binary search, brute force, data structures, greedy, ternary search, two pointers","brute force, greedy, math"
+2101,B,Quartet Swapping,"brute force, data structures, divide and conquer, greedy, sortings","greedy, math, sortings"
+2101,A,Mex in the Grid,"constructive algorithms, implementation","constructive algorithms, greedy, implementation, math"
+2094,H,La Vaca Saturno Saturnita,"binary search, brute force, math, number theory","binary search, data structures"
+2094,G,Chimpanzini Bananini,"data structures, implementation, math","implementation, math"
+2094,F,Trulimero Trulicina,constructive algorithms,"constructive algorithms, math, number theory"
+2094,E,Boneca Ambalabu,bitmasks,"bitmasks, dp, greedy, implementation, math"
+2094,D,Tung Tung Sahur,"greedy, strings, two pointers","dp, greedy, implementation"
+2094,C,Brr Brrr Patapim,math,
+2094,B,Bobritto Bandito,"brute force, constructive algorithms",
+2094,A,Trippi Troppi,strings,strings
+2093,G,Shorten the Array,"binary search, bitmasks, data structures, dfs and similar, greedy, strings, trees, two pointers","data structures, greedy"
+2093,F,Hackers and Neural Networks,"bitmasks, brute force, greedy",greedy
+2093,E,Min Max MEX,"binary search, brute force, greedy","binary search, data structures, two pointers"
+2093,D,Skibidi Table,"bitmasks, implementation","greedy, implementation, math"
+2093,C,Simple Repetition,"math, number theory","math, number theory"
+2093,B,Expensive Number,"greedy, math",implementation
+2093,A,Ideal Generator,math,"binary search, math"
+2084,H,Turtle and Nediam 2,"dp, greedy","greedy, math"
+2084,G2,Wish Upon a Satellite (Hard Version),"data structures, dp","greedy, sortings"
+2084,G1,Wish Upon a Satellite (Easy Version),"dp, games","greedy, sortings"
+2084,F,Skyscape,"constructive algorithms, data structures, greedy",constructive algorithms
+2084,E,Blossom,"binary search, combinatorics, dp, implementation, math, two pointers","brute force, combinatorics, dp, math"
+2084,D,Arcology On Permafrost,"binary search, brute force, constructive algorithms, greedy, math","brute force, constructive algorithms, greedy"
+2084,C,You Soared Afar With Grace,"constructive algorithms, data structures, greedy, implementation","constructive algorithms, greedy"
+2084,B,MIN = GCD,"greedy, math, number theory","greedy, math, number theory"
+2084,A,Max and Mod,"constructive algorithms, math","constructive algorithms, math"
+2077,G,RGB Walking,"bitmasks, chinese remainder theorem, dfs and similar, graphs, number theory","data structures, graphs"
+2077,F,AND x OR,"bitmasks, constructive algorithms, dp","bitmasks, data structures, dp, greedy"
+2077,E,Another Folding Strip,"combinatorics, constructive algorithms, data structures, divide and conquer, dp, greedy, math",
+2077,D,Maximum Polygon,"brute force, data structures, greedy, implementation, math","data structures, greedy"
+2077,C,Binary Subsequence Value Sum,"combinatorics, data structures, dp, fft, math, matrices","combinatorics, greedy, math"
+2077,B,Finding OR Sum,"bitmasks, constructive algorithms, implementation, interactive, math","bitmasks, constructive algorithms, interactive"
+2077,A,Breach of Faith,"constructive algorithms, greedy, math, sortings","constructive algorithms, greedy"
+2072,G,I've Been Flipping Numbers for 300 Years and Calculated the Sum,"binary search, brute force, combinatorics, divide and conquer, math, number theory","greedy, math"
+2072,F,"Goodbye, Banker Life","2-sat, bitmasks, combinatorics, constructive algorithms, fft, math, number theory",
+2072,B,"Having Been a Treasurer in the Past, I Help Goblins Deceive","combinatorics, constructive algorithms, strings","dp, greedy"
+2072,A,"New World, New Me, New Array","greedy, implementation, math","dp, greedy, implementation, math"
+2069,F,Graph Inclusion,"data structures, dfs and similar, divide and conquer, dsu, graphs","data structures, graphs, greedy, trees"
+2069,E,"A, B, AB and BA","constructive algorithms, greedy, sortings, strings","greedy, strings"
+2069,D,Palindrome Shuffle,"binary search, greedy, hashing, strings, two pointers","greedy, strings"
+2069,C,Beautiful Sequence,"combinatorics, dp, greedy, two pointers","binary search, combinatorics, dp"
+2069,B,Set of Strangers,"greedy, matrices","greedy, implementation, math"
+2069,A,Was there an Array?,"graph matchings, greedy",constructive algorithms
+2066,F,Curse,"constructive algorithms, dp, math","constructive algorithms, greedy"
+2066,E,Tropical Season,"binary search, data structures, greedy, implementation",
+2066,D2,Club of Young Aircraft Builders (hard version),"combinatorics, dp, math","combinatorics, dp"
+2066,D1,Club of Young Aircraft Builders (easy version),"combinatorics, dp, math","combinatorics, dp"
+2066,B,White Magic,"constructive algorithms, data structures, dp, greedy, implementation","greedy, implementation, math"
+2060,G,Bugged Sort,"dp, greedy, sortings",sortings
+2060,F,Multiplicative Arrays,"combinatorics, dp, number theory","combinatorics, math, number theory"
+2060,E,Graph Composition,"dfs and similar, dsu, graphs, greedy","dfs and similar, graphs"
+2060,D,Subtract Min Sort,greedy,greedy
+2060,C,Game of Mathletes,"games, greedy, sortings, two pointers","games, greedy, math"
+2060,B,Farmer John's Card Game,"greedy, sortings","brute force, greedy"
+2060,A,Fibonacciness,brute force,"brute force, implementation, math"
+2039,H2,Cool Swap Walk (Hard Version),"constructive algorithms, implementation, sortings","greedy, implementation"
+2039,H1,Cool Swap Walk (Easy Version),"constructive algorithms, implementation, sortings","greedy, implementation"
+2039,G,Shohag Loves Pebae,"math, number theory","dfs and similar, dp, math, number theory, trees"
+2039,F2,Shohag Loves Counting (Hard Version),"dp, number theory","combinatorics, dp, math, number theory"
+2039,F1,Shohag Loves Counting (Easy Version),"combinatorics, dp, math, number theory","brute force, combinatorics, dp, math, number theory"
+2039,E,Shohag Loves Inversions,"combinatorics, dp, implementation, math","combinatorics, data structures, dp"
+2039,D,Shohag Loves GCD,"constructive algorithms, greedy, math, number theory","greedy, math, number theory"
+2039,C2,Shohag Loves XOR (Hard Version),"bitmasks, brute force, math, number theory","bitmasks, dp, math, number theory"
+2039,C1,Shohag Loves XOR (Easy Version),"bitmasks, brute force, math, number theory","bitmasks, brute force, constructive algorithms, dp, math, number theory"
+2039,B,Shohag Loves Strings,"constructive algorithms, greedy, implementation, strings","constructive algorithms, strings"
+2039,A,Shohag Loves Mod,"constructive algorithms, number theory","constructive algorithms, math, number theory"
+2038,N,Fixing the Expression,implementation,"brute force, implementation"
+2038,M,Royal Flush,"dp, implementation","greedy, math, probabilities"
+2038,L,Bridge Renovation,"brute force, dp, greedy, math, two pointers","data structures, greedy"
+2038,K,Grid Walk,"brute force, dp, greedy, math, number theory","dp, math, number theory"
+2038,J,Waiting for...,"greedy, implementation",implementation
+2038,I,Polyathlon,"binary search, data structures, hashing, string suffix structures, strings",
+2038,H,Galactic Council,flows,"dp, greedy"
+2038,G,Guess One Character,"constructive algorithms, implementation, interactive","constructive algorithms, interactive"
+2038,F,Alternative Platforms,"combinatorics, data structures, fft, math, sortings","combinatorics, dp, math"
+2038,E,Barrels,"data structures, greedy, math",binary search
+2038,D,Divide OR Conquer,"binary search, bitmasks, data structures, dp, implementation",dp
+2038,C,DIY,"data structures, geometry, greedy, sortings","brute force, math"
+2038,B,Make It Equal,"binary search, brute force, greedy, math","greedy, math"
+2038,A,Bonus Project,"games, greedy",greedy
+2035,H,Peak Productivity Forces,constructive algorithms,"constructive algorithms, math"
+2035,G2,Go Learn! (Hard Version),"divide and conquer, dp","binary search, combinatorics, math"
+2035,G1,Go Learn! (Easy Version),"dp, trees","brute force, combinatorics, math"
+2035,F,Tree Operations,"binary search, brute force, dfs and similar, dp, trees","dfs and similar, dp"
+2035,E,Monster,"binary search, brute force, constructive algorithms, greedy, implementation, math, ternary search",math
+2035,D,Yet Another Real Number Problem,"binary search, data structures, divide and conquer, greedy, implementation, math","combinatorics, dp, math"
+2035,C,Alya and Permutation,"bitmasks, constructive algorithms, math","bitmasks, constructive algorithms"
+2035,B,Everyone Loves Tres,"constructive algorithms, greedy, math, number theory","implementation, math"
+2035,A,Sliding,"implementation, math",math
+2034,H,Rayan vs. Rayaneh,"brute force, dfs and similar, dp, number theory","math, number theory"
+2034,G2,Simurgh's Watch (Hard Version),"greedy, implementation",greedy
+2034,G1,Simurgh's Watch (Easy Version),"constructive algorithms, greedy, implementation, sortings",greedy
+2034,F2,Khayyam's Royal Decree (Hard Version),"combinatorics, dp, math, sortings","combinatorics, dp, math, probabilities"
+2034,F1,Khayyam's Royal Decree (Easy Version),"combinatorics, dp, math, sortings","combinatorics, dp, math, probabilities"
+2034,E,Permutations Harmony,"combinatorics, constructive algorithms, greedy, hashing, math","constructive algorithms, math"
+2034,D,Darius' Wisdom,"constructive algorithms, greedy, implementation, sortings",
+2034,C,Trapped in the Witch's Labyrinth,"constructive algorithms, dfs and similar, graphs, implementation",
+2034,B,Rakhsh's Revival,"data structures, greedy, implementation, two pointers","dp, greedy"
+2034,A,King Keykhosrow's Mystery,"brute force, chinese remainder theorem, math, number theory","brute force, math, number theory"
+2033,G,Sakurako and Chefir,"data structures, dfs and similar, dp, greedy, trees","data structures, dfs and similar, math, trees"
+2033,F,Kosuke's Sloth,"brute force, math, number theory","combinatorics, dp, math"
+2033,E,"Sakurako, Kosuke, and the Permutation","brute force, data structures, dfs and similar, dsu, graphs, greedy, math","greedy, math"
+2033,D,Kousuke's Assignment,"data structures, dp, dsu, greedy, math","brute force, dp, greedy"
+2033,C,Sakurako's Field Trip,"dp, greedy, two pointers",greedy
+2033,B,Sakurako and Water,"brute force, constructive algorithms, greedy","binary search, greedy, implementation"
+2033,A,Sakurako and Kosuke,"constructive algorithms, implementation, math","games, math"
+2023,F,Hills and Pits,"data structures, greedy, math, matrices","binary search, greedy"
+2023,E,Tree of Life,"dp, greedy, trees","graphs, greedy, trees"
+2023,D,Many Games,"brute force, dp, greedy, math, probabilities","brute force, dp, math, probabilities"
+2023,C,C+K+S,"constructive algorithms, dfs and similar, graphs, greedy, hashing, implementation, strings","dfs and similar, graphs"
+2023,B,Skipping,"binary search, dp, graphs, shortest paths","greedy, implementation, sortings"
+2023,A,Concatenation of Arrays,"constructive algorithms, greedy, math, sortings","data structures, greedy, math"
+2009,G3,Yunli's Subarray Queries (extreme version),"data structures, dp, implementation","binary search, data structures, greedy, two pointers"
+2009,G2,Yunli's Subarray Queries (hard version),"binary search, data structures, dp","binary search, data structures, greedy"
+2009,G1,Yunli's Subarray Queries (easy version),"binary search, data structures, two pointers","binary search, data structures, greedy"
+2009,F,Firefly's Queries,"bitmasks, data structures, flows, math","brute force, data structures, dp"
+2009,E,Klee's SUPER DUPER LARGE Array!!!,"binary search, math, ternary search","binary search, greedy, math, sortings"
+2009,D,Satyam and Counting,"geometry, math","binary search, brute force, geometry, implementation, math"
+2009,C,The Legend of Freya the Frog,"implementation, math",math
+2009,B,osu!mania,"brute force, implementation",implementation
+2009,A,Minimize!,"brute force, math","greedy, implementation, math"
+2005,E2,Subtangle Game (Hard Version),"data structures, dp, games, greedy, implementation","data structures, games, implementation"
+2005,E1,Subtangle Game (Easy Version),"dp, games, greedy, implementation","games, implementation"
+2005,D,Alter the GCD,"binary search, brute force, data structures, divide and conquer, implementation, number theory","brute force, greedy, number theory"
+2005,C,Lazy Narek,"dp, implementation, strings","dp, greedy, implementation, sortings"
+2005,B2,The Strict Teacher (Hard Version),"binary search, greedy, math, sortings","data structures, dfs and similar, dp, implementation"
+2005,B1,The Strict Teacher (Easy Version),"greedy, math, sortings",
+2005,A,Simple Palindrome,"combinatorics, constructive algorithms, greedy, math","greedy, strings"
+1985,H2,Maximize the Largest Component (Hard Version),"data structures, dfs and similar, dp, dsu, implementation","dfs and similar, dp, dsu, graphs"
+1985,H1,Maximize the Largest Component (Easy Version),"brute force, data structures, dfs and similar, dsu, graphs, implementation","dfs and similar, dp, dsu, graphs, greedy"
+1985,G,D-Function,"combinatorics, math, number theory","combinatorics, implementation, math"
+1985,F,Final Boss,"binary search, data structures","dp, math"
+1985,E,Secret Box,"brute force, combinatorics, math",math
+1985,D,Manhattan Circle,"implementation, math","brute force, implementation"
+1985,C,Good Prefixes,greedy,
+1985,B,Maximum Multiple Sum,"brute force, math, number theory","brute force, math"
+1985,A,Creating Words,"implementation, strings",strings
+1972,B,Coin Games,games,"games, greedy"
+1972,A,Contest Proposal,"brute force, greedy, two pointers","greedy, sortings"
+1969,F,Card Pairing,"dp, greedy, hashing, implementation",greedy
+1969,E,Unique Array,"binary search, data structures, divide and conquer, dp, greedy","greedy, two pointers"
+1969,D,Shop Game,"data structures, greedy, math, sortings","brute force, greedy"
+1969,C,Minimizing the Sum,"dp, implementation","greedy, math"
+1969,B,Shifts and Sorting,"constructive algorithms, greedy","dp, greedy, strings"
+1969,A,Two Friends,"constructive algorithms, implementation, math",greedy
+1955,H,The Most Reckless Defense,"bitmasks, brute force, constructive algorithms, dp, flows, graph matchings, shortest paths",dfs and similar
+1955,G,GCD on a grid,"brute force, dfs and similar, dp, implementation, math, number theory","math, number theory"
+1955,F,Unfair Game,"dp, games, greedy, math, schedules",games
+1955,E,Long Inversions,"brute force, greedy, implementation, sortings","brute force, greedy, math"
+1955,D,Inaccurate Subsequence Search,"data structures, two pointers",
+1955,C,Inhabitant of the Deep Sea,"greedy, implementation, math",sortings
+1955,B,Progressive Square,"constructive algorithms, data structures, implementation, sortings","constructive algorithms, greedy, implementation, math"
+1955,A,Yogurt Sale,math,"greedy, math"
+1951,I,Growing Trees,"binary search, constructive algorithms, flows, graphs, greedy","constructive algorithms, data structures, dfs and similar, dsu, graphs, greedy, math, trees"
+1951,H,Thanos Snap,"binary search, dp, games, greedy, trees","games, greedy"
+1951,G,Clacking Balls,"combinatorics, math, probabilities","dp, math"
+1951,F,Inversion Composition,"constructive algorithms, data structures, greedy","constructive algorithms, data structures, greedy, math"
+1951,E,No Palindromes,"brute force, constructive algorithms, divide and conquer, greedy, hashing, implementation, math, strings","brute force, strings"
+1951,D,Buying Jewels,"constructive algorithms, greedy, math","constructive algorithms, greedy, math"
+1951,C,Ticket Hoarding,"greedy, math, sortings",greedy
+1951,B,Battle Cows,"binary search, data structures, greedy",greedy
+1951,A,Dual Trigger,"constructive algorithms, greedy, math","constructive algorithms, greedy"
+1949,K,Make Triangle,"constructive algorithms, math","constructive algorithms, greedy"
+1949,J,Amanda the Amoeba,"graphs, implementation, trees, two pointers","constructive algorithms, implementation"
+1949,I,Disks,"dfs and similar, geometry, graph matchings, graphs","geometry, greedy"
+1949,H,Division Avoidance,"greedy, math","brute force, math"
+1949,G,Scooter,"graphs, greedy",
+1949,F,Dating,"greedy, sortings, trees",
+1949,E,Damage per Second,"brute force, math","binary search, brute force, dp, greedy, math, sortings"
+1949,D,Funny or Scary?,constructive algorithms,"dfs and similar, graphs, implementation"
+1949,C,Annual Ants' Gathering,"dfs and similar, dp, greedy, trees","brute force, trees"
+1949,B,Charming Meals,"binary search, brute force, greedy, sortings","greedy, sortings"
+1949,A,Grove,"brute force, dfs and similar, dp, geometry, probabilities","constructive algorithms, greedy"
+1936,F,Grand Finale: Circles,"binary search, geometry","binary search, geometry"
+1936,E,Yet Yet Another Permutation Problem,"divide and conquer, fft, math","combinatorics, data structures, math"
+1936,D,Bitwise Paradox,"binary search, bitmasks, data structures, greedy, two pointers","bitmasks, data structures, greedy"
+1936,C,Pokémon Arena,"data structures, graphs, greedy, implementation, shortest paths, sortings","binary search, greedy, implementation, math"
+1936,B,Pinball,"binary search, data structures, implementation, math, two pointers","greedy, implementation, math"
+1936,A,Bitwise Operation Wizard,"bitmasks, constructive algorithms, greedy, interactive, math","bitmasks, constructive algorithms, interactive"
+1935,F,Andrey's Tree,"binary search, constructive algorithms, data structures, dfs and similar, dsu, greedy, implementation, trees","dfs and similar, greedy, trees"
+1935,E,Distance Learning Courses in MAC,"bitmasks, brute force, data structures, greedy, math",data structures
+1935,D,Exam in MAC,"binary search, combinatorics, implementation, math",data structures
+1935,C,Messenger in MAC,"binary search, brute force, constructive algorithms, data structures, dp, greedy, sortings","data structures, dp, greedy"
+1935,B,Informatics in MAC,constructive algorithms,"constructive algorithms, greedy, math"
+1935,A,Entertainment in MAC,"constructive algorithms, strings","data structures, greedy, implementation, strings"
+1928,F,Digital Patterns,"combinatorics, data structures, implementation, math","data structures, greedy, implementation"
+1928,E,Modular Sequence,"brute force, constructive algorithms, dp, graphs, greedy, math, number theory","constructive algorithms, greedy, math, number theory"
+1928,D,Lonely Mountain Dungeons,"brute force, data structures, greedy, math, ternary search","binary search, data structures, greedy, implementation"
+1928,C,Physical Education Lesson,"brute force, math, number theory","brute force, constructive algorithms, implementation, math"
+1928,B,Equalize,"binary search, greedy, sortings, two pointers","brute force, constructive algorithms, data structures, greedy"
+1928,A,Rectangle Cutting,"geometry, math","brute force, implementation, math"
+1922,F,Replace on Segment,"dp, graph matchings",greedy
+1922,E,Increasing Subsequences,"bitmasks, constructive algorithms, divide and conquer, greedy, math",constructive algorithms
+1922,D,Berserk Monsters,"brute force, data structures, dsu, implementation, math",binary search
+1922,C,Closest Cities,"greedy, implementation, math","data structures, greedy, implementation"
+1922,B,Forming Triangles,"combinatorics, constructive algorithms, math, sortings","brute force, greedy, math"
+1922,A,Tricky Template,"constructive algorithms, implementation, strings",strings
+1921,G,Mischievous Shooter,"brute force, data structures, divide and conquer, dp, implementation","brute force, math"
+1921,F,Sum of Progression,"brute force, data structures, dp, implementation, math","binary search, data structures"
+1921,E,Eat the Chip,"brute force, games, greedy, math","brute force, dp, games"
+1921,D,Very Different Array,"data structures, greedy, sortings, two pointers","greedy, implementation"
+1921,C,Sending Messages,"greedy, math","greedy, math"
+1921,B,Arranging Cats,"greedy, implementation","constructive algorithms, math"
+1921,A,Square,"greedy, math","geometry, implementation, math"
+1918,G,Permutation of Given,"constructive algorithms, math","brute force, constructive algorithms, math"
+1918,F,Caterpillar on a Tree,"dfs and similar, graphs, greedy, implementation, sortings, trees","dfs and similar, dp, greedy, trees"
+1918,E,ace5 and Task Order,"constructive algorithms, divide and conquer, implementation, interactive, probabilities, sortings","constructive algorithms, interactive"
+1918,D,Blocking Elements,"binary search, data structures, dp, implementation, two pointers","data structures, dp, greedy"
+1918,C,XOR-distance,"bitmasks, greedy, implementation, math","bitmasks, brute force, dp, greedy, math"
+1918,B,Minimize Inversions,"constructive algorithms, data structures, greedy, implementation, sortings",greedy
+1918,A,Brick Wall,"constructive algorithms, greedy, implementation, math",
+1906,M,Triangle Construction,"greedy, math","binary search, geometry, greedy, math"
+1906,L,Palindromic Parentheses,constructive algorithms,constructive algorithms
+1906,K,Deck-Building Game,"divide and conquer, math","bitmasks, combinatorics, math"
+1906,J,Count BFS Graph,"combinatorics, dp","combinatorics, math"
+1906,I,Contingency Plan 2,graph matchings,"dfs and similar, graphs"
+1906,H,Twin Friends,"combinatorics, dp",combinatorics
+1906,G,Grid Game 2,"games, number theory",games
+1906,F,Maximize The Value,"data structures, sortings",data structures
+1906,E,Merge Not Sort,"constructive algorithms, dp",
+1906,D,Spaceship Exploration,"binary search, geometry",geometry
+1906,C,Cursed Game,interactive,
+1906,B,Button Pressing,"bitmasks, constructive algorithms, hashing",math
+1906,A,Easy As ABC,brute force,implementation
+1896,H2,Cyclic Hamming (Hard Version),"brute force, dp, fft, math, number theory","combinatorics, dp, math"
+1896,H1,Cyclic Hamming (Easy Version),"brute force, divide and conquer, dp, fft, math, number theory","combinatorics, dp, math"
+1896,G,Pepe Racing,"constructive algorithms, implementation, interactive, sortings","constructive algorithms, greedy, interactive"
+1896,F,Bracket Xoring,"constructive algorithms, greedy, implementation, math","constructive algorithms, greedy"
+1896,E,Permutation Sorting,"data structures, sortings",
+1896,D,Ones and Twos,"binary search, data structures, divide and conquer, math, two pointers",data structures
+1896,C,Matching Arrays,"binary search, constructive algorithms, greedy, sortings","constructive algorithms, greedy, math"
+1896,B,AB Flipping,"greedy, strings, two pointers",implementation
+1896,A,Jagged Swaps,sortings,"constructive algorithms, greedy, sortings"
+1878,G,wxhtzdy ORO Tree,"binary search, bitmasks, brute force, data structures, dfs and similar, implementation, trees","bitmasks, data structures, greedy, trees"
+1878,F,Vasilije Loves Number Theory,"brute force, math, number theory","brute force, data structures, math, number theory"
+1878,E,Iva & Pav,"binary search, bitmasks, data structures, greedy","binary search, data structures, greedy"
+1878,D,Reverse Madness,"data structures, greedy","brute force, strings"
+1878,C,Vasilije in Cacak,math,"greedy, implementation, math, two pointers"
+1878,B,Aleksa and Stack,"constructive algorithms, math","constructive algorithms, greedy, math"
+1878,A,How Much Does Daytona Cost?,greedy,
+1872,G,Replace With Product,"brute force, greedy, math","constructive algorithms, implementation, number theory"
+1872,F,Selling a Menagerie,"dfs and similar, dsu, graphs, implementation, math","constructive algorithms, graphs, greedy"
+1872,E,Data Structures Fan,"binary search, bitmasks, data structures, dp","bitmasks, brute force, math"
+1872,D,Plus Minus Permutation,math,math
+1872,C,Non-coprime Split,"math, number theory","brute force, constructive algorithms, math, number theory"
+1872,B,The Corridor or There and Back Again,"greedy, implementation",
+1872,A,Two Vessels,"brute force, greedy, math","greedy, implementation, math"
+1859,F,Teleportation in Byteland,"data structures, dfs and similar, divide and conquer, graphs, shortest paths, trees","dp, greedy, trees"
+1859,E,Maximum Monogonosity,"brute force, dp, math","data structures, dp, greedy"
+1859,D,Andrey and Escape from Capygrad,"binary search, data structures, dp, dsu, greedy, sortings","data structures, greedy"
+1859,C,Another Permutation Problem,"brute force, dp, greedy, math","greedy, math"
+1859,B,Olya and Game with Arrays,"constructive algorithms, greedy, math, sortings","constructive algorithms, data structures, greedy, sortings"
+1859,A,United We Stand,"constructive algorithms, math, number theory","constructive algorithms, greedy, implementation"
+1855,B,Longest Divisors Interval,"brute force, combinatorics, greedy, math, number theory","greedy, math"
+1855,A,Dalton the Teacher,"greedy, math","greedy, sortings"
+1853,B,Fibonaccharsis,"binary search, brute force, math","greedy, implementation, math"
+1853,A,Desorting,"brute force, greedy, math","brute force, greedy, sortings"
+1850,H,The Third Letter,"dfs and similar, dsu, graphs, greedy, implementation",greedy
+1850,G,The Morning Star,"combinatorics, data structures, geometry, implementation, math, sortings","geometry, implementation"
+1850,F,We Were Both Children,"brute force, implementation, math, number theory","binary search, greedy"
+1850,E,Cardboard for Pictures,"binary search, geometry, implementation, math","implementation, math"
+1850,D,Balanced Round,"brute force, greedy, implementation, sortings","greedy, math"
+1850,C,Word on the Paper,"implementation, strings",implementation
+1850,B,Ten Words of Wisdom,"implementation, sortings",
+1850,A,To My Critics,"implementation, sortings","implementation, math"
+1848,F,Vika and Wiki,"binary search, bitmasks, combinatorics, divide and conquer, dp, math",math
+1848,E,Vika and Stone Skipping,"brute force, implementation, math, number theory","dp, math"
+1848,D,Vika and Bonuses,"binary search, brute force, math, ternary search","constructive algorithms, greedy, implementation, math"
+1848,C,Vika and Price Tags,"math, number theory","brute force, constructive algorithms"
+1848,B,Vika and the Bridge,"binary search, data structures, greedy, implementation, math, sortings","constructive algorithms, dp, greedy, implementation"
+1848,A,Vika and Her Friends,"games, math","brute force, implementation"
+1847,F,The Boss's Identity,"binary search, bitmasks, data structures, dfs and similar, greedy, math, sortings","bitmasks, data structures"
+1847,E,Triangle Platinum?,"brute force, combinatorics, implementation, interactive, math, probabilities","constructive algorithms, interactive, math"
+1847,D,Professor Higashikata,"data structures, dsu, greedy, implementation, strings","greedy, strings"
+1847,C,"Vampiric Powers, anyone?","bitmasks, brute force, dp, greedy","bitmasks, brute force, dp, greedy"
+1847,B,Hamon Odyssey,"bitmasks, greedy, two pointers","dp, greedy, sortings"
+1847,A,The Man who became a God ,"greedy, sortings",greedy
+1841,F,Monocarp and a Strategic Game,"geometry, sortings, two pointers","*special, greedy"
+1841,E,Fill the Matrix,"data structures, greedy, math","implementation, math"
+1841,D,Pairs of Segments,"data structures, greedy, sortings, two pointers","brute force, greedy"
+1841,C,Ranom Numbers,"brute force, dp, greedy, math, strings",greedy
+1841,B,Keep it Beautiful,implementation,
+1841,A,Game with Board,"constructive algorithms, games","games, math, number theory"
+1836,B,Astrophysicists,"greedy, math",math
+1836,A,Destroyer,"implementation, sortings","constructive algorithms, greedy"
+1835,F,Good Graph,"bitmasks, dfs and similar, graph matchings, graphs, implementation","graphs, math"
+1835,E,Old Mobile,"combinatorics, dp, probabilities","math, probabilities"
+1835,D,Doctor's Brown Hypothesis,"dfs and similar, graphs, math, number theory",
+1835,C,Twin Clusters,"bitmasks, brute force, constructive algorithms, math, probabilities",bitmasks
+1835,B,Lottery,"binary search, brute force, greedy, math, two pointers",dp
+1835,A,k-th equality,"brute force, implementation, math",greedy
+1830,F,The Third Grace,"data structures, dp","dp, greedy"
+1830,E,Bully Sort,"data structures, math",data structures
+1830,D,Mex Tree,"brute force, dp, trees","dfs and similar, trees"
+1830,C,Hyperregular Bracket Strings,"combinatorics, greedy, hashing, math, number theory, sortings","dp, greedy, math"
+1830,B,The BOSS Can Count Pairs,"brute force, math",data structures
+1830,A,Copil Copac Draws Trees,"dfs and similar, dp, graphs, trees","dfs and similar, trees"
+1825,B,LuoTianyi and the Table,"greedy, math","binary search, constructive algorithms, greedy, implementation, sortings"
+1825,A,LuoTianyi and the Palindrome String,"greedy, strings","greedy, strings"
+1823,F,Random Walk,"dp, graphs, math, probabilities, trees","combinatorics, dfs and similar, dp, math, probabilities, trees"
+1823,E,Removing Graph,"brute force, dp, games, graphs, math","dfs and similar, games, graphs"
+1823,D,Unique Palindromes,"constructive algorithms, math, strings","constructive algorithms, data structures, strings"
+1823,C,Strongly Composite,"greedy, math, number theory","math, number theory"
+1823,B,Sort with Step,"brute force, math, sortings",math
+1823,A,A-characteristic,"combinatorics, constructive algorithms, math","constructive algorithms, math, number theory"
+1819,F,"Willy-nilly, Crack, Into Release!","data structures, dp",strings
+1819,E,Roads in E City,"interactive, math, probabilities, trees","graphs, interactive"
+1819,D,Misha and Apples,"brute force, data structures, dp, two pointers","binary search, brute force, greedy"
+1819,C,The Fox and the Complete Tree Traversal,"constructive algorithms, dp, implementation, math, trees","dfs and similar, trees"
+1819,B,The Butcher,"geometry, greedy, implementation, sortings, two pointers","constructive algorithms, data structures, implementation"
+1819,A,Constructive Problem,"brute force, greedy","brute force, constructive algorithms, greedy, implementation"
+1817,F,Entangled Substrings,"string suffix structures, strings","dp, strings"
+1817,E,Half-sum,"brute force, divide and conquer, greedy","combinatorics, dp, math"
+1817,D,Toy Machine,"constructive algorithms, games, implementation",implementation
+1817,C,Similar Polynomials,"combinatorics, math",math
+1817,B,Fish Graph,"brute force, constructive algorithms, dfs and similar, graphs","constructive algorithms, dfs and similar, graphs"
+1817,A,Almost Increasing Subsequence,"binary search, data structures, greedy","data structures, dp, greedy"
+1811,G2,Vlad and the Nice Paths (hard version),"binary search, combinatorics, data structures, dp, math, two pointers","combinatorics, dp, math"
+1811,G1,Vlad and the Nice Paths (easy version),"combinatorics, dp, math","combinatorics, dp, math"
+1811,F,Is It Flower?,"dfs and similar, graphs, implementation","dfs and similar, graphs, greedy, math"
+1811,E,Living Sequence,"binary search, dp, math, number theory",math
+1811,D,Umka and a Long Flight,"constructive algorithms, implementation, math","implementation, math"
+1811,C,Restore the Array,"constructive algorithms, greedy","constructive algorithms, greedy, implementation"
+1811,B,Conveyor Belts,"implementation, math",implementation
+1811,A,Insert Digit,"greedy, math, strings","dp, greedy"
+1810,H,Last Number,"combinatorics, math","brute force, greedy, implementation, math"
+1810,G,The Maximum Prefix,dp,"combinatorics, dp, math, probabilities"
+1810,F,M-tree,"data structures, math, sortings, trees","data structures, greedy, trees"
+1810,E,Monsters,"brute force, data structures, dfs and similar, dsu, graphs, greedy","data structures, graphs, greedy"
+1810,D,Climbing the Tree,"binary search, math","data structures, dp"
+1810,C,Make It Permutation,"brute force, greedy, sortings",greedy
+1810,B,Candies,"constructive algorithms, math, number theory",constructive algorithms
+1810,A,Beautiful Sequence,"brute force, greedy",dp
+1800,G,Symmetree,"dfs and similar, hashing, implementation, trees","dfs and similar, trees"
+1800,F,Dasha and Nightmares,"bitmasks, hashing, meet-in-the-middle, strings",dp
+1800,E2,Unforgivable Curse (hard version),"brute force, constructive algorithms, dfs and similar, dsu, graphs, greedy, strings","greedy, implementation, strings"
+1800,E1,Unforgivable Curse (easy version),"brute force, constructive algorithms, dsu, graphs, greedy, strings","constructive algorithms, greedy, implementation"
+1800,D,Remove Two Letters,"data structures, greedy, hashing, strings","greedy, strings"
+1800,C2,Powering the Hero (hard version),"data structures, greedy",greedy
+1800,C1,Powering the Hero (easy version),"data structures, greedy",greedy
+1800,B,Count the Number of Pairs,"greedy, strings","greedy, strings"
+1800,A,Is It a Cat?,"implementation, strings","implementation, strings"
+1797,F,Li Hua and Path,"data structures, dfs and similar, divide and conquer, dsu, trees","data structures, dfs and similar, trees"
+1797,E,Li Hua and Array,"brute force, data structures, dsu, math, number theory, two pointers","data structures, math, number theory"
+1797,D,Li Hua and Tree,"brute force, data structures, dfs and similar, dp, implementation, trees","data structures, dfs and similar, trees"
+1797,C,Li Hua and Chess,"constructive algorithms, greedy, interactive","constructive algorithms, greedy, interactive"
+1797,B,Li Hua and Pattern,"constructive algorithms, greedy",
+1797,A,Li Hua and Maze,"constructive algorithms, flows, graphs, greedy, implementation","greedy, math"
+1794,E,Labeling the Tree with Distances,"data structures, dp, greedy, hashing, implementation, trees",trees
+1794,D,Counting Factorizations,"combinatorics, divide and conquer, dp, math, number theory","combinatorics, dp, math, number theory"
+1794,C,Scoring Subsequences,"binary search, greedy, math, two pointers","dp, greedy"
+1794,B,Not Dividing,"constructive algorithms, greedy, math",constructive algorithms
+1794,A,Prefix and Suffix Array,strings,strings
+1789,F,Serval and Brain Power,"bitmasks, brute force, dp, greedy, implementation, strings",strings
+1789,E,Serval and Music Game,"brute force, dp, implementation, math, number theory","greedy, math, number theory"
+1789,D,Serval and Shift-Shift-Shift,"bitmasks, brute force, constructive algorithms, implementation","bitmasks, constructive algorithms, greedy"
+1789,C,Serval and Toxel's Arrays,"combinatorics, dp, implementation, math","binary search, brute force, implementation, math"
+1789,B,Serval and Inversion Magic,"brute force, implementation, strings, two pointers","constructive algorithms, data structures"
+1789,A,Serval and Mocha's Array,"brute force, math, number theory","constructive algorithms, math, number theory"
+1788,F,"XOR, Tree, and Queries","bitmasks, constructive algorithms, dfs and similar, dsu, graphs, greedy, implementation, trees","bitmasks, constructive algorithms, trees"
+1788,E,Sum Over Zero,"data structures, dfs and similar, dp","constructive algorithms, math"
+1788,D,Moving Dots,"binary search, brute force, combinatorics, math, two pointers","dp, math"
+1788,C,Matching Numbers,"constructive algorithms, greedy, math","brute force, constructive algorithms"
+1788,B,Sum of Two Numbers,"constructive algorithms, greedy, implementation, math, probabilities",math
+1788,A,One and Two,"brute force, implementation, math","constructive algorithms, math"
+1786,B,Cake Assembly Line,"brute force, sortings","greedy, implementation"
+1786,A2,Alternating Deck (hard version),implementation,data structures
+1786,A1,Non-alternating Deck (easy version),implementation,"constructive algorithms, math"
+1777,F,Comfortably Numb,"bitmasks, data structures, divide and conquer, strings, trees","bitmasks, data structures, greedy"
+1777,E,Edge Reverse,"binary search, dfs and similar, graphs, trees","graphs, greedy"
+1777,D,Score of a Tree,"bitmasks, combinatorics, dfs and similar, dp, math, probabilities, trees","math, trees"
+1777,C,Quiz Master,"binary search, math, number theory, sortings, two pointers","greedy, implementation"
+1777,B,Emordnilap,"combinatorics, greedy, math","combinatorics, data structures, dp, math"
+1777,A,Everybody Likes Good Arrays!,"greedy, math",greedy
+1771,F,Hossam and Range Minimum Query,"binary search, bitmasks, data structures, hashing, probabilities, strings, trees",data structures
+1771,E,Hossam and a Letter,"brute force, dp, implementation, two pointers",
+1771,D,Hossam and (sub-)palindromic tree,"brute force, data structures, dfs and similar, dp, strings, trees","data structures, dfs and similar, dp, greedy, trees"
+1771,C,Hossam and Trainees,"greedy, math, number theory",math
+1771,B,Hossam and Friends,"binary search, constructive algorithms, dp, two pointers",brute force
+1771,A,Hossam and Combinatorics,"combinatorics, math, sortings",sortings
+1765,N,Number Reduction,greedy,math
+1765,M,Minimum LCM,"math, number theory","math, number theory"
+1765,L,Project Manager,"brute force, data structures, implementation","data structures, implementation"
+1765,K,Torus Path,"greedy, math","greedy, math"
+1765,J,Hero to Zero,"graph matchings, math","greedy, implementation"
+1765,I,Infinite Chess,"implementation, shortest paths",implementation
+1765,H,Hospital Queue,"binary search, graphs, greedy, implementation",greedy
+1765,G,Guess the String,"constructive algorithms, interactive, probabilities","constructive algorithms, interactive"
+1765,F,Chemistry Lab,"dp, geometry, probabilities","math, probabilities"
+1765,E,Exchange,"brute force, math","greedy, sortings"
+1765,D,Watch the Videos,"binary search, constructive algorithms, two pointers","greedy, implementation"
+1765,C,Card Guessing,"combinatorics, dp, probabilities","dp, math, probabilities"
+1765,B,Broken Keyboard,greedy,"implementation, strings"
+1765,A,Access Levels,"bitmasks, dsu, flows, graph matchings",
+1764,H,Doremy's Paint 2,data structures,"data structures, dp"
+1764,G3,Doremy's Perfect DS Class (Hard Version),"binary search, interactive","constructive algorithms, interactive, math"
+1764,G2,Doremy's Perfect DS Class (Medium Version),"binary search, interactive","constructive algorithms, interactive, math"
+1764,G1,Doremy's Perfect DS Class (Easy Version),"binary search, interactive","constructive algorithms, interactive, math"
+1764,F,Doremy's Experimental Tree,"brute force, constructive algorithms, dfs and similar, dsu, sortings, trees","graphs, trees"
+1764,E,Doremy's Number Line,"dp, greedy, sortings",constructive algorithms
+1764,D,Doremy's Pegging Game,"combinatorics, dp, math","combinatorics, math"
+1764,C,Doremy's City Construction,"graphs, greedy","constructive algorithms, graphs, greedy"
+1764,B,Doremy's Perfect Math Class,"math, number theory","greedy, number theory"
+1764,A,Doremy's Paint,greedy,constructive algorithms
+1763,F,Edge Queries,"data structures, dfs and similar, dp, dsu, graphs, trees","data structures, dfs and similar, graphs, trees"
+1763,E,Node Pairs,"dp, graphs, math, number theory","graphs, greedy"
+1763,D,Valid Bitonic Permutations,"combinatorics, dp, implementation, math, number theory","combinatorics, math"
+1763,C,Another Array Problem,"brute force, constructive algorithms, greedy","brute force, greedy, math"
+1763,B,Incinerate,"binary search, brute force, data structures, implementation, math, sortings",greedy
+1763,A,Absolute Maximization,"bitmasks, constructive algorithms, greedy, math",greedy
+1747,E,List Generation,"combinatorics, dp, math","combinatorics, dp, math"
+1747,D,Yet Another Problem,"binary search, bitmasks, constructive algorithms, data structures","greedy, math"
+1747,C,Swap Game,games,"constructive algorithms, games, math"
+1747,B,BAN BAN,constructive algorithms,"constructive algorithms, greedy"
+1747,A,Two Groups,"constructive algorithms, greedy","constructive algorithms, greedy, math"
+1742,G,Orray,"bitmasks, brute force, greedy, math, sortings","constructive algorithms, greedy, math"
+1742,F,Smaller,"constructive algorithms, greedy, strings","brute force, strings"
+1742,E,Scuza,"binary search, greedy, math","binary search, dp, implementation, sortings"
+1742,D,Coprime,"brute force, greedy, number theory","greedy, math, number theory"
+1742,C,Stripes,implementation,implementation
+1742,B,Increasing,"greedy, implementation, sortings","greedy, math, sortings"
+1742,A,Sum,implementation,"implementation, math"
+1728,G,Illumination,"binary search, bitmasks, brute force, combinatorics, dp, math, two pointers","binary search, combinatorics, data structures, dp, math"
+1728,F,Fishermen,"flows, graph matchings, greedy","greedy, math"
+1728,E,Red-Black Pepper,"brute force, data structures, greedy, math, number theory","data structures, math"
+1728,D,Letter Picking,"constructive algorithms, dp, games, two pointers",games
+1728,C,Digital Logarithm,"data structures, greedy, sortings","data structures, greedy, sortings"
+1728,B,Best Permutation,"constructive algorithms, greedy",greedy
+1728,A,Colored Balls: Revisited,"brute force, greedy, implementation, sortings","dp, math"
+1720,E,Misha and Paintings,"constructive algorithms, data structures, greedy, implementation, math",brute force
+1720,D2,Xor-Subsequence (hard version),"bitmasks, data structures, dp, strings, trees","bitmasks, brute force, data structures, dp, greedy"
+1720,D1,Xor-Subsequence (easy version),"bitmasks, brute force, dp, strings, trees, two pointers","bitmasks, brute force, dp, greedy"
+1720,C,Corners,"greedy, implementation",implementation
+1720,B,Interesting Sum,"brute force, data structures, greedy, math, sortings","binary search, data structures, dp, greedy"
+1720,A,Burenka Plays with Fractions,"math, number theory","brute force, math, number theory"
+1712,F,Triameter,"binary search, data structures, dfs and similar, trees","shortest paths, trees"
+1712,E2,LCM Sum (hard version),"brute force, data structures, math, number theory, two pointers",math
+1712,E1,LCM Sum (easy version),"binary search, brute force, combinatorics, math, number theory, two pointers",math
+1712,D,Empty Graph,"binary search, constructive algorithms, data structures, greedy, shortest paths","binary search, graphs, greedy"
+1712,C,Sort Zero,"greedy, sortings","greedy, sortings"
+1712,B,Woeful Permutation,"constructive algorithms, greedy, number theory",math
+1712,A,Wonderful Permutation,"greedy, implementation",greedy
+1711,B,Party,"brute force, graphs","brute force, graphs, greedy"
+1711,A,Perfect Permutation,constructive algorithms,"constructive algorithms, math"
+1695,E,Ambiguous Dominoes,"constructive algorithms, dfs and similar, graphs","constructive algorithms, graphs"
+1695,D2,Tree Queries (Hard Version),"constructive algorithms, dfs and similar, dp, greedy, trees","dfs and similar, dp, trees"
+1695,D1,Tree Queries (Easy Version),"brute force, constructive algorithms, dfs and similar, dp, greedy, trees","dfs and similar, dp, trees"
+1695,C,Zero Path,"brute force, data structures, dp, graphs, greedy, shortest paths","dp, greedy"
+1695,B,Circle Game,"games, greedy","games, math"
+1695,A,Subrectangle Guess,games,"brute force, dfs and similar"
+1673,F,Anti-Theft Road Planning,"bitmasks, constructive algorithms, divide and conquer, greedy, interactive, math","constructive algorithms, dp, graphs, interactive"
+1673,E,Power or XOR?,"bitmasks, combinatorics, math, number theory","bitmasks, dp, math"
+1673,D,Lost Arithmetic Progression,"combinatorics, math, number theory","math, number theory"
+1673,C,Palindrome Basis,"brute force, dp, math, number theory","combinatorics, math"
+1673,B,A Perfectly Balanced String?,"brute force, greedy, strings","math, strings"
+1673,A,Subtle Substring Subtraction,"games, greedy, strings","games, greedy, strings"
+1672,I,PermutationForces,"data structures, greedy","data structures, greedy"
+1672,H,Zigu Zagu,"constructive algorithms, data structures, greedy",
+1672,G,Cross Xor,"constructive algorithms, graphs, math, matrices","combinatorics, math"
+1672,F2,Checker for Array Shuffling,"constructive algorithms, dfs and similar, graphs","greedy, implementation, math, sortings"
+1672,F1,Array Shuffling,"constructive algorithms, graphs, greedy","constructive algorithms, greedy, implementation"
+1672,E,notepad.exe,"binary search, constructive algorithms, greedy, interactive","constructive algorithms, interactive"
+1672,D,Cyclic Rotation,"constructive algorithms, greedy, implementation, two pointers",greedy
+1672,C,Unequal Array,"constructive algorithms, greedy, implementation","brute force, greedy, sortings"
+1672,B,I love AAAB,"constructive algorithms, implementation","greedy, implementation, strings"
+1672,A,Log Chopping,"games, implementation, math","games, greedy, math"
+1670,F,"Jee, You See?","bitmasks, combinatorics, dp","bitmasks, combinatorics, dp, math"
+1670,E,Hemose on the Tree,"bitmasks, constructive algorithms, dfs and similar, trees","constructive algorithms, dfs and similar, greedy, trees"
+1670,D,Very Suspicious,"binary search, brute force, geometry, greedy, implementation, math","brute force, greedy, math"
+1670,C,Where is the Pizza?,"data structures, dfs and similar, dsu, graphs, implementation, math",
+1670,B,Dorms War,"brute force, implementation, strings","brute force, dp, implementation, strings"
+1670,A,Prof. Slim,"greedy, implementation, sortings","constructive algorithms, sortings"
+1666,L,Labyrinth,"dfs and similar, graphs","dp, graphs"
+1666,K,Kingdom Partition,flows,greedy
+1666,J,Job Lookup,"constructive algorithms, dp, shortest paths, trees","greedy, math, trees"
+1666,I,Interactive Treasure Hunt,"brute force, constructive algorithms, geometry, interactive, math","constructive algorithms, implementation, interactive, math"
+1666,F,Fancy Stack,"combinatorics, dp, implementation","combinatorics, dp, math"
+1666,E,Even Split,"binary search, constructive algorithms, greedy, math",
+1666,D,Deletive Editing,greedy,implementation
+1666,C,Connect the Points,"brute force, constructive algorithms, geometry","constructive algorithms, geometry, sortings"
+1662,O,Circular Maze,"brute force, dfs and similar, graphs, implementation",geometry
+1662,N,Drone Photo,"combinatorics, math, sortings",implementation
+1662,M,Bottle Arrangements,constructive algorithms,"constructive algorithms, greedy"
+1662,L,Il Derby della Madonnina,"data structures, dp, math","binary search, greedy"
+1662,K,Pandemic Restrictions,"geometry, ternary search","geometry, math, sortings"
+1662,J,Training Camp,"flows, graphs",greedy
+1662,I,Ice Cream Shop,"brute force, implementation, sortings","dp, greedy"
+1662,H,Boundary,"brute force, math",math
+1662,G,Gastronomic Event,"dp, greedy, trees","greedy, sortings"
+1662,F,Antennas,"data structures, dfs and similar, graphs, implementation, shortest paths",greedy
+1662,E,Round Table,math,"constructive algorithms, greedy, math"
+1662,D,Evolution of Weasels,"greedy, implementation, strings",strings
+1662,C,European Trip,"dp, graphs, math, matrices","combinatorics, dfs and similar, dp, dsu, graphs"
+1662,B,Toys,"greedy, strings",
+1662,A,Organizing SWERC,"brute force, implementation",
+1649,B,Game of Ball Passing,"greedy, implementation","brute force, implementation"
+1649,A,Game,implementation,"greedy, math"
+1638,F,Two Posters,"brute force, data structures, greedy, two pointers",implementation
+1638,E,Colorful Operations,"brute force, data structures, implementation",data structures
+1638,D,Big Brush,"constructive algorithms, data structures, greedy, implementation","constructive algorithms, greedy, math"
+1638,C,Inversion Graph,"data structures, dsu, graphs, math","data structures, dfs and similar, dsu"
+1638,B,Odd Swap Sort,"data structures, math, sortings","greedy, sortings"
+1638,A,Reverse,"constructive algorithms, greedy, math","constructive algorithms, greedy, math"
+1634,F,Fibonacci Additions,"brute force, data structures, hashing, implementation, math",dp
+1634,E,Fair Share,"constructive algorithms, data structures, dfs and similar, graph matchings, graphs","math, sortings"
+1634,D,Finding Zero,"constructive algorithms, interactive, math","constructive algorithms, interactive"
+1634,C,OKEA,constructive algorithms,"data structures, greedy, math, sortings"
+1634,B,Fortune Telling,"bitmasks, math",bitmasks
+1634,A,Reverse and Concatenate,"greedy, strings","math, strings"
+1629,B,GCD Arrays,"greedy, math, number theory","math, number theory"
+1629,A,Download More RAM,"brute force, greedy, sortings","brute force, greedy, math"
+1626,F,A Random Code Problem,"combinatorics, dp, math, number theory, probabilities","combinatorics, probabilities"
+1626,E,Black and White Tree,"dfs and similar, greedy, trees","dfs and similar, dp, trees"
+1626,D,Martial Arts Tournament,"binary search, brute force, greedy, math","brute force, greedy, math"
+1626,C,Monsters And Spells,"binary search, data structures, dp, greedy, implementation, math, two pointers",greedy
+1626,B,Minor Reduction,"greedy, strings",greedy
+1626,A,Equidistant Letters,"constructive algorithms, sortings","constructive algorithms, greedy, implementation, math, sortings"
+1621,I,Two Sequences,"data structures, hashing, string suffix structures",greedy
+1621,H,Trains and Airplanes,"dfs and similar, graphs, shortest paths, trees","data structures, trees"
+1621,G,Weighted Increasing Subsequences,"data structures, dp, math","dp, greedy"
+1621,F,Strange Instructions,"data structures, greedy, implementation","dp, greedy"
+1621,E,New School,"binary search, data structures, dp, greedy, implementation, sortings","constructive algorithms, greedy, math"
+1621,D,The Winter Hike,"constructive algorithms, greedy, math",greedy
+1621,C,Hidden Permutations,"dfs and similar, interactive, math","constructive algorithms, interactive"
+1621,B,Integers Shop,"data structures, greedy, implementation","data structures, greedy, implementation, sortings"
+1621,A,Stable Arrangement of Rooks,constructive algorithms,constructive algorithms
+1616,H,Keep XOR Low,"bitmasks, combinatorics, data structures, divide and conquer, dp, math","bitmasks, combinatorics, dp, math"
+1616,G,Just Add an Edge,"dfs and similar, dp, graphs","dfs and similar, graphs"
+1616,F,Tricolor Triangles,"brute force, graphs, math, matrices","constructive algorithms, graphs, math"
+1616,E,Lexicographically Small Enough,"brute force, data structures, greedy, strings","constructive algorithms, greedy, strings"
+1616,D,Keep the Average High,"dp, greedy, math",greedy
+1616,C,Representative Edges,"brute force, geometry, implementation, math","greedy, implementation, math"
+1616,B,Mirror in the String,"greedy, strings","greedy, implementation, strings"
+1616,A,Integer Diversity,implementation,math
+1615,H,Reindeer Games,"binary search, constructive algorithms, data structures, divide and conquer, flows, graphs, shortest paths",greedy
+1615,G,Maximum Adjacent Pairs,"constructive algorithms, graph matchings",greedy
+1615,F,LEGOndary Grandmaster,"combinatorics, dp, math","dp, greedy, math"
+1615,E,Purple Crayon,"data structures, dfs and similar, games, graphs, greedy, math, sortings, trees","dfs and similar, dp, games, greedy, trees"
+1615,D,X(or)-mas Tree,"bitmasks, dfs and similar, dsu, graphs, trees","bitmasks, constructive algorithms, trees"
+1615,C,Menorah,"brute force, graphs, greedy, math","constructive algorithms, greedy, implementation"
+1615,B,And It's Non-Zero,"bitmasks, greedy, math","bitmasks, implementation"
+1615,A,Closing The Gap,"greedy, math","brute force, greedy"
+1611,G,Robot and Candies,"data structures, graph matchings, greedy",implementation
+1611,F,ATM and Students,"binary search, data structures, two pointers",greedy
+1611,E2,Escape The Maze (hard version),"dfs and similar, dp, greedy, shortest paths, trees","dfs and similar, graphs, math"
+1611,E1,Escape The Maze (easy version),"dfs and similar, greedy, shortest paths, trees, two pointers",
+1611,D,Weights Assignment For Tree Edges,"constructive algorithms, trees","dfs and similar, trees"
+1611,C,Polycarp Recovers the Permutation,constructive algorithms,constructive algorithms
+1611,B,Team Composition: Programmers and Mathematicians,"binary search, constructive algorithms, math","constructive algorithms, greedy, math"
+1611,A,Make Even,"constructive algorithms, math","greedy, implementation"
+1604,A,Era,greedy,"constructive algorithms, greedy"
+1593,G,Changing Brackets,"constructive algorithms, data structures, dp, greedy","data structures, dp, greedy"
+1593,F,Red-Black Number,"dfs and similar, dp, implementation, math, meet-in-the-middle","greedy, math"
+1593,E,Gardener and Tree,"brute force, data structures, dfs and similar, greedy, implementation, trees","constructive algorithms, dfs and similar, graphs, trees"
+1593,D2,Half of Same,"brute force, math, number theory","dp, greedy"
+1593,D1,All are Same,"math, number theory",greedy
+1593,C,Save More Mice,"binary search, greedy","greedy, math, sortings"
+1593,B,Make it Divisible by 25,"dfs and similar, dp, greedy, math","brute force, math"
+1593,A,Elections,math,"greedy, math"
+1592,F2,Alice and Recoloring 2,"constructive algorithms, flows, graph matchings, greedy",implementation
+1592,F1,Alice and Recoloring 1,"constructive algorithms, greedy",implementation
+1592,E,Bored Bakry,"bitmasks, greedy, math, two pointers","bitmasks, data structures, dp"
+1592,D,Hemose in ICPC ?,"binary search, dfs and similar, implementation, interactive, math, number theory, trees","constructive algorithms, dfs and similar, graphs, interactive, trees"
+1592,C,Bakry and Partitioning,"bitmasks, constructive algorithms, dfs and similar, dp, graphs, trees","bitmasks, dfs and similar, dp, trees"
+1592,B,Hemose Shopping,"constructive algorithms, dsu, math, sortings","greedy, math, sortings"
+1592,A,Gamer Hemose,"binary search, greedy, math, sortings","data structures, greedy, math"
+1585,G,Poachers,"dp, games, graphs, trees","games, greedy, trees"
+1585,F,Non-equal Neighbours,"combinatorics, dp, math","combinatorics, dp, math"
+1585,E,Frequency Queries,"data structures, dfs and similar, trees",trees
+1585,D,Yet Another Sorting Problem,"data structures, math","greedy, sortings"
+1585,C,Minimize Distance,greedy,greedy
+1585,B,Array Eversion,greedy,
+1585,A,Life of a Flower,implementation,"greedy, implementation, math"
+1556,H,DIY Tree,"graphs, greedy, math, probabilities","data structures, dsu, graphs, greedy, trees"
+1556,G,Gates to Another World,"bitmasks, data structures, dsu, two pointers","data structures, trees"
+1556,F,Sports Betting,"bitmasks, combinatorics, dp, graphs, math, probabilities","combinatorics, dp, math, probabilities"
+1556,E,Equilibrium,"data structures, dp, greedy","dp, greedy"
+1556,D,Take a Guess,"bitmasks, constructive algorithms, interactive, math","constructive algorithms, interactive"
+1556,C,Compressed Bracket Sequence,"brute force, implementation","greedy, implementation"
+1556,B,Take Your Places!,implementation,"greedy, math"
+1556,A,A Variety of Operations,math,"implementation, math"
+1555,F,Good Graph,"data structures, dsu, graphs, trees","data structures, dsu, graphs"
+1555,E,Boring Segments,"data structures, sortings, trees, two pointers","data structures, dp, greedy, sortings"
+1555,D,Say No to Palindromes,"brute force, constructive algorithms, dp, strings","binary search, data structures, strings"
+1555,C,Coin Rows,"brute force, constructive algorithms, dp, implementation","dp, games, greedy"
+1555,B,Two Tables,brute force,"implementation, math"
+1555,A,PizzaForces,"brute force, math",
+1552,I,Organizing a Music Festival,"dfs and similar, math",dp
+1552,H,Guess the Perimeter,"binary search, interactive, number theory","constructive algorithms, geometry, interactive"
+1552,G,A Serious Referee,"bitmasks, brute force, dfs and similar, sortings",
+1552,F,Telepanting,"binary search, data structures, dp, sortings","dp, math"
+1552,E,Colors and Intervals,"constructive algorithms, data structures, greedy, sortings",
+1552,D,Array Differentiation,"bitmasks, brute force, constructive algorithms, dfs and similar, dp, graphs, math","greedy, math"
+1552,C,Maximize the Intersections,"combinatorics, constructive algorithms, geometry, greedy, sortings","geometry, greedy"
+1552,B,Running for Gold,"combinatorics, graphs, greedy, sortings",greedy
+1552,A,Subsequence Permutation,"sortings, strings","greedy, implementation, strings"
+1551,F,Equidistant Vertices,"brute force, combinatorics, dfs and similar, dp, trees","combinatorics, constructive algorithms, dfs and similar, dp, math, trees"
+1551,E,Fixed Points,"binary search, brute force, dp","greedy, implementation"
+1551,D2,Domino (hard version),"constructive algorithms, implementation, math","constructive algorithms, math"
+1551,D1,Domino (easy version),"constructive algorithms, math","brute force, constructive algorithms, math"
+1551,C,Interesting Story,"greedy, sortings, strings","brute force, greedy, implementation, sortings, strings"
+1551,B2,Wonderful Coloring - 2,"binary search, constructive algorithms, data structures, greedy","constructive algorithms, math, two pointers"
+1551,B1,Wonderful Coloring - 1,"greedy, strings",
+1551,A,Polycarp and Coins,"greedy, math","greedy, math"
+1550,F,Jumping Around,"binary search, data structures, divide and conquer, dp, dsu, graphs, shortest paths",math
+1550,E,Stringforces,"binary search, bitmasks, brute force, dp, strings, two pointers","binary search, dp, greedy, implementation"
+1550,D,Excellent Arrays,"binary search, combinatorics, constructive algorithms, implementation, math, sortings, two pointers","combinatorics, math"
+1550,C,Manhattan Subarrays,"brute force, geometry, greedy, implementation","binary search, data structures, two pointers"
+1550,B,Maximum Cost Deletion,"greedy, math",
+1550,A,Find The Array,"greedy, math","brute force, math"
+1548,E,Gregor and the Two Painters,"data structures, divide and conquer, graphs, greedy, math",dp
+1548,D2,Gregor and the Odd Cows (Hard),"brute force, geometry, math, number theory","geometry, math"
+1548,D1,Gregor and the Odd Cows (Easy),"bitmasks, geometry, math, number theory","geometry, math"
+1548,C,The Three Little Pigs,"combinatorics, dp, fft, math",math
+1548,B,Integers Have Friends,"binary search, data structures, divide and conquer, math, number theory, two pointers","math, number theory"
+1548,A,Web of Lies,"brute force, graphs, greedy",data structures
+1546,B,AquaMoon and Stolen String,"interactive, math","constructive algorithms, interactive, math"
+1546,A,AquaMoon and Two Arrays,"brute force, greedy","constructive algorithms, greedy, math"
+1539,F,Strange Array,"data structures, greedy, sortings","data structures, greedy, implementation"
+1539,E,Game with Cards,"binary search, constructive algorithms, data structures, dp, greedy, implementation",greedy
+1539,D,PriceFixed,"binary search, greedy, implementation, sortings, two pointers",greedy
+1539,C,Stable Groups,"greedy, sortings","brute force, greedy"
+1539,B,Love Song,"dp, implementation, strings","implementation, strings"
+1539,A,Contest Start,"combinatorics, geometry, greedy, math",
+1529,B,Sifid and Strange Subsequences,"greedy, math, sortings","brute force, data structures, dp, greedy, sortings, two pointers"
+1529,A,Eshag Loves Big Arrays,"constructive algorithms, greedy, math","greedy, math"
+1527,E,Partition Game,"binary search, data structures, divide and conquer, dp","data structures, dp, greedy"
+1527,D,MEX Tree,"combinatorics, dfs and similar, implementation, math, trees","binary search, trees"
+1527,C,Sequence Pair Weight,"hashing, implementation, math",
+1527,B2,Palindrome Game (hard version),"constructive algorithms, games","games, greedy"
+1527,B1,Palindrome Game (easy version),"constructive algorithms, games","games, greedy"
+1527,A,And Then There Were K,bitmasks,"bitmasks, brute force, constructive algorithms, greedy, math"
+1523,H,Hopping Around the Array ,"data structures, dp",data structures
+1523,G,Try Booking,"data structures, divide and conquer",data structures
+1523,F,Favorite Game,"bitmasks, dp",
+1523,E,Crypto Lights,"combinatorics, dp, math, probabilities","combinatorics, greedy, math, probabilities"
+1523,D,Love-Hate,"bitmasks, brute force, dp, probabilities",greedy
+1523,C,Compression and Expansion,"brute force, data structures, greedy, implementation, trees","constructive algorithms, data structures, greedy, implementation, math"
+1523,B,Lord of the Values,constructive algorithms,greedy
+1523,A,Game of Life,implementation,"greedy, implementation"
+1516,E,Baby Ehab Plays with Permutations,"combinatorics, dp, math","combinatorics, math"
+1516,D,Cut,"binary search, data structures, dp, graphs, number theory, two pointers","data structures, implementation, math, number theory, two pointers"
+1516,C,Baby Ehab Partitions Again,"bitmasks, constructive algorithms, dp, math",greedy
+1516,B,AGAGA XOOORRR,"bitmasks, brute force, dp, greedy","greedy, math"
+1516,A,Tit for Tat,greedy,"greedy, sortings"
+1512,G,Short Task,"brute force, dp, math, number theory","constructive algorithms, math"
+1512,F,Education,"brute force, dp, greedy, implementation",greedy
+1512,E,Permutation by Sum,"brute force, greedy, math","constructive algorithms, math"
+1512,D,Corrupted Array,"constructive algorithms, data structures, greedy",implementation
+1512,C,A-B Palindrome,"constructive algorithms, implementation, strings",
+1512,B,Almost Rectangle,implementation,"brute force, constructive algorithms, implementation, math"
+1512,A,Spy Detected!,"brute force, implementation",math
+1510,K,King's Task,"brute force, graphs, implementation",math
+1510,J,Japanese Game,"constructive algorithms, math","constructive algorithms, implementation, math"
+1510,I,Is It Rated?,"greedy, interactive, math, probabilities",implementation
+1510,H,Hard Optimization,dp,"data structures, sortings"
+1510,D,Digits,"dp, math, number theory","implementation, math"
+1510,C,Cactus Not Enough,"dfs and similar, graph matchings, graphs","constructive algorithms, graphs"
+1510,B,Button Lock,"flows, graph matchings, graphs",
+1506,G,Maximize the Remaining String,"brute force, data structures, dp, greedy, strings","greedy, strings"
+1506,F,Triangular Paths,"constructive algorithms, graphs, math, shortest paths, sortings",greedy
+1506,E,Restoring the Permutation,"constructive algorithms, implementation","data structures, greedy"
+1506,D,Epic Transformation,"constructive algorithms, data structures, greedy",greedy
+1506,C,Double-ended Strings,"brute force, implementation, strings","dp, greedy, strings"
+1506,B,Partial Replacement,"greedy, implementation",
+1506,A,Strange Table,math,math
+1497,E2,Square-Free Division (hard version),"data structures, dp, greedy, math, number theory, two pointers","greedy, math"
+1497,E1,Square-Free Division (easy version),"data structures, dp, greedy, math, number theory, two pointers","brute force, math, number theory"
+1497,D,Genius,"bitmasks, dp, graphs, number theory","brute force, dp, greedy"
+1497,C2,k-LCM (hard version),"constructive algorithms, math","math, number theory"
+1497,C1,k-LCM (easy version),"constructive algorithms, math","math, number theory"
+1497,B,M-arrays,"constructive algorithms, greedy, math",math
+1497,A,Meximization,"brute force, data structures, greedy, sortings","constructive algorithms, greedy"
+1493,F,Enchanted Matrix,"bitmasks, interactive, number theory","constructive algorithms, interactive"
+1493,E,Enormous XOR,"bitmasks, constructive algorithms, greedy, math, strings, two pointers","bitmasks, brute force"
+1493,D,GCD of an Array,"brute force, data structures, hashing, implementation, math, number theory, sortings, two pointers","data structures, math, number theory"
+1493,C,K-beautiful Strings,"binary search, brute force, constructive algorithms, greedy, strings","greedy, strings"
+1493,B,Planet Lapituletti,"brute force, implementation",implementation
+1493,A,Anti-knapsack,"constructive algorithms, greedy","constructive algorithms, greedy, implementation, math, number theory"
+1492,E,Almost Fault-Tolerant Database,"brute force, constructive algorithms, dfs and similar, greedy, implementation","brute force, greedy"
+1492,D,Genius's Gambit,"bitmasks, constructive algorithms, greedy, math","dfs and similar, greedy, math"
+1492,C,Maximum width,"binary search, data structures, dp, greedy, two pointers",strings
+1492,B,Card Deck,"data structures, greedy, math","brute force, constructive algorithms, greedy, math, sortings"
+1492,A,Three swimmers,math,math
+1490,G,Old Floppy Drive ,"binary search, data structures, math",data structures
+1490,F,Equalize the Array,"binary search, data structures, greedy, math, sortings",greedy
+1490,E,Accidental Victory,"binary search, data structures, greedy",probabilities
+1490,D,Permutation Transformation,"dfs and similar, divide and conquer, implementation",trees
+1490,C,Sum of Cubes,"binary search, brute force, math","greedy, math"
+1490,B,Balanced Remainders,"brute force, constructive algorithms, math","greedy, math"
+1490,A,Dense Array,"greedy, math","greedy, implementation"
+1488,J,Flower Shop,"*special, data structures, fft, math",greedy
+1488,I,Demonic Invasion,"*special, flows",
+1488,H,Build From Suffixes,"*special, combinatorics, data structures",
+1488,G,Painting Numbers,"*special, data structures, greedy, number theory",math
+1488,F,Dogecoin,"*special, binary search, data structures",greedy
+1488,E,Palindromic Doubles,"*special, data structures, dp","brute force, data structures, dp, implementation"
+1488,D,Problemsolving Marathon,"*special, binary search, greedy","greedy, implementation, math"
+1488,C,Two Policemen,"*special, binary search, brute force, math","greedy, math"
+1488,B,RBS Deletion,"*special, greedy","data structures, greedy"
+1488,A,From Zero To Y,"*special, math",greedy
+1486,F,Pairs of Paths,"combinatorics, data structures, dfs and similar, dp, trees","graphs, trees"
+1486,E,Paired Payment,"binary search, brute force, constructive algorithms, dp, flows, graphs, shortest paths","dfs and similar, graphs, trees"
+1486,D,Max Median,"binary search, data structures, dp","binary search, greedy, math"
+1486,C2,Guessing the Greatest (hard version),"binary search, interactive","constructive algorithms, interactive, math"
+1486,C1,Guessing the Greatest (easy version),"binary search, interactive","constructive algorithms, interactive, math"
+1486,B,Eastern Exhibition,"binary search, geometry, shortest paths, sortings",math
+1486,A,Shifting Stacks,"greedy, implementation","brute force, implementation, sortings"
+1485,F,Copy or Prefix Sum,"combinatorics, data structures, dp, sortings","dp, math"
+1485,E,Move and Swap,"dfs and similar, dp, greedy, trees","dfs and similar, trees"
+1485,D,Multiples and Power Differences,"constructive algorithms, graphs, math, number theory",constructive algorithms
+1485,C,Floor and Mod,"binary search, brute force, math, number theory","math, number theory"
+1485,B,Replace and Keep Sorted,"dp, implementation, math",data structures
+1485,A,Add and Divide,"brute force, greedy, math, number theory","greedy, math"
+1478,C,Nezzar and Symmetric Array,"implementation, math, sortings","constructive algorithms, implementation, math, sortings"
+1478,B,Nezzar and Lucky Number,"brute force, dp, greedy, math","implementation, math"
+1478,A,Nezzar and Colorful Balls,"brute force, greedy","greedy, math"
+1475,G,Strange Beauty,"dp, math, number theory, sortings","brute force, math, sortings"
+1475,F,Unusual Matrix,"2-sat, brute force, constructive algorithms","brute force, constructive algorithms, greedy"
+1475,E,Advertising Agency,"combinatorics, math, sortings","combinatorics, dp, math"
+1475,D,Cleaning the Phone,"binary search, dp, sortings, two pointers","brute force, greedy"
+1475,C,Ball in Berland,"combinatorics, graphs, math","constructive algorithms, math"
+1475,B,New Year's Number,"brute force, dp, math",greedy
+1475,A,Odd Divisor,"math, number theory","math, number theory"
+1473,G,Tiles,"combinatorics, dp, fft, math",dp
+1473,F,Strange Set,"flows, math","brute force, greedy, sortings"
+1473,E,Minimum Path,"graphs, shortest paths","dfs and similar, graphs, shortest paths"
+1473,D,Program,"data structures, dp, implementation, strings","binary search, data structures, implementation"
+1473,C,No More Inversions,"constructive algorithms, math","data structures, greedy, math"
+1473,B,String LCM,"brute force, math, number theory, strings","brute force, math, strings"
+1473,A,Replacing Elements,"greedy, implementation, math, sortings","greedy, implementation, math"
+1472,G,Moving to the Capital,"dfs and similar, dp, graphs, shortest paths","dfs and similar, dp, graphs, shortest paths"
+1472,F,New Year's Puzzle,"brute force, dp, graph matchings, greedy, sortings","constructive algorithms, data structures"
+1472,E,Correct Placement,"binary search, data structures, dp, sortings, two pointers","data structures, implementation, sortings"
+1472,D,Even-Odd Game,"dp, games, greedy, sortings","games, greedy"
+1472,C,Long Jumps,"dp, graphs","greedy, implementation"
+1472,B,Fair Division,"dp, greedy, math",math
+1472,A,Cards for Friends,"greedy, math",implementation
+1471,B,Strange List,"brute force, greedy, implementation, math",brute force
+1471,A,Strange Partition,"greedy, math, number theory","constructive algorithms, greedy, implementation, math"
+1470,F,Strange Covering,divide and conquer,"data structures, geometry, greedy"
+1470,E,Strange Permutation,"binary search, combinatorics, data structures, dp, graphs, implementation, two pointers","data structures, greedy"
+1470,D,Strange Housing,"constructive algorithms, dfs and similar, graph matchings, graphs, greedy","dfs and similar, graphs, trees"
+1470,C,Strange Shuffle,"binary search, brute force, constructive algorithms, interactive",interactive
+1470,B,Strange Definition,"bitmasks, graphs, hashing, math, number theory","data structures, math, number theory"
+1470,A,Strange Birthday Party,"binary search, dp, greedy, sortings, two pointers","brute force, data structures, dp, greedy, sortings"
+1469,F,Power Sockets,"binary search, data structures, greedy",trees
+1469,E,A Bit Similar,"bitmasks, brute force, hashing, string suffix structures, strings, two pointers","brute force, constructive algorithms"
+1469,D,Ceil Divisions,"brute force, constructive algorithms, math, number theory","constructive algorithms, implementation"
+1469,C,Building a Fence,"dp, greedy, implementation, two pointers","constructive algorithms, greedy, implementation, math"
+1469,B,Red and Blue,"dp, greedy",greedy
+1469,A,Regular Bracket Sequence,"constructive algorithms, greedy","constructive algorithms, greedy"
+1466,I,The Riddle of the Sphinx,"binary search, data structures, interactive","binary search, interactive"
+1466,H,Finding satisfactory solutions,"combinatorics, dp, graphs, greedy, math","combinatorics, dp, greedy, math"
+1466,G,Song of the Sirens,"combinatorics, divide and conquer, hashing, math, string suffix structures, strings","brute force, strings"
+1466,F,Euclid's nightmare,"bitmasks, dfs and similar, dsu, graphs, greedy, math, sortings","dp, math, sortings"
+1466,E,Apollo versus Pan,"bitmasks, brute force, math","bitmasks, dp, math"
+1466,D,13th Labour of Heracles,"data structures, greedy, sortings, trees","dp, trees"
+1466,C,Canine poetry,"dp, greedy, strings","implementation, strings"
+1466,B,Last minute enhancements,"dp, greedy","constructive algorithms, greedy, math"
+1466,A,Bovine Dilemma,"brute force, geometry, math",geometry
+1443,E,Long Permutation,"brute force, math, two pointers","constructive algorithms, math"
+1443,C,The Delivery Dilemma,"binary search, greedy, sortings","binary search, data structures, greedy"
+1443,B,Saving the City,"dp, greedy, math, sortings","dp, greedy"
+1443,A,Kids Seating,"constructive algorithms, math",math
+1442,F,Differentiating Games,"games, interactive","games, graphs, interactive"
+1442,E,"Black, White and Grey Tree","binary search, constructive algorithms, dfs and similar, dp, greedy, trees","dfs and similar, dp, trees"
+1442,D,Sum,"data structures, divide and conquer, dp, greedy",
+1442,C,Graph Transpositions,"dfs and similar, graphs, greedy, shortest paths",dp
+1442,B,Identify the Operations,"combinatorics, data structures, dsu, greedy, implementation",
+1442,A,Extreme Subtraction,"constructive algorithms, dp, greedy",math
+1438,F,Olha and Igor,"interactive, probabilities, trees","constructive algorithms, interactive, math, trees"
+1438,E,Yurii Can Do Everything,"binary search, bitmasks, brute force, constructive algorithms, divide and conquer, two pointers","binary search, bitmasks, data structures"
+1438,D,Powerful Ksenia,"bitmasks, constructive algorithms, math","bitmasks, constructive algorithms, math"
+1438,C,Engineer Artem,"2-sat, chinese remainder theorem, constructive algorithms, fft, flows","constructive algorithms, implementation"
+1438,B,Valerii Against Everyone,"constructive algorithms, data structures, greedy, sortings",brute force
+1438,A,Specific Tastes of Andre ,"constructive algorithms, implementation",
+1423,M,Milutin's Plums,interactive,interactive
+1423,L,Light switches,meet-in-the-middle,implementation
+1423,K,Lonely Numbers,"binary search, math, number theory, two pointers",math
+1423,J,Bubble Cup hypothesis,"bitmasks, constructive algorithms, dp, math",math
+1423,I,Lookup Tables,bitmasks,constructive algorithms
+1423,H,Virus,"data structures, divide and conquer, dsu, graphs",data structures
+1423,G,Growing flowers,data structures,data structures
+1423,F,Coins,math,
+1423,E,5G Antenna Towers,geometry,geometry
+1423,C,Dušan's Railway,"divide and conquer, graphs, trees","constructive algorithms, graphs, shortest paths, trees"
+1423,B,Valuable Paper,"binary search, flows, graph matchings, graphs",
+1421,E,Swedish Heroes,"brute force, dp, implementation",
+1421,D,Hexagons,"brute force, constructive algorithms, greedy, implementation, math, shortest paths",
+1421,C,Palindromifier,"constructive algorithms, strings","greedy, strings"
+1421,B,Putting Bricks in the Wall,"constructive algorithms, implementation",data structures
+1421,A,XORwice,"bitmasks, greedy, math","bitmasks, greedy, math"
+1416,F,Showing Off,"flows, graph matchings, greedy, implementation","constructive algorithms, dfs and similar, implementation"
+1416,E,Split,"binary search, data structures, dp, greedy","greedy, implementation"
+1416,D,Graph and Queries,"data structures, dsu, graphs, implementation, trees","data structures, dfs and similar, dsu, graphs, trees"
+1416,C,XOR Inverse,"bitmasks, data structures, divide and conquer, dp, greedy, math, sortings, strings, trees","bitmasks, data structures, dp, greedy"
+1416,B,Make Them Equal,"constructive algorithms, greedy, math","bitmasks, brute force, constructive algorithms, math"
+1416,A,k-Amazing Numbers,"binary search, data structures, implementation, two pointers","data structures, implementation"
+1407,E,Egor in the Republic of Dagestan,"constructive algorithms, dfs and similar, dp, graphs, greedy, shortest paths","graphs, shortest paths"
+1407,D,Discrete Centrifugal Jumps,"data structures, dp, graphs","data structures, dp"
+1407,C,Chocolate Bunny,"constructive algorithms, interactive, math, two pointers","constructive algorithms, interactive"
+1407,B,Big Vova,"brute force, greedy, math, number theory","constructive algorithms, greedy, math, number theory"
+1407,A,Ahahahahahahahaha,"constructive algorithms, math","brute force, constructive algorithms, greedy, implementation, math"
+1405,B,Array Cancellation,"constructive algorithms, implementation","greedy, math"
+1405,A,Permutation Forgery,constructive algorithms,constructive algorithms
+1403,C,Chess Rush,"*special, combinatorics, dp, implementation, math","dp, implementation"
+1403,B,Spring cleaning,"*special, data structures, dfs and similar, graphs, trees","dp, trees"
+1403,A,The Potion of Great Power,"*special, 2-sat, binary search, data structures, graphs, interactive, sortings, two pointers","constructive algorithms, interactive"
+1399,F,Yet Another Segments Subset,"data structures, dp, graphs, sortings",sortings
+1399,E2,Weights Division (hard version),"binary search, dfs and similar, greedy, sortings, trees, two pointers",trees
+1399,E1,Weights Division (easy version),"data structures, dfs and similar, greedy, trees",trees
+1399,D,Binary String To Subsequences,"constructive algorithms, data structures, greedy, implementation",
+1399,C,Boats Competition,"brute force, greedy, two pointers","greedy, math"
+1399,B,Gifts Fixing,greedy,greedy
+1399,A,Remove Smallest,"greedy, sortings","greedy, sortings"
+1396,E,Distance Matching,"constructive algorithms, dfs and similar, trees","dfs and similar, graphs, implementation, trees"
+1396,D,Rainbow Rectangles,"data structures, sortings, two pointers","combinatorics, math"
+1396,C,Monster Invaders,"dp, greedy, implementation","dp, greedy"
+1396,B,Stoned Game,"brute force, constructive algorithms, games, greedy",games
+1396,A,Multiples of Length,"constructive algorithms, greedy, number theory",
+1388,E,Uncle Bogdan and Projections,"data structures, geometry, sortings",geometry
+1388,D,Captain Flint and Treasure,"data structures, dfs and similar, graphs, greedy, implementation, trees","data structures, greedy"
+1388,C,Uncle Bogdan and Country Happiness,"dfs and similar, greedy, math, trees",dp
+1388,B,Captain Flint and a Long Voyage,"greedy, math",greedy
+1388,A,Captain Flint and Crew Recruitment,"brute force, greedy, math, number theory","constructive algorithms, math, number theory"
+1383,F,Special Edges,"flows, graphs",data structures
+1383,E,Strange Operation,"combinatorics, data structures, dp","combinatorics, dp, strings"
+1383,D,Rearrange,"brute force, constructive algorithms, graphs, greedy, sortings",data structures
+1383,C,String Transformation 2,"bitmasks, dp, graphs, trees",strings
+1383,B,GameGame,"bitmasks, constructive algorithms, dp, games, greedy, math","bitmasks, brute force, dp, games, greedy"
+1383,A,String Transformation 1,"dsu, graphs, greedy, sortings, strings, trees, two pointers",strings
+1382,B,Sequential Nim,"dp, games",games
+1382,A,Common Subsequence,brute force,"constructive algorithms, greedy, two pointers"
+1365,G,Secure Password,"bitmasks, combinatorics, constructive algorithms, interactive, math","bitmasks, constructive algorithms, interactive, math"
+1365,F,Swaps Again,"constructive algorithms, implementation, sortings","greedy, math"
+1365,E,Maximum Subsequence Value,"brute force, constructive algorithms","bitmasks, brute force, greedy, math"
+1365,D,Solve The Maze,"constructive algorithms, dfs and similar, dsu, graphs, greedy, implementation, shortest paths",
+1365,C,Rotation Matching,"constructive algorithms, data structures, greedy, implementation",
+1365,B,Trouble Sort,"constructive algorithms, implementation",
+1365,A,Matrix Game,"games, greedy, implementation","constructive algorithms, games, math"
+1354,G,Find a Gift,"binary search, interactive, probabilities","binary search, interactive"
+1354,F,Summoning Minions,"constructive algorithms, dp, flows, graph matchings, greedy, sortings","binary search, greedy"
+1354,E,Graph Coloring,"dfs and similar, dp, graphs","constructive algorithms, dfs and similar, graphs"
+1354,D,Multiset,"binary search, data structures","data structures, greedy, implementation"
+1354,C2,Not So Simple Polygon Embedding,"binary search, brute force, geometry, math","geometry, math"
+1354,C1,Simple Polygon Embedding,"binary search, geometry, math, ternary search","geometry, math"
+1354,B,Ternary String,"binary search, dp, implementation, two pointers","implementation, strings"
+1354,A,Alarm Clock,math,"binary search, implementation, math"
+1343,F,Restore the Permutation by Sorted Segments,"brute force, constructive algorithms, data structures, greedy, implementation",
+1343,E,Weights Distributing,"brute force, graphs, greedy, shortest paths, sortings","dfs and similar, graphs"
+1343,D,Constant Palindrome Sum,"brute force, data structures, greedy, two pointers","greedy, math"
+1343,C,Alternating Subsequence,"dp, greedy, two pointers","dp, greedy"
+1343,B,Balanced Array,"constructive algorithms, math","constructive algorithms, math"
+1343,A,Candies,"brute force, math",math
+1341,B,Nastya and Door,"greedy, implementation","data structures, greedy"
+1341,A,Nastya and Rice,math,implementation
+1338,E,JYPnation,graphs,"constructive algorithms, graphs"
+1338,D,Nested Rubber Bands,"constructive algorithms, dfs and similar, dp, math, trees","dfs and similar, dp, trees"
+1338,C,Perfect Triples,"bitmasks, brute force, constructive algorithms, divide and conquer, math","bitmasks, math"
+1338,B,Edge Weight Assignment,"bitmasks, constructive algorithms, dfs and similar, greedy, math, trees","bitmasks, dfs and similar, dp, trees"
+1338,A,Powered Addition,"greedy, math",greedy
+1327,G,Letters and Question Marks,"bitmasks, dp, string suffix structures","data structures, strings"
+1327,F,AND Segments,"bitmasks, combinatorics, data structures, dp, two pointers","combinatorics, dp, math"
+1327,E,Count The Blocks,"combinatorics, dp, math","dp, math"
+1327,D,Infinite Path,"brute force, dfs and similar, graphs, math, number theory","graphs, implementation, math"
+1327,C,Game with Chips,"constructive algorithms, implementation",greedy
+1327,B,Princesses and Princes,"brute force, graphs, greedy","greedy, implementation"
+1327,A,Sum of Odd Integers,math,"brute force, math"
+1316,F,Battalion Strength,"data structures, divide and conquer, probabilities","combinatorics, greedy"
+1316,E,Team Building,"bitmasks, dp, greedy, sortings","greedy, math"
+1316,D,Nash Matrix,"constructive algorithms, dfs and similar, graphs, implementation",constructive algorithms
+1316,C,Primitive Primes,"constructive algorithms, math, ternary search","math, number theory"
+1316,B,String Modification,"brute force, constructive algorithms, implementation, sortings, strings",strings
+1316,A,Grade Allocation,implementation,"greedy, implementation, sortings"
+1294,F,Three Paths on a Tree,"dfs and similar, dp, greedy, trees",trees
+1294,E,Obtain a Permutation,"greedy, implementation, math","implementation, math"
+1294,D,MEX maximizing,"data structures, greedy, implementation, math",
+1294,C,Product of Three Numbers,"greedy, math, number theory","constructive algorithms, implementation, math"
+1294,B,Collecting Packages,"implementation, sortings","binary search, greedy"
+1294,A,Collecting Coins,math,"greedy, implementation, math"
+1286,F,Harry The Potter,"brute force, constructive algorithms, dp, fft, implementation, math","brute force, greedy"
+1286,E,Fedya the Potter Strikes Back,"data structures, strings","binary search, data structures, strings"
+1286,D,LCC,"data structures, math, matrices, probabilities","combinatorics, dp, math, probabilities"
+1286,C2,Madhouse (Hard version),"brute force, constructive algorithms, hashing, interactive, math",interactive
+1286,C1,Madhouse (Easy version),"brute force, constructive algorithms, interactive, math",interactive
+1286,B,Numbers on Tree,"constructive algorithms, data structures, dfs and similar, graphs, greedy, trees","constructive algorithms, data structures, dfs and similar, math, trees"
+1286,A,Garland,"dp, greedy, sortings",
+1268,E,Happy Cactus,dp,graphs
+1268,D,Invertation in Tournament,"brute force, divide and conquer, graphs, math","constructive algorithms, dfs and similar, dp, graphs, math"
+1268,C,K Integers,"binary search, data structures",math
+1268,B,Domino for Young,"dp, greedy, math",dp
+1268,A,Long Beautiful Integer,"constructive algorithms, greedy, implementation, strings","constructive algorithms, greedy"
+1261,F,Xor-Set,"bitmasks, divide and conquer, math","bitmasks, dp"
+1260,F,Colored Tree,"data structures, trees","dp, trees"
+1260,E,Tournament,"brute force, dp, greedy",brute force
+1260,D,A Game with Traps,"binary search, dp, greedy, sortings",greedy
+1260,C,Infinite Fence,"greedy, math, number theory",
+1260,B,Obtain Two Zeroes,"binary search, math",math
+1260,A,Heating,math,"binary search, greedy"
+1237,H,Balanced Reversals,constructive algorithms,"constructive algorithms, greedy"
+1237,G,Balanced Distribution,"data structures, dp, greedy","implementation, math"
+1237,F,Balanced Domino Placements,"combinatorics, dp",
+1237,E,Balanced Binary Search Trees,"dp, math","combinatorics, dfs and similar, dp, trees"
+1237,D,Balanced Playlist,"binary search, data structures, implementation","dp, implementation, sortings"
+1237,C2,Balanced Removals (Harder),"binary search, constructive algorithms, divide and conquer, greedy, implementation, sortings","dp, geometry"
+1237,C1,Balanced Removals (Easier),"constructive algorithms, geometry, greedy","dp, geometry"
+1237,B,Balanced Tunnel,"data structures, sortings, two pointers",
+1237,A,Balanced Rating Changes,"implementation, math","implementation, math"
+1221,G,Graph And Numbers,"bitmasks, brute force, combinatorics, dp, meet-in-the-middle","dfs and similar, graphs"
+1221,F,Choose a Square,"binary search, data structures, sortings",sortings
+1221,E,Game With String,games,games
+1221,D,Make The Fence Great Again,dp,"greedy, math"
+1221,C,Perfect Team,"binary search, math",sortings
+1221,B,Knights,"constructive algorithms, greedy",implementation
+1221,A,2048 Game,"brute force, greedy, math","implementation, math"
+1210,G,Mateusz and Escape Room,dp,dp
+1210,F2,Marek and Matching (hard version),"brute force, probabilities","math, probabilities"
+1210,F1,Marek and Matching (easy version),"brute force, probabilities","dp, math, number theory, probabilities"
+1210,E,Wojtek and Card Tricks,math,dp
+1210,D,Konrad and Company Evaluation,graphs,
+1210,C,Kamil and Making a Stream,"math, number theory, trees","dfs and similar, dp, math, number theory, trees"
+1210,B,Marcin and Training Camp,"brute force, greedy","data structures, greedy, sortings"
+1210,A,Anadi and Domino,"brute force, graphs","constructive algorithms, dfs and similar, graphs"
+1205,F,Beauty of a Permutation,"constructive algorithms, math","data structures, math"
+1205,E,Expected Value Again,"combinatorics, strings","math, number theory"
+1205,D,Almost All,"constructive algorithms, trees","dfs and similar, trees"
+1205,C,Palindromic Paths,"implementation, interactive","constructive algorithms, math"
+1205,B,Shortest Cycle,"bitmasks, brute force, graphs, shortest paths","bitmasks, graphs, greedy"
+1205,A,Almost Equal,"constructive algorithms, greedy, math","constructive algorithms, greedy, math"
+1200,F,Graph Traveler,"brute force, data structures, dfs and similar, dp, graphs, implementation, math, number theory",graphs
+1200,E,Compress Words,"brute force, hashing, implementation, string suffix structures, strings","implementation, strings"
+1200,D,White Lines,"brute force, data structures, dp, implementation, two pointers",implementation
+1200,C,Round Corridor,"math, number theory",math
+1200,B,Block Adventure,"dp, greedy",implementation
+1200,A,Hotelier,"brute force, data structures, implementation",
+1197,F,Coloring Game,"dp, games, matrices",dp
+1197,E,Culture Code,"binary search, combinatorics, data structures, dp, shortest paths, sortings","combinatorics, dp"
+1197,D,Yet Another Subarray Problem,"dp, greedy, math","greedy, implementation"
+1197,C,Array Splitting,"greedy, sortings","greedy, sortings"
+1197,B,Pillars,"greedy, implementation",math
+1197,A,DIY Wooden Ladder,"greedy, math, sortings","binary search, greedy"
+1196,F,K-th Path,"brute force, constructive algorithms, shortest paths, sortings","graphs, shortest paths"
+1196,E,Connected Component on a Chessboard,"constructive algorithms, implementation",constructive algorithms
+1196,D2,RGB Substring (hard version),"data structures, dp, implementation, two pointers",implementation
+1196,D1,RGB Substring (easy version),implementation,"brute force, implementation, math"
+1196,C,Robot Breakout,implementation,
+1196,B,Odd Sum Segments,"constructive algorithms, math",
+1196,A,Three Piles of Candies,"brute force, constructive algorithms, math",greedy
+1182,F,Maximum Sine,"binary search, data structures, number theory",greedy
+1182,E,Product Oriented Recurrence,"dp, math, matrices, number theory","math, number theory"
+1182,D,Complete Mirror,"constructive algorithms, dfs and similar, dp, hashing, implementation, trees","constructive algorithms, dfs and similar, trees"
+1182,C,Beautiful Lyrics,"data structures, greedy, strings","implementation, strings"
+1182,B,Plus from Picture,"dfs and similar, implementation, strings",implementation
+1182,A,Filling Shapes,"dp, math","dp, implementation"
+1179,E,Alesya and Discrete Math,"divide and conquer, interactive","interactive, number theory"
+1179,D,Fedor Runs for President,"data structures, dp, trees","graphs, trees"
+1179,C,Serge and Dining Room,"binary search, data structures, graph matchings, greedy, implementation, math, trees",data structures
+1179,B,Tolik and His Uncle,constructive algorithms,"data structures, geometry, implementation, math"
+1179,A,Valeriy and Deque,"data structures, implementation","data structures, greedy, math"
+1176,F,Destroy it!,"dp, implementation, sortings","binary search, data structures, dp, greedy"
+1176,E,Cover it!,"dfs and similar, dsu, graphs, shortest paths, trees","constructive algorithms, dfs and similar, graphs"
+1176,D,Recover it!,"dfs and similar, graphs, greedy, number theory, sortings","math, number theory"
+1176,C,Lose it!,"dp, greedy, implementation",
+1176,B,Merge it!,math,math
+1176,A,Divide it!,"brute force, greedy, implementation",math
+1168,E,Xor Permutations,"constructive algorithms, math","bitmasks, constructive algorithms"
+1168,D,Anagram Paths,"dp, implementation, trees",trees
+1168,C,And Reachability,"bitmasks, dp","bitmasks, data structures"
+1168,B,Good Triple,"brute force, two pointers",implementation
+1168,A,Increasing by Modulo,"binary search, greedy",
+1162,B,Double Matrix,"brute force, greedy",greedy
+1162,A,Zoning Restrictions Again,implementation,"dp, flows"
+1157,G,Inverse of Rows and Columns,"brute force, constructive algorithms","constructive algorithms, greedy, implementation"
+1157,F,Maximum Balanced Circle,"constructive algorithms, dp, greedy, two pointers","brute force, dp, greedy"
+1157,E,Minimum Array,"binary search, data structures, greedy",greedy
+1157,D,N Problems During K Days,"constructive algorithms, greedy, math",greedy
+1157,C2,Increasing Subsequence (hard version),greedy,"brute force, dp, greedy, implementation"
+1157,C1,Increasing Subsequence (easy version),greedy,"brute force, dp, greedy, implementation"
+1157,B,Long Number,greedy,"dp, greedy"
+1157,A,Reachable Numbers,implementation,"dp, math"
+1149,E,Election Promises,"games, graphs",graphs
+1149,D,Abandoning Roads,"brute force, dp, graphs, greedy","graphs, trees"
+1149,C,Tree Generator™,"data structures, implementation, trees","constructive algorithms, data structures, trees"
+1149,B,Three Religions,"dp, implementation, strings","constructive algorithms, strings"
+1149,A,Prefix Sum Primes,"constructive algorithms, greedy, math, number theory",math
+1148,H,Holy Diver ,data structures,"data structures, implementation"
+1148,G,Gold Experience,"constructive algorithms, graphs, math, number theory, probabilities","graphs, number theory"
+1148,F,Foo Fighters,"bitmasks, constructive algorithms","constructive algorithms, implementation, math"
+1148,E,Earth Wind and Fire,"constructive algorithms, greedy, math, sortings, two pointers","constructive algorithms, greedy, sortings"
+1148,D,Dirty Deeds Done Dirt Cheap,"greedy, sortings",graphs
+1148,C,Crazy Diamond,"constructive algorithms, sortings","constructive algorithms, sortings"
+1148,B,Born This Way,"binary search, brute force, two pointers","dp, sortings"
+1148,A,Another One Bites The Dust,greedy,"brute force, dp"
+1136,E,Nastya Hasn't Written a Legend,"binary search, data structures","data structures, implementation"
+1136,D,Nastya Is Buying Lunch,greedy,
+1136,C,Nastya Is Transposing Matrices,"constructive algorithms, sortings",implementation
+1136,B,Nastya Is Playing Computer Games,"constructive algorithms, math",
+1136,A,Nastya Is Reading a Book,implementation,implementation
+1120,F,Secret Letters,"data structures, dp, greedy",greedy
+1120,E,The very same Munchhausen,brute force,brute force
+1120,D,Power Tree,"dfs and similar, dp, dsu, graphs, greedy, trees","data structures, dfs and similar, trees"
+1120,C,Compress String,"dp, strings","dp, greedy, strings"
+1120,B,Once in a casino,"constructive algorithms, greedy, implementation, math",
+1120,A,Diana and Liana,"greedy, implementation, two pointers",greedy
+1117,G,Recursive Queries,data structures,"brute force, data structures"
+1117,F,Crisp String,"bitmasks, dp","implementation, strings"
+1117,E,Decypher the String,"bitmasks, chinese remainder theorem, constructive algorithms, interactive, math",interactive
+1117,D,Magic Gems,"dp, math, matrices",math
+1117,C,Magic Ship,binary search,math
+1117,B,Emotes,"greedy, math, sortings","dp, greedy"
+1117,A,Best Subsegment,"implementation, math",
+1116,D6,Hessenberg matrix,*special,*special
+1116,D5,Creeper,*special,*special
+1116,D4,TIE fighter,*special,*special
+1116,D3,X-wing fighter,*special,*special
+1116,D2,Pattern of increasing blocks,*special,*special
+1116,D1,Block diagonal matrix,*special,*special
+1116,C3,``Is the number of ones divisible by 3?'' oracle,*special,*special
+1116,C2,``Is the bit string periodic?'' oracle,*special,*special
+1116,C1,Alternating bits oracle,*special,*special
+1116,B2,"Not A, not B or not C?",*special,*special
+1116,B1,Distinguish three-qubit states,*special,*special
+1116,A2,Generate equal superposition of four basis states,*special,*special
+1116,A1,Generate state |00⟩ + |01⟩ + |10⟩,*special,*special
+1115,U3,Block unitary,*special,*special
+1115,U2,Chessboard unitary,*special,*special
+1115,U1,Anti-diagonal unitary,*special,*special
+1115,G3,Palindrome checker oracle,*special,*special
+1115,G2,OR oracle,*special,*special
+1115,G1,AND oracle,*special,*special
+1114,F,"Please, another Queries on Array?","bitmasks, data structures, divide and conquer, math, number theory","data structures, number theory"
+1114,E,Arithmetic Progression,"binary search, interactive, number theory, probabilities","interactive, number theory"
+1114,D,Flood Fill,dp,dp
+1114,C,Trailing Loves (or L'oeufs?),"brute force, implementation, math, number theory",math
+1114,B,Yet Another Array Partitioning Task,"constructive algorithms, greedy, sortings","data structures, dp, greedy"
+1114,A,Got Any Grapes?,"brute force, greedy, implementation","binary search, greedy, sortings"
+1107,G,Vasya and Maximum Profit,"binary search, constructive algorithms, data structures, dp, dsu",implementation
+1107,F,Vasya and Endless Credits,"dp, flows, graph matchings, graphs, sortings",dp
+1107,E,Vasya and Binary String,dp,"dp, implementation"
+1107,D,Compression,"dp, implementation, math, number theory",
+1107,C,Brutality,"greedy, sortings, two pointers",dp
+1107,B,Digital root,"math, number theory","implementation, math"
+1107,A,Digits Sequence Dividing,"greedy, strings",implementation
+1105,E,Helping Hiasat ,"bitmasks, brute force, dp, meet-in-the-middle",greedy
+1105,D,Kilani and the Game,"dfs and similar, graphs, implementation, shortest paths","games, math"
+1105,C,Ayoub and Lost Array,"combinatorics, dp, math","combinatorics, dp, math, number theory"
+1105,B,Zuhair and Strings,"brute force, implementation, strings","data structures, dp, strings"
+1105,A,Salem and Sticks ,"brute force, implementation",greedy
+1102,F,Elongated Matrix,"binary search, bitmasks, brute force, dp, graphs",implementation
+1102,E,Monotonic Renumeration,"combinatorics, sortings","combinatorics, dp, fft, math"
+1102,D,Balanced Ternary String,"greedy, strings",greedy
+1102,C,Doors Breaking and Repairing,games,"games, greedy"
+1102,B,Array K-Coloring,"greedy, sortings",
+1102,A,Integer Sequence Dividing,math,math
+1097,H,Mateusz and an Infinite Sequence,"bitmasks, brute force, dp, strings",math
+1097,G,Vladislav and a Great Legend,"combinatorics, dp, trees","dp, trees"
+1097,F,Alex and a TV Show,"bitmasks, combinatorics, number theory","data structures, math, number theory"
+1097,E,Egor and an RPG game,"constructive algorithms, greedy",constructive algorithms
+1097,D,Makoto and a Blackboard,"dp, math, number theory, probabilities","math, number theory, probabilities"
+1097,C,Yuhao and a Parenthesis,"greedy, implementation",greedy
+1097,B,Petr and a Combination Lock,"bitmasks, brute force, dp",
+1097,A,Gennady and a Card Game,"brute force, implementation",implementation
+1073,G,Yet Another LCP Problem,"data structures, string suffix structures","data structures, strings"
+1073,F,Choosing Two Paths,"dfs and similar, dp, greedy, trees","dfs and similar, trees"
+1073,E,Segment Sum,"bitmasks, combinatorics, dp, math","combinatorics, implementation, math"
+1073,D,Berland Fair,"binary search, brute force, data structures, greedy",implementation
+1073,C,Vasya and Robot,"binary search, two pointers","data structures, implementation"
+1073,B,Vasya and Books,"implementation, math",implementation
+1073,A,Diverse Substring,"implementation, strings","implementation, strings"
+1071,E,Rain Protection,"binary search, geometry","geometry, math"
+1064,B,Equations of Mathematical Magic,math,"bitmasks, constructive algorithms, math"
+1064,A,Make a triangle!,"brute force, geometry, math",brute force
+1057,C,Tanya and Colored Candies,"*special, dp",greedy
+1057,B,DDoS,"*special, brute force","*special, implementation"
+1057,A,Bmail Computer Network,"*special, dfs and similar, trees","dp, graphs, sortings, trees"
+1042,F,Leaf Sets,"data structures, dfs and similar, dsu, graphs, greedy, sortings, trees",trees
+1042,E,Vasya and Magic Matrix,"dp, math, probabilities",math
+1042,D,Petya and Array,"data structures, divide and conquer, two pointers","data structures, math, two pointers"
+1042,C,Array Product,"constructive algorithms, greedy, math",greedy
+1042,B,Vitamins,"bitmasks, brute force, dp, implementation","greedy, implementation"
+1042,A,Benches,"binary search, implementation","greedy, math"
+1041,F,Ray in the tube,"data structures, divide and conquer, dp, math",greedy
+1041,E,Tree Reconstruction,"constructive algorithms, data structures, graphs, greedy","dfs and similar, greedy, trees"
+1041,D,Glider,"binary search, data structures, two pointers",geometry
+1041,C,Coffee Break,"binary search, data structures, greedy, two pointers",greedy
+1041,B,Buying a TV Set,math,math
+1041,A,Heist,"greedy, implementation, sortings","dp, implementation"
+1039,E,Summer Oenothera Exhibition,data structures,"data structures, greedy"
+1039,D,You Are Given a Tree,"data structures, dp, trees","dfs and similar, dp, trees"
+1039,C,Network Safety,"dfs and similar, dsu, graphs, math, sortings","bitmasks, combinatorics, dp"
+1039,B,Subway Pursuit,"binary search, interactive, probabilities",interactive
+1039,A,Timetable,"constructive algorithms, data structures, greedy, math","constructive algorithms, greedy, math, sortings"
+1037,H,Security,"data structures, string suffix structures","data structures, strings"
+1037,G,A Game on Strings,games,"dp, games, strings"
+1037,F,Maximum Reduction,"combinatorics, data structures, math",
+1037,E,Trips,graphs,"implementation, math"
+1037,D,Valid BFS?,"dfs and similar, graphs, shortest paths, trees","dfs and similar, graphs, trees"
+1037,C,Equalize,"dp, greedy, strings","constructive algorithms, greedy"
+1037,B,Reach Median,greedy,greedy
+1037,A,Packets,"constructive algorithms, greedy, math","greedy, implementation"
+1031,F,Familiar Operations,"brute force, graphs, math","greedy, math, number theory"
+1031,E,Triple Flips,constructive algorithms,"constructive algorithms, math"
+1031,D,Minimum path,greedy,"implementation, strings"
+1031,C,Cram Time,greedy,"implementation, two pointers"
+1031,A,Golden Plate,"implementation, math",math
+1030,G,Linear Congruential Generator,number theory,"combinatorics, dp, math, number theory"
+1030,F,Putting Boxes Together,data structures,data structures
+1030,E,Vasya and Good Sequences,"bitmasks, dp","bitmasks, math"
+1030,D,Vasya and Triangle,"geometry, number theory","constructive algorithms, geometry, implementation, math"
+1030,C,Vasya and Golden Ticket,implementation,
+1030,B,Vasya and Cornfield,geometry,implementation
+1030,A,In Search of an Easy Problem,implementation,
+1013,B,And,greedy,"brute force, greedy"
+1013,A,Piles With Stones,math,
+1012,F,Passports,"dp, implementation","binary search, dp"
+1012,E,Cycle sort,"dsu, math","greedy, sortings"
+1012,D,AB-Strings,"constructive algorithms, strings",strings
+1012,C,Hills,dp,
+1012,B,Chemical table,"constructive algorithms, dfs and similar, dsu, graphs, matrices",
+1012,A,Photo of The Sky,"brute force, implementation, math, sortings",geometry
+1009,G,Allowed Letters,"bitmasks, flows, graph matchings, graphs, greedy",greedy
+1009,F,Dominant Indices,"data structures, dsu, trees","data structures, dfs and similar, trees"
+1009,E,Intercity Travelling,"combinatorics, math, probabilities","combinatorics, math"
+1009,D,Relatively Prime Graph,"brute force, constructive algorithms, graphs, greedy, math","constructive algorithms, dfs and similar, graphs, number theory"
+1009,C,Annoying Present,"greedy, math",math
+1009,B,Minimum Ternary String,"greedy, implementation","greedy, implementation, strings"
+1009,A,Game Shopping,implementation,implementation
+997,E,Good Subsegments,data structures,data structures
+997,D,Cycles in product,"combinatorics, divide and conquer, trees",combinatorics
+997,C,Sky Full of Stars,"combinatorics, math","combinatorics, math"
+997,B,Roman Digits,"brute force, combinatorics, dp, greedy, math",dp
+997,A,Convert to Ones,"brute force, greedy, implementation, math",greedy
+983,E,NN country,"binary search, data structures, trees","constructive algorithms, graphs, trees"
+983,D,Arkady and Rectangles,data structures,"data structures, geometry, math"
+983,C,Elevator,"dp, graphs, shortest paths",
+983,B,XOR-pyramid,dp,"binary search, data structures"
+983,A,Finite or not?,"implementation, math",math
+982,F,The Meeting Place Cannot Be Changed,"dfs and similar, graphs",graphs
+982,E,Billiard,"geometry, number theory","brute force, geometry, implementation, math"
+982,D,Shark,"brute force, data structures, dsu, trees",implementation
+982,C,Cut 'em all!,"dfs and similar, dp, graphs, greedy, trees","dfs and similar, dp, greedy, trees"
+982,B,Bus of Characters,"data structures, greedy, implementation","brute force, implementation"
+982,A,Row,"brute force, constructive algorithms",
+978,G,Petya's Exams,"greedy, implementation, sortings","binary search, greedy, sortings"
+978,F,Mentors,"binary search, data structures, implementation","dp, graphs, sortings"
+978,E,Bus Video System,"combinatorics, math",implementation
+978,D,Almost Arithmetic Progression,"brute force, implementation, math","greedy, implementation"
+978,C,Letters,"binary search, implementation, two pointers",
+978,B,File Name,"greedy, strings","dp, greedy, implementation"
+978,A,Remove Duplicates,implementation,"constructive algorithms, greedy"
+958,F3,Lightsabers (hard),fft,
+958,F2,Lightsabers (medium),"binary search, two pointers",greedy
+958,F1,Lightsabers (easy),implementation,
+958,E3,Guard Duty (hard),geometry,"constructive algorithms, geometry"
+958,E2,Guard Duty (medium),"binary search, dp, greedy, sortings",implementation
+958,E1,Guard Duty (easy),"brute force, geometry, greedy, math",
+958,D1,Hyperspace Jump (easy),"expression parsing, math",implementation
+958,C3,Encryption (hard),"data structures, dp",dp
+958,C2,Encryption (medium),dp,dp
+958,C1,Encryption (easy),brute force,dp
+958,B2,Maximum Control (medium),"data structures, dfs and similar, graphs, greedy, trees",trees
+958,B1,Maximum Control (easy),implementation,"dp, trees"
+958,A2,Death Stars (medium),"hashing, strings",implementation
+958,A1,Death Stars (easy),implementation,implementation
+955,F,Heaps,"dp, trees","data structures, dfs and similar, trees"
+955,D,Scissors,"brute force, strings",implementation
+955,C,Sad powers,"binary search, math, number theory","implementation, math"
+955,B,Not simply beatiful strings,implementation,"implementation, strings"
+955,A,Feed the cat,"greedy, math",
+946,G,Almost Increasing Array,"data structures, dp",implementation
+946,F,Fibonacci String Subsequences,"combinatorics, dp, matrices","combinatorics, dp, math"
+946,E,Largest Beautiful Number,"greedy, implementation","greedy, implementation, strings"
+946,D,Timetable,dp,implementation
+946,C,String Transformation,"greedy, strings","greedy, strings"
+946,B,Weird Subtraction Process,"math, number theory",
+946,A,Partition,greedy,binary search
+933,E,A Preponderant Reunion,"constructive algorithms, dp","constructive algorithms, greedy"
+933,D,A Creative Cutout,"brute force, combinatorics, math",geometry
+933,C,A Colourful Prospect,"geometry, graphs","geometry, implementation"
+933,B,A Determined Cleanup,math,math
+933,A,A Twisty Movement,dp,implementation
+928,D,Autocompletion,"*special, strings, trees","implementation, strings"
+928,C,Dependency management,"*special, graphs, implementation",
+928,B,Chat,"*special, dp",
+928,A,Login Verification,"*special, strings",implementation
+916,E,Jamie and Tree,"data structures, trees","data structures, trees"
+916,D,Jamie and To-do List,"data structures, interactive, trees",data structures
+916,C,Jamie and Interesting Graph,"constructive algorithms, graphs, shortest paths","graphs, math"
+916,B,Jamie and Binary Sequence (changed after round),"bitmasks, greedy, math","binary search, implementation"
+916,A,Jamie and Alarm Snooze,"brute force, implementation, math","greedy, implementation, math"
+909,F,AND-permutations,constructive algorithms,constructive algorithms
+909,E,Coprocessor,"dfs and similar, dp, graphs, greedy","greedy, implementation"
+909,D,Colorful Points,"data structures, greedy, implementation",
+909,C,Python Indentation,dp,
+909,B,Segments,"constructive algorithms, math",implementation
+909,A,Generate Login,"brute force, greedy, sortings",strings
+902,B,Coloring a Tree,"dfs and similar, dsu, greedy","dfs and similar, trees"
+902,A,Visiting a Friend,"greedy, implementation",implementation
+897,B,Chtholly's request,brute force,implementation
+897,A,Scarborough Fair,implementation,"brute force, implementation, strings"
+892,B,Wrath,"greedy, implementation, two pointers",greedy
+892,A,Greed,"greedy, implementation","implementation, sortings"
+887,F,Row of Models,"greedy, sortings",implementation
+887,E,Little Brother,"binary search, geometry, sortings",geometry
+887,D,Ratings and Reality Shows,"data structures, two pointers","data structures, implementation"
+887,C,Solution for Cube,"brute force, implementation",math
+887,B,Cubes for Masha,"brute force, implementation",dp
+887,A,Div. 64,implementation,"dp, math"
+871,E,Restore the Tree,"graphs, greedy, trees","constructive algorithms, dfs and similar, graphs, trees"
+870,F,Paths,"data structures, number theory","dp, math, number theory"
+870,E,"Points, Lines and Ready-made Titles","dfs and similar, dsu, graphs, trees",dp
+870,D,Something with XOR Queries,"brute force, interactive, probabilities","constructive algorithms, interactive"
+870,C,Maximum splitting,"dp, greedy, math, number theory",math
+870,B,Maximum of Maximums of Minimums,greedy,"brute force, greedy, implementation, two pointers"
+870,A,Search for Pretty Integers,"brute force, implementation","brute force, implementation"
+863,F,Almost Permutation,flows,"data structures, greedy"
+863,E,Turn Off The TV,"data structures, sortings","data structures, implementation"
+863,D,Yet Another Array Queries Problem,"data structures, implementation",data structures
+863,C,1-2-3,"graphs, implementation",
+863,B,Kayaking,"brute force, greedy, sortings","dp, math"
+863,A,Quasi-palindrome,"brute force, implementation",
+858,F,Wizard's Tour,"constructive algorithms, dfs and similar, graphs","dfs and similar, graphs"
+858,E,Tests Renumeration,"greedy, implementation","greedy, implementation"
+858,D,Polycarp's phone book,"data structures, implementation, sortings",implementation
+858,C,Did you mean...,"dp, greedy, implementation","implementation, strings"
+858,B,Which floor?,"brute force, implementation",
+858,A,k-rounding,"brute force, math, number theory",math
+854,B,Maxim Buys an Apartment,"constructive algorithms, math",greedy
+854,A,Fraction,"brute force, constructive algorithms, math",math
+851,B,Arpa and an exam about geometry,"geometry, math","geometry, implementation"
+851,A,Arpa and a research in Mexican wave,"implementation, math","implementation, math"
+844,B,Rectangles,"combinatorics, math",implementation
+844,A,Diversity,"greedy, implementation, strings","greedy, implementation, strings"
+837,G,Functions On The Segments,data structures,data structures
+837,F,Prefix Sums,"binary search, brute force, combinatorics, math, matrices",
+837,E,Vasya's Function,"binary search, implementation, math","math, number theory"
+837,D,Round Subset,"dp, math",math
+837,C,Two Seals,"brute force, implementation",
+837,B,Flag of Berland,"brute force, implementation",implementation
+837,A,Text Volume,implementation,"implementation, strings"
+835,F,Roads in the Kingdom,"dfs and similar, dp, graphs, trees","graphs, shortest paths"
+835,E,The penguin's game,"binary search, constructive algorithms, interactive",interactive
+835,D,Palindromic characteristics,"brute force, dp, hashing, strings","constructive algorithms, hashing, strings"
+835,C,Star sky,"dp, implementation","data structures, geometry"
+835,B,The number on the board,greedy,implementation
+835,A,Key races,math,implementation
+834,B,The Festive Evening,"data structures, implementation",sortings
+834,A,The Useless Toy,implementation,"brute force, implementation"
+831,C,Jury Marks,"brute force, constructive algorithms",
+831,B,Keyboard Layouts,"implementation, strings","implementation, strings"
+831,A,Unimodal Array,implementation,
+821,E,Okabe and El Psy Kongroo,"dp, matrices",
+821,D,Okabe and City,"dfs and similar, graphs, shortest paths",implementation
+821,C,Okabe and Boxes,"data structures, greedy, trees",greedy
+821,B,Okabe and Banana Trees,"brute force, math",
+821,A,Okabe and Future Gadget Laboratory,implementation,implementation
+820,C,Mister B and Boring Game,"games, greedy","dp, greedy, strings"
+820,B,Mister B and Angle in Polygon,"constructive algorithms, geometry, math","geometry, math"
+820,A,Mister B and Book Reading,implementation,implementation
+816,B,Karen and Coffee,"binary search, data structures, implementation","data structures, dp"
+816,A,Karen and Morning,"brute force, implementation","brute force, implementation"
+801,B,Valued Keys,"constructive algorithms, greedy, strings","constructive algorithms, strings"
+801,A,Vicious Keyboard,brute force,"dp, implementation, strings"
+780,H,Intranet of Buses,"binary search, geometry, implementation, two pointers",math
+780,G,Andryusha and Nervous Barriers,"data structures, dp",dp
+780,F,Axel and Marston in Bitland,"bitmasks, dp, graphs, matrices","dp, graphs, shortest paths"
+780,E,Underground Lab,"constructive algorithms, dfs and similar, graphs","data structures, dp, graphs"
+780,D,Innokenty and a Football League,"2-sat, graphs, greedy, implementation, shortest paths, strings","constructive algorithms, math"
+780,C,Andryusha and Colored Balloons,"dfs and similar, graphs, greedy, trees","data structures, dp"
+780,B,The Meeting Place Cannot Be Changed,binary search,"implementation, sortings"
+780,A,Andryusha and Socks,implementation,
+774,L,Bars,"*special, binary search",greedy
+774,K,Stepan and Vowels,"*special, implementation, strings","implementation, strings"
+774,J,Stepan's Series,"*special, dp","greedy, implementation"
+774,I,Composing Of String,"*special, dp",strings
+774,H,Repairing Of String,"*special, constructive algorithms",strings
+774,G,Perfectionist Arkadiy,"*special, number theory",math
+774,F,Pens And Days Of Week,"*special, binary search, number theory",implementation
+774,E,Big Number and Remainder,"*special, math, number theory","brute force, number theory"
+774,D,Lie or Truth,"*special, constructive algorithms, implementation, sortings","implementation, sortings"
+774,C,Maximum Number,"*special, constructive algorithms, greedy, implementation","implementation, math"
+774,B,Significant Cups,"*special, binary search, data structures, two pointers","dp, greedy, implementation"
+774,A,Amusement Park,"*special, ternary search",greedy
+772,E,Verifying Kingdom,"binary search, divide and conquer, interactive, trees","interactive, trees"
+772,D,Varying Kibibits,"bitmasks, dp","dp, math"
+772,C,Vulnerable Kerbals,"constructive algorithms, dp, graphs, math, number theory","constructive algorithms, math"
+772,B,Volatile Kite,geometry,"binary search, geometry"
+772,A,Voltage Keepsake,"binary search, math","binary search, math"
+745,B,Hongcow Solves A Puzzle,implementation,"brute force, implementation"
+745,A,Hongcow Learns the Cyclic Shift,"implementation, strings",strings
+744,E,Hongcow Masters the Cyclic Shift,"strings, two pointers",dp
+744,D,Hongcow Draws a Circle,geometry,geometry
+744,C,Hongcow Buys a Deck of Cards,"bitmasks, brute force, dp","brute force, greedy"
+744,B,Hongcow's Game,"bitmasks, divide and conquer, interactive","constructive algorithms, interactive"
+744,A,Hongcow Builds A Nation,"dfs and similar, graphs","graphs, trees"
+743,E,Vladik and cards,"binary search, bitmasks, brute force, dp",data structures
+743,D,Chloe and pleasant prizes,"dfs and similar, dp, graphs, trees","greedy, trees"
+743,C,Vladik and fractions,"brute force, constructive algorithms, math, number theory","brute force, implementation"
+743,B,Chloe and the sequence ,"binary search, bitmasks, constructive algorithms, implementation","brute force, implementation, number theory"
+743,A,Vladik and flights,"constructive algorithms, greedy, implementation",implementation
+739,E,Gosha is hunting,"brute force, data structures, dp, flows, math, probabilities, sortings","dp, math, probabilities"
+739,D,Recover a functional graph,graph matchings,graphs
+739,C,Alyona and towers,data structures,"data structures, dp"
+739,B,Alyona and a tree,"binary search, data structures, dfs and similar, graphs, trees","data structures, dfs and similar, dp, trees"
+739,A,Alyona and mex,"constructive algorithms, greedy","constructive algorithms, greedy"
+734,F,Anton and School,"bitmasks, constructive algorithms, implementation, math",constructive algorithms
+734,E,Anton and Tree,"dfs and similar, dp, trees","data structures, dfs and similar, dp, graphs, trees"
+734,D,Anton and Chess,implementation,"brute force, implementation"
+734,C,Anton and Making Potions,"binary search, dp, greedy, two pointers","dp, greedy"
+734,B,Anton and Digits,"brute force, greedy, implementation, math",math
+734,A,Anton and Danik,"implementation, strings","implementation, strings"
+712,E,Memory and Casinos,"data structures, math, probabilities",probabilities
+712,D,Memory and Scores,"combinatorics, dp, math","combinatorics, math"
+712,C,Memory and De-Evolution,"greedy, math","brute force, math"
+712,B,Memory and Trident,"implementation, strings","brute force, greedy"
+712,A,Memory and Crow,"implementation, math","greedy, implementation"
+699,B,One Bomb,implementation,implementation
+699,A,Launch of Collider,implementation,"implementation, sortings"
+688,B,Lovely Palindromes,"constructive algorithms, math",implementation
+688,A,Opponents,implementation,greedy
+686,B,Little Robber Girl's Zoo,"constructive algorithms, implementation, sortings",constructive algorithms
+686,A,Free Ice Cream,"constructive algorithms, implementation","constructive algorithms, greedy"
+677,E,Vanya and Balloons,"binary search, brute force, dp, implementation","implementation, math"
+677,D,Vanya and Treasure,"data structures, dp, graphs, shortest paths","greedy, implementation"
+677,C,Vanya and Label,"bitmasks, combinatorics, implementation, strings","bitmasks, combinatorics, math"
+677,B,Vanya and Food Processor,"implementation, math",implementation
+677,A,Vanya and Fence,implementation,
+676,E,The Last Fight Between Human and AI,math,"games, math"
+676,D,Theseus and labyrinth,"graphs, implementation, shortest paths","greedy, implementation"
+676,C,Vasya and String,"binary search, dp, strings, two pointers",
+676,B,Pyramid of Glasses,"implementation, math",dp
+676,A,Nicholas and Permutation,"constructive algorithms, implementation",greedy
+675,E,Trains and Statistic,"data structures, dp, greedy",data structures
+675,D,Tree Construction,"data structures, trees",trees
+675,C,Money Transfers,"constructive algorithms, data structures, greedy, sortings","greedy, implementation"
+675,B,Restoring Painting,"brute force, constructive algorithms, math","brute force, math"
+675,A,Infinite Sequence,math,math
+666,E,Forensic Examination,"data structures, string suffix structures","data structures, strings"
+666,D,Chain Reaction,"brute force, geometry","brute force, constructive algorithms"
+666,C,Codeword,"combinatorics, strings","data structures, strings"
+666,B,World Tour,"graphs, shortest paths",dfs and similar
+666,A,Reberland Linguistics,"dp, implementation, strings","constructive algorithms, implementation, strings"
+665,F,Four Divisors,"data structures, dp, math, number theory, sortings, two pointers","implementation, math, number theory"
+665,E,Beautiful Subarrays,"data structures, divide and conquer, strings, trees",data structures
+665,D,Simple Subset,"constructive algorithms, greedy, number theory","dfs and similar, math, number theory"
+665,C,Simple Strings,"dp, greedy, strings","greedy, strings"
+665,B,Shopping,brute force,
+665,A,Buses Between Cities,implementation,"binary search, implementation, math"
+664,A,Complicated GCD,"math, number theory","math, number theory"
+662,E,To Hack or not to Hack,"brute force, dp, greedy",
+662,D,International Olympiad,"constructive algorithms, greedy, implementation, math","greedy, implementation"
+662,C,Binary Table,"bitmasks, brute force, divide and conquer, dp, fft, math","brute force, greedy, implementation"
+662,B,Graph Coloring,"dfs and similar, graphs","dfs and similar, graphs"
+662,A,Gambling Nim,"bitmasks, math, matrices, probabilities",games
+656,G,You're a Professional,*special,"implementation, sortings"
+656,F,Ace It!,*special,"*special, implementation"
+656,E,Out of Controls,*special,"dp, graphs"
+656,D,Rosetta Problem,*special,*special
+656,C,Without Text,*special,"*special, implementation"
+656,B,Scrambled,"*special, implementation",*special
+656,A,Da Vinci Powers,*special,*special
+650,E,Clockwork Bomb,"data structures, dfs and similar, dsu, greedy, trees","dfs and similar, graphs"
+650,D,Zip-line,"binary search, data structures, dp, hashing","greedy, implementation"
+650,C,Table Compression,"dfs and similar, dp, dsu, graphs, greedy","greedy, implementation"
+650,B,Image Preview,"binary search, brute force, dp, two pointers",greedy
+650,A,Watchmen,"data structures, geometry, math",data structures
+648,E,Собери число,"graphs, shortest paths","constructive algorithms, greedy, implementation"
+648,D,Собачки и миски,"data structures, greedy, sortings",
+648,C,Путь Робота,"constructive algorithms, dfs and similar, graphs",*special
+648,B,Собери стол,"constructive algorithms, sortings","constructive algorithms, greedy, implementation"
+648,A,Наибольший подъем,"constructive algorithms, implementation",*special
+643,G,Choosing Ads,data structures,binary search
+643,F,Bears and Juice,"dp, math, meet-in-the-middle",
+643,E,Bear and Destroying Subtrees,"dp, math, probabilities, trees","data structures, probabilities, trees"
+643,C,Levels and Regions,dp,"dp, greedy"
+643,B,Bear and Two Paths,"constructive algorithms, graphs","dfs and similar, graphs"
+643,A,Bear and Colors,implementation,
+639,F,Bear and Chemistry,"data structures, dfs and similar, graphs, trees","binary search, dfs and similar"
+639,E,Bear and Paradox,"binary search, greedy, math, sortings",binary search
+639,D,Bear and Contribution,"data structures, greedy, sortings, two pointers",greedy
+639,C,Bear and Polynomials,"hashing, implementation, math","brute force, dp, math"
+639,B,Bear and Forgotten Tree 3,"constructive algorithms, graphs, trees","dfs and similar, graphs, trees"
+639,A,Bear and Displayed Friends,implementation,"data structures, implementation"
+638,D,Three-dimensional Turtle Super Computer ,"brute force, dfs and similar, graphs",dp
+638,C,Road Improvement,"*special, dfs and similar, graphs, greedy, trees","data structures, graphs"
+638,B,Making Genome in Berland,"*special, dfs and similar, strings","constructive algorithms, data structures, strings"
+638,A,Home Numbers,"*special, constructive algorithms, math",implementation
+631,E,Product Sum,"data structures, dp, geometry",
+631,D,Messenger,"data structures, hashing, implementation, string suffix structures, strings","implementation, strings"
+631,C,Report,"data structures, sortings",
+631,B,Print Check,"constructive algorithms, implementation","constructive algorithms, data structures"
+631,A,Interview,"brute force, implementation",greedy
+630,R,Game,"games, math",games
+630,Q,Pyramids,"geometry, math",
+630,P,Area of a Star,"geometry, math",geometry
+630,O,Arrow,geometry,geometry
+630,N,Forecast,math,
+630,M,Turn,"geometry, math",
+630,L,Cracking the Code,"implementation, math",implementation
+630,K,Indivisibility,"math, number theory",
+630,J,Divisibility,"math, number theory",
+630,I,Parking Lot,"combinatorics, math",
+630,H,Benches,"combinatorics, math",implementation
+630,G,Challenge Pennants,"combinatorics, math",
+630,F,Selection of Personnel,"combinatorics, math",
+630,E,A rectangle,math,
+630,D,Hexagons!,math,math
+630,C,Lucky Numbers,"combinatorics, math",brute force
+630,B,Moore's Law,math,"implementation, math"
+630,A,Again Twenty Five!,number theory,
+629,E,Famil Door and Roads,"combinatorics, data structures, dfs and similar, dp, probabilities, trees","dfs and similar, graphs, trees"
+629,D,Babaei and Birthday Cake,"data structures, dp",greedy
+629,C,Famil Door and Brackets,"dp, strings",combinatorics
+629,B,Far Relative’s Problem,brute force,implementation
+629,A,Far Relative’s Birthday Cake,"brute force, combinatorics, constructive algorithms, implementation",
+628,F,Bear and Fair Set,"flows, graphs","constructive algorithms, number theory"
+628,E,Zbazi in Zeydabad,"data structures, implementation","brute force, dfs and similar"
+628,D,Magic Numbers,dp,"dp, math"
+628,C,Bear and String Distance,"greedy, strings",strings
+628,B,New Skateboard,dp,strings
+628,A,Tennis Tournament,"implementation, math",
+622,F,The Sum of the k-th Powers,math,"combinatorics, dp, math"
+622,E,Ants in Leaves,"dfs and similar, greedy, sortings, trees","dfs and similar, trees"
+622,D,Optimal Number Permutation,constructive algorithms,"data structures, math"
+622,C,Not Equal on a Segment,"data structures, implementation",data structures
+622,B,The Time,implementation,implementation
+622,A,Infinite Sequence,"implementation, math","implementation, math"
+615,E,Hexagons,"binary search, implementation, math","implementation, math"
+615,D,Multipliers,"math, number theory","combinatorics, math, number theory"
+615,C,Running Track,"dp, greedy, strings, trees",strings
+615,B,Longtail Hedgehog,"dp, graphs",graphs
+615,A,Bulbs,implementation,
+612,F,Simba on the Circle,dp,"graphs, math"
+612,E,Square Root of Permutation,"combinatorics, constructive algorithms, dfs and similar, graphs, math","constructive algorithms, math"
+612,D,The Union of k-Segments,"greedy, sortings","data structures, greedy, sortings"
+612,C,Replace To Make Regular Bracket Sequence,"data structures, expression parsing, math",
+612,B,HDD is Outdated Technology,"implementation, math",implementation
+612,A,The Text Splitting,"brute force, implementation, strings","brute force, strings"
+606,B,Testing Robots,implementation,dp
+606,A,Magic Spheres,implementation,implementation
+600,F,Edge coloring of bipartite graph,graphs,graphs
+600,E,Lomsat gelral,"data structures, dfs and similar, dsu, trees","graphs, trees"
+600,D,Area of Two Circles' Intersection,geometry,geometry
+600,C,Make Palindrome,"constructive algorithms, greedy, strings","greedy, strings"
+600,B,Queries about less or equal elements,"binary search, data structures, sortings, two pointers",sortings
+600,A,Extract Numbers,"implementation, strings","implementation, strings"
+599,E,Sandy and Nuts,"bitmasks, dp, trees","data structures, dfs and similar, graphs, trees"
+599,D,Spongebob and Squares,"brute force, math",dp
+599,C,Day at the Beach,sortings,greedy
+599,B,Spongebob and Joke,implementation,dfs and similar
+599,A,Patrick and Shopping,implementation,"constructive algorithms, greedy, implementation"
+597,C,Subsequences,"data structures, dp",math
+597,B,Restaurant,"dp, greedy, sortings",implementation
+597,A,Divisibility,math,number theory
+593,E,Strange Calculation and Cats,"dp, matrices",data structures
+593,D,Happy Tree Party,"data structures, dfs and similar, graphs, math, trees","dfs and similar, graphs, trees"
+593,C,Beautiful Function,"constructive algorithms, math",greedy
+593,B,Anton and Lines,"geometry, sortings","geometry, sortings"
+593,A,2Char,"brute force, implementation",implementation
+587,F,Duff is Mad,"data structures, strings",strings
+587,E,Duff as a Queen,data structures,data structures
+587,D,Duff in Mafia,"2-sat, binary search","data structures, graphs"
+587,C,Duff in the Army,"data structures, trees",trees
+587,B,Duff in Beach,dp,math
+587,A,Duff and Weight Lifting,greedy,greedy
+582,E,Boolean Function,"bitmasks, dp, expression parsing",dp
+582,D,Number of Binominal Coefficients,"dp, math, number theory","dp, math"
+582,C,Superior Periodic Subarrays,number theory,implementation
+582,B,Once Again...,"constructive algorithms, dp, matrices",implementation
+582,A,GCD Table,"constructive algorithms, greedy, number theory","math, number theory"
+579,B,Finding Team Member,"brute force, implementation, sortings",greedy
+579,A,Raising Bacteria,bitmasks,"binary search, implementation"
+578,F,Mirror Box,"matrices, trees",
+578,E,Walking!,"constructive algorithms, greedy","constructive algorithms, greedy"
+578,D,LCS Again,"dp, greedy","dp, implementation, strings"
+578,C,Weakness and Poorness,ternary search,"binary search, data structures, dp"
+578,B,"""Or"" Game","brute force, greedy",brute force
+578,A,A Problem about Polyline,"geometry, math",math
+576,E,Painting Edges,"binary search, data structures","brute force, graphs"
+576,D,Flights for Regular Customers,"dp, matrices",shortest paths
+576,C,Points on Plane,"constructive algorithms, divide and conquer, geometry, greedy, sortings",
+576,B,Invariance of Tree,"constructive algorithms, dfs and similar, greedy, trees","constructive algorithms, dfs and similar, trees"
+576,A,Vasya and Petya's Game,"math, number theory","binary search, brute force, math, number theory"
+573,E,Bear and Bowling,"data structures, greedy","binary search, data structures, divide and conquer, geometry, ternary search"
+573,D,Bear and Cavalry,"data structures, divide and conquer, dp",dfs and similar
+573,C,Bear and Drawing,"constructive algorithms, dfs and similar, trees","dfs and similar, trees"
+573,B,Bear and Blocks,"binary search, data structures, dp, math",implementation
+573,A,Bear and Poker,"implementation, math, number theory",
+571,E,Geometric Progressions,math,math
+571,D,Campus,"binary search, data structures, dsu, trees",implementation
+571,C,CNF 2,"constructive algorithms, dfs and similar, graphs, greedy","graphs, implementation"
+571,B,Minimization,"dp, greedy, sortings","binary search, data structures, implementation, sortings"
+571,A,Lengthening Sticks,"combinatorics, implementation, math","brute force, math"
+570,E,Pig and Palindromes,"combinatorics, dp",
+570,D,Tree Requests,"binary search, bitmasks, constructive algorithms, dfs and similar, graphs, trees","data structures, dfs and similar, graphs, trees"
+570,C,Replacement,"constructive algorithms, data structures, implementation","data structures, strings"
+570,B,Simple Game,"constructive algorithms, games, greedy, implementation, math","dp, math, probabilities"
+570,A,Elections,implementation,"greedy, implementation"
+558,E,A Simple Task,"data structures, sortings, strings",strings
+558,D,Guess Your Way Out! II,"data structures, implementation, sortings",trees
+558,C,Amr and Chemistry,"brute force, graphs, greedy, math, shortest paths","greedy, math"
+558,B,Amr and The Large Array,implementation,greedy
+558,A,Lala Land and Apple Trees,"brute force, implementation, sortings","constructive algorithms, greedy"
+557,E,Ann and Half-Palindrome,"data structures, dp, graphs, string suffix structures, strings, trees",strings
+557,D,Vitaly and Cycle,"combinatorics, dfs and similar, graphs, math","dfs and similar, graphs, trees"
+557,C,Arthur and Table,"brute force, data structures, dp, greedy, math, sortings",
+557,B,Pasha and Tea,"constructive algorithms, implementation, math, sortings",sortings
+557,A,Ilya and Diplomas,"greedy, implementation, math","dp, greedy, implementation"
+546,E,Soldier and Traveling,"flows, graphs, math",graphs
+546,D,Soldier and Number Game,"constructive algorithms, dp, math, number theory","greedy, math"
+546,C,Soldier and Cards,"brute force, dfs and similar, games",
+546,B,Soldier and Badges,"brute force, greedy, implementation, sortings","dp, greedy, implementation"
+546,A,Soldier and Bananas,"brute force, implementation, math",brute force
+529,B,Group Photo 2 (online mirror version),"brute force, greedy, sortings","data structures, dp"
+528,E,Triangles 3000,"geometry, sortings",geometry
+528,D,Fuzzy Search,"bitmasks, brute force, fft","data structures, strings"
+520,E,Pluses everywhere,"combinatorics, dp, math, number theory","dp, math"
+520,D,Cubes,"games, greedy, implementation",math
+520,C,DNA Alignment,"math, strings","combinatorics, dp, math"
+520,B,Two Buttons,"dfs and similar, graphs, greedy, implementation, math, shortest paths","dp, implementation"
+520,A,Pangram,"implementation, strings","implementation, strings"
+519,E,A and B and Lecture Rooms,"binary search, data structures, dfs and similar, dp, trees","graphs, trees"
+519,D,A and B and Interesting Substrings,"data structures, dp, two pointers",strings
+519,C,A and B and Team Training,"greedy, implementation, math, number theory",
+519,B,A and B and Compilation Errors,"data structures, implementation, sortings","brute force, constructive algorithms"
+519,A,A and B and Chess,implementation,implementation
+516,E,Drazil and His Happy Friends,"math, number theory","implementation, math"
+516,D,Drazil and Morning Exercise,"dfs and similar, dp, dsu, trees, two pointers","dp, trees"
+515,E,Drazil and Park,data structures,binary search
+515,D,Drazil and Tiles,"constructive algorithms, greedy",brute force
+515,C,Drazil and Factorial,"greedy, math, sortings",implementation
+515,B,Drazil and His Happy Friends,"brute force, dsu, meet-in-the-middle, number theory",implementation
+515,A,Drazil and Date,math,math
+513,G3,Inversions problem,dp,"math, probabilities"
+513,G2,Inversions problem,"dp, probabilities","math, probabilities"
+513,G1,Inversions problem,"brute force, dfs and similar, dp, meet-in-the-middle","math, probabilities"
+513,F2,Scaygerboss,flows,
+513,F1,Scaygerboss,flows,
+513,E2,Subarray Cuts,dp,dp
+513,E1,Subarray Cuts,dp,dp
+513,D2,Constrained Tree,"constructive algorithms, data structures","dfs and similar, trees"
+513,D1,Constrained Tree,dfs and similar,"dfs and similar, trees"
+513,C,Second price auction,"bitmasks, probabilities","data structures, probabilities"
+513,B2,Permutations,"bitmasks, divide and conquer, math",
+513,B1,Permutations,brute force,
+513,A,Game,"constructive algorithms, math",games
+512,E,Fox And Polygon,"constructive algorithms, divide and conquer","constructive algorithms, geometry, math"
+512,D,Fox And Travelling,"dp, trees",
+510,E,Fox And Dinner,flows,"greedy, math"
+510,D,Fox And Jumping,"bitmasks, brute force, dp, math",greedy
+510,C,Fox And Names,"dfs and similar, graphs, sortings",greedy
+510,B,Fox And Two Dots,dfs and similar,implementation
+510,A,Fox And Snake,implementation,
+500,G,New Year Running,"number theory, trees","graphs, implementation, trees"
+500,F,New Year Shopping,"divide and conquer, dp","greedy, sortings"
+500,E,New Year Domino,"data structures, dp, dsu","data structures, implementation"
+500,D,New Year Santa Network,"combinatorics, dfs and similar, graphs, trees","data structures, trees"
+500,C,New Year Book Reading,"constructive algorithms, greedy, implementation, math","dp, greedy, sortings"
+500,B,New Year Permutation,"dfs and similar, dsu, graphs, greedy, math, sortings","constructive algorithms, implementation, sortings"
+500,A,New Year Transportation,"dfs and similar, graphs, implementation",
+493,E,Vasya and Polynomial,math,math
+493,D,Vasya and Chess,"constructive algorithms, games, math",games
+493,C,Vasya and Basketball,"binary search, brute force, data structures, implementation, sortings, two pointers",
+493,B,Vasya and Wrestling,implementation,implementation
+493,A,Vasya and Football,implementation,implementation
+491,C,Deciphering,"flows, graph matchings",
+491,B,New York Hotel,"greedy, math",implementation
+491,A,Up the hill,"constructive algorithms, implementation",brute force
+482,E,ELCA,"data structures, trees","data structures, dfs and similar, trees"
+482,D,Random Function and Tree,"combinatorics, dp, trees","dp, trees"
+482,C,Game with Strings,"bitmasks, dp, probabilities","dp, math, probabilities"
+482,B,Interesting Array,"constructive algorithms, data structures, trees","constructive algorithms, greedy"
+482,A,Diverse Permutation,"constructive algorithms, greedy","constructive algorithms, greedy, math"
+478,E,Wavy numbers,"brute force, dfs and similar, meet-in-the-middle, sortings","brute force, math"
+478,D,Red-Green Towers,dp,
+478,C,Table Decorations,greedy,implementation
+478,B,Random Teams,"combinatorics, constructive algorithms, greedy, math",greedy
+478,A,Initial Bet,implementation,math
+466,E,Information Graph,"dfs and similar, dsu, graphs, trees",data structures
+466,D,Increase Sequence,"combinatorics, dp","combinatorics, dp, math"
+466,C,Number of Ways,"binary search, brute force, data structures, dp, two pointers","data structures, implementation, math"
+466,B,Wonder Room,"brute force, math",constructive algorithms
+466,A,Cheap Travel,implementation,greedy
+465,B,Inbox (100500),implementation,implementation
+465,A,inc ARG,implementation,implementation
+460,E,Roland and Rose,"brute force, geometry, math, sortings",greedy
+460,D,Little Victor and Set,"brute force, constructive algorithms, math","brute force, greedy, math"
+460,C,Present,"binary search, data structures, greedy",greedy
+460,B,Little Dima and Equation,"brute force, implementation, math, number theory",math
+460,A,Vasya and Socks,"brute force, implementation, math","brute force, implementation"
+459,E,Pashmak and Graph,"dp, sortings",graphs
+459,D,Pashmak and Parmida's problem,"data structures, divide and conquer, sortings",math
+459,C,Pashmak and Buses,"combinatorics, constructive algorithms, math",constructive algorithms
+459,B,Pashmak and Flowers,"combinatorics, implementation, sortings",math
+459,A,Pashmak and Garden,implementation,
+455,E,Function,data structures,"binary search, data structures"
+455,D,Serega and Fun,data structures,"data structures, math"
+455,C,Civilization,"dfs and similar, dp, dsu, ternary search, trees","data structures, graphs, trees"
+455,B,A Lot of Games,"dfs and similar, dp, games, implementation, strings, trees",games
+455,A,Boredom,dp,math
+453,E,Little Pony and Lord Tirek,data structures,
+453,D,Little Pony and Elements of Harmony,"dp, matrices",combinatorics
+453,C,Little Pony and Summer Sun Celebration,"constructive algorithms, dfs and similar, graphs","graphs, trees"
+453,B,Little Pony and Harmony Chest,"bitmasks, brute force, dp",math
+453,A,Little Pony and Expected Maximum,probabilities,"dp, math, probabilities"
+452,F,Permutation,"data structures, divide and conquer, hashing",math
+452,E,Three strings,"data structures, dsu, string suffix structures, strings","combinatorics, dp, string suffix structures, strings"
+452,D,"Washer, Dryer, Folder","greedy, implementation",brute force
+452,C,Magic Trick,"combinatorics, math, probabilities","math, probabilities"
+452,B,4-point polyline,"brute force, constructive algorithms, geometry, trees",constructive algorithms
+452,A,Eevee,"brute force, implementation, strings","implementation, strings"
+442,E,Gena and Second Distance,geometry,
+442,D,Adam and Tree,"data structures, trees","dp, trees"
+442,C,Artem and Array ,"data structures, greedy","greedy, implementation"
+442,B,Andrey and Problem,"greedy, math, probabilities","dp, probabilities"
+442,A,Borya and Hanabi,"bitmasks, brute force, implementation","dp, implementation"
+440,D,Berland Federalization,"dp, trees","dfs and similar, graphs"
+440,C,One-Based Arithmetic,"brute force, dfs and similar, divide and conquer","implementation, math"
+440,B,Balancer,"greedy, implementation",dp
+440,A,Forgotten Episode,implementation,data structures
+437,E,The Child and Polygon,"dp, geometry","dp, geometry"
+437,D,The Child and Zoo,"dsu, sortings",math
+437,C,The Child and Toy,"graphs, greedy, sortings","data structures, greedy"
+437,B,The Child and Set,"bitmasks, greedy, implementation, sortings","brute force, constructive algorithms, greedy, math"
+437,A,The Child and Homework,implementation,implementation
+415,B,Mashmokh and Tokens,"binary search, greedy, implementation, math","greedy, implementation"
+415,A,Mashmokh and Lights,implementation,
+414,E,Mashmokh's Designed Problem,data structures,"data structures, trees"
+414,D,Mashmokh and Water Tanks,"binary search, data structures, greedy, trees, two pointers",
+414,C,Mashmokh and Reverse Operation,"combinatorics, divide and conquer","data structures, dp, implementation"
+414,B,Mashmokh and ACM,"combinatorics, dp, number theory","combinatorics, dp, math"
+414,A,Mashmokh and Numbers,"constructive algorithms, number theory","constructive algorithms, math, number theory"
+403,E,Two Rooted Trees,"data structures, implementation, trees","constructive algorithms, data structures, dp"
+403,D,Beautiful Pairs of Numbers,"combinatorics, dp",dp
+402,E,Strictly Positive Matrix,"graphs, math",implementation
+402,D,Upgrading Array,"dp, greedy, math, number theory","math, number theory"
+402,C,Searching for Graph,"brute force, constructive algorithms, graphs","constructive algorithms, graphs"
+402,B,Trees in a Row,"brute force, implementation","greedy, implementation"
+402,A,Nuts,"greedy, math","greedy, implementation, number theory"
+386,D,Game with Points,"dp, graphs, implementation, shortest paths","constructive algorithms, greedy"
+386,C,Diverse Substrings,"dp, strings, two pointers",strings
+386,B,"Fly, freebies, fly!","binary search, brute force, implementation",implementation
+386,A,Second-Price Auction,implementation,implementation
+385,E,Bear in the Field,"math, matrices",math
+385,D,Bear and Floodlight,"bitmasks, dp, geometry",geometry
+385,C,Bear and Prime Numbers,"binary search, brute force, data structures, dp, implementation, math, number theory",data structures
+385,B,Bear and Strings,"brute force, greedy, implementation, math, strings","dp, string suffix structures, strings"
+385,A,Bear and Raspberry,"brute force, greedy, implementation","brute force, greedy, implementation"
+384,B,Multitasking,"greedy, implementation, sortings, two pointers",implementation
+384,A,Coder,implementation,constructive algorithms
+380,E,Sereja and Dividing,data structures,greedy
+380,D,Sereja and Cinema,"combinatorics, math",dp
+380,C,Sereja and Brackets,"data structures, schedules","data structures, greedy"
+380,B,Sereja and Tree,"graphs, implementation","data structures, trees"
+380,A,Sereja and Prefixes,"binary search, brute force",data structures
+373,B,Making Sequences is Fun,"binary search, implementation, math","brute force, math"
+373,A,Collecting Beats is Fun,implementation,"implementation, math"
+372,E,Drawing Circles is Fun,"combinatorics, geometry","combinatorics, dp, geometry"
+372,D,Choosing Subtree is Fun,"binary search, data structures, dfs and similar, trees, two pointers","dfs and similar, dp, trees"
+372,C,Watching Fireworks is Fun,"data structures, dp, math",data structures
+372,B,Counting Rectangles is Fun,"brute force, divide and conquer, dp",data structures
+372,A,Counting Kangaroos is Fun,"binary search, greedy, sortings, two pointers","data structures, implementation"
+371,E,Subway Innovation,"greedy, math, two pointers","greedy, math"
+371,D,Vessels,"data structures, dsu, implementation, trees","data structures, sortings"
+371,C,Hamburgers,"binary search, brute force","brute force, implementation"
+371,B,Fox Dividing Cheese,"math, number theory",binary search
+371,A,K-Periodic Array,"greedy, implementation, math",greedy
+370,E,Summer Reading,"dp, greedy",greedy
+370,D,Broken Monitor,"brute force, constructive algorithms, greedy, implementation",greedy
+370,C,Mittens,"constructive algorithms, greedy, sortings",graphs
+370,B,Berland Bingo,implementation,implementation
+370,A,"Rook, Bishop and King","graphs, math, shortest paths",implementation
+369,E,Valera and Queries,"binary search, data structures",
+369,D,Valera and Fools,"dfs and similar, dp, graphs, shortest paths",math
+369,C,Valera and Elections,"dfs and similar, graphs, trees",graphs
+369,B,Valera and Contest,"constructive algorithms, implementation, math",
+369,A,Valera and Plates,"greedy, implementation",implementation
+363,E,Two Circles,"brute force, data structures, implementation",greedy
+363,D,Renting Bikes,"binary search, greedy",greedy
+363,C,Fixing Typos,"greedy, implementation",implementation
+363,B,Fence,"brute force, dp","binary search, dp, greedy"
+363,A,Soroban,implementation,"dp, implementation"
+361,B,Levko and Permutation,"constructive algorithms, math, number theory","constructive algorithms, math, number theory"
+361,A,Levko and Table,"constructive algorithms, implementation","brute force, constructive algorithms, implementation, math"
+351,E,Jeff and Permutation,greedy,math
+351,D,Jeff and Removing Periods,data structures,"binary search, data structures, dp"
+351,C,Jeff and Brackets,"dp, matrices","data structures, dp, greedy"
+351,B,Jeff and Furik,"combinatorics, dp, probabilities","dp, math, probabilities"
+351,A,Jeff and Rounding,"dp, greedy, implementation, math","constructive algorithms, math"
+350,E,Wrong Floyd,"brute force, constructive algorithms, dfs and similar, graphs","graphs, implementation"
+350,D,Looking for Owls,"binary search, data structures, geometry, hashing, sortings",geometry
+350,C,Bombs,"greedy, implementation, sortings",
+350,B,Resort,graphs,"graphs, implementation"
+350,A,TL,"brute force, greedy, implementation","constructive algorithms, math"
+343,E,Pumping Stations,"brute force, dfs and similar, divide and conquer, flows, graphs, greedy, trees",
+343,D,Water Tree,"data structures, dfs and similar, graphs, trees","dfs and similar, graphs, trees"
+343,C,Read Time,"binary search, greedy, two pointers",
+343,B,Alternating Current,"data structures, greedy, implementation",implementation
+343,A,Rational Resistance,"math, number theory",math
+341,E,Candies Game,"constructive algorithms, greedy",constructive algorithms
+341,D,Iahub and Xors,data structures,"constructive algorithms, data structures, implementation"
+335,F,"Buy One, Get One Free","dp, greedy",
+335,E,Counting Skyscrapers,"dp, math, probabilities",math
+335,D,Rectangles and Square,"brute force, dp","brute force, implementation"
+335,C,More Reclamation,games,
+335,B,Palindrome,"constructive algorithms, dp","greedy, strings"
+335,A,Banana,"binary search, constructive algorithms, greedy",
+325,E,The Red Button,"combinatorics, dfs and similar, dsu, graphs, greedy",math
+325,D,Reclamation,dsu,data structures
+325,C,Monsters and Diamonds,"dfs and similar, graphs, shortest paths","binary search, greedy"
+325,B,Stadium and Games,"binary search, math","implementation, math"
+325,A,Square and Rectangles,implementation,implementation
+323,C,Two permutations,data structures,"data structures, implementation"
+323,B,Tournament-graph,"constructive algorithms, graphs","constructive algorithms, graphs"
+323,A,Black-and-White Cube,"combinatorics, constructive algorithms",constructive algorithms
+322,B,Ciel and Flowers,"combinatorics, math","greedy, math"
+322,A,Ciel and Dancing,greedy,"constructive algorithms, math"
+320,B,Ping-Pong (Easy Version),"dfs and similar, graphs",data structures
+320,A,Magic Numbers,"brute force, greedy",math
+319,E,Ping-Pong,data structures,data structures
+319,D,Have You Ever Heard About the Word?,"greedy, hashing, string suffix structures, strings","brute force, strings"
+319,C,Kalila and Dimna in the Logging Industry,"dp, geometry",
+319,B,Psychos in a Line,"data structures, implementation",implementation
+319,A,Malek Dance Club,"combinatorics, math",math
+314,E,Sereja and Squares,dp,
+314,D,Sereja and Straight Lines,"binary search, data structures, geometry, sortings, two pointers",geometry
+314,C,Sereja and Subsequences,"data structures, dp",dp
+314,B,Sereja and Periods,"binary search, dfs and similar, strings","brute force, greedy, strings"
+314,A,Sereja and Contest,implementation,data structures
+313,E,Ilya and Two Numbers,"constructive algorithms, data structures, dsu, greedy",math
+313,D,Ilya and Roads,dp,data structures
+313,C,Ilya and Matrix,"constructive algorithms, greedy, implementation, sortings",
+313,B,Ilya and Queries,"dp, implementation","data structures, implementation"
+313,A,Ilya and Bank Account,"implementation, number theory","implementation, math"
+302,B,Eugeny and Play List,"binary search, implementation, two pointers",data structures
+302,A,Eugeny and Array,implementation,data structures
+288,E,Polo the Penguin and Lucky Numbers,"dp, implementation, math","brute force, combinatorics, dp, implementation"
+288,D,Polo the Penguin and Trees ,"combinatorics, dfs and similar, trees",trees
+288,C,Polo the Penguin and XOR operation,"implementation, math","constructive algorithms, greedy, math"
+288,B,Polo the Penguin and Houses ,combinatorics,"implementation, math"
+288,A,Polo the Penguin and Strings,greedy,
+283,E,Cow Tennis Tournament,"combinatorics, data structures, math",math
+283,D,Cows and Cool Sequences,"dp, math, number theory",greedy
+283,C,Coin Troubles,dp,"combinatorics, dp"
+283,B,Cow Program,"dfs and similar, dp, graphs","data structures, implementation"
+283,A,Cows and Sequence,"constructive algorithms, data structures, implementation","data structures, math"
+279,E,Beautiful Decomposition,"dp, games, greedy, number theory","dp, implementation"
+279,D,The Minimum Number of Variables,"bitmasks, dp",
+279,C,Ladder,"dp, implementation, two pointers","brute force, data structures, implementation"
+279,B,Books,"binary search, brute force, implementation, two pointers",implementation
+279,A,Point on Spiral,"brute force, geometry, implementation","geometry, math"
+274,E,Mirror Room,"data structures, implementation",
+274,D,Lovely Matrix,"dfs and similar, graphs, greedy, sortings",
+274,C,The Last Hole!,"brute force, geometry",geometry
+274,B,Zero Tree,"dfs and similar, dp, greedy, trees","dfs and similar, trees"
+274,A,k-Multiple Free Set,"binary search, greedy, sortings",
+272,E,Dima and Horses,"combinatorics, constructive algorithms, graphs","brute force, dfs and similar, graphs"
+272,D,Dima and Two Sequences,"combinatorics, math, sortings",dp
+272,C,Dima and Staircase,"data structures, implementation","data structures, greedy, implementation, sortings"
+272,B,Dima and Sequence,"implementation, math",math
+272,A,Dima and Friends,"implementation, math",implementation
+269,E,String Theory,"geometry, math, strings",implementation
+269,D,Maximum Waterfall,"data structures, dp, graphs, sortings",data structures
+269,C,Flawed Flow,"constructive algorithms, flows, graphs, greedy","dfs and similar, graphs"
+269,B,Greenhouse Effect,dp,dp
+269,A,Magical Boxes,"greedy, math",
+267,C,Berland Traffic,"math, matrices","dfs and similar, graphs"
+267,B,Dominoes,"dfs and similar, graphs",constructive algorithms
+267,A,Subtractions,"math, number theory",
+264,E,Roadside Trees,"data structures, dp","data structures, implementation, trees"
+264,D,Colorful Stones,"dp, two pointers",
+264,C,Choosing Balls,dp,
+264,B,Good Sequences,"dp, number theory",number theory
+264,A,Escape from Stones,"constructive algorithms, data structures, implementation, two pointers",
+260,E,Dividing Kingdom,"binary search, brute force, data structures","constructive algorithms, geometry"
+260,D,Black and White Tree,"constructive algorithms, dsu, graphs, greedy, trees","dfs and similar, trees"
+260,C,Balls and Boxes,"constructive algorithms, greedy, implementation","brute force, implementation"
+260,B,Ancient Prophesy,"brute force, implementation, strings",
+260,A,Adding Digits,"implementation, math","brute force, math, number theory"
+253,E,Printer,"binary search, data structures, implementation, sortings",implementation
+253,D,Table with Letters - 2,"brute force, two pointers","brute force, implementation"
+253,C,Text Editor,"data structures, dfs and similar, graphs, greedy, shortest paths",implementation
+253,B,Physics Practical,"binary search, dp, sortings, two pointers",dp
+253,A,Boys and Girls,greedy,"brute force, constructive algorithms, implementation"
+252,B,Unsorting Array,"brute force, sortings",implementation
+252,A,Little Xor,"brute force, implementation",
+250,E,Mad Joe,brute force,
+250,D,Building Bridge,"geometry, ternary search, two pointers",
+250,C,Movie Critics,greedy,"greedy, implementation"
+250,B,Restoring IPv6,"implementation, strings",implementation
+250,A,Paper Work,greedy,greedy
+245,H,Queries for Number of Palindromes,"dp, hashing, strings","data structures, strings"
+245,G,Suggested Friends,"brute force, graphs","dfs and similar, graphs, sortings"
+245,F,Log Stream Analysis,"binary search, brute force, implementation, strings",implementation
+245,E,Mishap in Club,"greedy, implementation",
+245,D,Restoring Table,"constructive algorithms, greedy",bitmasks
+245,C,Game with Coins,greedy,
+245,B,Internet Address,"implementation, strings","implementation, strings"
+245,A,System Administrator,implementation,implementation
+243,E,Matrix,data structures,implementation
+243,D,Cubes,"data structures, dp, geometry, two pointers",implementation
+243,C,Colorado Potato Beetle,"dfs and similar, implementation","data structures, implementation"
+243,B,Hydra,"graphs, sortings",graphs
+243,A,The Brand New Function,bitmasks,"bitmasks, data structures, math"
+231,E,Cactus,"data structures, dfs and similar, dp, graphs, trees","dfs and similar, graphs"
+231,D,Magic Box,"brute force, geometry","geometry, implementation"
+231,C,To Add or Not to Add,"binary search, sortings, two pointers","greedy, implementation, sortings"
+231,B,"Magic, Wizardry and Wonders","constructive algorithms, greedy","brute force, dp"
+231,A,Team,"brute force, greedy",implementation
+229,E,Gifts,"combinatorics, dp, math, probabilities",probabilities
+229,D,Towers,"dp, greedy, two pointers",greedy
+229,C,Triangles,"combinatorics, graphs, math",graphs
+229,B,Planets,"binary search, data structures, graphs, shortest paths",dp
+229,A,Shifts,"brute force, two pointers","brute force, implementation"
+223,E,Planar Graph,"flows, geometry, graphs","data structures, dfs and similar, graphs"
+223,D,Spider,"geometry, graphs",geometry
+223,C,Partial Sums,"combinatorics, math, number theory",math
+223,B,Two Strings,"data structures, dp, strings",strings
+223,A,Bracket Sequence,"data structures, expression parsing, implementation",
+222,E,Decoding Genome,"dp, matrices",
+222,D,Olympiad,"binary search, greedy, sortings, two pointers","math, sortings"
+222,C,Reducing Fractions,"implementation, math, number theory, sortings","brute force, implementation, math, number theory"
+222,B,Cosmic Tables,"data structures, implementation",
+222,A,Shooshuns and Sequence ,"brute force, implementation",math
+221,B,Little Elephant and Numbers,implementation,"brute force, math"
+221,A,Little Elephant and Function,"implementation, math",
+214,B,Hometask,"brute force, constructive algorithms, greedy, math",implementation
+214,A,System of Equations,brute force,
+204,E,Little Elephant and Strings,"data structures, implementation, string suffix structures, two pointers","data structures, strings"
+204,D,Little Elephant and Retro Strings,dp,"combinatorics, dp"
+204,C,Little Elephant and Furik and Rubik,"math, probabilities","dp, probabilities, strings"
+204,B,Little Elephant and Cards,"binary search, data structures","constructive algorithms, greedy"
+204,A,Little Elephant and Interval,"binary search, combinatorics, dp","brute force, math"
+202,B,Brand New Easy Problem,brute force,greedy
+202,A,LLPS,"binary search, bitmasks, brute force, greedy, implementation, strings","greedy, strings"
+201,E,Thoroughly Bureaucratic Organization,"binary search, combinatorics",math
+201,D,Brand New Problem,"bitmasks, brute force, dp",greedy
+201,C,Fragile Bridges,dp,dp
+201,B,Guess That Car!,"math, ternary search",data structures
+201,A,Clear Symmetry,"constructive algorithms, dp, math",implementation
+195,E,Building Forest,"data structures, dsu, graphs","constructive algorithms, dfs and similar, graphs"
+195,D,Analyzing Polyline,"geometry, math, sortings",implementation
+195,C,Try and Catch,"expression parsing, implementation",implementation
+195,B,After Training,"data structures, implementation, math",
+195,A,Let's Watch Football,"binary search, brute force, math",
+192,B,Walking in the Rain,"brute force, implementation",data structures
+192,A,Funky Numbers,"binary search, brute force, implementation",brute force
+177,G2,Fibonacci Strings,"matrices, strings","data structures, math, strings"
+177,G1,Fibonacci Strings,strings,"data structures, math, strings"
+177,E2,Space Voyage,binary search,data structures
+177,E1,Space Voyage,binary search,data structures
+177,D2,Encrypting Messages,data structures,implementation
+177,D1,Encrypting Messages,brute force,implementation
+177,C2,Party,"brute force, dfs and similar, dsu, graphs","dp, graphs"
+177,C1,Party,"dfs and similar, dsu, graphs","dp, graphs"
+177,B2,Rectangular Game,number theory,
+177,B1,Rectangular Game,number theory,
+177,A2,Good Matrix Elements,implementation,implementation
+172,E,BHTML+BCSS,"*special, dfs and similar, expression parsing",implementation
+172,D,Calendar Reform,"*special, number theory",
+172,C,Bus,"*special, implementation, sortings","brute force, implementation"
+172,B,Pseudorandom Sequence Period,"*special, implementation, number theory",implementation
+172,A,Phone Code,"*special, brute force, implementation","brute force, strings"
+166,E,Tetrahedron,"dp, math, matrices","combinatorics, dp, math"
+166,D,Shoe Store,"dp, graph matchings, greedy, sortings, two pointers","greedy, sortings"
+166,C,Median,"greedy, math, sortings",
+166,B,Polygons,"geometry, sortings",geometry
+166,A,Rank List,"binary search, implementation, sortings",sortings
+165,E,Compatible Numbers,"bitmasks, brute force, dfs and similar, dp",
+165,D,Beard Graph,"data structures, dsu, trees","graphs, shortest paths"
+165,C,Another Problem on Strings,"binary search, brute force, dp, math, strings, two pointers",
+165,B,Burning Midnight Oil,"binary search, implementation","greedy, implementation"
+165,A,Supercentral Point,implementation,implementation
+137,E,Last Chance,"data structures, implementation, strings",
+137,D,Palindromes,"dp, strings",strings
+137,C,History,sortings,sortings
+137,B,Permutation,greedy,"greedy, implementation, sortings"
+137,A,Postcards and photos,implementation,greedy
+129,B,Students and Shoelaces,"brute force, dfs and similar, graphs, implementation",implementation
+129,A,Cookies,implementation,"dp, math"
+125,E,MST Company,"binary search, graphs","dfs and similar, graphs, greedy"
+125,D,Two progressions,"constructive algorithms, greedy",implementation
+125,C,Hobbits' Party,"constructive algorithms, greedy",
+125,B,Simple XML,implementation,"implementation, strings"
+125,A,Measuring Lengths in Baden,math,math
+124,B,Permutations,"brute force, combinatorics, implementation","greedy, implementation, sortings"
+124,A,The number of positions,math,implementation
+121,E,Lucky Array,data structures,data structures
+121,D,Lucky Segments,"binary search, implementation, two pointers","brute force, greedy"
+121,C,Lucky Permutation,"brute force, combinatorics, number theory",
+121,B,Lucky Transformation,strings,implementation
+121,A,Lucky Sum,implementation,brute force
+116,B,Little Pigs and Wolves,"greedy, implementation",implementation
+116,A,Tram,implementation,binary search
+112,B,Petya and Square,"implementation, math",
+112,A,Petya and Strings,"implementation, strings","dp, strings"
+110,B,Lucky String,"constructive algorithms, strings",
+110,A,Nearly Lucky Number,implementation,"brute force, implementation"
+101,E,Candies and Stones,"divide and conquer, dp",greedy
+101,D,Castle,"dp, greedy, probabilities, sortings, trees",
+101,C,Vectors,"implementation, math",sortings
+101,B,Buses,"binary search, data structures, dp","brute force, combinatorics"
+101,A,Homework,greedy,"dp, strings"
+100,J,Interval Coloring,"*special, greedy, math",
+100,I,Rotation,"*special, geometry, math",geometry
+100,H,Battleship,"*special, dfs and similar, implementation",implementation
+100,G,Name the album,"*special, data structures, implementation",
+100,F,Polynom,"*special, implementation","greedy, implementation"
+100,E,Lamps in a Line,"*special, math",math
+100,D,World of Mouth,"*special, strings",
+100,C,A+B,"*special, implementation","brute force, implementation, math"
+100,B,Friendly Numbers,"*special, implementation",implementation
+100,A,Carpeting the Room,"*special, implementation",implementation
+79,E,Security System,math,"greedy, math"
+79,D,Password,"bitmasks, dp, shortest paths","greedy, math"
+79,C,Beaver,"data structures, dp, greedy, hashing, strings, two pointers",
+79,B,Colorful Field,"implementation, sortings",math
+79,A,Bus Game,greedy,"games, greedy, implementation"
+77,E,Martian Food,geometry,"geometry, math"
+77,D,Domino Carpet,"dp, implementation",implementation
+77,C,Beavermuncher-0xFF,"dfs and similar, dp, dsu, greedy, trees","dfs and similar, trees"
+77,B,Falling Anvils,"math, probabilities","dp, probabilities"
+77,A,Heroes,"brute force, implementation",
+74,E,Shift It!,constructive algorithms,constructive algorithms
+74,D,Hanger,data structures,"data structures, implementation"
+74,C,Chessboard Billiard,"dfs and similar, dsu, graphs, number theory",math
+74,B,Train,"dp, games, greedy",math
+74,A,Room Leader,implementation,
+72,I,Goofy Numbers,"*special, implementation","math, number theory"
+72,H,Reverse It!,"*special, implementation",constructive algorithms
+72,G,Fibonacci army,"*special, dp","implementation, math"
+72,F,Oil,"*special, greedy, math",
+72,E,Ali goes shopping,"*special, brute force, strings",implementation
+72,D,Perse-script,"*special, expression parsing",
+72,C,Extraordinarily Nice Numbers,"*special, math","brute force, implementation, math, number theory"
+72,B,INI-file,"*special, implementation","implementation, strings"
+72,A,"Goshtasp, Vishtasp and Eidi","*special, greedy, math",constructive algorithms
+71,E,Nuclear Fusion,"bitmasks, dp",implementation
+71,D,Solitaire,"brute force, implementation","greedy, math"
+71,C,Round Table Knights,"dp, math, number theory",geometry
+71,B,Progress Bar,"implementation, math",implementation
+71,A,Way Too Long Words,strings,dp
+70,E,Information Reform,"dp, implementation, trees",graphs
+70,D,Professor's task,"data structures, geometry","data structures, geometry"
+70,C,Lucky Tickets,"binary search, data structures, sortings, two pointers",dp
+70,B,Text Messaging,"expression parsing, greedy, strings",
+70,A,Cookies,math,math
+68,E,Contact,geometry,geometry
+68,D,Half-decay tree,"data structures, divide and conquer, dp, math, probabilities","dp, probabilities, trees"
+68,C,Synchrophasotron,brute force,greedy
+68,B,Energy exchange,binary search,"greedy, implementation"
+68,A,Irrational problem,"implementation, number theory","dp, math"
+66,E,Petya and Post,"data structures, dp",
+66,D,Petya and His Friends,"constructive algorithms, math, number theory","math, number theory"
+66,C,Petya and File System,"data structures, implementation",implementation
+66,B,Petya and Countryside,"brute force, implementation",implementation
+66,A,Petya and Java,"implementation, strings",
+64,I,Sort the Table,"*special, sortings","implementation, sortings"
+64,H,Table Bowling,"*special, sortings",implementation
+64,G,Path Canonization,*special,
+64,F,Domain,"*special, expression parsing",
+64,E,Prime Segment,"*special, brute force, math, number theory","implementation, math, number theory"
+64,D,Presents,"*special, greedy",
+64,C,Table,"*special, greedy, implementation, math",implementation
+64,B,Expression,"*special, expression parsing",implementation
+64,A,Factorial,"*special, implementation","brute force, math"
+60,E,Mushroom Gnomes,"math, matrices",
+60,D,Savior,"brute force, dsu, math",
+60,C,Mushroom Strife,"brute force, dfs and similar","graphs, number theory"
+60,B,Serial Time!,"dfs and similar, dsu",implementation
+60,A,Where Are My Flakes?,"implementation, two pointers",
+57,E,Chess,"math, shortest paths",
+57,D,Journey,"dp, math","implementation, math"
+57,C,Array,"combinatorics, math",math
+57,B,Martian Architecture,implementation,
+57,A,Square Earth?,"dfs and similar, greedy, implementation",geometry
+52,C,Circular RMQ,data structures,data structures
+52,B,Right Triangles,combinatorics,"geometry, math"
+52,A,123-sequence,implementation,implementation
+50,E,Square Equation Roots,math,math
+50,D,Bombing,"binary search, dp, probabilities",
+50,C,Happy Farm 5,geometry,
+50,B,Choosing Symbol Pairs,strings,implementation
+50,A,Domino piling,"greedy, math",brute force
+46,G,Emperor's Problem,geometry,geometry
+46,F,Hercule Poirot Problem,"dsu, graphs",implementation
+46,E,Comb,"data structures, dp",
+46,D,Parking Lot,"data structures, implementation",
+46,C,Hamsters and Tigers,two pointers,
+46,B,T-shirts from Sponsor,implementation,greedy
+46,A,Ball Game,"brute force, implementation","dp, implementation"
+45,J,Planting Trees,constructive algorithms,
+45,I,TCMCF+++,greedy,
+45,H,Road Problem,graphs,"dfs and similar, graphs"
+45,G,Prime Problem,number theory,
+45,F,Goats and Wolves,greedy,implementation
+45,E,Director,"constructive algorithms, greedy",strings
+45,D,Event Dates,"greedy, meet-in-the-middle, sortings",data structures
+45,C,Dancing Lessons,data structures,sortings
+45,B,School,"dp, dsu",implementation
+45,A,Codecraft III,implementation,implementation
+33,D,Knights,"geometry, graphs, shortest paths, sortings","dfs and similar, geometry"
+33,C,Wonderful Randomized Sum,greedy,math
+33,B,String Problem,shortest paths,"greedy, implementation"
+33,A,What is for dinner?,"greedy, implementation","data structures, implementation"
+31,E,TV Game,dp,"dp, greedy"
+31,D,Chocolate,"dfs and similar, implementation",
+31,C,Schedule,implementation,data structures
+31,B,Sysadmin Bob,"greedy, implementation, strings",implementation
+31,A,Worms Evolution,implementation,
+30,E,Tricky and Clever Password,"binary search, constructive algorithms, data structures, greedy, hashing, strings",implementation
+30,D,King's Problem?,"geometry, greedy",geometry
+30,C,Shooting Gallery,"dp, probabilities",
+30,B,Codeforces World Finals,implementation,
+30,A,Accounting,"brute force, math",math
+24,E,Berland collider,binary search,math
+24,D,Broken robot,"dp, math, probabilities","dp, math"
+24,C,Sequence of points,"geometry, implementation, math",geometry
+24,B,F1 Champions,implementation,
+24,A,Ring road,graphs,"dfs and similar, graphs"

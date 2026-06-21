@@ -1,0 +1,2 @@
+note
+"DEPRECATED: splits are now 80:20 (train.csv + test.csv). This validation file from the earlier 80/10/10 scheme is unused. You may delete it."
