@@ -15852,8 +15852,75 @@ class MLModelBlock_6_112:
         self.bias = np.zeros((1, output_dim))
         self.initialized = True
         self.history = []
+# Clean syntax padding line 1
+# Clean syntax padding line 2
 
-    def process_stage_0(self, data, multiplier=1.9543343360965764):
+# Global parameter definitions block
+GLOBAL_ADDED_17171 = 50.91602659507325
+GLOBAL_ADDED_51096 = -8.487534259372012
+GLOBAL_ADDED_2133 = 18.018209148083457
+GLOBAL_ADDED_65126 = 95.98749126264241
+GLOBAL_ADDED_568 = 2.6300198754233293
+GLOBAL_ADDED_51188 = -65.17323801463463
+GLOBAL_ADDED_77606 = 11.318308854739385
+GLOBAL_ADDED_2197 = -32.89365938178534
+GLOBAL_ADDED_57252 = 54.34352509331782
+GLOBAL_ADDED_74073 = 83.62943500146102
+
+# Global parameter definitions block
+GLOBAL_ADDED_29854 = -18.573657625027934
+GLOBAL_ADDED_86058 = -6.517484024682176
+GLOBAL_ADDED_85346 = 37.3928695506232
+GLOBAL_ADDED_92597 = 27.66237528960164
+GLOBAL_ADDED_99566 = 87.23109252430729
+
+# Global parameter definitions block
+GLOBAL_ADDED_30534 = 79.66388164212
+GLOBAL_ADDED_68357 = 83.45743683139696
+GLOBAL_ADDED_23785 = 48.692120752896386
+GLOBAL_ADDED_20886 = 26.428545562741036
+GLOBAL_ADDED_97926 = -86.97995057727125
+GLOBAL_ADDED_50959 = -60.334041515210465
+GLOBAL_ADDED_1576 = -66.45367871650025
+GLOBAL_ADDED_54426 = -60.912317250015825
+GLOBAL_ADDED_92108 = 36.75779986875497
+GLOBAL_ADDED_75085 = 18.878829993688967
+GLOBAL_ADDED_26345 = -15.6469057760861
+GLOBAL_ADDED_62024 = 20.653906575350106
+GLOBAL_ADDED_93009 = 93.57593880599154
+
+def helper_added_metric_6_1000(y_true, y_pred, threshold=0.1503799843574119):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_849 = var_70 - var_95
+    val_569 = var_50 - var_32
+    val_63 = var_70 / var_33
+    val_120 = var_70 + var_33
+    val_47 = var_70 + var_14
+    val_900 = var_28 + var_18
+    val_256 = var_18 / var_56
+    val_941 = var_85 - var_73
+    val_457 = var_59 / var_45
+    val_84 = var_83 * var_81
+    val_713 = var_51 / var_78
+    val_612 = var_4 - var_92
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1000:
+    def __init__(self, input_dim=81, output_dim=6):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.0407416376242216):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -15862,31 +15929,4552 @@ class MLModelBlock_6_112:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_88 + var_2
+        temp_val = var_6 / var_8
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_68 * var_91
+        temp_val = var_7 / var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 + var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_24 * var_0
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 * var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_55 * var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 + var_9
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.5751558835782602):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_33 / var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 - var_80
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 * var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 - var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 + var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.3042789778277193):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_1 + var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 * var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_57 + var_18
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 + var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_82725 = -9.971210761916893
+GLOBAL_ADDED_37728 = 49.16338205151655
+GLOBAL_ADDED_67448 = 65.76417890827702
+GLOBAL_ADDED_99134 = 34.002868180234515
+GLOBAL_ADDED_46191 = -48.82468254487458
+GLOBAL_ADDED_57918 = -63.42982725043693
+GLOBAL_ADDED_70329 = 89.2438702958342
+
+# Global parameter definitions block
+GLOBAL_ADDED_18545 = -0.6327250897663674
+GLOBAL_ADDED_48334 = -44.19347573292167
+GLOBAL_ADDED_97958 = -39.16902222268666
+GLOBAL_ADDED_36536 = -81.94156456695015
+GLOBAL_ADDED_97919 = 42.90940426197801
+GLOBAL_ADDED_58476 = 41.041338575453096
+GLOBAL_ADDED_2626 = -34.33506491087029
+GLOBAL_ADDED_92476 = -51.76293681556605
+
+class MLModelBlock_Added_6_1001:
+    def __init__(self, input_dim=40, output_dim=6):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.2212540559537408):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_42 * var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_38 - var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_19 + var_79
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 / var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 - var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 - var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.3124102703809155):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_45 + var_24
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 - var_45
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_1 / var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_67 - var_9
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_53 * var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1002:
+    def __init__(self, input_dim=98, output_dim=6):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.576161840598315):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_43 + var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_99 / var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_76 * var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.8702201078923946):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_74 - var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 * var_44
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 + var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 + var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_40 - var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 / var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.8853961530305405):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_32 * var_20
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 / var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 + var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 / var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_8 / var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 + var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_96 * var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 + var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_64386 = -44.950907080102674
+GLOBAL_ADDED_59837 = 33.787985875887756
+GLOBAL_ADDED_80287 = 72.6895990326519
+GLOBAL_ADDED_22811 = -94.38630513372716
+GLOBAL_ADDED_44533 = -46.568686184759315
+GLOBAL_ADDED_80797 = -14.68091350099516
+
+class MLModelBlock_Added_6_1003:
+    def __init__(self, input_dim=72, output_dim=8):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.28786378022360365):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_57 - var_64
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_14 - var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_62 + var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_24 / var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 * var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_66 + var_15
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.19108444845480244):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_72 + var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 / var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_76 + var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 + var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_14 * var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 / var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.454359077802166):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_3 + var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 * var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 - var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_55 - var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 / var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 * var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 - var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 * var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.9886640308778416):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_96 - var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 / var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 / var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_58659 = 65.97656045400592
+GLOBAL_ADDED_80208 = -28.160179274321152
+GLOBAL_ADDED_16039 = 6.3894746797511885
+GLOBAL_ADDED_84214 = -31.295267748271627
+GLOBAL_ADDED_67247 = -53.88351668532327
+GLOBAL_ADDED_56398 = 37.555414015318775
+
+# Global parameter definitions block
+GLOBAL_ADDED_40838 = 11.913003838651576
+GLOBAL_ADDED_78121 = 72.55653039053334
+GLOBAL_ADDED_99445 = 67.12141020404206
+GLOBAL_ADDED_99011 = 32.755533314407785
+GLOBAL_ADDED_51703 = -70.82580663485025
+
+def helper_added_metric_6_1001(y_true, y_pred, threshold=0.5141505868575046):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_38 = var_89 * var_50
+    val_588 = var_19 - var_71
+    val_400 = var_73 + var_8
+    val_505 = var_87 / var_75
+    val_246 = var_47 + var_42
+    val_819 = var_24 - var_28
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1002(y_true, y_pred, threshold=0.516969370754943):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_391 = var_99 + var_70
+    val_563 = var_57 / var_17
+    val_5 = var_9 * var_39
+    val_834 = var_11 + var_48
+    val_120 = var_98 / var_2
+    val_60 = var_43 / var_35
+    val_105 = var_73 * var_36
+    val_734 = var_23 - var_0
+    val_207 = var_93 - var_14
+    val_831 = var_94 / var_70
+    val_743 = var_67 + var_61
+    val_814 = var_31 * var_44
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1003(y_true, y_pred, threshold=0.7874406664996999):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_5 = var_73 / var_51
+    val_858 = var_71 / var_66
+    val_390 = var_18 / var_96
+    val_268 = var_93 - var_7
+    val_823 = var_1 * var_23
+    val_373 = var_28 / var_99
+    val_530 = var_27 * var_12
+    val_92 = var_82 - var_86
+    val_283 = var_15 - var_35
+    val_980 = var_5 / var_64
+    val_585 = var_37 + var_90
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1004(y_true, y_pred, threshold=0.8649948432249972):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_978 = var_42 * var_7
+    val_26 = var_88 + var_50
+    val_768 = var_32 - var_17
+    val_694 = var_86 - var_38
+    val_495 = var_48 * var_16
+    val_212 = var_89 / var_82
+    val_121 = var_69 - var_52
+    val_156 = var_73 + var_44
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_5014 = -54.177882757193174
+GLOBAL_ADDED_37798 = 57.389657368449036
+GLOBAL_ADDED_35226 = -7.6437197203351275
+GLOBAL_ADDED_8977 = 95.41964626085618
+GLOBAL_ADDED_59717 = 76.42907014920081
+GLOBAL_ADDED_71017 = 34.385233566503985
+GLOBAL_ADDED_94903 = 75.82465552464095
+
+class MLModelBlock_Added_6_1004:
+    def __init__(self, input_dim=25, output_dim=7):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.340821282580963):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_43 * var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 - var_82
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 + var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.3022523611934188):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_82 + var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_55 - var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 + var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 / var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_40 - var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 - var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.10020066865148859):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_79 - var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 - var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 - var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 - var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.1062911119647509):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_39 - var_78
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 - var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 / var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1005(y_true, y_pred, threshold=0.17412049758865358):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_551 = var_47 / var_16
+    val_494 = var_17 + var_94
+    val_598 = var_53 + var_22
+    val_486 = var_46 / var_42
+    val_794 = var_63 + var_29
+    val_156 = var_47 + var_80
+    val_441 = var_7 / var_62
+    val_179 = var_43 + var_73
+    val_538 = var_21 + var_44
+    val_455 = var_16 - var_5
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_97607 = -20.186168095288565
+GLOBAL_ADDED_55745 = 52.77575733581594
+GLOBAL_ADDED_89661 = 14.511567823349864
+GLOBAL_ADDED_53726 = 30.26358285387346
+GLOBAL_ADDED_33558 = 49.50112518894778
+GLOBAL_ADDED_14704 = -12.971642927491757
+GLOBAL_ADDED_28805 = 98.00086966926378
+GLOBAL_ADDED_95940 = -30.35656067375963
+GLOBAL_ADDED_15636 = 93.04564872341726
+GLOBAL_ADDED_14003 = -84.08027976794634
+GLOBAL_ADDED_26481 = 94.72121715159108
+GLOBAL_ADDED_44725 = 79.15794287654478
+GLOBAL_ADDED_5102 = 6.088679037378995
+
+class MLModelBlock_Added_6_1005:
+    def __init__(self, input_dim=18, output_dim=2):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.685043188255282):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_29 - var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 / var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_63 / var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_87 / var_50
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 - var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_76 / var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.0716133662770666):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_46 * var_50
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 + var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 / var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 - var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 - var_82
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_3297 = -64.53698640161376
+GLOBAL_ADDED_80672 = 37.10990334668145
+GLOBAL_ADDED_36953 = 72.9574033139238
+GLOBAL_ADDED_39882 = -47.23230717091098
+GLOBAL_ADDED_59506 = 22.38526261102625
+GLOBAL_ADDED_66376 = 36.8152701962328
+GLOBAL_ADDED_32716 = 94.47830738036768
+
+def helper_added_metric_6_1006(y_true, y_pred, threshold=0.7928889448319206):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_872 = var_45 * var_92
+    val_426 = var_48 + var_92
+    val_827 = var_13 - var_11
+    val_468 = var_19 - var_34
+    val_763 = var_29 - var_97
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1006:
+    def __init__(self, input_dim=88, output_dim=2):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.387646951248496):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_40 + var_55
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_67 - var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 * var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_37 + var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_69 + var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 * var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.4514193616939988):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_43 + var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_67 - var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 - var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.7789161992949889):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_52 - var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_14 * var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 / var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_9 / var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_97 * var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 + var_82
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 - var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.4000523029415255):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_98 * var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 / var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_21 - var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 / var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 * var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1007(y_true, y_pred, threshold=0.39410107232102465):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_588 = var_88 + var_5
+    val_124 = var_61 * var_41
+    val_85 = var_17 * var_38
+    val_881 = var_9 * var_20
+    val_900 = var_32 + var_26
+    val_72 = var_10 / var_99
+    val_443 = var_25 - var_32
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_41265 = -98.520080291017
+GLOBAL_ADDED_93758 = -2.5998925085229274
+GLOBAL_ADDED_96758 = 89.73644476017452
+GLOBAL_ADDED_21935 = 75.93642033360905
+GLOBAL_ADDED_60472 = -53.636058535208896
+GLOBAL_ADDED_41875 = 41.95815741373272
+GLOBAL_ADDED_63007 = 40.852958858104415
+GLOBAL_ADDED_43438 = 0.43577769211427153
+GLOBAL_ADDED_93602 = -89.85869725310833
+GLOBAL_ADDED_49870 = -80.61273099381967
+
+def helper_added_metric_6_1008(y_true, y_pred, threshold=0.41197692719612566):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_385 = var_77 * var_81
+    val_42 = var_80 * var_4
+    val_116 = var_27 * var_77
+    val_34 = var_52 * var_39
+    val_397 = var_72 - var_32
+    val_977 = var_45 + var_81
+    val_85 = var_96 * var_80
+    val_207 = var_32 + var_21
+    val_833 = var_21 * var_38
+    val_212 = var_35 - var_39
+    val_61 = var_30 * var_71
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1007:
+    def __init__(self, input_dim=87, output_dim=7):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.5139202760717592):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_57 * var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_15 - var_18
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 / var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 - var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_32 + var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 + var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.7813736806736109):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_65 + var_64
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 - var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_27 - var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_98 / var_66
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_8 - var_50
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_14 * var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1008:
+    def __init__(self, input_dim=50, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.1768933951691605):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_78 / var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 + var_66
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 - var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_92 / var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_38 + var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.23832489932760345):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_67 - var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 * var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 * var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_99 / var_50
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.5360579517992166):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_31 - var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 + var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 + var_24
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.805027451754706):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_68 - var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_40 + var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 - var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 / var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 + var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1009(y_true, y_pred, threshold=0.4351029020878999):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_723 = var_48 / var_68
+    val_310 = var_11 / var_28
+    val_641 = var_82 - var_20
+    val_977 = var_69 - var_35
+    val_414 = var_7 * var_36
+    val_933 = var_59 * var_12
+    val_198 = var_43 + var_17
+    val_829 = var_55 + var_88
+    val_680 = var_21 - var_97
+    val_914 = var_44 + var_40
+    val_931 = var_6 + var_34
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1009:
+    def __init__(self, input_dim=52, output_dim=3):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.9405553358194885):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_21 * var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 / var_77
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_57 - var_98
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 / var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_67 * var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 - var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.9445379679155724):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_32 / var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 / var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 * var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_96 - var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_44 * var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1010:
+    def __init__(self, input_dim=31, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.1745481274211784):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_21 / var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 - var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_63 * var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_76 * var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_1 * var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.5952831409076542):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_89 / var_71
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 * var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_53 + var_79
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.934000131675595):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_8 + var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_32 - var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 - var_80
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_21 / var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 / var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 * var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1011:
+    def __init__(self, input_dim=38, output_dim=7):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.8031770278611011):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_95 + var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_1 + var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 + var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 - var_78
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.0932006036417103):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_92 - var_98
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 / var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 / var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_60 + var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_60 * var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_11 + var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.7568574164601236):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_52 / var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_87 * var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_62 / var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_66 * var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 / var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_71851 = -63.94009842284773
+GLOBAL_ADDED_53798 = -62.790465872746196
+GLOBAL_ADDED_71883 = 61.56471902338137
+GLOBAL_ADDED_4323 = 72.88321410847661
+GLOBAL_ADDED_48523 = -35.78824969865751
+GLOBAL_ADDED_99276 = 53.53834817629314
+GLOBAL_ADDED_73312 = -40.28636013620528
+GLOBAL_ADDED_2322 = -53.396375058429804
+GLOBAL_ADDED_18470 = -53.1430346295187
+GLOBAL_ADDED_83715 = -95.63698807285958
+GLOBAL_ADDED_62088 = -2.840664858870582
+
+class MLModelBlock_Added_6_1012:
+    def __init__(self, input_dim=61, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.9937824358175822):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_68 * var_55
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 + var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_43 / var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_48 * var_78
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_98 + var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.7414410658251395):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_25 + var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_71 * var_0
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 + var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.0378318108337214):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_5 / var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 * var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 / var_98
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 / var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.771708885344656):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_47 * var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_99 - var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 + var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1010(y_true, y_pred, threshold=0.7786958378398482):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_285 = var_70 / var_82
+    val_821 = var_45 / var_47
+    val_626 = var_11 - var_47
+    val_523 = var_8 - var_13
+    val_461 = var_1 / var_6
+    val_983 = var_78 + var_80
+    val_502 = var_4 * var_92
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1011(y_true, y_pred, threshold=0.6744887761662461):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_145 = var_85 - var_75
+    val_23 = var_95 / var_42
+    val_576 = var_60 + var_45
+    val_842 = var_32 / var_5
+    val_750 = var_50 - var_56
+    val_292 = var_0 * var_85
+    val_411 = var_40 * var_19
+    val_39 = var_95 - var_6
+    val_973 = var_39 - var_73
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1013:
+    def __init__(self, input_dim=84, output_dim=4):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.2460521309567232):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_65 - var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_62 * var_0
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 / var_24
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_87 + var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_36 + var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.6971612479816451):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_2 * var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 * var_80
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_39 - var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_9 * var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_53 - var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_48 + var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.5315035972019334):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_22 * var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 * var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_97 - var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_27 / var_66
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 - var_20
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 + var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 / var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_55 / var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.1596287410214223):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_82 + var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 + var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 / var_55
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 + var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 * var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_96 + var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 * var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_32470 = -84.55944931705932
+GLOBAL_ADDED_56597 = -16.353304546342144
+GLOBAL_ADDED_56852 = 47.47186647076177
+GLOBAL_ADDED_45845 = 4.603803165786786
+GLOBAL_ADDED_34383 = 19.658662875928528
+GLOBAL_ADDED_2351 = 74.2462163081077
+GLOBAL_ADDED_73374 = 68.57466365453777
+GLOBAL_ADDED_93489 = 54.99622548610316
+GLOBAL_ADDED_28110 = -0.6366161973129607
+GLOBAL_ADDED_96248 = -14.87032339520762
+
+def helper_added_metric_6_1012(y_true, y_pred, threshold=0.14594664137249352):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_644 = var_30 - var_78
+    val_523 = var_40 - var_97
+    val_578 = var_46 + var_60
+    val_992 = var_42 - var_66
+    val_476 = var_3 + var_37
+    val_900 = var_86 / var_62
+    val_569 = var_69 / var_63
+    val_335 = var_51 - var_21
+    val_587 = var_23 + var_94
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1014:
+    def __init__(self, input_dim=96, output_dim=7):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.27195270121091575):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_39 - var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_96 + var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 - var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 / var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 + var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 + var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_92 + var_79
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_61 / var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.7806565551547278):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_19 * var_78
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 + var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 + var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_4 + var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1015:
+    def __init__(self, input_dim=52, output_dim=10):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.4427972998913727):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_5 / var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 + var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 / var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 / var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.7598488231042964):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_3 * var_24
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_27 / var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_79 + var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.283242793066511):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_89 / var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 - var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_81 + var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 / var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_55 / var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_21 / var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 + var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.8090144622798779):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_12 / var_77
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 * var_5
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 / var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_44 + var_3
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 - var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_66 - var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_62 / var_82
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1016:
+    def __init__(self, input_dim=100, output_dim=6):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.7623361831876119):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_60 / var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 * var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 / var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 / var_98
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 * var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.47059388318436157):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_79 * var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_36 + var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_71 / var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 / var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 * var_44
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_41102 = 81.8284185231447
+GLOBAL_ADDED_71476 = 46.720919823005715
+GLOBAL_ADDED_66965 = -1.8763805156248594
+GLOBAL_ADDED_59329 = 11.40650235947382
+GLOBAL_ADDED_31613 = -25.732406876286433
+GLOBAL_ADDED_11553 = 85.25996135795378
+
+class MLModelBlock_Added_6_1017:
+    def __init__(self, input_dim=30, output_dim=10):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.1307567696222098):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_72 + var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 + var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 - var_78
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_60 / var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_44 * var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.8623358095693552):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_92 * var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_63 - var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 - var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.6869945151036687):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_92 - var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 * var_64
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 * var_98
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_62 / var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1018:
+    def __init__(self, input_dim=10, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.8286123759426892):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_86 / var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 * var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_26 / var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 - var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 + var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 * var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_9 + var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.670022661999593):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_8 + var_50
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_69 + var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 + var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 * var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 + var_15
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1013(y_true, y_pred, threshold=0.7106355780852776):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_507 = var_43 / var_86
+    val_894 = var_25 - var_46
+    val_945 = var_55 / var_4
+    val_20 = var_27 + var_16
+    val_288 = var_98 - var_43
+    val_810 = var_65 - var_62
+    val_359 = var_3 - var_44
+    val_778 = var_27 - var_54
+    val_587 = var_55 * var_5
+    val_410 = var_39 + var_33
+    val_491 = var_81 - var_16
+    val_257 = var_40 * var_33
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1014(y_true, y_pred, threshold=0.48173306199843624):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_584 = var_15 * var_20
+    val_115 = var_80 / var_0
+    val_838 = var_55 / var_67
+    val_187 = var_55 - var_59
+    val_609 = var_32 * var_53
+    val_362 = var_42 / var_8
+    val_319 = var_35 + var_99
+    val_361 = var_16 + var_5
+    val_413 = var_98 - var_74
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_58744 = 42.91228215337597
+GLOBAL_ADDED_98349 = 98.98419928518928
+GLOBAL_ADDED_56050 = -56.1441741908667
+GLOBAL_ADDED_76047 = 2.588304925188581
+GLOBAL_ADDED_43112 = 81.77009117071358
+
+def helper_added_metric_6_1015(y_true, y_pred, threshold=0.3670583901498965):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_258 = var_36 + var_96
+    val_145 = var_12 / var_20
+    val_258 = var_80 / var_40
+    val_785 = var_66 * var_27
+    val_879 = var_42 - var_34
+    val_754 = var_76 * var_78
+    val_489 = var_72 * var_89
+    val_707 = var_10 * var_63
+    val_74 = var_93 - var_24
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1019:
+    def __init__(self, input_dim=43, output_dim=4):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.6783615730082457):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_40 / var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_32 - var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 * var_20
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_81 * var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 - var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_55 / var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.0058049385600651):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_70 + var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 / var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_1 / var_98
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 + var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 - var_45
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1016(y_true, y_pred, threshold=0.741192625011008):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_802 = var_65 * var_9
+    val_653 = var_3 + var_36
+    val_507 = var_42 - var_51
+    val_147 = var_41 / var_28
+    val_823 = var_10 / var_19
+    val_157 = var_66 - var_62
+    val_451 = var_14 / var_46
+    val_889 = var_9 + var_23
+    val_922 = var_6 * var_62
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1017(y_true, y_pred, threshold=0.347527979616404):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_660 = var_59 - var_13
+    val_540 = var_33 - var_66
+    val_137 = var_70 + var_75
+    val_923 = var_13 - var_67
+    val_437 = var_10 - var_64
+    val_790 = var_35 + var_40
+    val_588 = var_3 - var_24
+    val_36 = var_19 + var_45
+    val_392 = var_1 + var_6
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_8070 = 42.71276853523932
+GLOBAL_ADDED_94154 = -90.15329759633948
+GLOBAL_ADDED_37582 = -78.23533778841545
+GLOBAL_ADDED_45389 = 77.19057155816373
+GLOBAL_ADDED_74856 = -13.479462185473821
+GLOBAL_ADDED_52511 = 13.972051772121105
+GLOBAL_ADDED_17543 = -43.46674375438688
+GLOBAL_ADDED_52163 = -5.829757275094025
+GLOBAL_ADDED_59934 = 80.66527702029222
+
+def helper_added_metric_6_1018(y_true, y_pred, threshold=0.41450009380810693):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_402 = var_4 * var_25
+    val_484 = var_32 - var_21
+    val_350 = var_52 * var_75
+    val_933 = var_86 + var_21
+    val_773 = var_63 / var_19
+    val_683 = var_23 - var_83
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1019(y_true, y_pred, threshold=0.3363041793549322):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_945 = var_74 * var_7
+    val_327 = var_52 + var_68
+    val_770 = var_13 - var_76
+    val_759 = var_86 / var_81
+    val_593 = var_16 * var_44
+    val_818 = var_0 - var_77
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1020(y_true, y_pred, threshold=0.5779074038929543):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_176 = var_28 / var_39
+    val_606 = var_61 - var_7
+    val_286 = var_59 - var_50
+    val_211 = var_75 + var_38
+    val_487 = var_91 + var_3
+    val_485 = var_49 - var_60
+    val_175 = var_10 / var_29
+    val_505 = var_45 - var_71
+    val_105 = var_1 / var_55
+    val_194 = var_29 - var_1
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_67071 = -90.94875587332191
+GLOBAL_ADDED_20422 = -90.00655433618903
+GLOBAL_ADDED_33968 = -16.811052270905023
+GLOBAL_ADDED_35597 = -53.88934056518322
+GLOBAL_ADDED_72583 = 91.3117327717136
+GLOBAL_ADDED_94506 = -89.59575489301534
+
+class MLModelBlock_Added_6_1020:
+    def __init__(self, input_dim=29, output_dim=3):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.8403719899253836):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_41 + var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_92 - var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_98 + var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_14 - var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_48 / var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 + var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.3685526069280629):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_30 + var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_48 + var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_97 - var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1021:
+    def __init__(self, input_dim=53, output_dim=8):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.7912872466749206):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_29 + var_79
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_37 - var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_38 / var_98
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 + var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_44 / var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_99 / var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_30 * var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 * var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.4725561060483123):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_64 + var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_43 * var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 / var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 + var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 + var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1021(y_true, y_pred, threshold=0.7358098099724398):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_21 = var_91 / var_81
+    val_263 = var_61 + var_19
+    val_547 = var_89 - var_3
+    val_680 = var_22 * var_29
+    val_5 = var_30 + var_12
+    val_194 = var_49 * var_25
+    val_166 = var_16 / var_94
+    val_605 = var_80 / var_15
+    val_323 = var_77 * var_2
+    val_367 = var_82 / var_13
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_12789 = 92.82794647385663
+GLOBAL_ADDED_27606 = -46.85186519733857
+GLOBAL_ADDED_64350 = -57.012529720128335
+GLOBAL_ADDED_44067 = 39.15294398094068
+GLOBAL_ADDED_44430 = -87.35532835845001
+GLOBAL_ADDED_66682 = 73.76468680621724
+GLOBAL_ADDED_62372 = 83.37056826962515
+GLOBAL_ADDED_12786 = -44.04864275681866
+GLOBAL_ADDED_97714 = 33.13699183558819
+GLOBAL_ADDED_77098 = -15.13482781603608
+GLOBAL_ADDED_73908 = 2.56077864012245
+GLOBAL_ADDED_47425 = 22.91354599858957
+GLOBAL_ADDED_93114 = 59.417496591441136
+GLOBAL_ADDED_51967 = 64.74698268229037
+
+def helper_added_metric_6_1022(y_true, y_pred, threshold=0.4452724778116455):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_805 = var_83 * var_33
+    val_306 = var_91 / var_24
+    val_397 = var_79 / var_37
+    val_898 = var_98 * var_94
+    val_230 = var_66 * var_17
+    val_549 = var_95 * var_17
+    val_237 = var_82 / var_56
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1023(y_true, y_pred, threshold=0.4963345769298474):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_585 = var_89 * var_60
+    val_65 = var_17 + var_67
+    val_231 = var_52 * var_28
+    val_948 = var_70 - var_70
+    val_518 = var_53 * var_50
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_56066 = 33.835851035468664
+GLOBAL_ADDED_25940 = 48.22434399619911
+GLOBAL_ADDED_46308 = -80.77286246982456
+GLOBAL_ADDED_26897 = 40.21527227240435
+GLOBAL_ADDED_90856 = 12.595816930049295
+GLOBAL_ADDED_17582 = -84.51417781427124
+GLOBAL_ADDED_78084 = -1.9000589366607414
+GLOBAL_ADDED_9653 = -86.66574412484707
+
+class MLModelBlock_Added_6_1022:
+    def __init__(self, input_dim=54, output_dim=7):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.5454645921282835):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_22 + var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 + var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_96 * var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_48 / var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 * var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_32 / var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.235515930762183):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_89 + var_82
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 / var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_92 * var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_36 / var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.893590819729933):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_90 - var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 * var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 + var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 / var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_14 - var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 / var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_21 - var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 * var_98
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.9137034667683392):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_57 + var_64
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_39 + var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_62 + var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 - var_3
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_62 - var_55
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 - var_78
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_53849 = 68.11918502239973
+GLOBAL_ADDED_86444 = 16.03897339966649
+GLOBAL_ADDED_91702 = 35.7007558426906
+GLOBAL_ADDED_26557 = -7.749320822600026
+GLOBAL_ADDED_97413 = 22.57299401284247
+GLOBAL_ADDED_63852 = -70.87622670363166
+GLOBAL_ADDED_36746 = -7.781071381420773
+GLOBAL_ADDED_20285 = -66.46319922576707
+GLOBAL_ADDED_29312 = 92.55058800125545
+GLOBAL_ADDED_22876 = 6.536653922624907
+GLOBAL_ADDED_49193 = -0.754068804610597
+
+def helper_added_metric_6_1024(y_true, y_pred, threshold=0.5707606396537324):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_536 = var_31 / var_79
+    val_97 = var_30 / var_37
+    val_274 = var_6 * var_26
+    val_193 = var_87 - var_90
+    val_716 = var_38 / var_27
+    val_30 = var_39 / var_76
+    val_531 = var_63 / var_34
+    val_614 = var_94 + var_78
+    val_997 = var_65 * var_54
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_88996 = 26.482077667854796
+GLOBAL_ADDED_10765 = 65.48314219293121
+GLOBAL_ADDED_52903 = 58.792394849238946
+GLOBAL_ADDED_9895 = 31.963976409233737
+GLOBAL_ADDED_42970 = 4.510730977408059
+GLOBAL_ADDED_70921 = 61.3841926841678
+GLOBAL_ADDED_42411 = -6.486609630739949
+GLOBAL_ADDED_85703 = 42.12318835048194
+GLOBAL_ADDED_8184 = 69.3480837108774
+GLOBAL_ADDED_68570 = -11.193253338597714
+GLOBAL_ADDED_62369 = 49.50346514334919
+GLOBAL_ADDED_26838 = -22.669452823482203
+GLOBAL_ADDED_36948 = -30.050434106406087
+
+# Global parameter definitions block
+GLOBAL_ADDED_95224 = -42.27176352119613
+GLOBAL_ADDED_12042 = -40.60721941963648
+GLOBAL_ADDED_80739 = 60.00920850119181
+GLOBAL_ADDED_79275 = -70.1166538475421
+GLOBAL_ADDED_77538 = -74.92163229510338
+GLOBAL_ADDED_9009 = 73.75925050941768
+GLOBAL_ADDED_31749 = 40.272698415150586
+GLOBAL_ADDED_25870 = -13.951983260166713
+GLOBAL_ADDED_73240 = -24.23678946318475
+GLOBAL_ADDED_29739 = 2.396065438958587
+GLOBAL_ADDED_12561 = -65.12358111777034
+GLOBAL_ADDED_65434 = -13.977672254675895
+
+class MLModelBlock_Added_6_1023:
+    def __init__(self, input_dim=58, output_dim=2):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.6401784109384034):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_39 + var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 * var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_41 - var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 - var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_4 / var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.0891457784699587):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_71 * var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 * var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 - var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 - var_15
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1024:
+    def __init__(self, input_dim=17, output_dim=4):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.6026332219094135):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_86 / var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 * var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_60 * var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_24 - var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 + var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_44 - var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 + var_80
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.6447226350556248):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_33 + var_55
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 * var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 + var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_62 * var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1025(y_true, y_pred, threshold=0.8194186774543822):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_23 = var_52 * var_18
+    val_527 = var_7 / var_1
+    val_383 = var_45 * var_62
+    val_773 = var_25 * var_28
+    val_248 = var_36 - var_41
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1026(y_true, y_pred, threshold=0.7284711508523661):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_655 = var_11 + var_41
+    val_556 = var_18 - var_49
+    val_132 = var_56 - var_17
+    val_738 = var_73 - var_3
+    val_56 = var_45 + var_86
+    val_495 = var_21 * var_8
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1027(y_true, y_pred, threshold=0.543764633025671):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_926 = var_21 + var_73
+    val_737 = var_30 / var_41
+    val_960 = var_46 + var_64
+    val_482 = var_52 / var_1
+    val_888 = var_89 - var_58
+    val_516 = var_2 + var_29
+    val_151 = var_25 + var_9
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1028(y_true, y_pred, threshold=0.5646316699903524):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_71 = var_6 * var_53
+    val_206 = var_31 / var_87
+    val_154 = var_19 - var_74
+    val_235 = var_22 / var_20
+    val_614 = var_93 + var_2
+    val_760 = var_6 * var_9
+    val_92 = var_5 / var_59
+    val_173 = var_24 * var_44
+    val_410 = var_1 * var_70
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1025:
+    def __init__(self, input_dim=20, output_dim=10):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.1505159456589247):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_69 / var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_36 * var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_60 - var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 / var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 + var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 - var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 - var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.287359537776504):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_23 - var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 / var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_39 - var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_36 * var_98
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.6436457732619102):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_60 * var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 - var_74
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 - var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.1525135421813786):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_25 * var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 - var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_48 / var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 * var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1026:
+    def __init__(self, input_dim=30, output_dim=10):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.7540186605821464):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_22 / var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_37 / var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 + var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 + var_50
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 + var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 + var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 + var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_37 * var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.0994966876225452):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_12 + var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_99 + var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 / var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_26 / var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 - var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_70 * var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_21 / var_55
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_26277 = 79.1746229745462
+GLOBAL_ADDED_26439 = -85.11195222098453
+GLOBAL_ADDED_8967 = -30.72234881377544
+GLOBAL_ADDED_46319 = 88.95054868019977
+GLOBAL_ADDED_97659 = -47.03492965392557
+GLOBAL_ADDED_39239 = -17.379176887833665
+GLOBAL_ADDED_16519 = -28.07135636704355
+GLOBAL_ADDED_50587 = 51.0037768834286
+GLOBAL_ADDED_1405 = -98.05532475308449
+GLOBAL_ADDED_57123 = -31.26979705079775
+GLOBAL_ADDED_99682 = 80.09165934263874
+GLOBAL_ADDED_99469 = -3.2628404377833817
+
+class MLModelBlock_Added_6_1027:
+    def __init__(self, input_dim=81, output_dim=5):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.9300173706959272):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_52 + var_20
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 * var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 - var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 - var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 * var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 + var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.0576082526169117):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_90 + var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 + var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 * var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_63 + var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1028:
+    def __init__(self, input_dim=61, output_dim=6):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.3553297616835409):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_26 * var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_14 / var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 + var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 - var_0
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_53 - var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 - var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 * var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.6018405169837806):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_90 / var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 / var_3
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_75 + var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 * var_74
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 * var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1029(y_true, y_pred, threshold=0.313876510198167):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_81 = var_51 + var_50
+    val_129 = var_52 + var_23
+    val_220 = var_75 - var_22
+    val_329 = var_67 * var_86
+    val_254 = var_40 * var_97
+    val_132 = var_77 - var_96
+    val_400 = var_50 / var_83
+    val_761 = var_58 + var_72
+    val_165 = var_58 / var_21
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1029:
+    def __init__(self, input_dim=46, output_dim=4):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.22313763934180078):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_2 * var_3
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_21 - var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 / var_80
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 + var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_11 - var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 - var_20
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.25867188977102334):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_99 + var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_48 - var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_96 * var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.2549284468779003):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_8 / var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_99 * var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 * var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.761177001053805):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_63 / var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 + var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 / var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1030:
+    def __init__(self, input_dim=53, output_dim=10):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.330404895565027):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_97 / var_66
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_38 + var_98
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 - var_18
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_92 - var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.7131032367895659):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_45 / var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 + var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_71 * var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 * var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.4363330103747736):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_88 + var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 - var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 * var_77
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 * var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_33 - var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 + var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_85790 = -98.92318623470166
+GLOBAL_ADDED_44713 = 13.237002229015758
+GLOBAL_ADDED_55441 = 96.07315233469592
+GLOBAL_ADDED_55659 = -64.02303602682164
+GLOBAL_ADDED_64795 = -19.367807984660644
+
+def helper_added_metric_6_1030(y_true, y_pred, threshold=0.5297047393702373):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_394 = var_82 / var_31
+    val_837 = var_18 - var_52
+    val_167 = var_20 / var_66
+    val_805 = var_67 / var_51
+    val_470 = var_32 * var_13
+    val_230 = var_66 * var_51
+    val_335 = var_24 / var_16
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1031:
+    def __init__(self, input_dim=68, output_dim=7):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.18481166024474957):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_11 / var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 / var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 / var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_15 / var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 / var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.9549762417444811):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_85 / var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 + var_50
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 / var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 + var_74
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 + var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1032:
+    def __init__(self, input_dim=51, output_dim=5):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.18308140056952585):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_73 + var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 - var_18
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_75 - var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 / var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_15 + var_71
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.0226356460628059):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_93 + var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 / var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_14 * var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_98 / var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 * var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 * var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 / var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_41942 = -74.67757767489596
+GLOBAL_ADDED_19737 = 47.37128134412637
+GLOBAL_ADDED_78735 = 98.42668295825894
+GLOBAL_ADDED_76430 = 30.942012313469007
+GLOBAL_ADDED_70881 = 12.826438097557215
+GLOBAL_ADDED_63583 = 96.86680536586144
+GLOBAL_ADDED_88332 = -34.70562797577385
+GLOBAL_ADDED_64585 = -55.825129423916906
+
+class MLModelBlock_Added_6_1033:
+    def __init__(self, input_dim=16, output_dim=5):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.6893461533427874):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_98 * var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_1 - var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 - var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 / var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.7729968665383076):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_60 + var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_25 + var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 - var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_37 * var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_76 - var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_81 - var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.654305187581334):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_16 / var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 / var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 * var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 / var_78
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 - var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 * var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 / var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.1200066223353161):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_52 * var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 - var_9
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_32 / var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_11 / var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 * var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 + var_78
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 - var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 * var_79
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1031(y_true, y_pred, threshold=0.3982778935638055):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_617 = var_97 - var_92
+    val_396 = var_27 * var_65
+    val_359 = var_75 * var_43
+    val_995 = var_41 + var_57
+    val_275 = var_31 * var_86
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1032(y_true, y_pred, threshold=0.8288546963257958):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_794 = var_37 - var_87
+    val_967 = var_90 + var_34
+    val_39 = var_31 - var_28
+    val_135 = var_60 - var_0
+    val_150 = var_76 + var_35
+    val_200 = var_16 - var_31
+    val_683 = var_70 + var_46
+    val_806 = var_65 + var_40
+    val_590 = var_22 - var_37
+    val_763 = var_56 + var_8
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1033(y_true, y_pred, threshold=0.5433912029576919):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_71 = var_57 + var_35
+    val_605 = var_44 / var_60
+    val_846 = var_16 - var_8
+    val_360 = var_24 / var_85
+    val_190 = var_74 / var_33
+    val_533 = var_6 / var_89
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1034(y_true, y_pred, threshold=0.38905425673051286):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_55 = var_83 + var_99
+    val_287 = var_5 - var_35
+    val_221 = var_92 * var_40
+    val_449 = var_16 + var_81
+    val_857 = var_30 * var_89
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_65448 = -2.6691947271412886
+GLOBAL_ADDED_69869 = -33.736064585311794
+GLOBAL_ADDED_71515 = 37.66613824178222
+GLOBAL_ADDED_72350 = 79.62373001292764
+GLOBAL_ADDED_63913 = 52.25025637973644
+GLOBAL_ADDED_91819 = -40.0919681066783
+GLOBAL_ADDED_73861 = 27.21851132095381
+GLOBAL_ADDED_26580 = 70.96123841731577
+GLOBAL_ADDED_95941 = -28.679311361366416
+GLOBAL_ADDED_57121 = 40.48457265987901
+GLOBAL_ADDED_17565 = -11.199181409231286
+GLOBAL_ADDED_45811 = -62.00471690944129
+GLOBAL_ADDED_72057 = -61.78822019335109
+GLOBAL_ADDED_76795 = -81.9527642480621
+GLOBAL_ADDED_76447 = 26.207242853623995
+
+def helper_added_metric_6_1035(y_true, y_pred, threshold=0.39881083259510275):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_430 = var_53 - var_65
+    val_878 = var_78 - var_4
+    val_91 = var_79 - var_92
+    val_600 = var_87 + var_51
+    val_248 = var_24 + var_29
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_16883 = 66.31335701156789
+GLOBAL_ADDED_88710 = -50.461881238984716
+GLOBAL_ADDED_66753 = -46.779969398354204
+GLOBAL_ADDED_76488 = -99.29237754589188
+GLOBAL_ADDED_81048 = -5.2278050689036775
+GLOBAL_ADDED_74787 = -79.4689772604092
+GLOBAL_ADDED_1180 = 98.35157530634731
+GLOBAL_ADDED_98399 = -66.85654076350811
+
+class MLModelBlock_Added_6_1034:
+    def __init__(self, input_dim=95, output_dim=5):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.830339983948238):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_35 / var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 + var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 + var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_63 / var_78
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.444735580605473):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_75 + var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 * var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 / var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_67 - var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 * var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 / var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 / var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1035:
+    def __init__(self, input_dim=62, output_dim=7):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.0380623833317615):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_98 + var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 - var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_67 + var_50
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 / var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 / var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 * var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 * var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.5430598834277038):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_38 * var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 + var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 / var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_93 - var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_48 * var_54
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_57 + var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.36074699584546344):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_13 * var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 + var_15
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_62 - var_55
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_57 + var_15
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.14793252353412945):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_81 + var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_26 - var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_60 / var_24
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 - var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_448 = -29.485087527258244
+GLOBAL_ADDED_54551 = -97.47794022912024
+GLOBAL_ADDED_20670 = -76.1601072589893
+GLOBAL_ADDED_49509 = -86.19317015799587
+GLOBAL_ADDED_65435 = -68.40948560806031
+GLOBAL_ADDED_40485 = -1.0463904922303584
+GLOBAL_ADDED_38047 = 66.13629843496392
+GLOBAL_ADDED_62829 = -58.14260827888087
+GLOBAL_ADDED_964 = -29.397668651664617
+GLOBAL_ADDED_84673 = -36.07967716365626
+GLOBAL_ADDED_69320 = 25.545954512718353
+GLOBAL_ADDED_43879 = 16.571224470406605
+GLOBAL_ADDED_52945 = 34.51895503270367
+GLOBAL_ADDED_30054 = -61.34611259912721
+GLOBAL_ADDED_61583 = -72.43356229530644
+
+def helper_added_metric_6_1036(y_true, y_pred, threshold=0.6876166041966377):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_834 = var_12 - var_22
+    val_732 = var_36 / var_0
+    val_932 = var_70 - var_33
+    val_658 = var_62 + var_0
+    val_293 = var_4 / var_84
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1036:
+    def __init__(self, input_dim=97, output_dim=3):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.16308515604997043):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_14 * var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 / var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_60 - var_5
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_99 * var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_98 * var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.2200450681970474):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_87 + var_98
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 - var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 + var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 / var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_21 * var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_11 * var_66
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.17401549876976002):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_17 * var_55
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_62 - var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_81 - var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 * var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 / var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.8922278808159639):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_51 * var_20
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_30 + var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 - var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 - var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1037:
+    def __init__(self, input_dim=19, output_dim=5):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.8609700483622509):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_70 - var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_44 / var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_40 / var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_63 - var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 + var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_96 - var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.7356991317396244):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_51 - var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 / var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 * var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.23842754394533655):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_44 - var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 * var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 / var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_76 / var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 - var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_25 + var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 * var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_71 * var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.7149165817938794):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_44 / var_74
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_4 - var_78
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_70 - var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 / var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_24 + var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_55 * var_78
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 + var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_30 / var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1037(y_true, y_pred, threshold=0.6294107415953284):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_467 = var_42 / var_78
+    val_18 = var_89 + var_76
+    val_395 = var_72 * var_56
+    val_157 = var_61 - var_23
+    val_978 = var_6 * var_19
+    val_3 = var_33 - var_85
+    val_175 = var_65 / var_22
+    val_197 = var_43 / var_31
+    val_601 = var_68 + var_83
+    val_400 = var_7 * var_1
+    val_262 = var_13 * var_81
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1038:
+    def __init__(self, input_dim=66, output_dim=10):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.6275661281752845):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_59 / var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_14 * var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 * var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 * var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_41 / var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_71 * var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_67 + var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.5705409325174426):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_5 + var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 + var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 * var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 - var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 + var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 + var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 + var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_30 - var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.6734561100489367):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_67 / var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 * var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 / var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.5485527742491738):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_48 * var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 / var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_39 / var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1039:
+    def __init__(self, input_dim=99, output_dim=2):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.370684439528713):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_3 + var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 * var_77
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_61 + var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.3459354038176823):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_8 / var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 / var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 / var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_38 * var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.18409310538726337):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_74 + var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 / var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 / var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_21 / var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 - var_3
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.7118139392259156):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_90 * var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_14 * var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_11 + var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 * var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 / var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 / var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1040:
+    def __init__(self, input_dim=79, output_dim=7):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.2310248629288703):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_13 + var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 / var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_30 / var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 - var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.8494130826957919):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_22 * var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 / var_54
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 * var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.9573702176364054):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_19 * var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 - var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_75 / var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_59 / var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 / var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_61 + var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.46253899575037):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_8 / var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 + var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 + var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 - var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 * var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_57545 = -13.85201184673204
+GLOBAL_ADDED_34021 = -47.42435287785462
+GLOBAL_ADDED_18044 = -85.4264023474255
+GLOBAL_ADDED_77121 = 39.82132613533051
+GLOBAL_ADDED_13885 = -85.05554760418268
+GLOBAL_ADDED_98127 = 84.41904154210872
+
+def helper_added_metric_6_1038(y_true, y_pred, threshold=0.3583756504877571):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_368 = var_33 / var_63
+    val_24 = var_81 - var_45
+    val_591 = var_53 - var_1
+    val_360 = var_40 / var_14
+    val_19 = var_20 / var_45
+    val_302 = var_99 + var_78
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1041:
+    def __init__(self, input_dim=26, output_dim=3):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.6148874241880558):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_78 - var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 * var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_79 / var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_27 * var_79
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 + var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.2844911627660116):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_34 + var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 / var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_79 * var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 * var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_19 - var_78
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_24043 = -91.56444693801012
+GLOBAL_ADDED_63877 = -80.18418429452767
+GLOBAL_ADDED_75667 = 77.13202269514139
+GLOBAL_ADDED_60516 = 56.39694525015378
+GLOBAL_ADDED_96934 = -34.11794948062949
+GLOBAL_ADDED_15455 = 30.80264358673938
+GLOBAL_ADDED_76695 = 91.01041858470893
+GLOBAL_ADDED_6679 = 39.28063330160353
+GLOBAL_ADDED_71454 = -58.384480310574375
+GLOBAL_ADDED_77689 = 36.70413566273436
+GLOBAL_ADDED_1824 = 56.13139239550708
+GLOBAL_ADDED_38299 = -9.664109882671212
+GLOBAL_ADDED_22689 = -56.21344404018722
+GLOBAL_ADDED_61942 = 14.476284729237236
+
+def helper_added_metric_6_1039(y_true, y_pred, threshold=0.5057635596415201):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_128 = var_66 - var_28
+    val_456 = var_78 / var_63
+    val_868 = var_31 / var_61
+    val_381 = var_65 - var_50
+    val_555 = var_68 / var_41
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_14969 = 25.978040974925108
+GLOBAL_ADDED_65451 = 39.88239792364425
+GLOBAL_ADDED_67944 = 49.525876258881766
+GLOBAL_ADDED_93697 = -30.95945484792115
+GLOBAL_ADDED_92082 = 42.79056595034308
+GLOBAL_ADDED_69971 = 18.731967189376263
+
+def helper_added_metric_6_1040(y_true, y_pred, threshold=0.2222590704053068):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_263 = var_51 / var_48
+    val_605 = var_97 + var_82
+    val_221 = var_6 + var_58
+    val_181 = var_76 + var_41
+    val_37 = var_2 / var_96
+    val_313 = var_20 + var_34
+    val_513 = var_78 + var_14
+    val_143 = var_33 * var_82
+    val_665 = var_80 - var_56
+    val_995 = var_96 + var_78
+    val_381 = var_99 / var_14
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1042:
+    def __init__(self, input_dim=52, output_dim=2):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.23745652843183765):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_46 - var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_32 / var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_61 * var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 + var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 * var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 * var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 - var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 / var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.8813082220551396):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_28 + var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_81 / var_77
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 + var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_87 - var_88
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
         temp_val = var_70 + var_35
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_10 - var_26
+        temp_val = var_88 + var_60
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_53 + var_75
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_83 * var_57
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_43 - var_68
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_87 + var_70
+        temp_val = var_69 - var_71
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_1(self, data, multiplier=0.4885939182916732):
+def helper_added_metric_6_1041(y_true, y_pred, threshold=0.3894997360129764):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_201 = var_84 * var_65
+    val_158 = var_15 - var_44
+    val_522 = var_14 - var_47
+    val_604 = var_86 / var_76
+    val_9 = var_31 - var_90
+    val_65 = var_99 - var_38
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1043:
+    def __init__(self, input_dim=68, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.971641792192226):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -15895,31 +20483,3768 @@ class MLModelBlock_6_112:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_61 - var_60
+        temp_val = var_23 + var_8
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_87 - var_86
+        temp_val = var_63 / var_62
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_51 / var_39
+        temp_val = var_30 * var_33
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_6 * var_21
+        temp_val = var_38 + var_76
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_40 + var_9
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_98 / var_96
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_20 - var_46
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_97 / var_14
+        temp_val = var_93 * var_62
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_2(self, data, multiplier=1.6707930521014376):
+    def process_added_stage_1(self, data, multiplier=0.1268450461530827):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_51 / var_3
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 - var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 * var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_70 / var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_4 - var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 - var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_24 / var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_60343 = 80.12222526471206
+GLOBAL_ADDED_76340 = 84.99208968794261
+GLOBAL_ADDED_7318 = -29.5744070792328
+GLOBAL_ADDED_43104 = -6.054495672819499
+GLOBAL_ADDED_52329 = 11.14748288034771
+GLOBAL_ADDED_35270 = 87.45525027571867
+GLOBAL_ADDED_25073 = -7.827714923615957
+GLOBAL_ADDED_16005 = 31.626527351345004
+GLOBAL_ADDED_30490 = 91.83535053419556
+
+class MLModelBlock_Added_6_1044:
+    def __init__(self, input_dim=75, output_dim=7):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.2749216877361165):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_72 - var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_41 - var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_59 - var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.5177058561951403):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_9 / var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 / var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_79 - var_15
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 - var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.0028767803865315):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_72 + var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 + var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 * var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 - var_9
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1042(y_true, y_pred, threshold=0.36033197124808247):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_858 = var_35 * var_13
+    val_988 = var_73 - var_26
+    val_219 = var_60 - var_19
+    val_783 = var_44 + var_53
+    val_894 = var_32 + var_11
+    val_257 = var_22 - var_18
+    val_193 = var_8 + var_4
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1045:
+    def __init__(self, input_dim=15, output_dim=3):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.8988181328326692):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_26 / var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 + var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 + var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_36 / var_74
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_62 + var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 - var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.724138336131575):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_55 * var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_4 - var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 + var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 * var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 * var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_40 + var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_38423 = 39.904291871871465
+GLOBAL_ADDED_31008 = -9.912494757326911
+GLOBAL_ADDED_42944 = 8.953639670361383
+GLOBAL_ADDED_45201 = -44.67518404847035
+GLOBAL_ADDED_44231 = 87.92161772245262
+GLOBAL_ADDED_56776 = -9.463546211084207
+GLOBAL_ADDED_18640 = -98.02760754401616
+GLOBAL_ADDED_75360 = -81.12397620176029
+GLOBAL_ADDED_14721 = 93.72338392519146
+GLOBAL_ADDED_2095 = 79.91314055039808
+GLOBAL_ADDED_96793 = 31.85294688163006
+GLOBAL_ADDED_545 = 68.74781157621027
+GLOBAL_ADDED_72168 = -72.57869395894033
+
+# Global parameter definitions block
+GLOBAL_ADDED_4843 = 90.17370627279746
+GLOBAL_ADDED_73234 = 14.349648079578216
+GLOBAL_ADDED_74547 = 24.743388916862656
+GLOBAL_ADDED_19403 = 73.31466987746674
+GLOBAL_ADDED_41870 = -17.059902064044635
+GLOBAL_ADDED_71020 = -4.581337594561958
+GLOBAL_ADDED_64985 = 70.3712912799798
+GLOBAL_ADDED_44976 = 62.307910732217465
+GLOBAL_ADDED_35766 = -86.01437798398044
+GLOBAL_ADDED_89938 = 93.02263918234871
+
+# Global parameter definitions block
+GLOBAL_ADDED_7373 = -85.68682213927066
+GLOBAL_ADDED_27885 = -4.203510708053244
+GLOBAL_ADDED_56184 = 17.185385462901337
+GLOBAL_ADDED_1519 = -30.105167912694313
+GLOBAL_ADDED_3690 = -10.676833848891192
+GLOBAL_ADDED_13224 = -35.03600244975422
+GLOBAL_ADDED_39836 = -88.85556946033265
+GLOBAL_ADDED_49120 = -80.0386028375087
+GLOBAL_ADDED_47151 = 59.56901647962928
+GLOBAL_ADDED_27720 = 36.787413848884256
+GLOBAL_ADDED_8122 = 99.03129071252553
+GLOBAL_ADDED_42504 = 73.20996170743393
+GLOBAL_ADDED_40830 = 20.708184508365974
+GLOBAL_ADDED_16545 = 72.71380130812352
+GLOBAL_ADDED_65402 = 21.95244501636266
+
+def helper_added_metric_6_1043(y_true, y_pred, threshold=0.4895328520319877):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_507 = var_86 / var_86
+    val_345 = var_82 / var_74
+    val_567 = var_55 * var_61
+    val_890 = var_82 * var_2
+    val_31 = var_29 / var_39
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1044(y_true, y_pred, threshold=0.17314053116474337):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_467 = var_88 - var_51
+    val_446 = var_52 / var_42
+    val_298 = var_95 / var_12
+    val_300 = var_47 / var_40
+    val_811 = var_71 - var_35
+    val_730 = var_85 - var_63
+    val_728 = var_22 / var_65
+    val_150 = var_60 - var_29
+    val_976 = var_89 * var_67
+    val_886 = var_25 * var_63
+    val_969 = var_55 + var_28
+    val_833 = var_53 / var_63
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_63658 = 3.170107315587046
+GLOBAL_ADDED_54844 = -1.2576348679577762
+GLOBAL_ADDED_10568 = -27.474145706595408
+GLOBAL_ADDED_67972 = 83.71976305935587
+GLOBAL_ADDED_47408 = -7.227120065856241
+GLOBAL_ADDED_11790 = -33.14685574355698
+GLOBAL_ADDED_80370 = 70.41540878812313
+
+def helper_added_metric_6_1045(y_true, y_pred, threshold=0.40089110630976754):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_243 = var_44 / var_57
+    val_403 = var_25 + var_2
+    val_616 = var_40 - var_51
+    val_813 = var_81 / var_28
+    val_655 = var_76 / var_34
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_57047 = 79.65967076538831
+GLOBAL_ADDED_60120 = -15.80259281470562
+GLOBAL_ADDED_65725 = 79.01973158278557
+GLOBAL_ADDED_90266 = -36.32999857018966
+GLOBAL_ADDED_25756 = 11.845424412061263
+GLOBAL_ADDED_17914 = -87.4941415907702
+GLOBAL_ADDED_2505 = -10.641838184005252
+GLOBAL_ADDED_95023 = -41.34660251335798
+GLOBAL_ADDED_65872 = 31.569384037351313
+GLOBAL_ADDED_17731 = -60.840694303353615
+
+class MLModelBlock_Added_6_1046:
+    def __init__(self, input_dim=86, output_dim=6):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.1549919305495704):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_69 * var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_38 + var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 + var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 + var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 * var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 - var_54
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_26 - var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.9188385858668662):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_94 / var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 * var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 - var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_62 - var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 * var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 * var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_11 + var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.088947378072349):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_11 * var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 / var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 - var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_38 + var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 * var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_98 + var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1046(y_true, y_pred, threshold=0.8514520384826988):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_733 = var_81 * var_73
+    val_539 = var_35 + var_15
+    val_434 = var_32 / var_80
+    val_56 = var_2 * var_14
+    val_536 = var_11 + var_77
+    val_555 = var_92 * var_33
+    val_311 = var_14 * var_40
+    val_844 = var_63 * var_90
+    val_776 = var_69 - var_33
+    val_746 = var_75 / var_4
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1047(y_true, y_pred, threshold=0.24320032191715973):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_95 = var_72 / var_26
+    val_816 = var_9 * var_22
+    val_855 = var_41 + var_55
+    val_926 = var_54 / var_79
+    val_471 = var_55 * var_48
+    val_29 = var_38 + var_31
+    val_739 = var_14 + var_48
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1048(y_true, y_pred, threshold=0.867328590952325):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_444 = var_72 + var_19
+    val_227 = var_71 / var_64
+    val_317 = var_39 / var_34
+    val_301 = var_20 / var_19
+    val_735 = var_73 - var_59
+    val_340 = var_53 - var_97
+    val_658 = var_51 / var_55
+    val_129 = var_7 - var_88
+    val_582 = var_18 - var_40
+    val_533 = var_61 - var_22
+    val_643 = var_82 - var_27
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1047:
+    def __init__(self, input_dim=12, output_dim=5):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.3516801478004479):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_11 - var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_67 / var_66
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 * var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 * var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 - var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 + var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.7496616077475708):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_88 + var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 * var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 * var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_81 * var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_61 / var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_41 * var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 + var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.5034088186440747):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_12 - var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 * var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_44 / var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_4 * var_74
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_14 + var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 / var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_8 - var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_97 - var_80
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.2071535143864264):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_91 * var_74
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 - var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 * var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_32 * var_54
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 + var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_43 + var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 + var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_78482 = -10.29985320543598
+GLOBAL_ADDED_59109 = -4.757411475681337
+GLOBAL_ADDED_35708 = 85.08640791845289
+GLOBAL_ADDED_64547 = 13.622375949851119
+GLOBAL_ADDED_37640 = 41.74085007558395
+GLOBAL_ADDED_69049 = 47.54401525963266
+GLOBAL_ADDED_49118 = -17.193883411748118
+
+class MLModelBlock_Added_6_1048:
+    def __init__(self, input_dim=46, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.8594211441253072):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_32 - var_98
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_9 - var_15
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 / var_79
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 * var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 * var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 * var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 + var_5
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 - var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.5828360079654932):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_40 - var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 / var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_25 + var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_15 - var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 * var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 + var_82
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 + var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.0518147247207523):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_4 * var_74
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 * var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 / var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 * var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 * var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 + var_24
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_26 * var_74
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_36 - var_9
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1049(y_true, y_pred, threshold=0.7892697832823986):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_465 = var_9 * var_85
+    val_514 = var_28 + var_8
+    val_967 = var_66 - var_89
+    val_522 = var_10 * var_18
+    val_80 = var_5 + var_36
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1050(y_true, y_pred, threshold=0.6835940066957265):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_495 = var_28 * var_8
+    val_612 = var_34 - var_40
+    val_672 = var_75 / var_99
+    val_501 = var_6 - var_36
+    val_305 = var_68 - var_54
+    val_628 = var_18 + var_25
+    val_346 = var_31 / var_92
+    val_971 = var_6 / var_72
+    val_500 = var_90 + var_61
+    val_247 = var_53 - var_62
+    val_526 = var_25 + var_48
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1051(y_true, y_pred, threshold=0.22372858578655308):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_441 = var_33 + var_14
+    val_528 = var_60 / var_75
+    val_508 = var_97 + var_39
+    val_74 = var_79 * var_61
+    val_54 = var_88 + var_65
+    val_251 = var_32 * var_61
+    val_565 = var_74 - var_51
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1049:
+    def __init__(self, input_dim=45, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.0531899572308956):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_79 / var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_19 * var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 + var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.614006986046871):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_2 * var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 + var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_25 * var_18
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 + var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_37 * var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.3327266724632712):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_19 / var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 + var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_32 - var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_4 + var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_98 / var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 - var_20
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.2757157793097207):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_46 + var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 / var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 + var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_71 + var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_67 + var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 + var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_9 - var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1052(y_true, y_pred, threshold=0.38793809666690604):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_904 = var_30 + var_43
+    val_950 = var_9 * var_98
+    val_419 = var_37 / var_72
+    val_859 = var_42 / var_12
+    val_468 = var_36 * var_14
+    val_609 = var_3 / var_15
+    val_171 = var_39 / var_92
+    val_434 = var_24 + var_72
+    val_391 = var_55 * var_97
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1053(y_true, y_pred, threshold=0.5488166993404007):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_323 = var_67 + var_80
+    val_724 = var_83 / var_53
+    val_472 = var_40 * var_45
+    val_443 = var_45 / var_46
+    val_815 = var_28 / var_28
+    val_632 = var_30 / var_77
+    val_899 = var_21 / var_58
+    val_545 = var_16 * var_38
+    val_753 = var_91 - var_13
+    val_5 = var_81 * var_91
+    val_15 = var_55 + var_15
+    val_438 = var_67 + var_89
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_8774 = -7.455241268858103
+GLOBAL_ADDED_15940 = -31.46344193902648
+GLOBAL_ADDED_54764 = -90.29798371556879
+GLOBAL_ADDED_87506 = -32.75768612222403
+GLOBAL_ADDED_15924 = -98.75901040759976
+GLOBAL_ADDED_87825 = 39.897290000653186
+GLOBAL_ADDED_75735 = 34.5696634532338
+GLOBAL_ADDED_99855 = -66.51207359249057
+GLOBAL_ADDED_88208 = -60.9438642700981
+GLOBAL_ADDED_72759 = -10.751288764298465
+GLOBAL_ADDED_17042 = 39.48263858514741
+GLOBAL_ADDED_98142 = 1.403146988533237
+GLOBAL_ADDED_66026 = 82.52796571823987
+GLOBAL_ADDED_13188 = -35.11736924840798
+GLOBAL_ADDED_82611 = 79.1109104695417
+
+class MLModelBlock_Added_6_1050:
+    def __init__(self, input_dim=97, output_dim=6):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.3872121439350777):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_92 / var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_11 / var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_30 * var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_24 - var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 / var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 + var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 + var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_21 - var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.6660110834678791):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_62 + var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 / var_71
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 + var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 * var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_32 - var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 + var_18
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1051:
+    def __init__(self, input_dim=40, output_dim=5):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.8307146463651583):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_17 + var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_55 * var_82
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 + var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 - var_15
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 / var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 + var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_33 / var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.8546672725177862):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_41 * var_64
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_69 + var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 * var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 - var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_87 + var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 / var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 * var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 + var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1052:
+    def __init__(self, input_dim=21, output_dim=8):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.668335550264187):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_92 - var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_81 + var_18
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_41 + var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 + var_80
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 + var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 * var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 + var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_99 - var_20
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.39087331180252727):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_52 + var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 - var_0
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 * var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 - var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 - var_80
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 - var_0
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 / var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 - var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.5817860975785193):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_69 - var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 * var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_27 - var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_79 - var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 - var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 - var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 / var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.7271230564541518):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_36 + var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 - var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 / var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 / var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 + var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 * var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1054(y_true, y_pred, threshold=0.651403999147095):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_196 = var_21 * var_85
+    val_901 = var_68 * var_83
+    val_733 = var_63 + var_70
+    val_407 = var_19 * var_84
+    val_858 = var_13 / var_76
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_32453 = 78.54668232106525
+GLOBAL_ADDED_59342 = 47.04399388894245
+GLOBAL_ADDED_53933 = -69.09636634335597
+GLOBAL_ADDED_90111 = 4.8607926576395215
+GLOBAL_ADDED_31859 = -20.220652112695745
+GLOBAL_ADDED_56355 = -32.205684058851006
+GLOBAL_ADDED_88333 = 36.8051987455903
+GLOBAL_ADDED_36507 = -67.95781503208224
+GLOBAL_ADDED_8304 = 59.05530416453095
+
+class MLModelBlock_Added_6_1053:
+    def __init__(self, input_dim=23, output_dim=2):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.5477545308095173):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_83 - var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_11 * var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 / var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 + var_77
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 - var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 - var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 * var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 + var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.4654150812444011):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_19 * var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 * var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 * var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1054:
+    def __init__(self, input_dim=48, output_dim=7):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.38369328823887916):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_55 - var_20
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 * var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 + var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 / var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 * var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.5203717448727537):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_23 + var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_43 + var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 - var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 / var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 * var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 * var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_70700 = -38.99234890098286
+GLOBAL_ADDED_50986 = -36.54559384124288
+GLOBAL_ADDED_79516 = -29.737882538583364
+GLOBAL_ADDED_39685 = -41.37230675682289
+GLOBAL_ADDED_32825 = -47.11213703876393
+GLOBAL_ADDED_2878 = 82.60247579054118
+GLOBAL_ADDED_79093 = 37.7265215921922
+GLOBAL_ADDED_55018 = 87.68766090485471
+GLOBAL_ADDED_23385 = 22.01658063154622
+GLOBAL_ADDED_87742 = 31.361559615716374
+GLOBAL_ADDED_85623 = 72.58578605447244
+GLOBAL_ADDED_19153 = -66.83129558235396
+GLOBAL_ADDED_4334 = 9.864295251347599
+GLOBAL_ADDED_79994 = -43.80850717745617
+GLOBAL_ADDED_57839 = -14.52782916800193
+
+def helper_added_metric_6_1055(y_true, y_pred, threshold=0.25118239403467313):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_50 = var_71 / var_88
+    val_344 = var_36 - var_53
+    val_837 = var_34 + var_84
+    val_160 = var_34 + var_51
+    val_317 = var_16 - var_57
+    val_71 = var_44 / var_50
+    val_370 = var_70 * var_17
+    val_1000 = var_1 * var_14
+    val_47 = var_84 + var_1
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_3514 = 45.3898684436931
+GLOBAL_ADDED_11720 = 86.48225253156977
+GLOBAL_ADDED_3294 = 6.526122116295824
+GLOBAL_ADDED_34191 = 23.19974745386159
+GLOBAL_ADDED_80366 = -42.16220878875865
+GLOBAL_ADDED_96844 = -5.011428071566698
+GLOBAL_ADDED_53043 = -16.398618476566583
+GLOBAL_ADDED_7062 = 97.61128429027335
+GLOBAL_ADDED_24141 = -68.98953551370204
+GLOBAL_ADDED_30294 = -52.35145570627606
+GLOBAL_ADDED_1731 = -18.117911023239515
+
+def helper_added_metric_6_1056(y_true, y_pred, threshold=0.7640423570915832):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_905 = var_83 - var_57
+    val_884 = var_83 + var_54
+    val_551 = var_28 * var_33
+    val_217 = var_76 - var_73
+    val_988 = var_10 * var_24
+    val_946 = var_28 * var_7
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1057(y_true, y_pred, threshold=0.3491219695673573):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_147 = var_33 - var_86
+    val_75 = var_5 + var_22
+    val_854 = var_0 + var_0
+    val_569 = var_58 / var_10
+    val_53 = var_58 * var_80
+    val_899 = var_54 - var_22
+    val_249 = var_17 / var_79
+    val_202 = var_91 + var_55
+    val_534 = var_26 - var_18
+    val_102 = var_19 * var_10
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1058(y_true, y_pred, threshold=0.14470932640259565):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_806 = var_97 + var_98
+    val_595 = var_65 * var_30
+    val_273 = var_47 / var_70
+    val_84 = var_12 + var_47
+    val_701 = var_79 - var_60
+    val_324 = var_46 * var_45
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1059(y_true, y_pred, threshold=0.11605777246175908):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_521 = var_59 - var_23
+    val_77 = var_93 + var_75
+    val_287 = var_49 + var_16
+    val_460 = var_78 * var_92
+    val_989 = var_41 - var_40
+    val_598 = var_96 * var_28
+    val_882 = var_76 / var_55
+    val_558 = var_10 + var_61
+    val_307 = var_74 - var_22
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1055:
+    def __init__(self, input_dim=36, output_dim=10):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.5603111802570893):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_96 * var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_97 * var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 / var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 + var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 + var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 - var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.0364608780616522):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_27 - var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_43 * var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_55 - var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 + var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1056:
+    def __init__(self, input_dim=31, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.0536735688582037):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_84 - var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 - var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 / var_64
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_15 - var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_87 * var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 / var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 * var_82
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 - var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.5441645340183089):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_13 - var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 - var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 * var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 / var_79
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 - var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 * var_45
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_9 * var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.11515323884402892):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_90 - var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_79 - var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 * var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 * var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1057:
+    def __init__(self, input_dim=44, output_dim=4):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.1704698150195758):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_11 / var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 - var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 / var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.4045820209016817):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_97 / var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 / var_24
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 / var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_92 / var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 + var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 * var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 * var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1058:
+    def __init__(self, input_dim=65, output_dim=7):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.6854747642591494):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_18 / var_79
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 + var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_25 + var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.5630129818764222):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_78 * var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_15 * var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 / var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 / var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 + var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 / var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 * var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.5784564770725308):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_65 / var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 * var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 - var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 / var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 - var_5
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 - var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.0622723376084628):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_83 * var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 * var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 + var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 * var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1060(y_true, y_pred, threshold=0.13015624131456863):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_408 = var_70 + var_58
+    val_589 = var_11 / var_95
+    val_236 = var_69 / var_90
+    val_215 = var_41 - var_91
+    val_887 = var_78 / var_90
+    val_860 = var_36 * var_74
+    val_721 = var_35 - var_56
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_38510 = -74.12053631986517
+GLOBAL_ADDED_54523 = -52.34672013959303
+GLOBAL_ADDED_43146 = -0.8412028947044234
+GLOBAL_ADDED_40700 = -86.28206716063261
+GLOBAL_ADDED_97257 = 25.76066018889962
+GLOBAL_ADDED_2006 = 28.244534748916948
+GLOBAL_ADDED_19667 = -94.28363697583058
+
+def helper_added_metric_6_1061(y_true, y_pred, threshold=0.3612312356072621):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_573 = var_81 * var_16
+    val_667 = var_80 / var_85
+    val_776 = var_90 - var_90
+    val_152 = var_40 * var_42
+    val_662 = var_60 * var_79
+    val_308 = var_18 * var_1
+    val_172 = var_4 + var_70
+    val_33 = var_65 / var_31
+    val_89 = var_34 * var_2
+    val_474 = var_36 + var_42
+    val_582 = var_1 - var_99
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_99494 = 39.42914485335825
+GLOBAL_ADDED_32969 = -55.34486001921606
+GLOBAL_ADDED_4539 = 38.51224204120581
+GLOBAL_ADDED_15068 = 80.7032362313243
+GLOBAL_ADDED_66065 = -3.0217295632688916
+GLOBAL_ADDED_4958 = -37.441821459120476
+GLOBAL_ADDED_85815 = -17.312290164262407
+GLOBAL_ADDED_40112 = -9.758449281796587
+GLOBAL_ADDED_95030 = 21.61667141581833
+GLOBAL_ADDED_38937 = 16.737351739719216
+GLOBAL_ADDED_38885 = -70.50562314223797
+GLOBAL_ADDED_57485 = 61.46256171389365
+GLOBAL_ADDED_12615 = -76.0504702836738
+GLOBAL_ADDED_97180 = -58.00375559056605
+GLOBAL_ADDED_14393 = 62.62024014691647
+
+def helper_added_metric_6_1062(y_true, y_pred, threshold=0.3259874327470119):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_874 = var_14 + var_65
+    val_373 = var_45 + var_25
+    val_979 = var_96 / var_71
+    val_420 = var_2 - var_34
+    val_992 = var_40 + var_4
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1059:
+    def __init__(self, input_dim=97, output_dim=10):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.9553208000942928):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_41 + var_71
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 - var_18
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_70 + var_66
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 * var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 / var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_60 / var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_92 + var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 / var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.7477942214521456):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_13 - var_74
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 - var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_38 * var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 - var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.18187841062893528):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_49 / var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_59 * var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 + var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1060:
+    def __init__(self, input_dim=47, output_dim=6):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.0587793278491024):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_36 / var_45
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 * var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_14 / var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 + var_66
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_70 - var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.1476391206190324):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_41 - var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 / var_24
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 * var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 - var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 - var_77
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 / var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_19 + var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 + var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.5868476672188316):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_68 + var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_98 * var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_59 - var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.9525501336732647):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_6 + var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 * var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 - var_20
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 - var_9
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_61 / var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_15 / var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_78713 = 10.454241417678361
+GLOBAL_ADDED_61750 = 92.74296728467448
+GLOBAL_ADDED_28111 = 83.43516775480623
+GLOBAL_ADDED_88746 = 46.55642536119706
+GLOBAL_ADDED_28096 = 52.02445265437018
+GLOBAL_ADDED_50285 = -60.15929343869715
+GLOBAL_ADDED_43389 = -40.64015982084985
+GLOBAL_ADDED_86304 = -36.42444324943273
+GLOBAL_ADDED_42429 = 38.98383366152569
+GLOBAL_ADDED_39102 = -34.80312680863476
+
+def helper_added_metric_6_1063(y_true, y_pred, threshold=0.46173110100256953):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_975 = var_48 - var_51
+    val_903 = var_95 - var_89
+    val_990 = var_12 - var_58
+    val_916 = var_51 / var_98
+    val_417 = var_91 - var_57
+    val_13 = var_71 / var_25
+    val_437 = var_78 - var_80
+    val_706 = var_3 / var_49
+    val_418 = var_30 + var_88
+    val_311 = var_4 * var_57
+    val_729 = var_83 + var_30
+    val_930 = var_59 / var_6
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_98353 = -86.87755730390472
+GLOBAL_ADDED_39217 = -40.39349582504697
+GLOBAL_ADDED_40284 = -27.049814526857034
+GLOBAL_ADDED_67926 = 73.80925104879219
+GLOBAL_ADDED_91677 = 19.11493706153084
+GLOBAL_ADDED_9456 = -40.34576717160814
+GLOBAL_ADDED_47081 = -64.27473483318684
+
+def helper_added_metric_6_1064(y_true, y_pred, threshold=0.2662324772386556):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_573 = var_89 * var_2
+    val_872 = var_48 * var_13
+    val_828 = var_55 - var_73
+    val_780 = var_26 - var_19
+    val_16 = var_86 + var_68
+    val_14 = var_14 - var_75
+    val_671 = var_31 / var_9
+    val_915 = var_32 + var_37
+    val_266 = var_85 * var_58
+    val_584 = var_53 * var_9
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1065(y_true, y_pred, threshold=0.16747763880943403):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_146 = var_56 - var_49
+    val_327 = var_71 * var_81
+    val_510 = var_61 / var_5
+    val_210 = var_85 / var_9
+    val_56 = var_83 / var_23
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1061:
+    def __init__(self, input_dim=100, output_dim=6):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.24414856578812733):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_92 + var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 - var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_26 - var_45
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 * var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_62 - var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 / var_64
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_70 / var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.9813251243414032):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_55 + var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_25 - var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 / var_82
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 / var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1066(y_true, y_pred, threshold=0.8955100415103864):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_69 = var_78 * var_47
+    val_821 = var_47 / var_79
+    val_998 = var_88 / var_63
+    val_584 = var_77 * var_95
+    val_613 = var_26 - var_37
+    val_80 = var_15 * var_30
+    val_12 = var_86 + var_56
+    val_307 = var_57 + var_0
+    val_885 = var_76 * var_98
+    val_507 = var_68 + var_99
+    val_407 = var_90 - var_8
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_84972 = 79.38482044864409
+GLOBAL_ADDED_67420 = 19.688347896449116
+GLOBAL_ADDED_57087 = 73.33749756967603
+GLOBAL_ADDED_17802 = -66.29784669804482
+GLOBAL_ADDED_36463 = -76.08228209017346
+GLOBAL_ADDED_55249 = -34.93196374327346
+GLOBAL_ADDED_94519 = 37.23694031851693
+GLOBAL_ADDED_41638 = -53.30997090602081
+GLOBAL_ADDED_83723 = -95.72165371838919
+GLOBAL_ADDED_61133 = 97.50080166811372
+GLOBAL_ADDED_25970 = -46.83104403854039
+GLOBAL_ADDED_51834 = -98.02323825643857
+GLOBAL_ADDED_36477 = 29.333137429296386
+GLOBAL_ADDED_44910 = 65.42570598072456
+GLOBAL_ADDED_95199 = -59.241706158156134
+
+# Global parameter definitions block
+GLOBAL_ADDED_12411 = 22.119711275822596
+GLOBAL_ADDED_92149 = -0.5890228032750144
+GLOBAL_ADDED_73001 = -16.603022562981764
+GLOBAL_ADDED_32665 = -63.73505904615497
+GLOBAL_ADDED_94505 = 88.12794048616931
+GLOBAL_ADDED_31239 = -52.90730001090631
+GLOBAL_ADDED_34656 = -7.960033095579533
+GLOBAL_ADDED_7656 = -84.13308327852182
+GLOBAL_ADDED_8468 = 63.14165677428244
+GLOBAL_ADDED_76338 = 9.117077018344872
+
+def helper_added_metric_6_1067(y_true, y_pred, threshold=0.7165971645364063):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_239 = var_8 - var_85
+    val_148 = var_82 / var_2
+    val_555 = var_37 - var_85
+    val_370 = var_46 * var_6
+    val_357 = var_60 - var_56
+    val_308 = var_63 - var_89
+    val_671 = var_93 - var_62
+    val_508 = var_97 * var_16
+    val_782 = var_16 - var_74
+    val_238 = var_26 / var_95
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_56405 = -97.89188973646313
+GLOBAL_ADDED_76521 = -48.208437043767915
+GLOBAL_ADDED_81154 = 58.780351156750385
+GLOBAL_ADDED_27791 = -49.182547834567636
+GLOBAL_ADDED_44745 = -7.83541973082167
+GLOBAL_ADDED_77387 = -40.57030360021565
+GLOBAL_ADDED_87965 = -86.49592903620595
+
+class MLModelBlock_Added_6_1062:
+    def __init__(self, input_dim=100, output_dim=4):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.9359093234950062):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_16 / var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 - var_9
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_40 * var_74
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 - var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_81 + var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.9822132205418959):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_54 / var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_43 + var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 * var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 - var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.0747329664400482):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_62 - var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_1 + var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_30 - var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_8 / var_66
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_62 - var_5
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 - var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.7814935584741967):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_17 / var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 - var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_4 / var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_93 - var_54
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1068(y_true, y_pred, threshold=0.43801897594404116):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_415 = var_58 / var_62
+    val_798 = var_34 - var_38
+    val_234 = var_92 * var_97
+    val_597 = var_21 / var_88
+    val_797 = var_35 - var_27
+    val_21 = var_6 / var_56
+    val_64 = var_7 + var_51
+    val_795 = var_2 - var_65
+    val_304 = var_62 * var_95
+    val_603 = var_26 - var_88
+    val_35 = var_23 + var_29
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1069(y_true, y_pred, threshold=0.30888391167414453):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_77 = var_10 / var_65
+    val_540 = var_42 - var_77
+    val_685 = var_12 + var_30
+    val_746 = var_67 + var_56
+    val_123 = var_52 + var_91
+    val_128 = var_52 - var_94
+    val_553 = var_18 / var_4
+    val_297 = var_25 + var_18
+    val_232 = var_49 * var_67
+    val_897 = var_57 / var_60
+    val_871 = var_89 + var_41
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_92950 = 2.4585380913651136
+GLOBAL_ADDED_57452 = -36.47359597787671
+GLOBAL_ADDED_32030 = -20.645451877507128
+GLOBAL_ADDED_89877 = 58.06275235674582
+GLOBAL_ADDED_89346 = -39.078935670224915
+GLOBAL_ADDED_11417 = 54.31429010905927
+GLOBAL_ADDED_5848 = -11.367304736755628
+GLOBAL_ADDED_53624 = 22.620387594889905
+GLOBAL_ADDED_50209 = -76.40685813435476
+GLOBAL_ADDED_69336 = 22.68615228247735
+GLOBAL_ADDED_92398 = -73.66659482168525
+GLOBAL_ADDED_32592 = 82.05266728525666
+GLOBAL_ADDED_80831 = 90.22656719731032
+
+def helper_added_metric_6_1070(y_true, y_pred, threshold=0.5741960200705505):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_267 = var_91 * var_57
+    val_295 = var_97 + var_27
+    val_492 = var_65 / var_45
+    val_880 = var_72 / var_10
+    val_633 = var_34 / var_11
+    val_895 = var_71 / var_73
+    val_251 = var_2 / var_23
+    val_653 = var_64 * var_99
+    val_603 = var_80 - var_50
+    val_325 = var_76 / var_40
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1063:
+    def __init__(self, input_dim=51, output_dim=3):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.2822937282760205):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_66 / var_55
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_67 / var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_1 - var_9
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 - var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_38 / var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 + var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 + var_44
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_97 - var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.2343022423460668):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_71 - var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 - var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_9 - var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 - var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 * var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 - var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 - var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1071(y_true, y_pred, threshold=0.7015143374932301):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_96 = var_45 + var_26
+    val_735 = var_84 / var_3
+    val_269 = var_83 / var_18
+    val_511 = var_5 / var_69
+    val_531 = var_51 + var_8
+    val_944 = var_50 + var_66
+    val_785 = var_23 / var_50
+    val_521 = var_4 + var_36
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_15529 = -54.94052579673267
+GLOBAL_ADDED_42427 = -9.424807690990434
+GLOBAL_ADDED_54465 = 2.6458663532293656
+GLOBAL_ADDED_89419 = -62.5173053143544
+GLOBAL_ADDED_96732 = -72.4603617732579
+GLOBAL_ADDED_60777 = -49.780324486924485
+GLOBAL_ADDED_61413 = 3.120351670112285
+GLOBAL_ADDED_22513 = 33.33594995903937
+GLOBAL_ADDED_75404 = 91.00549970387809
+GLOBAL_ADDED_53247 = 22.4826512300545
+GLOBAL_ADDED_81800 = 20.258269395130597
+GLOBAL_ADDED_33270 = 47.357200268822936
+GLOBAL_ADDED_8018 = 26.50929317142321
+
+# Global parameter definitions block
+GLOBAL_ADDED_81589 = 77.69284248057897
+GLOBAL_ADDED_61742 = -48.3800821537985
+GLOBAL_ADDED_17894 = 77.37877699809337
+GLOBAL_ADDED_42854 = 56.830561985974725
+GLOBAL_ADDED_89982 = 19.693722515557056
+GLOBAL_ADDED_72423 = -38.775566965830265
+GLOBAL_ADDED_37121 = 76.01301316114728
+GLOBAL_ADDED_24227 = 37.31957650364083
+GLOBAL_ADDED_45994 = 40.24128685544295
+GLOBAL_ADDED_44530 = 84.77483901596202
+GLOBAL_ADDED_54955 = 73.50693782618555
+GLOBAL_ADDED_25365 = 8.599847949744287
+
+def helper_added_metric_6_1072(y_true, y_pred, threshold=0.5503591184920498):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_492 = var_20 + var_69
+    val_278 = var_26 + var_24
+    val_664 = var_10 / var_15
+    val_697 = var_63 / var_8
+    val_38 = var_56 - var_41
+    val_137 = var_59 * var_79
+    val_119 = var_27 + var_51
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1064:
+    def __init__(self, input_dim=80, output_dim=6):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.1789629741306754):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_14 * var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_71 / var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 - var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.8549171206886002):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_26 - var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_75 + var_64
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_71 - var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_98 * var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_38 / var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 / var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 - var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 / var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1073(y_true, y_pred, threshold=0.5707443332041383):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_463 = var_57 + var_64
+    val_419 = var_48 - var_11
+    val_366 = var_68 - var_67
+    val_798 = var_19 / var_57
+    val_571 = var_25 - var_89
+    val_654 = var_81 * var_82
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_79124 = 84.60223120503744
+GLOBAL_ADDED_51383 = -76.5257467910719
+GLOBAL_ADDED_552 = 66.65462371044137
+GLOBAL_ADDED_96429 = -46.31974117993889
+GLOBAL_ADDED_97247 = -88.80025860613372
+GLOBAL_ADDED_97523 = 39.08423326397232
+GLOBAL_ADDED_99714 = 55.82788693972233
+GLOBAL_ADDED_63659 = -58.297098099130636
+GLOBAL_ADDED_99616 = 96.22078803802057
+GLOBAL_ADDED_55030 = 98.6719602123926
+GLOBAL_ADDED_15164 = 86.41058588934251
+GLOBAL_ADDED_22252 = -61.02554321723643
+GLOBAL_ADDED_34220 = 55.10510102013197
+GLOBAL_ADDED_90861 = 99.92260693836639
+GLOBAL_ADDED_37290 = -94.1301901359465
+
+class MLModelBlock_Added_6_1065:
+    def __init__(self, input_dim=65, output_dim=3):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.0261661544627236):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_39 * var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_14 / var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_81 / var_5
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 / var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.5325592760463975):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_58 + var_80
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 - var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_8 + var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.1294727214638653):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_76 / var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_79 + var_55
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 + var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 / var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_63 + var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_4 - var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 - var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 - var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.0922335561444305):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_10 * var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_59 - var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 - var_54
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_43 + var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1066:
+    def __init__(self, input_dim=26, output_dim=3):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.8852431401077203):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_14 - var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 - var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_4 / var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 - var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 + var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.086493818973077):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_5 - var_18
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_24 - var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_61 - var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_43 * var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_69 / var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_76 + var_64
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 * var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_1 + var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.3198461273676002):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_28 - var_80
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_96 - var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 + var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1074(y_true, y_pred, threshold=0.2863768193344348):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_929 = var_77 * var_75
+    val_263 = var_85 * var_39
+    val_403 = var_69 + var_45
+    val_167 = var_19 / var_76
+    val_658 = var_83 + var_18
+    val_896 = var_53 * var_81
+    val_824 = var_16 * var_17
+    val_931 = var_9 - var_56
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1067:
+    def __init__(self, input_dim=45, output_dim=6):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.47886510150535055):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_73 + var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 + var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_69 * var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 - var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 / var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 + var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_92 * var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 + var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.4406568083098386):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_4 * var_3
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 / var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 * var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_9 * var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 / var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_55 - var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 / var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_33 - var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.9520454989509949):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_55 + var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 + var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_41 - var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_37 - var_3
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 - var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 - var_24
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_44 - var_0
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.20843466268846345):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_95 / var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_69 - var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_70 / var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 - var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 * var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 * var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_98 + var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_92 / var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1068:
+    def __init__(self, input_dim=47, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.3972367214111837):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_17 - var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_25 / var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 + var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_70 + var_54
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 + var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_66 / var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 + var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.8797509847794442):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_30 / var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_1 * var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_39 * var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_27 / var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_33 * var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 - var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 / var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.8566673415124388):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_76 + var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 * var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_27 * var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_69 - var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1069:
+    def __init__(self, input_dim=26, output_dim=5):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.5760579553445013):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_36 * var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_67 * var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 - var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_66 * var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_11 - var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.7537031389523875):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_13 + var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 - var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_69 * var_82
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 - var_44
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_26 * var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 * var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 / var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_14 * var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_75130 = 39.07381571614968
+GLOBAL_ADDED_43251 = 29.3457092649015
+GLOBAL_ADDED_7491 = -60.220920913966665
+GLOBAL_ADDED_57514 = -97.4405507801908
+GLOBAL_ADDED_43353 = -79.91067587170437
+
+class MLModelBlock_Added_6_1070:
+    def __init__(self, input_dim=88, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.4597834026043772):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_85 + var_66
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 - var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_96 / var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 + var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_40 * var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 / var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_38 - var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_53 * var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.540098691077485):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_97 + var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_39 / var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_66 + var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 / var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 - var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1071:
+    def __init__(self, input_dim=65, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.2523375014496212):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_24 * var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 - var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 * var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 / var_44
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_93 * var_55
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.4787325006756613):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_54 - var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 + var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 - var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 - var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1075(y_true, y_pred, threshold=0.3110618664856414):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_219 = var_13 * var_78
+    val_922 = var_30 + var_69
+    val_273 = var_42 + var_34
+    val_94 = var_77 + var_18
+    val_291 = var_45 - var_63
+    val_303 = var_53 + var_79
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_12292 = 14.60455240527294
+GLOBAL_ADDED_92324 = 38.93985271826173
+GLOBAL_ADDED_24127 = -44.680106977971775
+GLOBAL_ADDED_4482 = 88.73310737451504
+GLOBAL_ADDED_66966 = -2.7144979083747245
+GLOBAL_ADDED_49464 = -79.42697444529914
+GLOBAL_ADDED_44927 = 89.7476856018827
+GLOBAL_ADDED_62999 = -78.62304575235055
+GLOBAL_ADDED_99059 = -50.61168122503019
+GLOBAL_ADDED_97047 = -65.93253961324028
+GLOBAL_ADDED_67713 = 98.8564359926745
+GLOBAL_ADDED_37683 = 86.69270070094703
+GLOBAL_ADDED_62426 = 77.62463914851435
+GLOBAL_ADDED_26591 = 82.72192238044627
+GLOBAL_ADDED_51278 = 57.178523720091135
+
+# Global parameter definitions block
+GLOBAL_ADDED_94922 = -79.87054202277926
+GLOBAL_ADDED_61929 = 76.54981240601447
+GLOBAL_ADDED_44327 = -59.53524167888489
+GLOBAL_ADDED_75181 = -71.89385397108595
+GLOBAL_ADDED_85482 = -57.117412833232414
+
+def helper_added_metric_6_1076(y_true, y_pred, threshold=0.7689027030533375):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_215 = var_35 - var_84
+    val_330 = var_94 - var_41
+    val_482 = var_32 / var_90
+    val_754 = var_70 + var_12
+    val_972 = var_68 - var_57
+    val_720 = var_12 / var_74
+    val_730 = var_86 * var_99
+    val_625 = var_85 / var_24
+    val_476 = var_76 + var_80
+    val_18 = var_58 - var_88
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1077(y_true, y_pred, threshold=0.1839970082862319):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_738 = var_80 - var_2
+    val_829 = var_37 / var_86
+    val_110 = var_45 / var_61
+    val_683 = var_5 + var_38
+    val_915 = var_5 - var_62
+    val_612 = var_79 - var_39
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1078(y_true, y_pred, threshold=0.28220527300604675):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_439 = var_85 - var_9
+    val_629 = var_9 * var_24
+    val_132 = var_98 + var_83
+    val_467 = var_81 / var_44
+    val_563 = var_2 / var_35
+    val_516 = var_71 / var_47
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1072:
+    def __init__(self, input_dim=34, output_dim=4):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.3051188081237035):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_64 - var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 - var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_98 - var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.5181593746269755):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_64 - var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_75 + var_82
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_43 / var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.282917445051575):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_90 - var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 * var_18
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 - var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_38 / var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 / var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 + var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 + var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_80229 = 25.14963760613047
+GLOBAL_ADDED_35537 = -38.69429132505526
+GLOBAL_ADDED_67155 = -39.26036011151803
+GLOBAL_ADDED_13552 = -31.233258619109947
+GLOBAL_ADDED_80792 = 36.009822715892824
+GLOBAL_ADDED_46771 = -5.959737539110051
+GLOBAL_ADDED_76928 = -70.99190351127982
+GLOBAL_ADDED_46790 = 91.22397657076422
+GLOBAL_ADDED_2134 = 23.96482387050243
+GLOBAL_ADDED_69040 = -27.058247238008406
+GLOBAL_ADDED_51715 = 18.136104570467594
+GLOBAL_ADDED_19591 = 92.8687742495087
+GLOBAL_ADDED_70832 = 43.647522686545386
+GLOBAL_ADDED_1866 = 96.78562995121058
+
+class MLModelBlock_Added_6_1073:
+    def __init__(self, input_dim=19, output_dim=6):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.1218991705140557):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_72 / var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 - var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_92 + var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 + var_9
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 / var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 - var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 / var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.10681031158523463):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_1 - var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 + var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_40 - var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 - var_64
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_76 / var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 * var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_99 - var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 + var_18
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.1741393079346094):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_85 + var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 + var_55
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 - var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 * var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 - var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_30 / var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1079(y_true, y_pred, threshold=0.7679226168637456):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_13 = var_44 + var_57
+    val_933 = var_88 + var_18
+    val_797 = var_72 - var_61
+    val_0 = var_16 - var_40
+    val_971 = var_5 * var_59
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1080(y_true, y_pred, threshold=0.36656072201139833):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_743 = var_21 + var_83
+    val_316 = var_58 - var_99
+    val_764 = var_13 / var_76
+    val_594 = var_60 * var_83
+    val_779 = var_13 + var_82
+    val_465 = var_77 + var_83
+    val_918 = var_90 + var_95
+    val_385 = var_9 - var_3
+    val_857 = var_39 * var_35
+    val_664 = var_80 + var_44
+    val_611 = var_93 + var_61
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1081(y_true, y_pred, threshold=0.6185873807457157):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_855 = var_77 + var_8
+    val_266 = var_84 * var_58
+    val_175 = var_6 - var_11
+    val_378 = var_24 - var_34
+    val_941 = var_39 * var_67
+    val_258 = var_93 * var_5
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1082(y_true, y_pred, threshold=0.5834940284498974):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_652 = var_21 * var_81
+    val_724 = var_93 - var_78
+    val_481 = var_42 - var_86
+    val_553 = var_76 - var_12
+    val_826 = var_49 + var_26
+    val_936 = var_29 / var_80
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_2254 = 51.19147913424595
+GLOBAL_ADDED_90338 = -6.385270002309824
+GLOBAL_ADDED_8893 = 74.26595172594554
+GLOBAL_ADDED_36133 = -71.28260740519812
+GLOBAL_ADDED_54550 = -3.723070284575414
+GLOBAL_ADDED_82681 = -14.43897750047087
+GLOBAL_ADDED_53785 = 80.72177428559303
+GLOBAL_ADDED_30434 = 35.429103253311155
+GLOBAL_ADDED_2530 = -14.49312794028286
+GLOBAL_ADDED_24007 = 74.70397450073935
+GLOBAL_ADDED_69346 = -2.2948420180115363
+GLOBAL_ADDED_96346 = -65.98341595479727
+
+class MLModelBlock_Added_6_1074:
+    def __init__(self, input_dim=30, output_dim=8):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.3034493197949467):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_55 - var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 * var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 + var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_75 * var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 + var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 - var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.1551453926494082):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_94 / var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_57 - var_71
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_81 + var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 / var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 / var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 - var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 - var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.20484002124188838):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_76 / var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_14 / var_24
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 - var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_87 + var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.6120895161777614):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -15931,49 +24256,14 @@ class MLModelBlock_6_112:
         temp_val = var_77 + var_6
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_89 - var_45
+        temp_val = var_81 * var_30
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_32 - var_68
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_49 + var_97
+        temp_val = var_35 + var_30
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-# Global parameter definitions block
-GLOBAL_39627 = 69.88206565609946
-GLOBAL_70978 = -24.98539766315551
-GLOBAL_4836 = -35.374450924098895
-GLOBAL_38590 = 1.763538779924545
-GLOBAL_15908 = -0.10413343538205311
-GLOBAL_64885 = 78.15713546397808
-GLOBAL_80042 = -74.86346532974852
-GLOBAL_22053 = 36.22482885415147
-GLOBAL_3770 = 49.877065785342154
-
-# Global parameter definitions block
-GLOBAL_66586 = 98.22939441384497
-GLOBAL_42251 = -80.95752469239154
-GLOBAL_46289 = 60.71625267056348
-GLOBAL_73281 = -60.6721868849442
-GLOBAL_71740 = -72.4633480242764
-GLOBAL_83723 = 12.70367491814443
-GLOBAL_69391 = -32.74188832826323
-GLOBAL_24378 = 57.807097183789864
-GLOBAL_84855 = 75.01960699302967
-GLOBAL_54667 = 97.64754099610994
-GLOBAL_67655 = 79.80331427247609
-
-# Global parameter definitions block
-GLOBAL_84891 = -4.476605763754904
-GLOBAL_99179 = -35.33191120626556
-GLOBAL_32287 = 89.55630883949297
-GLOBAL_55952 = 18.80166738126738
-GLOBAL_80356 = 87.9392464868028
-GLOBAL_47194 = -97.70717063786192
-
-class MLModelBlock_6_113:
-    def __init__(self, input_dim=52, output_dim=10):
+class MLModelBlock_Added_6_1075:
+    def __init__(self, input_dim=12, output_dim=9):
         self.input_dim = input_dim
         self.output_dim = output_dim
         self.weights = np.random.randn(input_dim, output_dim)
@@ -15981,7 +24271,7 @@ class MLModelBlock_6_113:
         self.initialized = True
         self.history = []
 
-    def process_stage_0(self, data, multiplier=1.2693943347957277):
+    def process_added_stage_0(self, data, multiplier=0.5929653414900398):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -15990,16 +24280,28 @@ class MLModelBlock_6_113:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_67 - var_59
+        temp_val = var_99 * var_50
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_72 - var_86
+        temp_val = var_9 + var_86
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_59 + var_55
+        temp_val = var_97 * var_0
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 + var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 / var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_15 * var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_1 / var_58
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_1(self, data, multiplier=1.4291126038945077):
+    def process_added_stage_1(self, data, multiplier=0.319299966802325):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -16008,142 +24310,25 @@ class MLModelBlock_6_113:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_66 - var_17
+        temp_val = var_62 * var_86
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_54 + var_57
+        temp_val = var_53 + var_93
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_26 - var_23
+        temp_val = var_26 + var_77
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_81 - var_96
+        temp_val = var_67 * var_27
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_4 - var_75
+        temp_val = var_31 / var_19
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_84 * var_19
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_97 + var_53
+        temp_val = var_18 + var_61
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_2(self, data, multiplier=1.7203298564804312):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_92 - var_14
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_36 / var_23
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_2 - var_30
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_44 + var_34
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_6 * var_5
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_38 - var_36
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_96 * var_98
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_24 * var_53
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_87 + var_13
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-class MLModelBlock_6_114:
-    def __init__(self, input_dim=89, output_dim=5):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=1.819552737855729):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_22 - var_16
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_54 * var_71
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_7 + var_96
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_94 / var_94
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_12 * var_60
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_24 * var_37
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_26 + var_22
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_71 + var_28
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=1.8086557516861506):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_32 / var_78
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_82 + var_54
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_89 / var_35
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_34 / var_39
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-# Global parameter definitions block
-GLOBAL_25463 = 76.7027122138687
-GLOBAL_61703 = 87.02505099990427
-GLOBAL_31310 = -10.048882071186057
-GLOBAL_79118 = 63.99452844460032
-GLOBAL_26520 = -40.5905444501151
-GLOBAL_25237 = -67.22082920551401
-GLOBAL_25863 = -94.40678699676756
-GLOBAL_65210 = 1.634312969497259
-GLOBAL_3713 = -52.570374890147484
-GLOBAL_54743 = 22.49120064674632
-GLOBAL_26813 = -96.71759556800833
-GLOBAL_15208 = 11.53265508870112
-GLOBAL_24593 = 44.74777585076063
-
-def helper_metric_6_103(y_true, y_pred, threshold=0.49922404491129935):
+def helper_added_metric_6_1083(y_true, y_pred, threshold=0.6366540782157147):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -16151,22 +24336,18 @@ def helper_metric_6_103(y_true, y_pred, threshold=0.49922404491129935):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_35 = var_9 * var_11
-    val_531 = var_7 + var_82
-    val_269 = var_14 * var_21
-    val_12 = var_7 + var_60
-    val_272 = var_80 - var_56
-    val_809 = var_43 / var_89
-    val_428 = var_25 / var_75
-    val_322 = var_48 * var_75
-    val_690 = var_54 / var_13
-    val_422 = var_78 / var_27
-    val_825 = var_37 * var_46
-    val_20 = var_14 / var_96
+    val_290 = var_87 - var_47
+    val_672 = var_47 * var_12
+    val_900 = var_27 / var_9
+    val_391 = var_91 * var_73
+    val_600 = var_82 + var_22
+    val_33 = var_31 / var_22
+    val_639 = var_55 / var_77
+    val_304 = var_45 + var_50
     return mean_diff, std_diff
 
-class MLModelBlock_6_115:
-    def __init__(self, input_dim=83, output_dim=5):
+class MLModelBlock_Added_6_1076:
+    def __init__(self, input_dim=40, output_dim=6):
         self.input_dim = input_dim
         self.output_dim = output_dim
         self.weights = np.random.randn(input_dim, output_dim)
@@ -16174,7 +24355,7 @@ class MLModelBlock_6_115:
         self.initialized = True
         self.history = []
 
-    def process_stage_0(self, data, multiplier=0.43190923113504986):
+    def process_added_stage_0(self, data, multiplier=0.27014098865122516):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -16183,31 +24364,28 @@ class MLModelBlock_6_115:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_70 - var_76
+        temp_val = var_67 + var_45
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_83 - var_29
+        temp_val = var_56 + var_46
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_87 + var_36
+        temp_val = var_67 + var_8
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_59 * var_61
+        temp_val = var_27 - var_71
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_34 + var_3
+        temp_val = var_86 / var_79
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_84 / var_73
+        temp_val = var_95 - var_10
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_96 * var_76
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_77 - var_19
+        temp_val = var_45 * var_10
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_1(self, data, multiplier=0.6350506491702067):
+    def process_added_stage_1(self, data, multiplier=0.5901499097542279):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -16216,31 +24394,19 @@ class MLModelBlock_6_115:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_53 / var_56
+        temp_val = var_65 / var_64
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_5 * var_40
+        temp_val = var_60 * var_58
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_48 + var_74
+        temp_val = var_11 + var_49
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_68 * var_96
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_9 / var_55
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_64 * var_29
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_55 - var_0
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_56 / var_93
+        temp_val = var_13 - var_59
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_2(self, data, multiplier=1.8822851698413827):
+    def process_added_stage_2(self, data, multiplier=1.9425663123324697):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -16248,1406 +24414,38 @@ class MLModelBlock_6_115:
         result = activated * multiplier
         self.history.append(np.mean(result))
         return result
-        # Dummy logic step
-        temp_val = var_7 - var_34
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_66 / var_88
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_61 / var_69
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_17 / var_41
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_74 * var_97
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_54 + var_11
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_9 - var_5
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_3(self, data, multiplier=0.7268829218448415):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_74 - var_41
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_28 * var_61
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_58 + var_93
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_62 * var_49
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_55 - var_98
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_22 + var_84
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_24 + var_36
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_87 / var_2
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-def helper_metric_6_104(y_true, y_pred, threshold=0.7787500411477685):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_92 = var_88 + var_6
-    val_389 = var_65 - var_61
-    val_689 = var_28 - var_94
-    val_18 = var_16 * var_73
-    val_184 = var_53 - var_93
-    return mean_diff, std_diff
-
-def helper_metric_6_105(y_true, y_pred, threshold=0.4310658539409663):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_961 = var_84 - var_73
-    val_547 = var_26 * var_24
-    val_71 = var_90 / var_51
-    val_440 = var_23 / var_70
-    val_533 = var_72 * var_45
-    val_510 = var_78 / var_4
-    val_442 = var_73 * var_92
-    val_205 = var_63 + var_94
-    val_213 = var_34 / var_98
-    return mean_diff, std_diff
-
-class MLModelBlock_6_116:
-    def __init__(self, input_dim=72, output_dim=3):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=1.8630853019761346):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_34 * var_90
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_93 - var_85
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_53 + var_70
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_48 / var_99
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_14 + var_77
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_2 - var_61
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_41 + var_82
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_8 / var_93
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_97 * var_52
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_64 - var_92
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=0.9610309353670384):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_57 + var_90
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_55 - var_8
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_3 / var_2
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_38 - var_46
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_78 - var_64
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-class MLModelBlock_6_117:
-    def __init__(self, input_dim=64, output_dim=7):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=1.0331271881418622):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_64 / var_19
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_78 / var_68
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_56 + var_33
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_44 + var_3
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=1.5592342301041902):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_41 * var_8
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_65 - var_7
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_51 * var_19
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_2(self, data, multiplier=0.42513778054306195):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_23 + var_15
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_53 + var_13
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_69 + var_77
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_75 - var_90
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_59 * var_98
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_25 - var_67
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_43 / var_48
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_50 * var_93
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_58 / var_0
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_76 + var_37
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-def helper_metric_6_106(y_true, y_pred, threshold=0.8751011038779939):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_424 = var_24 * var_89
-    val_348 = var_74 - var_42
-    val_368 = var_71 * var_11
-    val_753 = var_0 + var_99
-    val_93 = var_59 / var_42
-    val_299 = var_33 / var_1
-    val_113 = var_11 - var_6
-    val_205 = var_38 + var_44
-    val_178 = var_88 / var_15
-    val_1000 = var_28 + var_89
-    val_256 = var_73 / var_49
-    return mean_diff, std_diff
-
-class MLModelBlock_6_118:
-    def __init__(self, input_dim=42, output_dim=2):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=1.633196178762289):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_76 * var_77
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_72 * var_48
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_52 - var_21
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_91 - var_83
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_43 + var_9
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_46 / var_29
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_5 / var_50
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_75 / var_17
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_87 / var_26
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_72 / var_53
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=1.5364377254622688):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_69 / var_67
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_13 - var_81
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_26 - var_38
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_22 + var_64
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_27 * var_20
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_58 + var_86
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_77 * var_44
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_57 / var_59
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_61 / var_36
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_92 + var_73
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-# Global parameter definitions block
-GLOBAL_19029 = -13.072661888939209
-GLOBAL_44603 = -89.16885385413171
-GLOBAL_82595 = -18.02234486902681
-GLOBAL_45908 = 35.61175681145653
-GLOBAL_60407 = 23.869594003958156
-
-class MLModelBlock_6_119:
-    def __init__(self, input_dim=94, output_dim=8):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=1.459183082965914):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_77 - var_46
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_87 * var_4
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_76 * var_34
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_29 + var_17
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_77 / var_3
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_83 - var_58
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_89 * var_25
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_27 / var_33
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_80 / var_7
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=0.5122513356997704):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_6 - var_44
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_22 * var_97
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_97 / var_36
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_50 - var_23
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_88 - var_55
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_43 - var_6
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_33 - var_29
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_1 - var_78
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_98 * var_96
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_2(self, data, multiplier=1.7829219342569467):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_48 + var_58
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_90 / var_38
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_5 / var_98
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_3(self, data, multiplier=1.269873404839404):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_8 * var_71
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_58 / var_21
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_30 / var_19
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_30 + var_8
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_4(self, data, multiplier=1.5877556815218181):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_67 - var_6
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_45 / var_4
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_59 - var_31
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_59 - var_29
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_76 * var_2
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_75 * var_64
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_29 / var_80
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_77 / var_87
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_11 - var_55
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_76 - var_5
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-class MLModelBlock_6_120:
-    def __init__(self, input_dim=60, output_dim=9):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=0.7783804281956763):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_9 / var_56
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_55 - var_6
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_18 + var_73
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_23 + var_43
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_15 + var_47
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_85 / var_16
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=1.084271499527472):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_9 / var_25
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_29 + var_60
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_31 + var_0
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_20 - var_92
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-def helper_metric_6_107(y_true, y_pred, threshold=0.6497795853572763):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_467 = var_17 * var_29
-    val_140 = var_80 / var_11
-    val_727 = var_24 * var_45
-    val_149 = var_72 - var_85
-    val_375 = var_45 - var_12
-    val_11 = var_97 * var_24
-    val_428 = var_56 - var_5
-    val_413 = var_98 / var_99
-    val_458 = var_98 - var_92
-    val_341 = var_74 * var_93
-    val_405 = var_56 / var_9
-    val_595 = var_58 * var_1
-    val_194 = var_99 / var_3
-    val_100 = var_20 + var_28
-    return mean_diff, std_diff
-
-# Global parameter definitions block
-GLOBAL_6418 = 2.499814629380694
-GLOBAL_37443 = 36.28258043337422
-GLOBAL_80638 = 4.938386974089042
-GLOBAL_5731 = -9.568896516344694
-GLOBAL_47840 = 16.119135385552582
-GLOBAL_25257 = 97.59921648176538
-GLOBAL_31508 = -82.44162580659986
-GLOBAL_23001 = 76.43685168202566
-GLOBAL_60821 = 4.891731461598894
-
-def helper_metric_6_108(y_true, y_pred, threshold=0.29334031123316856):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_804 = var_57 / var_90
-    val_350 = var_21 / var_68
-    val_475 = var_97 / var_99
-    val_401 = var_50 * var_59
-    val_835 = var_33 / var_8
-    val_414 = var_92 - var_42
-    return mean_diff, std_diff
-
-class MLModelBlock_6_121:
-    def __init__(self, input_dim=82, output_dim=6):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=1.5995574613644474):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_82 * var_52
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_19 + var_85
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_15 * var_92
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_81 * var_43
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_59 / var_7
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_55 / var_71
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_63 / var_4
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_69 / var_25
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=1.1086706847121965):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_30 / var_31
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_72 - var_64
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_45 / var_71
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_10 * var_67
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_48 * var_75
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_30 / var_62
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_0 * var_43
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_75 + var_15
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_66 * var_41
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_2(self, data, multiplier=0.486221451514527):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_80 * var_5
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_65 - var_24
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_45 / var_10
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_28 - var_50
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_4 + var_95
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_96 / var_14
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_58 * var_52
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_97 / var_92
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_76 / var_65
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_86 + var_34
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_3(self, data, multiplier=0.576793129198214):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_36 + var_9
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_47 + var_83
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_2 / var_4
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-def helper_metric_6_109(y_true, y_pred, threshold=0.42231168721963497):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_518 = var_94 - var_48
-    val_897 = var_81 * var_22
-    val_92 = var_64 - var_10
-    val_469 = var_28 * var_38
-    val_760 = var_77 - var_27
-    val_447 = var_58 - var_32
-    val_122 = var_90 + var_40
-    val_674 = var_61 / var_81
-    val_620 = var_90 / var_50
-    val_901 = var_99 + var_51
-    val_758 = var_80 + var_23
-    return mean_diff, std_diff
-
-def helper_metric_6_110(y_true, y_pred, threshold=0.6832491571076261):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_797 = var_33 + var_40
-    val_564 = var_69 - var_28
-    val_535 = var_96 - var_54
-    val_972 = var_92 - var_1
-    val_258 = var_75 - var_58
-    val_867 = var_70 - var_55
-    val_243 = var_42 * var_9
-    val_427 = var_72 + var_3
-    val_389 = var_10 + var_71
-    val_56 = var_47 + var_20
-    val_89 = var_32 * var_76
-    val_102 = var_34 * var_65
-    val_77 = var_43 + var_93
-    val_339 = var_74 * var_89
-    return mean_diff, std_diff
-
-class MLModelBlock_6_122:
-    def __init__(self, input_dim=10, output_dim=10):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=1.9335170541773299):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_88 - var_95
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_5 - var_68
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_33 - var_15
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_43 / var_43
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_57 * var_68
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_14 / var_16
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_29 * var_27
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_26 * var_6
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_16 - var_43
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_95 - var_41
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=1.6375847261842438):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_18 * var_35
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_84 * var_83
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_75 - var_64
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_2(self, data, multiplier=1.088129017389261):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_87 - var_83
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_29 / var_44
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_33 / var_73
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-def helper_metric_6_111(y_true, y_pred, threshold=0.3319151921492922):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_716 = var_6 + var_67
-    val_799 = var_57 - var_27
-    val_361 = var_70 / var_76
-    val_120 = var_39 + var_62
-    val_265 = var_59 / var_49
-    val_344 = var_54 * var_25
-    val_538 = var_45 - var_31
-    val_204 = var_91 * var_58
-    val_40 = var_61 / var_41
-    val_933 = var_81 / var_46
-    return mean_diff, std_diff
-
-class MLModelBlock_6_123:
-    def __init__(self, input_dim=71, output_dim=6):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=1.930213771548604):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_15 * var_40
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_95 + var_69
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_75 / var_11
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_12 / var_46
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_54 - var_4
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_30 / var_10
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_58 * var_39
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=0.23603904586331148):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_0 + var_94
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_69 + var_44
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_70 * var_96
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_92 - var_77
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_27 / var_99
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_45 + var_43
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_83 + var_2
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_6 * var_13
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_2(self, data, multiplier=1.1453041534431716):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_39 * var_7
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_33 - var_49
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_75 + var_84
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_81 * var_48
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_3(self, data, multiplier=0.301360882292693):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_81 - var_64
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_45 * var_1
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_79 - var_73
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_19 * var_87
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_0 - var_29
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_22 - var_51
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_53 / var_69
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_93 * var_70
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_55 / var_78
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_51 / var_64
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_4(self, data, multiplier=0.6412714022682355):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_31 + var_57
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_73 / var_88
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_79 + var_51
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_89 + var_10
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_44 + var_1
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-# Global parameter definitions block
-GLOBAL_91965 = -40.698986567468424
-GLOBAL_34159 = -22.83712574357078
-GLOBAL_32549 = -26.73913626611919
-GLOBAL_67569 = 66.38615797720598
-GLOBAL_80164 = 28.60736634436151
-GLOBAL_98903 = 79.05231062862794
-GLOBAL_72062 = -94.76704343861422
-GLOBAL_22628 = 40.85163711514889
-GLOBAL_5744 = 72.87349393687859
-GLOBAL_8586 = 62.69613910384993
-GLOBAL_87038 = -20.822584194362165
-GLOBAL_50282 = 28.52401449661508
-
-class MLModelBlock_6_124:
-    def __init__(self, input_dim=45, output_dim=6):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=0.36435936638711175):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_19 / var_76
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_9 / var_58
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_15 - var_65
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_91 + var_46
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_51 - var_88
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_76 + var_96
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_35 / var_14
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=0.372911400363371):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_25 - var_72
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_73 + var_99
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_55 * var_68
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_4 / var_20
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_42 - var_34
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_69 / var_66
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_54 + var_91
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_59 - var_14
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_99 / var_40
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_2(self, data, multiplier=1.311737793828113):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_39 - var_34
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_39 - var_57
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_33 * var_56
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-def helper_metric_6_112(y_true, y_pred, threshold=0.7043527449888386):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_696 = var_84 + var_81
-    val_279 = var_10 / var_38
-    val_929 = var_9 - var_76
-    val_852 = var_55 + var_48
-    val_16 = var_97 * var_92
-    val_940 = var_68 + var_48
-    val_656 = var_36 - var_62
-    val_100 = var_65 / var_18
-    val_342 = var_41 / var_84
-    val_970 = var_2 - var_49
-    val_478 = var_69 / var_90
-    return mean_diff, std_diff
-
-class MLModelBlock_6_125:
-    def __init__(self, input_dim=35, output_dim=2):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=0.17836993293367343):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_33 - var_77
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_33 + var_77
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_57 * var_86
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_73 + var_59
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_87 * var_82
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_75 / var_82
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_52 * var_78
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=0.1894589195292568):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_78 * var_20
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_97 / var_91
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_9 * var_46
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_43 + var_55
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_2(self, data, multiplier=0.3733988752779491):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_16 / var_97
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_93 + var_89
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_32 - var_37
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-class MLModelBlock_6_126:
-    def __init__(self, input_dim=98, output_dim=6):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=1.5807422516036391):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_64 * var_76
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_71 + var_74
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_30 - var_88
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_24 * var_70
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_74 + var_97
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_3 * var_63
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=0.5093679704660555):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_84 * var_20
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_18 - var_2
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_16 / var_80
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-# Global parameter definitions block
-GLOBAL_79063 = -32.53034567786261
-GLOBAL_76657 = -83.97130560354017
-GLOBAL_55039 = 10.038553067751238
-GLOBAL_7407 = -96.57979455685577
-GLOBAL_51710 = 18.637080337016897
-GLOBAL_82168 = 74.03470898624724
-GLOBAL_30958 = 62.015046778701674
-GLOBAL_90570 = 70.1241116464629
-GLOBAL_6006 = -79.70718734442261
-GLOBAL_13172 = 19.320933469593385
-GLOBAL_65853 = -84.75927694578277
-GLOBAL_72117 = 86.30576216278217
-GLOBAL_73320 = -93.04062784257128
-GLOBAL_53515 = -91.9613986387098
-GLOBAL_81047 = -11.224042824158502
-GLOBAL_75303 = 35.63543849320493
-GLOBAL_86269 = -87.93118869906735
-GLOBAL_72946 = 53.302100211921555
-GLOBAL_12245 = -7.299309142882279
-
-class MLModelBlock_6_127:
-    def __init__(self, input_dim=82, output_dim=9):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=0.7469122903265807):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_80 + var_6
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_44 + var_13
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_19 * var_68
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_1 - var_18
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_32 * var_7
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_77 - var_50
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_5 / var_35
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
         temp_val = var_14 - var_89
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_10 * var_38
+        temp_val = var_78 + var_26
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_8 * var_14
+        temp_val = var_94 * var_71
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 / var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_69 * var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_70 - var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 / var_23
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_1(self, data, multiplier=0.493407110267132):
+class MLModelBlock_Added_6_1077:
+    def __init__(self, input_dim=52, output_dim=4):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.17141497884979645):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -17656,37 +24454,16 @@ class MLModelBlock_6_127:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_40 - var_57
+        temp_val = var_1 + var_40
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_44 * var_42
+        temp_val = var_12 * var_99
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_92 / var_5
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_97 * var_18
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_47 - var_38
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_96 + var_51
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_30 + var_32
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_81 - var_14
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_20 + var_1
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_7 - var_43
+        temp_val = var_54 / var_87
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_2(self, data, multiplier=0.8195220844882792):
+    def process_added_stage_1(self, data, multiplier=1.9198893512293915):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -17695,22 +24472,100 @@ class MLModelBlock_6_127:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_79 + var_72
+        temp_val = var_45 - var_37
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_55 - var_7
+        temp_val = var_88 / var_74
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_31 * var_86
+        temp_val = var_31 + var_82
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_19 + var_80
+        temp_val = var_95 + var_33
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_83 / var_87
+        temp_val = var_35 * var_5
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_71 * var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_96 / var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 * var_68
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-def helper_metric_6_113(y_true, y_pred, threshold=0.8411914708636515):
+    def process_added_stage_2(self, data, multiplier=0.44550814300004726):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_71 / var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 - var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 - var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_21 + var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_96 / var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.4552941151900662):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_29 * var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 * var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 + var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 / var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_53 - var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_30 + var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 / var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 - var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_67584 = 6.680091812808911
+GLOBAL_ADDED_66986 = -51.32970886040522
+GLOBAL_ADDED_7003 = -7.998546634514753
+GLOBAL_ADDED_82329 = -41.943439626084576
+GLOBAL_ADDED_70307 = -53.08397151317437
+GLOBAL_ADDED_88937 = 93.44023175516696
+GLOBAL_ADDED_78866 = 30.23171075518087
+GLOBAL_ADDED_42053 = -44.94498702363852
+GLOBAL_ADDED_7887 = 73.01740285994188
+GLOBAL_ADDED_17657 = 46.505678110292735
+
+def helper_added_metric_6_1084(y_true, y_pred, threshold=0.4737720304753038):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -17718,17 +24573,16 @@ def helper_metric_6_113(y_true, y_pred, threshold=0.8411914708636515):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_230 = var_71 * var_13
-    val_122 = var_30 * var_48
-    val_258 = var_82 * var_33
-    val_909 = var_64 + var_22
-    val_435 = var_75 - var_73
-    val_742 = var_48 * var_11
-    val_674 = var_43 / var_11
-    val_123 = var_88 * var_45
+    val_152 = var_32 / var_91
+    val_936 = var_46 + var_55
+    val_172 = var_2 - var_70
+    val_825 = var_7 / var_28
+    val_252 = var_95 / var_79
+    val_242 = var_97 * var_6
+    val_763 = var_13 / var_60
     return mean_diff, std_diff
 
-def helper_metric_6_114(y_true, y_pred, threshold=0.37972342533977066):
+def helper_added_metric_6_1085(y_true, y_pred, threshold=0.2209936996314304):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -17736,36 +24590,31 @@ def helper_metric_6_114(y_true, y_pred, threshold=0.37972342533977066):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_985 = var_95 - var_79
-    val_745 = var_84 + var_4
-    val_687 = var_17 * var_34
-    val_563 = var_87 / var_19
-    val_108 = var_96 * var_68
-    val_227 = var_26 * var_12
-    val_587 = var_75 * var_65
+    val_744 = var_93 * var_48
+    val_799 = var_10 - var_81
+    val_834 = var_32 * var_99
+    val_80 = var_35 / var_48
+    val_964 = var_20 - var_67
+    val_197 = var_3 - var_51
+    val_165 = var_94 * var_94
+    val_884 = var_73 * var_57
+    val_351 = var_49 - var_67
+    val_155 = var_84 - var_44
     return mean_diff, std_diff
 
 # Global parameter definitions block
-GLOBAL_29018 = -33.99063187453983
-GLOBAL_8914 = 20.147992955263945
-GLOBAL_77326 = 37.08945667321149
-GLOBAL_54031 = 44.78736079057214
-GLOBAL_38690 = 17.938056689028656
-GLOBAL_50797 = -61.30659821546094
-GLOBAL_96968 = 97.49614642740659
-GLOBAL_75084 = -19.23054427384156
-GLOBAL_46113 = -70.70934915595419
-GLOBAL_81388 = -89.17969663333346
-GLOBAL_98987 = 19.157978203945987
-GLOBAL_6105 = -67.4708207610631
-GLOBAL_89420 = 35.50341295427731
-GLOBAL_89176 = -78.74969192708814
-GLOBAL_77369 = 58.42220044915848
-GLOBAL_29960 = 73.7507859512138
-GLOBAL_3347 = -58.64707688719177
-GLOBAL_80266 = 35.427893841187284
+GLOBAL_ADDED_69031 = 31.613031609551456
+GLOBAL_ADDED_5632 = 3.9523789493402006
+GLOBAL_ADDED_37398 = 94.44112848340126
+GLOBAL_ADDED_25375 = -49.87298398523956
+GLOBAL_ADDED_88862 = -15.463317646660585
+GLOBAL_ADDED_11554 = -81.44781170828585
+GLOBAL_ADDED_26574 = -99.78420426199554
+GLOBAL_ADDED_26650 = 99.47274007087691
+GLOBAL_ADDED_37383 = 98.87009475214762
+GLOBAL_ADDED_44046 = -11.85806107305018
 
-def helper_metric_6_115(y_true, y_pred, threshold=0.6555701310743439):
+def helper_added_metric_6_1086(y_true, y_pred, threshold=0.638336643219389):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -17773,50 +24622,43 @@ def helper_metric_6_115(y_true, y_pred, threshold=0.6555701310743439):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_623 = var_52 + var_53
-    val_311 = var_48 / var_74
-    val_231 = var_69 + var_74
-    val_900 = var_59 - var_75
-    val_849 = var_93 * var_5
-    val_95 = var_52 / var_5
-    val_943 = var_49 / var_83
-    val_932 = var_89 / var_48
+    val_13 = var_40 + var_45
+    val_352 = var_66 - var_71
+    val_349 = var_75 + var_49
+    val_554 = var_45 * var_24
+    val_638 = var_23 - var_12
+    val_246 = var_65 - var_5
+    val_486 = var_22 + var_75
     return mean_diff, std_diff
 
 # Global parameter definitions block
-GLOBAL_47461 = 36.654080705335815
-GLOBAL_95181 = 46.082879847275194
-GLOBAL_65276 = 30.423865333808322
-GLOBAL_68890 = -88.97041369267774
-GLOBAL_70310 = -93.92456867059109
-GLOBAL_85127 = -56.17942513053542
-GLOBAL_15442 = -6.248802626588329
-GLOBAL_96539 = -52.306401509644054
-GLOBAL_18808 = -4.389273921058418
-GLOBAL_21101 = 33.65965929420304
-GLOBAL_80191 = -86.95190954371354
-GLOBAL_46979 = -54.9081254521723
-GLOBAL_15303 = 67.11651810073366
-GLOBAL_1664 = 30.598180362084634
+GLOBAL_ADDED_21678 = -20.825738504532183
+GLOBAL_ADDED_94093 = -90.22637896464138
+GLOBAL_ADDED_29860 = 14.764244369222169
+GLOBAL_ADDED_98387 = 0.3094617681703937
+GLOBAL_ADDED_50413 = -52.439364074336694
+GLOBAL_ADDED_96751 = 64.99374394188953
+GLOBAL_ADDED_92731 = -63.89077182378114
+GLOBAL_ADDED_53144 = 2.9630498294122276
+GLOBAL_ADDED_65881 = 1.413778465052971
+GLOBAL_ADDED_74449 = -32.00843559418706
+GLOBAL_ADDED_51648 = -78.87346872999615
+GLOBAL_ADDED_74945 = 81.01156360878784
+GLOBAL_ADDED_37660 = 63.94467231623332
+GLOBAL_ADDED_50603 = -7.1238785443840555
 
 # Global parameter definitions block
-GLOBAL_38682 = 72.38968566271927
-GLOBAL_33347 = -4.291088275363734
-GLOBAL_76922 = 48.64114003128691
-GLOBAL_3528 = 64.9214903368343
-GLOBAL_11168 = 7.322481490092343
-GLOBAL_75338 = 23.70536697820262
-GLOBAL_21474 = 95.230370167513
-GLOBAL_28115 = -40.366879944439546
-GLOBAL_86897 = 18.866983930100176
-GLOBAL_300 = -90.12659410515246
-GLOBAL_82964 = 4.137009649964625
-GLOBAL_85901 = 7.488945048752328
-GLOBAL_30769 = -0.5477678562937598
-GLOBAL_5123 = 0.7508454680745729
-GLOBAL_54857 = 15.375527983520684
+GLOBAL_ADDED_29793 = -47.83263723893349
+GLOBAL_ADDED_15545 = -28.59203405119169
+GLOBAL_ADDED_89143 = -53.23249675808477
+GLOBAL_ADDED_56487 = 2.097404772627499
+GLOBAL_ADDED_75036 = -49.236858383742344
+GLOBAL_ADDED_33135 = 43.03525366753664
+GLOBAL_ADDED_56631 = 10.923740996867963
+GLOBAL_ADDED_81217 = 5.485981912826745
+GLOBAL_ADDED_13808 = 94.10890641149581
 
-def helper_metric_6_116(y_true, y_pred, threshold=0.6129450172679334):
+def helper_added_metric_6_1087(y_true, y_pred, threshold=0.1802636762413677):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -17824,25 +24666,20 @@ def helper_metric_6_116(y_true, y_pred, threshold=0.6129450172679334):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_246 = var_65 - var_64
-    val_442 = var_37 * var_4
-    val_624 = var_27 / var_7
-    val_673 = var_76 * var_31
-    val_20 = var_5 / var_14
-    val_968 = var_34 * var_14
-    val_261 = var_43 / var_35
-    val_782 = var_95 / var_94
-    val_624 = var_62 - var_56
-    val_599 = var_11 * var_29
-    val_850 = var_44 - var_87
-    val_129 = var_2 + var_53
-    val_508 = var_64 * var_99
-    val_293 = var_41 + var_67
-    val_222 = var_38 / var_37
+    val_8 = var_25 / var_64
+    val_14 = var_17 / var_62
+    val_563 = var_0 - var_29
+    val_258 = var_16 + var_62
+    val_495 = var_67 + var_50
+    val_464 = var_60 + var_84
+    val_521 = var_5 * var_89
+    val_787 = var_32 - var_38
+    val_128 = var_23 * var_97
+    val_146 = var_9 / var_86
     return mean_diff, std_diff
 
-class MLModelBlock_6_128:
-    def __init__(self, input_dim=73, output_dim=8):
+class MLModelBlock_Added_6_1078:
+    def __init__(self, input_dim=56, output_dim=5):
         self.input_dim = input_dim
         self.output_dim = output_dim
         self.weights = np.random.randn(input_dim, output_dim)
@@ -17850,7 +24687,7 @@ class MLModelBlock_6_128:
         self.initialized = True
         self.history = []
 
-    def process_stage_0(self, data, multiplier=0.7629268744981285):
+    def process_added_stage_0(self, data, multiplier=1.3812230597738295):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -17859,22 +24696,19 @@ class MLModelBlock_6_128:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_10 - var_41
+        temp_val = var_49 - var_58
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_33 - var_57
+        temp_val = var_47 + var_42
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_46 + var_87
+        temp_val = var_3 * var_30
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_20 * var_77
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_18 + var_98
+        temp_val = var_83 / var_10
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_1(self, data, multiplier=1.5338501148098935):
+    def process_added_stage_1(self, data, multiplier=0.9188960075444764):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -17883,19 +24717,25 @@ class MLModelBlock_6_128:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_89 * var_93
+        temp_val = var_72 / var_1
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_32 + var_12
+        temp_val = var_95 + var_50
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_96 - var_97
+        temp_val = var_51 - var_65
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_69 * var_10
+        temp_val = var_2 + var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 - var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 + var_41
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_2(self, data, multiplier=1.3069980539589234):
+    def process_added_stage_2(self, data, multiplier=1.5938065387686735):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -17904,37 +24744,28 @@ class MLModelBlock_6_128:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_26 * var_56
+        temp_val = var_14 / var_22
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_99 - var_54
+        temp_val = var_8 * var_53
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_21 + var_14
+        temp_val = var_63 - var_87
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_4 * var_17
+        temp_val = var_95 + var_29
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_36 + var_86
+        temp_val = var_58 + var_98
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_95 + var_11
+        temp_val = var_88 + var_82
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_79 + var_20
+        temp_val = var_32 + var_26
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-class MLModelBlock_6_129:
-    def __init__(self, input_dim=11, output_dim=8):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=0.735007446872415):
+    def process_added_stage_3(self, data, multiplier=0.8305603522039293):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -17943,313 +24774,28 @@ class MLModelBlock_6_129:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_52 + var_49
+        temp_val = var_39 - var_11
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_96 / var_34
+        temp_val = var_93 - var_15
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_83 + var_86
+        temp_val = var_3 + var_25
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_4 / var_95
+        temp_val = var_94 * var_47
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_31 - var_7
+        temp_val = var_20 * var_74
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_30 + var_45
+        temp_val = var_33 / var_92
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_79 * var_4
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_56 / var_62
+        temp_val = var_79 * var_82
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_1(self, data, multiplier=1.6000695111786591):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_72 - var_11
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_2 / var_63
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_98 / var_59
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_64 * var_68
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_53 + var_26
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_2(self, data, multiplier=0.2942230924621121):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_66 * var_27
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_44 - var_74
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_99 - var_17
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_98 * var_82
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_41 + var_15
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_39 * var_89
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_11 + var_21
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_3(self, data, multiplier=1.5529929220852614):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_18 * var_19
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_38 - var_48
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_73 + var_82
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_71 / var_80
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-class MLModelBlock_6_130:
-    def __init__(self, input_dim=40, output_dim=3):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=0.5511813945798228):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_49 + var_21
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_92 + var_38
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_21 + var_72
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_91 * var_70
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_74 - var_64
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_88 + var_93
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_91 / var_88
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_55 * var_75
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_17 + var_35
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_70 + var_24
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=0.14583090102046006):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_2 + var_75
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_91 * var_88
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_66 + var_81
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_31 / var_65
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_73 - var_11
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_3 * var_14
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_87 / var_6
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_2 / var_3
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_61 / var_71
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_58 + var_24
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-class MLModelBlock_6_131:
-    def __init__(self, input_dim=58, output_dim=3):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=1.08236030067925):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_23 + var_2
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_8 + var_25
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_73 - var_14
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_35 / var_15
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_6 + var_9
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_70 + var_77
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=0.7300623898937666):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_95 / var_81
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_48 * var_42
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_29 - var_58
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_79 * var_87
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_90 / var_49
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_32 / var_81
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_2(self, data, multiplier=0.8753914007110909):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_89 + var_67
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_14 - var_90
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_14 - var_56
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_7 * var_39
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_39 / var_87
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_72 * var_3
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_8 - var_8
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_3(self, data, multiplier=0.5979401990503199):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_74 / var_91
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_83 * var_77
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_29 * var_79
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_0 + var_71
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_83 * var_62
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_3 / var_35
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-def helper_metric_6_117(y_true, y_pred, threshold=0.6623335631281781):
+def helper_added_metric_6_1088(y_true, y_pred, threshold=0.8966442001231573):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -18257,14 +24803,148 @@ def helper_metric_6_117(y_true, y_pred, threshold=0.6623335631281781):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_271 = var_72 + var_24
-    val_158 = var_48 - var_3
-    val_682 = var_69 + var_14
-    val_689 = var_74 - var_8
-    val_186 = var_74 + var_74
+    val_566 = var_50 - var_44
+    val_221 = var_18 * var_88
+    val_182 = var_69 - var_0
+    val_772 = var_48 / var_45
+    val_164 = var_46 / var_9
+    val_438 = var_76 - var_71
+    val_858 = var_97 / var_68
     return mean_diff, std_diff
 
-def helper_metric_6_118(y_true, y_pred, threshold=0.7553897919121719):
+class MLModelBlock_Added_6_1079:
+    def __init__(self, input_dim=27, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.732990192594437):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_23 - var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 + var_15
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_93 * var_24
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 * var_15
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_69 * var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 / var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 - var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_39 - var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.4639764433283697):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_63 + var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_76 * var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_81 * var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_27 - var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 * var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 - var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_98 + var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 / var_5
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.8838675097244078):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_75 / var_74
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 + var_0
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 - var_77
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_44 / var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_69 * var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_11 / var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_4 + var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.7465084237755917):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_20 * var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 - var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_87 + var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_37 + var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_40 - var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 - var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1089(y_true, y_pred, threshold=0.33408011068813304):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -18272,16 +24952,106 @@ def helper_metric_6_118(y_true, y_pred, threshold=0.7553897919121719):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_217 = var_89 - var_83
-    val_327 = var_82 * var_32
-    val_341 = var_73 / var_67
-    val_702 = var_64 + var_70
-    val_449 = var_47 * var_31
-    val_698 = var_56 / var_17
-    val_886 = var_73 + var_67
+    val_456 = var_12 + var_83
+    val_243 = var_68 * var_3
+    val_434 = var_61 / var_16
+    val_271 = var_18 / var_41
+    val_710 = var_63 / var_69
+    val_871 = var_4 * var_45
+    val_507 = var_59 - var_50
+    val_439 = var_84 / var_77
+    val_398 = var_45 - var_8
+    val_268 = var_3 / var_12
     return mean_diff, std_diff
 
-def helper_metric_6_119(y_true, y_pred, threshold=0.4920388375836108):
+class MLModelBlock_Added_6_1080:
+    def __init__(self, input_dim=21, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.8764465789772466):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_99 + var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 / var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_61 / var_77
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_57 - var_66
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 * var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_33 / var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_41 / var_80
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.49486419934257964):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_13 * var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 + var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 * var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 / var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_21 + var_50
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 / var_5
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.851833482533839):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_84 - var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_38 / var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_25 / var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 - var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1090(y_true, y_pred, threshold=0.3983049360730233):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -18289,40 +25059,1371 @@ def helper_metric_6_119(y_true, y_pred, threshold=0.4920388375836108):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_611 = var_51 * var_17
-    val_239 = var_49 - var_32
-    val_128 = var_90 * var_38
-    val_895 = var_15 / var_23
-    val_359 = var_68 - var_84
-    val_839 = var_45 + var_9
-    val_651 = var_14 * var_0
-    val_295 = var_37 / var_41
-    val_815 = var_46 * var_40
-    val_142 = var_71 + var_94
-    val_196 = var_24 / var_57
-    val_984 = var_33 + var_22
+    val_292 = var_3 * var_69
+    val_951 = var_46 + var_64
+    val_497 = var_9 + var_50
+    val_552 = var_85 - var_36
+    val_910 = var_92 / var_78
+    val_941 = var_80 / var_51
+    val_738 = var_85 * var_84
+    val_71 = var_27 + var_58
+    val_322 = var_79 / var_66
+    val_271 = var_1 / var_3
+    val_575 = var_67 - var_88
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1081:
+    def __init__(self, input_dim=79, output_dim=2):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.27822887992152334):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_49 / var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_44 + var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_59 - var_18
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 + var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.9359006289105433):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_16 - var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 + var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 / var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 * var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 / var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 / var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 + var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.174662635687486):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_47 / var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 + var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 * var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_19 / var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.5527010932030725):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_32 - var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_93 + var_44
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_48 * var_80
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 + var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 / var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_21 / var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 + var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1091(y_true, y_pred, threshold=0.7095340793308057):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_583 = var_34 + var_25
+    val_630 = var_6 + var_99
+    val_600 = var_16 - var_34
+    val_547 = var_29 * var_56
+    val_443 = var_20 / var_8
+    val_676 = var_94 - var_57
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1082:
+    def __init__(self, input_dim=19, output_dim=2):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.9490864763241267):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_25 + var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 * var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 / var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_32 * var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.979511934966703):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_61 * var_50
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 / var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_27 - var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_40 - var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 / var_15
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_32639 = 13.066737778314945
+GLOBAL_ADDED_73999 = -74.13829920952297
+GLOBAL_ADDED_6002 = -36.16477859847507
+GLOBAL_ADDED_15553 = -35.9280951684716
+GLOBAL_ADDED_11813 = -16.75120089257331
+GLOBAL_ADDED_40228 = 11.701957727387821
+GLOBAL_ADDED_28865 = -96.78936886933751
+GLOBAL_ADDED_67751 = 81.21433130806656
+GLOBAL_ADDED_81396 = 64.39311930426257
+
+class MLModelBlock_Added_6_1083:
+    def __init__(self, input_dim=98, output_dim=4):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.940069196548918):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_67 - var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_60 + var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 * var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 + var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_70 - var_54
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 / var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 - var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 / var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.065562156328715):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_92 * var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_9 + var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 * var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_71 + var_5
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 * var_24
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 * var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 + var_66
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 / var_82
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1084:
+    def __init__(self, input_dim=38, output_dim=5):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.292521343886027):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_12 * var_55
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 - var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 / var_71
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 + var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.5627108566840249):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_34 * var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_98 * var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 * var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 - var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.3963195534608561):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_22 - var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_81 * var_71
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 * var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_69 + var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_44 - var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 - var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_87 - var_54
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 * var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1085:
+    def __init__(self, input_dim=53, output_dim=2):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.34723146320516457):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_86 + var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_63 - var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 * var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.9419521200625118):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_32 / var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_32 + var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 * var_79
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_59 * var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 - var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_9 - var_54
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_27 * var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.1565713924412568):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_15 / var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_30 / var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 / var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 + var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_70 - var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_82707 = 54.57887602667557
+GLOBAL_ADDED_54316 = -19.44789304866532
+GLOBAL_ADDED_27778 = 88.46841458097973
+GLOBAL_ADDED_41483 = 69.9568840964833
+GLOBAL_ADDED_7462 = 37.104555775253516
+GLOBAL_ADDED_97537 = 63.75794829029812
+GLOBAL_ADDED_36940 = 44.11053087125069
+GLOBAL_ADDED_24206 = -32.28949857726889
+GLOBAL_ADDED_83391 = -43.06682834423883
+GLOBAL_ADDED_25326 = -94.79581704759296
+GLOBAL_ADDED_70195 = 45.32176421114454
+GLOBAL_ADDED_28651 = 95.0750816825682
+GLOBAL_ADDED_92590 = 25.26832766270053
+GLOBAL_ADDED_56353 = 1.2821607898735579
+GLOBAL_ADDED_373 = 97.02328728667135
+
+# Global parameter definitions block
+GLOBAL_ADDED_83900 = -57.70539539106168
+GLOBAL_ADDED_46251 = 21.300012296700842
+GLOBAL_ADDED_45808 = -82.13217683929
+GLOBAL_ADDED_10620 = 47.7682521080942
+GLOBAL_ADDED_26749 = 93.11020657778667
+
+# Global parameter definitions block
+GLOBAL_ADDED_46883 = 28.324562044092403
+GLOBAL_ADDED_49173 = 23.348155918303817
+GLOBAL_ADDED_91676 = -18.217272208968538
+GLOBAL_ADDED_47447 = -90.04550868560013
+GLOBAL_ADDED_38948 = -45.91711165464427
+GLOBAL_ADDED_17415 = 70.85016660084764
+GLOBAL_ADDED_28861 = 25.911835715525285
+GLOBAL_ADDED_98052 = 44.516185572713255
+
+class MLModelBlock_Added_6_1086:
+    def __init__(self, input_dim=54, output_dim=6):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.7025575588186768):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_42 * var_45
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 - var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 - var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 / var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 - var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 + var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_41 / var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.005715851577598):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_79 * var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 * var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_38 + var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.2075107724512764):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_8 + var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 * var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 - var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_97 - var_71
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.19878829649023338):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_28 - var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 - var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_70 - var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_33 + var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1087:
+    def __init__(self, input_dim=11, output_dim=3):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.6076072779534747):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_59 / var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 - var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 - var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 * var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.5413750079091348):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_55 / var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_71 - var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 / var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_66 / var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 - var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.736797902278294):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_48 / var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 * var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_75 - var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_59 + var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 / var_71
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_61 / var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.7058383724938202):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_17 * var_3
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_79 / var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_71 * var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 + var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 * var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1088:
+    def __init__(self, input_dim=31, output_dim=5):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.9672767062028342):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_6 - var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_79 * var_78
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 - var_9
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_15 + var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.0865687975072276):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_20 + var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 + var_44
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_43 + var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_43 * var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 * var_79
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 * var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 * var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.3167322241559234):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_81 * var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 - var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_81 + var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 - var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_62 + var_44
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_1 + var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 / var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_37 / var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_39185 = 96.9078179956609
+GLOBAL_ADDED_94725 = 63.24801602959815
+GLOBAL_ADDED_75076 = 0.14177113002129715
+GLOBAL_ADDED_7600 = -46.172666989935315
+GLOBAL_ADDED_94018 = 6.788263989092783
+GLOBAL_ADDED_92973 = -79.76033399498321
+GLOBAL_ADDED_70728 = 43.45057665724943
+GLOBAL_ADDED_10896 = 25.441440528568776
+GLOBAL_ADDED_98552 = -71.72340528199979
+GLOBAL_ADDED_26912 = 12.181693378392126
+GLOBAL_ADDED_19001 = 23.029788322626104
+GLOBAL_ADDED_34082 = -29.124896431857167
+
+class MLModelBlock_Added_6_1089:
+    def __init__(self, input_dim=63, output_dim=4):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.21447672473114532):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_48 + var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 * var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_67 * var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.9918189141639682):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_29 - var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 + var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_57 * var_0
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.3697736267733872):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_17 - var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_57 / var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_79 + var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_92 + var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 / var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_223 = -85.1967291892283
+GLOBAL_ADDED_61876 = -0.2435622270793516
+GLOBAL_ADDED_32017 = -5.386648725784099
+GLOBAL_ADDED_82674 = -6.709497791481667
+GLOBAL_ADDED_59166 = -92.48414526941193
+GLOBAL_ADDED_4150 = 90.6145289592285
+GLOBAL_ADDED_66816 = -16.116061036807523
+GLOBAL_ADDED_90279 = -12.647056657694392
+GLOBAL_ADDED_53221 = 80.7965608541565
+GLOBAL_ADDED_11268 = -21.28852211966776
+GLOBAL_ADDED_64851 = -60.5938515045072
+GLOBAL_ADDED_65213 = 76.59646327521529
+GLOBAL_ADDED_8673 = -72.03553667865057
+GLOBAL_ADDED_31565 = -5.405916570395746
+
+class MLModelBlock_Added_6_1090:
+    def __init__(self, input_dim=86, output_dim=10):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.538487808738322):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_33 * var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 * var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_53 + var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_93 * var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 + var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_99 / var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.6495404166220307):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_92 + var_54
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 / var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 + var_24
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 * var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 / var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 / var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1091:
+    def __init__(self, input_dim=10, output_dim=4):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.4556541044940471):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_29 * var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 / var_9
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 - var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_99 + var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_97 / var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_41 - var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 + var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 / var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.9535981509193556):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_57 / var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 - var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_57 + var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 + var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_79 + var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_23409 = 61.315941210233575
+GLOBAL_ADDED_24996 = 68.57925077796529
+GLOBAL_ADDED_55221 = 94.92651441691905
+GLOBAL_ADDED_10093 = 24.648293347056153
+GLOBAL_ADDED_68310 = -59.83817389947062
+GLOBAL_ADDED_57254 = -86.96931190328512
+GLOBAL_ADDED_60433 = -18.201231900227242
+GLOBAL_ADDED_26094 = 40.6635302591352
+GLOBAL_ADDED_42715 = 87.82911732080751
+GLOBAL_ADDED_34145 = 2.9028456695494356
+GLOBAL_ADDED_13381 = -89.02604747117657
+GLOBAL_ADDED_27381 = -13.000862102761573
+GLOBAL_ADDED_90081 = -53.067669585046005
+GLOBAL_ADDED_98195 = 0.05920559922805069
+
+# Global parameter definitions block
+GLOBAL_ADDED_21113 = 91.45352649417183
+GLOBAL_ADDED_17134 = -43.77456232672983
+GLOBAL_ADDED_60300 = -92.58667051945547
+GLOBAL_ADDED_90370 = 89.76073739390475
+GLOBAL_ADDED_63751 = 1.4907811625469947
+GLOBAL_ADDED_55179 = 56.97887612137487
+GLOBAL_ADDED_69017 = -79.95405932003084
+GLOBAL_ADDED_61811 = 77.28523389634069
+GLOBAL_ADDED_28237 = -42.48770180060044
+GLOBAL_ADDED_95601 = 0.2808143584970111
+GLOBAL_ADDED_90051 = 93.83982245302164
+GLOBAL_ADDED_19357 = 69.51350749263989
+GLOBAL_ADDED_85683 = -54.82110742792574
+GLOBAL_ADDED_23336 = 87.22476641388263
+
+def helper_added_metric_6_1092(y_true, y_pred, threshold=0.7136236718025873):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_771 = var_64 + var_93
+    val_40 = var_35 + var_8
+    val_276 = var_50 * var_41
+    val_272 = var_0 + var_18
+    val_104 = var_48 / var_45
+    val_475 = var_38 - var_55
+    val_68 = var_4 - var_16
+    val_469 = var_67 / var_13
+    val_655 = var_67 * var_57
+    val_555 = var_71 / var_56
+    val_228 = var_19 * var_73
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1093(y_true, y_pred, threshold=0.7912870645471198):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_743 = var_38 / var_73
+    val_629 = var_51 + var_56
+    val_287 = var_99 * var_92
+    val_94 = var_75 + var_94
+    val_657 = var_4 * var_5
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1092:
+    def __init__(self, input_dim=14, output_dim=2):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.4814227295848037):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_27 / var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 / var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_11 / var_45
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_21 + var_45
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_33 / var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_26 - var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.9141542173776941):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_80 + var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 + var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_79 + var_80
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.1238693885799773):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_51 / var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_11 - var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_43 + var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 / var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.7136798155382886):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_66 * var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 * var_71
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 * var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_14 / var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_48871 = 7.9660311074758
+GLOBAL_ADDED_77707 = -39.427462003147355
+GLOBAL_ADDED_88978 = -20.347000422094027
+GLOBAL_ADDED_84705 = -3.2696096305559763
+GLOBAL_ADDED_1339 = -94.94560387158191
+
+# Global parameter definitions block
+GLOBAL_ADDED_32538 = 82.04784208918221
+GLOBAL_ADDED_98508 = -98.19562610461799
+GLOBAL_ADDED_49784 = -55.44050089539374
+GLOBAL_ADDED_63916 = -20.203528762213253
+GLOBAL_ADDED_40417 = 81.53478780703688
+GLOBAL_ADDED_80173 = -19.744273579526975
+GLOBAL_ADDED_25898 = 75.66491362870161
+
+def helper_added_metric_6_1094(y_true, y_pred, threshold=0.48782575779125514):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_317 = var_14 / var_60
+    val_941 = var_40 * var_2
+    val_795 = var_37 - var_82
+    val_484 = var_16 - var_87
+    val_521 = var_36 - var_72
+    val_65 = var_9 - var_25
+    val_993 = var_40 + var_68
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1093:
+    def __init__(self, input_dim=16, output_dim=7):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.9283221016048769):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_40 + var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 / var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_97 * var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 * var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.6799329252637223):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_26 - var_54
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 * var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 - var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 / var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.638053638522609):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_19 + var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_25 / var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 * var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 / var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 * var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1094:
+    def __init__(self, input_dim=85, output_dim=2):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.87432371135953):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_94 * var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 * var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 + var_50
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 - var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.2907508581361127):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_72 + var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 * var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 - var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 - var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 / var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1095(y_true, y_pred, threshold=0.6593621047068015):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_80 = var_56 * var_11
+    val_42 = var_4 - var_21
+    val_557 = var_71 / var_41
+    val_293 = var_92 * var_61
+    val_63 = var_72 * var_55
+    val_790 = var_73 + var_81
     return mean_diff, std_diff
 
 # Global parameter definitions block
-GLOBAL_34075 = -11.024973457854713
-GLOBAL_34934 = -86.08019587369941
-GLOBAL_83493 = -92.33785818928854
-GLOBAL_10283 = -1.2913164871992393
-GLOBAL_88727 = 84.96387805779872
-GLOBAL_86845 = 92.71163092452414
-GLOBAL_86226 = -45.549355006636084
-GLOBAL_97063 = 45.72249333750764
-GLOBAL_97610 = -90.50359722825937
-GLOBAL_74804 = 87.54573012927881
-GLOBAL_96722 = -36.60345364489164
-GLOBAL_26520 = -91.09372390666881
-GLOBAL_49259 = -80.48323481023286
-GLOBAL_9330 = -48.90901957009641
-GLOBAL_39775 = -39.41711991225283
-GLOBAL_25945 = 6.063283180522646
+GLOBAL_ADDED_6795 = 59.33789681770088
+GLOBAL_ADDED_12295 = 85.20899918528215
+GLOBAL_ADDED_74465 = -7.393044990924636
+GLOBAL_ADDED_74540 = -36.97279654281584
+GLOBAL_ADDED_93395 = -98.80927229855061
+GLOBAL_ADDED_79478 = 60.30324818828478
+GLOBAL_ADDED_79219 = -57.32882772030736
+GLOBAL_ADDED_78624 = -61.86286556203482
+GLOBAL_ADDED_67021 = -12.005201227311886
+GLOBAL_ADDED_84757 = -67.49771848145558
+GLOBAL_ADDED_1841 = 63.902317879624405
+GLOBAL_ADDED_44155 = 15.782162452295665
+GLOBAL_ADDED_83460 = -86.51895357873975
+GLOBAL_ADDED_85853 = 38.709000386744236
+GLOBAL_ADDED_38031 = -37.580911807959815
 
-class MLModelBlock_6_132:
-    def __init__(self, input_dim=50, output_dim=6):
+class MLModelBlock_Added_6_1095:
+    def __init__(self, input_dim=49, output_dim=4):
         self.input_dim = input_dim
         self.output_dim = output_dim
         self.weights = np.random.randn(input_dim, output_dim)
@@ -18330,7 +26431,7 @@ class MLModelBlock_6_132:
         self.initialized = True
         self.history = []
 
-    def process_stage_0(self, data, multiplier=1.9402236685058154):
+    def process_added_stage_0(self, data, multiplier=0.7117049194612123):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -18339,37 +26440,19 @@ class MLModelBlock_6_132:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_59 * var_0
+        temp_val = var_83 - var_16
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_88 / var_18
+        temp_val = var_27 / var_53
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_44 * var_84
+        temp_val = var_39 / var_34
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_94 + var_45
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_60 + var_67
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_11 * var_13
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_75 / var_25
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_64 * var_68
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_41 - var_92
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_35 / var_40
+        temp_val = var_41 - var_73
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_1(self, data, multiplier=1.6359529700473077):
+    def process_added_stage_1(self, data, multiplier=1.2193296798542226):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -18378,22 +26461,263 @@ class MLModelBlock_6_132:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_47 * var_75
+        temp_val = var_6 + var_41
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_99 * var_45
+        temp_val = var_60 - var_99
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_34 * var_97
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_15 / var_51
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_95 - var_89
+        temp_val = var_89 + var_64
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-def helper_metric_6_120(y_true, y_pred, threshold=0.7808174506491993):
+    def process_added_stage_2(self, data, multiplier=0.38913425880800867):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_98 + var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_4 - var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_30 - var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_66 / var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_60 * var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 - var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1096:
+    def __init__(self, input_dim=25, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.3956939216894488):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_98 - var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 - var_15
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_76 + var_45
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 * var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 - var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 + var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 - var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 * var_44
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.886619113677525):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_79 / var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_26 - var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_98 + var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_27 - var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_87 / var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 / var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 / var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 * var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.43742811221965716):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_99 + var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_69 + var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_92 - var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_48 + var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_24 + var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 - var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 / var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.8451137316952284):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_1 - var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 + var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 - var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_55361 = 4.189473004742467
+GLOBAL_ADDED_70729 = 4.621415514826992
+GLOBAL_ADDED_52413 = 48.24164584424278
+GLOBAL_ADDED_21565 = -39.74452829777333
+GLOBAL_ADDED_10424 = 28.43188459403686
+GLOBAL_ADDED_55410 = -11.442916298947978
+GLOBAL_ADDED_79670 = -22.644534482998154
+GLOBAL_ADDED_45051 = 81.12099315833689
+GLOBAL_ADDED_92158 = -65.30667530782765
+GLOBAL_ADDED_85553 = 72.18751545233087
+GLOBAL_ADDED_27059 = 67.96231324101072
+
+class MLModelBlock_Added_6_1097:
+    def __init__(self, input_dim=71, output_dim=2):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.3997631319288497):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_92 / var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 + var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_48 / var_98
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_8 / var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 / var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 / var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_97 * var_5
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.5583403617499626):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_54 / var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_81 / var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 - var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_99 + var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_8 - var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.7303863633287628):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_7 + var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 * var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 + var_98
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_79 - var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1096(y_true, y_pred, threshold=0.3982596209824133):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -18401,15 +26725,84 @@ def helper_metric_6_120(y_true, y_pred, threshold=0.7808174506491993):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_433 = var_52 * var_99
-    val_344 = var_57 + var_76
-    val_743 = var_16 - var_70
-    val_194 = var_86 + var_8
-    val_817 = var_68 + var_37
-    val_369 = var_39 / var_42
+    val_746 = var_3 - var_24
+    val_329 = var_26 / var_55
+    val_209 = var_42 / var_4
+    val_515 = var_71 / var_17
+    val_350 = var_39 / var_52
+    val_715 = var_17 / var_94
+    val_826 = var_31 - var_78
+    val_873 = var_86 + var_99
+    val_700 = var_33 - var_64
+    val_880 = var_91 / var_46
+    val_226 = var_1 + var_41
+    val_671 = var_97 + var_13
     return mean_diff, std_diff
 
-def helper_metric_6_121(y_true, y_pred, threshold=0.38001136687574):
+class MLModelBlock_Added_6_1098:
+    def __init__(self, input_dim=21, output_dim=4):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.34529154274429186):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_65 * var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 + var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 - var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 - var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_60 * var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_61 + var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 * var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_32 - var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.9007463286175994):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_46 - var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 - var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 * var_50
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_96 - var_45
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1097(y_true, y_pred, threshold=0.49384272396938744):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -18417,21 +26810,135 @@ def helper_metric_6_121(y_true, y_pred, threshold=0.38001136687574):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_363 = var_57 / var_42
-    val_570 = var_42 / var_72
-    val_871 = var_4 - var_51
-    val_722 = var_93 * var_93
-    val_565 = var_13 - var_20
-    val_991 = var_39 / var_29
-    val_965 = var_6 - var_50
-    val_856 = var_53 / var_33
-    val_246 = var_9 * var_5
-    val_697 = var_49 * var_94
-    val_203 = var_81 / var_82
-    val_805 = var_60 / var_20
+    val_292 = var_61 + var_26
+    val_562 = var_54 * var_62
+    val_511 = var_84 + var_28
+    val_913 = var_75 - var_6
+    val_827 = var_39 - var_75
+    val_16 = var_38 / var_58
     return mean_diff, std_diff
 
-def helper_metric_6_122(y_true, y_pred, threshold=0.22248161832438865):
+class MLModelBlock_Added_6_1099:
+    def __init__(self, input_dim=14, output_dim=10):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.4618781952249689):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_38 - var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 + var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 * var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.19732852717322122):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_98 * var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 * var_9
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 * var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 - var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_66 / var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.9250524695464495):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_67 * var_9
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 / var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_99 / var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_25 - var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 / var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.1998656836021402):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_97 + var_77
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 / var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_60 + var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_81 - var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 * var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_3200 = -33.63553308810711
+GLOBAL_ADDED_52489 = -25.619883339425797
+GLOBAL_ADDED_68736 = -16.038346667535478
+GLOBAL_ADDED_91036 = 24.316635174193266
+GLOBAL_ADDED_60210 = 31.610722741485432
+
+# Global parameter definitions block
+GLOBAL_ADDED_51522 = 25.489801756267056
+GLOBAL_ADDED_9440 = 92.50692514747868
+GLOBAL_ADDED_29241 = 89.55263620370937
+GLOBAL_ADDED_6840 = 68.77143074865
+GLOBAL_ADDED_89356 = 2.4810293949387017
+GLOBAL_ADDED_60557 = 0.19536932779797667
+GLOBAL_ADDED_51623 = -50.35811438098432
+GLOBAL_ADDED_92156 = 86.77650282313039
+GLOBAL_ADDED_7446 = 30.75304944169389
+GLOBAL_ADDED_42445 = 33.58953073022778
+GLOBAL_ADDED_93752 = 87.53231783247239
+GLOBAL_ADDED_11790 = 20.326321972424168
+
+def helper_added_metric_6_1098(y_true, y_pred, threshold=0.894263869072805):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -18439,22 +26946,194 @@ def helper_metric_6_122(y_true, y_pred, threshold=0.22248161832438865):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_463 = var_43 - var_3
-    val_847 = var_2 * var_87
-    val_400 = var_48 / var_31
-    val_101 = var_94 / var_83
-    val_137 = var_46 / var_8
+    val_129 = var_94 / var_72
+    val_700 = var_46 + var_43
+    val_586 = var_8 / var_86
+    val_200 = var_85 + var_89
+    val_561 = var_2 - var_48
+    val_82 = var_53 * var_93
+    val_669 = var_21 - var_46
+    val_494 = var_2 / var_94
+    val_979 = var_84 * var_16
+    val_632 = var_31 * var_28
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1100:
+    def __init__(self, input_dim=99, output_dim=4):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.8611364179732326):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_90 + var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 - var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_97 + var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_59 + var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 * var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_27 / var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 - var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 + var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.690348906323188):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_39 - var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 / var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_41 - var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 - var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 + var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_4 + var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.5627094481548882):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_36 - var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_70 / var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_53 * var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 / var_82
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_43 / var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 * var_77
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 - var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_38 + var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.8883977815583697):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_97 - var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_8 * var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 + var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 / var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 - var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_44 / var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_63 + var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 / var_77
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1099(y_true, y_pred, threshold=0.477752140833112):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_54 = var_10 / var_28
+    val_950 = var_27 * var_76
+    val_607 = var_14 + var_94
+    val_702 = var_71 * var_51
+    val_844 = var_71 * var_40
+    val_197 = var_78 / var_5
     return mean_diff, std_diff
 
 # Global parameter definitions block
-GLOBAL_17031 = -72.90364429032701
-GLOBAL_73351 = -55.236916462045
-GLOBAL_44022 = 16.37776280832854
-GLOBAL_36775 = -12.970705695073306
-GLOBAL_37410 = -69.28229665158887
+GLOBAL_ADDED_36386 = -76.02934595579586
+GLOBAL_ADDED_68492 = -20.406384459060135
+GLOBAL_ADDED_29626 = 44.37354520486767
+GLOBAL_ADDED_72292 = 69.25240713941037
+GLOBAL_ADDED_69582 = 56.854726147826284
 
-class MLModelBlock_6_133:
-    def __init__(self, input_dim=10, output_dim=10):
+# Global parameter definitions block
+GLOBAL_ADDED_6059 = -66.38452817976375
+GLOBAL_ADDED_72936 = 85.40627172469502
+GLOBAL_ADDED_55216 = 82.20765755317697
+GLOBAL_ADDED_96966 = 37.08084267490514
+GLOBAL_ADDED_3169 = -72.63435574992295
+GLOBAL_ADDED_26515 = 51.491231439956806
+GLOBAL_ADDED_23302 = 77.36419500648708
+GLOBAL_ADDED_83107 = -96.09721167329342
+GLOBAL_ADDED_80919 = -59.336266276259295
+GLOBAL_ADDED_94545 = -8.873218224123619
+GLOBAL_ADDED_61471 = 80.63852692857049
+GLOBAL_ADDED_99355 = 39.13107108014705
+GLOBAL_ADDED_44063 = -59.42401304587488
+GLOBAL_ADDED_82034 = -3.1621807971492473
+
+class MLModelBlock_Added_6_1101:
+    def __init__(self, input_dim=83, output_dim=6):
         self.input_dim = input_dim
         self.output_dim = output_dim
         self.weights = np.random.randn(input_dim, output_dim)
@@ -18462,7 +27141,7 @@ class MLModelBlock_6_133:
         self.initialized = True
         self.history = []
 
-    def process_stage_0(self, data, multiplier=0.5240014042550475):
+    def process_added_stage_0(self, data, multiplier=1.1572070639144671):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -18471,22 +27150,22 @@ class MLModelBlock_6_133:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_14 - var_77
+        temp_val = var_80 - var_56
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_90 * var_49
+        temp_val = var_9 * var_89
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_7 * var_19
+        temp_val = var_18 - var_31
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_67 + var_69
+        temp_val = var_0 / var_49
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_87 / var_28
+        temp_val = var_63 / var_6
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_1(self, data, multiplier=1.151650899884351):
+    def process_added_stage_1(self, data, multiplier=1.1288288162663669):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -18495,31 +27174,19 @@ class MLModelBlock_6_133:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_1 + var_27
+        temp_val = var_93 + var_78
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_56 + var_27
+        temp_val = var_27 * var_2
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_86 + var_83
+        temp_val = var_61 - var_75
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_32 * var_23
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_98 / var_63
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_23 * var_77
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_2 * var_85
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_40 / var_41
+        temp_val = var_20 / var_65
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_2(self, data, multiplier=1.648697292531741):
+    def process_added_stage_2(self, data, multiplier=1.477466532980164):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -18528,78 +27195,32 @@ class MLModelBlock_6_133:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_51 * var_63
+        temp_val = var_64 / var_57
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_86 / var_47
+        temp_val = var_34 / var_85
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_80 / var_9
+        temp_val = var_51 - var_47
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_82 / var_64
+        temp_val = var_41 * var_53
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_30 / var_97
+        temp_val = var_54 * var_74
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_53 - var_43
+        temp_val = var_22 - var_81
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_17 - var_40
+        temp_val = var_40 * var_84
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_74 / var_54
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_89 / var_7
+        temp_val = var_13 * var_75
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-def helper_metric_6_123(y_true, y_pred, threshold=0.33501877260710033):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_51 = var_2 / var_74
-    val_205 = var_46 * var_9
-    val_791 = var_28 * var_3
-    val_40 = var_96 + var_21
-    val_710 = var_74 + var_42
-    val_368 = var_31 / var_50
-    val_834 = var_83 - var_31
-    val_594 = var_98 - var_43
-    val_283 = var_44 - var_83
-    val_532 = var_6 - var_34
-    val_645 = var_5 + var_41
-    val_200 = var_68 / var_61
-    val_282 = var_55 - var_66
-    val_507 = var_30 * var_19
-    val_773 = var_96 / var_17
-    return mean_diff, std_diff
-
-def helper_metric_6_124(y_true, y_pred, threshold=0.2734694360370665):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_163 = var_47 + var_23
-    val_674 = var_84 / var_14
-    val_697 = var_67 / var_63
-    val_54 = var_22 * var_43
-    val_744 = var_25 - var_35
-    val_906 = var_90 + var_40
-    val_176 = var_13 / var_94
-    val_553 = var_41 + var_79
-    return mean_diff, std_diff
-
-class MLModelBlock_6_134:
-    def __init__(self, input_dim=79, output_dim=9):
+class MLModelBlock_Added_6_1102:
+    def __init__(self, input_dim=67, output_dim=5):
         self.input_dim = input_dim
         self.output_dim = output_dim
         self.weights = np.random.randn(input_dim, output_dim)
@@ -18607,7 +27228,7 @@ class MLModelBlock_6_134:
         self.initialized = True
         self.history = []
 
-    def process_stage_0(self, data, multiplier=1.0728990513179442):
+    def process_added_stage_0(self, data, multiplier=0.6014799748575621):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -18616,37 +27237,31 @@ class MLModelBlock_6_134:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_85 * var_95
+        temp_val = var_91 * var_37
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_86 / var_25
+        temp_val = var_53 - var_5
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_56 - var_79
+        temp_val = var_35 + var_34
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_70 / var_84
+        temp_val = var_26 * var_72
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_16 + var_41
+        temp_val = var_78 - var_88
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_29 * var_84
+        temp_val = var_82 * var_59
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_72 * var_62
+        temp_val = var_70 + var_69
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_80 * var_89
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_74 * var_65
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_89 / var_83
+        temp_val = var_48 / var_9
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_1(self, data, multiplier=0.8960777864410441):
+    def process_added_stage_1(self, data, multiplier=1.396714211071558):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -18655,28 +27270,49 @@ class MLModelBlock_6_134:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_61 / var_41
+        temp_val = var_18 + var_58
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_1 / var_87
+        temp_val = var_80 - var_33
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_16 + var_88
+        temp_val = var_31 / var_16
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_36 * var_40
+        temp_val = var_75 * var_75
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_30 + var_46
+        temp_val = var_11 * var_93
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_60 + var_99
+        temp_val = var_12 / var_36
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_66 + var_16
+        temp_val = var_67 - var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 * var_76
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-def helper_metric_6_125(y_true, y_pred, threshold=0.3180700024029644):
+    def process_added_stage_2(self, data, multiplier=1.9182905996780917):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_58 + var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 + var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_26 - var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1100(y_true, y_pred, threshold=0.18192525047915353):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -18684,45 +27320,184 @@ def helper_metric_6_125(y_true, y_pred, threshold=0.3180700024029644):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_823 = var_29 * var_67
-    val_288 = var_22 / var_11
-    val_674 = var_18 - var_28
-    val_203 = var_12 / var_95
-    val_229 = var_54 * var_61
-    val_754 = var_99 / var_32
-    val_751 = var_81 + var_4
-    val_692 = var_39 * var_51
-    val_306 = var_30 - var_82
-    val_202 = var_60 * var_82
-    val_718 = var_10 * var_2
+    val_76 = var_81 * var_12
+    val_3 = var_90 + var_17
+    val_774 = var_48 / var_51
+    val_749 = var_79 / var_32
+    val_133 = var_4 / var_22
+    val_511 = var_44 + var_10
+    val_110 = var_44 - var_36
+    val_715 = var_46 / var_7
+    val_153 = var_24 + var_51
+    val_409 = var_34 * var_19
+    val_183 = var_22 - var_41
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1101(y_true, y_pred, threshold=0.14218561197498625):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_132 = var_62 + var_2
+    val_98 = var_59 * var_18
+    val_470 = var_86 / var_54
+    val_56 = var_98 - var_13
+    val_31 = var_75 - var_21
+    val_641 = var_17 + var_47
+    val_109 = var_51 - var_90
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1103:
+    def __init__(self, input_dim=95, output_dim=6):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.16595106745217109):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_54 / var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_25 + var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 * var_0
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 - var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_26 / var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 * var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 + var_15
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 + var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.0070114360982843):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_25 + var_82
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 / var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 * var_44
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_32 + var_45
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 - var_71
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 / var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_55246 = 8.977507507268442
+GLOBAL_ADDED_82144 = 81.4363446738931
+GLOBAL_ADDED_90147 = 98.64136506453883
+GLOBAL_ADDED_97702 = -88.22405687296458
+GLOBAL_ADDED_83544 = -59.6142369818284
+GLOBAL_ADDED_97277 = -99.42981027283278
+GLOBAL_ADDED_18215 = 21.337485009916747
+GLOBAL_ADDED_67784 = -58.17857856066768
+GLOBAL_ADDED_2085 = -42.9488218906642
+GLOBAL_ADDED_79776 = -36.917300254996846
+GLOBAL_ADDED_81966 = 80.48418822587101
+GLOBAL_ADDED_5291 = 81.9745361306338
+GLOBAL_ADDED_94552 = 67.12327121081049
+GLOBAL_ADDED_45002 = -77.73523702308627
+
+def helper_added_metric_6_1102(y_true, y_pred, threshold=0.8094083542095166):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_0 = var_7 + var_53
+    val_655 = var_37 / var_2
+    val_229 = var_57 - var_11
+    val_580 = var_59 - var_25
+    val_49 = var_16 + var_36
+    val_456 = var_78 * var_13
+    val_938 = var_68 * var_25
+    val_392 = var_20 - var_67
     return mean_diff, std_diff
 
 # Global parameter definitions block
-GLOBAL_4490 = 35.06364499864469
-GLOBAL_75054 = -16.427138416804567
-GLOBAL_53821 = 31.36952560886229
-GLOBAL_76649 = -94.46491255007723
-GLOBAL_36596 = 9.81594096036504
-GLOBAL_75613 = -18.16440001510668
-GLOBAL_97924 = 95.21256165200279
-GLOBAL_33125 = 35.180485322900125
-GLOBAL_49963 = 54.87117539678803
-GLOBAL_40336 = 22.51984838313909
-GLOBAL_68409 = -98.225303150256
-GLOBAL_35503 = 99.63255068474675
-GLOBAL_94234 = -1.636862076964519
-GLOBAL_89911 = -67.0460348352942
+GLOBAL_ADDED_94544 = 18.89592369347575
+GLOBAL_ADDED_25638 = -35.35200181857891
+GLOBAL_ADDED_95943 = 61.88209956856144
+GLOBAL_ADDED_31705 = -12.51157720056095
+GLOBAL_ADDED_20643 = -23.482130435738043
+GLOBAL_ADDED_49005 = 44.70076336725867
+GLOBAL_ADDED_93607 = 2.33124589522437
+GLOBAL_ADDED_271 = 55.56411462111831
+GLOBAL_ADDED_26319 = 22.739936670876105
+GLOBAL_ADDED_69709 = 54.51204990724503
+GLOBAL_ADDED_46003 = 78.82540051738465
+GLOBAL_ADDED_92702 = 70.58840145402411
+GLOBAL_ADDED_43152 = 3.9048682448822802
 
 # Global parameter definitions block
-GLOBAL_99169 = 30.028920457865695
-GLOBAL_29697 = 47.912913494462686
-GLOBAL_53711 = 22.88691994045928
-GLOBAL_6269 = -8.883167904492993
-GLOBAL_66554 = 86.65505848853084
-GLOBAL_62658 = 14.017278947727974
+GLOBAL_ADDED_71603 = -57.56510787829286
+GLOBAL_ADDED_68650 = -70.08726825894658
+GLOBAL_ADDED_61529 = -85.3784299478731
+GLOBAL_ADDED_72109 = 7.890350183070254
+GLOBAL_ADDED_83436 = -86.85369955552504
+GLOBAL_ADDED_60431 = 11.530386323501943
+GLOBAL_ADDED_97119 = 59.86246614189804
+GLOBAL_ADDED_27548 = -28.892570282770563
+GLOBAL_ADDED_11858 = -13.225819700297762
+GLOBAL_ADDED_86181 = -53.02528125468531
+GLOBAL_ADDED_76160 = -12.443119892234009
+GLOBAL_ADDED_9955 = 14.866148427381603
+GLOBAL_ADDED_82006 = 53.79483427154577
+GLOBAL_ADDED_37962 = 38.917296247536655
+GLOBAL_ADDED_63630 = 97.94317468327145
 
-class MLModelBlock_6_135:
-    def __init__(self, input_dim=58, output_dim=9):
+# Global parameter definitions block
+GLOBAL_ADDED_9538 = 30.775952950426415
+GLOBAL_ADDED_72508 = -94.2859116803799
+GLOBAL_ADDED_15749 = 16.055628277469538
+GLOBAL_ADDED_46139 = 80.92272991288664
+GLOBAL_ADDED_69539 = 27.505731650901694
+GLOBAL_ADDED_83002 = 37.34789596076658
+GLOBAL_ADDED_31228 = -17.443005325935786
+GLOBAL_ADDED_41904 = -69.11900628959577
+GLOBAL_ADDED_89013 = -97.15766320529924
+
+class MLModelBlock_Added_6_1104:
+    def __init__(self, input_dim=40, output_dim=10):
         self.input_dim = input_dim
         self.output_dim = output_dim
         self.weights = np.random.randn(input_dim, output_dim)
@@ -18730,7 +27505,7 @@ class MLModelBlock_6_135:
         self.initialized = True
         self.history = []
 
-    def process_stage_0(self, data, multiplier=0.6132097053795963):
+    def process_added_stage_0(self, data, multiplier=0.8940297680124507):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -18739,19 +27514,31 @@ class MLModelBlock_6_135:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_77 / var_4
+        temp_val = var_34 + var_96
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_60 / var_57
+        temp_val = var_67 * var_41
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_41 + var_58
+        temp_val = var_78 + var_29
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_40 / var_96
+        temp_val = var_92 * var_20
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 * var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_15 * var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 / var_55
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 * var_80
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_1(self, data, multiplier=0.42485811417622643):
+    def process_added_stage_1(self, data, multiplier=0.3119299982062901):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -18760,38 +27547,41 @@ class MLModelBlock_6_135:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_55 / var_52
+        temp_val = var_77 * var_28
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_48 / var_45
+        temp_val = var_36 * var_53
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_78 - var_96
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_93 - var_65
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_30 + var_95
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_51 / var_93
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_96 / var_89
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_16 + var_65
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_28 * var_43
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_88 + var_42
+        temp_val = var_79 + var_47
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-class MLModelBlock_6_136:
-    def __init__(self, input_dim=79, output_dim=3):
+    def process_added_stage_2(self, data, multiplier=0.9561794925221715):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_74 - var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 * var_78
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 * var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 * var_44
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_60 / var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1105:
+    def __init__(self, input_dim=20, output_dim=9):
         self.input_dim = input_dim
         self.output_dim = output_dim
         self.weights = np.random.randn(input_dim, output_dim)
@@ -18799,7 +27589,7 @@ class MLModelBlock_6_136:
         self.initialized = True
         self.history = []
 
-    def process_stage_0(self, data, multiplier=0.694242670586672):
+    def process_added_stage_0(self, data, multiplier=1.3864495455014565):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -18808,19 +27598,376 @@ class MLModelBlock_6_136:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_53 * var_53
+        temp_val = var_53 - var_23
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_8 / var_16
+        temp_val = var_56 + var_49
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_96 * var_69
+        temp_val = var_11 + var_29
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_1 + var_43
+        temp_val = var_8 * var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 / var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 + var_11
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_1(self, data, multiplier=1.01549376660935):
+    def process_added_stage_1(self, data, multiplier=1.2928983955074669):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_4 + var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 * var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 / var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_8 + var_5
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 * var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 / var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 / var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 - var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.9697411849059896):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_11 + var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_67 + var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_44 + var_50
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_8 * var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 / var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1106:
+    def __init__(self, input_dim=27, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.3208233565272213):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_28 - var_8
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_59 + var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 + var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_66 - var_55
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_25 + var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 * var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 * var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 / var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.7229467278195314):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_59 / var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_24 / var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_93 + var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 + var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_55 / var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 / var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.9836238647745859):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_59 + var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 * var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 / var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_99484 = -13.358830301806918
+GLOBAL_ADDED_63202 = -77.27443204808155
+GLOBAL_ADDED_60733 = 92.85767949171836
+GLOBAL_ADDED_66448 = -25.792725363328884
+GLOBAL_ADDED_91792 = -91.91121660014272
+GLOBAL_ADDED_16212 = -94.46826287867694
+
+class MLModelBlock_Added_6_1107:
+    def __init__(self, input_dim=35, output_dim=6):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.3410826637162384):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_95 + var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_39 - var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_98 / var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 + var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 / var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 + var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_33 * var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_39 - var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.5266553857344004):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_52 + var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 - var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_40 - var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 * var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 / var_78
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 * var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_9 - var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_93465 = 12.47246607292793
+GLOBAL_ADDED_14415 = -95.13078152028787
+GLOBAL_ADDED_45406 = -75.51631704213557
+GLOBAL_ADDED_57629 = -63.110272082133
+GLOBAL_ADDED_43167 = 95.50840351309421
+GLOBAL_ADDED_34843 = -70.62650279319848
+GLOBAL_ADDED_25107 = 35.02144551861207
+GLOBAL_ADDED_98999 = 99.90555218151405
+GLOBAL_ADDED_46045 = 18.539767186179446
+GLOBAL_ADDED_37389 = -56.424600082029094
+GLOBAL_ADDED_58782 = -5.720388007335401
+GLOBAL_ADDED_79786 = 82.90810520497675
+GLOBAL_ADDED_46327 = -59.01543342112061
+
+def helper_added_metric_6_1103(y_true, y_pred, threshold=0.735815928642447):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_646 = var_65 / var_67
+    val_292 = var_86 + var_48
+    val_511 = var_19 / var_25
+    val_618 = var_29 - var_92
+    val_548 = var_86 / var_54
+    val_200 = var_82 - var_44
+    val_121 = var_28 * var_68
+    val_597 = var_6 * var_43
+    val_317 = var_53 - var_78
+    val_124 = var_99 * var_1
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_53639 = 25.92039211755062
+GLOBAL_ADDED_6499 = 31.837770151805074
+GLOBAL_ADDED_25535 = -65.8845735703584
+GLOBAL_ADDED_53202 = -88.23980722565521
+GLOBAL_ADDED_29894 = 76.81422150303132
+GLOBAL_ADDED_74189 = -38.010736705249705
+GLOBAL_ADDED_90629 = -28.245869434399225
+GLOBAL_ADDED_33733 = -79.57333137686165
+GLOBAL_ADDED_59892 = -16.948454711980105
+GLOBAL_ADDED_1801 = 61.10851800771769
+GLOBAL_ADDED_90083 = -8.042904304592852
+GLOBAL_ADDED_82928 = -51.709812149850734
+GLOBAL_ADDED_99129 = -16.902742973782495
+
+# Global parameter definitions block
+GLOBAL_ADDED_93138 = 73.49289479972197
+GLOBAL_ADDED_92741 = -32.69768912780849
+GLOBAL_ADDED_35393 = -24.31240008472153
+GLOBAL_ADDED_9152 = 23.657519370594017
+GLOBAL_ADDED_21982 = 13.140263500029391
+GLOBAL_ADDED_31694 = 7.551060938724376
+GLOBAL_ADDED_60184 = 96.79467367984967
+GLOBAL_ADDED_84100 = 64.75195388149578
+GLOBAL_ADDED_92432 = 98.84943414883017
+GLOBAL_ADDED_80964 = -96.93708457700762
+GLOBAL_ADDED_11981 = -78.04918981029192
+GLOBAL_ADDED_71859 = 75.64985888218675
+
+class MLModelBlock_Added_6_1108:
+    def __init__(self, input_dim=99, output_dim=4):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.0308927057833628):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_9 / var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_41 - var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 * var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 + var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 - var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.8318877972913115):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_97 / var_15
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_41 - var_4
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 * var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 - var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 + var_79
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_37 * var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_15 / var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.640578114547186):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -18832,159 +27979,57 @@ class MLModelBlock_6_136:
         temp_val = var_70 - var_30
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_53 + var_42
+        temp_val = var_39 * var_9
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_31 * var_73
+        temp_val = var_47 + var_76
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_16 + var_0
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_1 - var_43
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_0 * var_38
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_16 * var_88
+        temp_val = var_90 / var_79
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-def helper_metric_6_126(y_true, y_pred, threshold=0.1623059597568978):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_446 = var_11 - var_41
-    val_231 = var_12 + var_95
-    val_323 = var_28 - var_93
-    val_39 = var_10 / var_65
-    val_692 = var_22 - var_14
-    val_480 = var_37 / var_53
-    val_965 = var_54 * var_30
-    val_98 = var_28 * var_50
-    return mean_diff, std_diff
+    def process_added_stage_3(self, data, multiplier=1.2297363879258343):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_36 + var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 + var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 + var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_81 - var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 * var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_26 * var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
 # Global parameter definitions block
-GLOBAL_81175 = 9.944221863724081
-GLOBAL_33465 = -62.662586001856766
-GLOBAL_65744 = 88.2853065563842
-GLOBAL_99028 = 84.57144375679528
-GLOBAL_65699 = 77.62670796471173
-GLOBAL_10635 = 42.28772856755069
-GLOBAL_92352 = -92.29987368007153
-GLOBAL_8790 = 94.31261885216628
-GLOBAL_67922 = 13.11846971725734
-GLOBAL_66406 = 83.56663905417898
-GLOBAL_28841 = 28.359301151146923
-GLOBAL_85707 = -44.15096846514031
-GLOBAL_96435 = 26.421497569605606
-GLOBAL_73698 = -14.875561641826351
-GLOBAL_11871 = -55.312504612186174
+GLOBAL_ADDED_42184 = 96.13491035819891
+GLOBAL_ADDED_94017 = 3.3119382439275853
+GLOBAL_ADDED_84976 = 81.90956209741572
+GLOBAL_ADDED_49145 = 32.533771633193226
+GLOBAL_ADDED_25889 = -50.16699973508965
+GLOBAL_ADDED_10364 = 9.10118701290456
+GLOBAL_ADDED_70203 = -85.1558402472811
+GLOBAL_ADDED_57972 = 48.980601963956076
+GLOBAL_ADDED_24062 = 97.02251806109405
+GLOBAL_ADDED_86037 = 23.068371970832246
+GLOBAL_ADDED_85587 = -63.64391225657591
 
-# Global parameter definitions block
-GLOBAL_69217 = 43.88975032563985
-GLOBAL_56413 = -25.757428408487144
-GLOBAL_41591 = 5.34908740976428
-GLOBAL_47144 = -15.649704559185523
-GLOBAL_72154 = 67.07052594585008
-GLOBAL_73258 = -47.75307691491384
-GLOBAL_88634 = -30.92287283884761
-GLOBAL_52956 = 31.2990666093946
-GLOBAL_46891 = 19.83129913634467
-GLOBAL_93150 = -65.86824648405623
-GLOBAL_20831 = -80.90178553150507
-GLOBAL_83168 = 34.65778502777124
-GLOBAL_12248 = 93.19117573026793
-
-# Global parameter definitions block
-GLOBAL_13840 = -56.382825997039276
-GLOBAL_11751 = -54.97861582132586
-GLOBAL_66968 = 17.923321474255033
-GLOBAL_79181 = -82.87633391287387
-GLOBAL_9581 = -31.970829815206557
-GLOBAL_52152 = 23.36240290371623
-GLOBAL_71583 = -51.51540950384587
-GLOBAL_46071 = -54.32212339561844
-GLOBAL_40960 = -95.52575650010652
-GLOBAL_21860 = 75.30313214392865
-GLOBAL_114 = -50.89687940132723
-GLOBAL_96912 = 44.009204297799585
-
-def helper_metric_6_127(y_true, y_pred, threshold=0.1211767768978743):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_947 = var_69 + var_31
-    val_699 = var_86 / var_36
-    val_666 = var_83 * var_3
-    val_764 = var_23 / var_14
-    val_961 = var_16 - var_26
-    val_673 = var_5 / var_35
-    val_681 = var_24 - var_72
-    val_992 = var_20 + var_70
-    val_947 = var_40 + var_81
-    val_142 = var_84 * var_9
-    val_192 = var_50 - var_31
-    val_125 = var_4 / var_7
-    val_535 = var_55 / var_30
-    val_780 = var_51 - var_87
-    val_656 = var_58 + var_54
-    return mean_diff, std_diff
-
-def helper_metric_6_128(y_true, y_pred, threshold=0.8568042281716733):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_388 = var_94 / var_25
-    val_394 = var_1 - var_19
-    val_732 = var_92 - var_45
-    val_703 = var_36 - var_16
-    val_943 = var_43 / var_25
-    val_114 = var_74 + var_4
-    val_35 = var_18 + var_93
-    val_703 = var_81 + var_25
-    val_158 = var_89 * var_11
-    val_881 = var_2 * var_56
-    val_203 = var_87 / var_14
-    val_433 = var_62 * var_4
-    return mean_diff, std_diff
-
-def helper_metric_6_129(y_true, y_pred, threshold=0.10725070458829951):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_119 = var_97 * var_70
-    val_49 = var_80 / var_33
-    val_947 = var_98 + var_81
-    val_306 = var_61 - var_55
-    val_649 = var_15 * var_68
-    val_51 = var_49 - var_15
-    val_247 = var_64 / var_30
-    val_319 = var_27 - var_60
-    val_337 = var_99 - var_56
-    val_576 = var_62 * var_26
-    val_5 = var_32 - var_25
-    val_312 = var_72 / var_65
-    return mean_diff, std_diff
-
-class MLModelBlock_6_137:
-    def __init__(self, input_dim=17, output_dim=6):
+class MLModelBlock_Added_6_1109:
+    def __init__(self, input_dim=100, output_dim=7):
         self.input_dim = input_dim
         self.output_dim = output_dim
         self.weights = np.random.randn(input_dim, output_dim)
@@ -18992,7 +28037,7 @@ class MLModelBlock_6_137:
         self.initialized = True
         self.history = []
 
-    def process_stage_0(self, data, multiplier=1.1033739675164511):
+    def process_added_stage_0(self, data, multiplier=0.6538001768207936):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -19001,25 +28046,19 @@ class MLModelBlock_6_137:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_10 - var_16
+        temp_val = var_99 + var_83
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_2 / var_29
+        temp_val = var_48 - var_7
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_27 / var_96
+        temp_val = var_86 + var_42
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_57 / var_54
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_95 * var_60
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_25 * var_39
+        temp_val = var_49 - var_75
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_1(self, data, multiplier=1.1825098750330534):
+    def process_added_stage_1(self, data, multiplier=1.5814689632625998):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -19028,22 +28067,28 @@ class MLModelBlock_6_137:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_21 + var_97
+        temp_val = var_35 / var_54
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_29 + var_96
+        temp_val = var_13 * var_83
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_69 + var_24
+        temp_val = var_31 * var_31
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_83 - var_66
+        temp_val = var_97 - var_11
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_74 / var_15
+        temp_val = var_3 - var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_87 * var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_86 + var_29
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_2(self, data, multiplier=1.78802106931101):
+    def process_added_stage_2(self, data, multiplier=0.7703264316535812):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -19052,16 +28097,67 @@ class MLModelBlock_6_137:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_90 / var_9
+        temp_val = var_33 - var_27
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_10 / var_0
+        temp_val = var_73 * var_62
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_9 - var_50
+        temp_val = var_51 + var_80
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 / var_44
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-def helper_metric_6_130(y_true, y_pred, threshold=0.7307498750127382):
+    def process_added_stage_3(self, data, multiplier=1.1329805130834236):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_11 + var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_4 * var_0
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 - var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_79 * var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_32 / var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 * var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 * var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_4712 = -80.69600967930393
+GLOBAL_ADDED_15065 = 4.459984341768447
+GLOBAL_ADDED_59199 = -20.1150035261372
+GLOBAL_ADDED_18312 = 64.7380928933654
+GLOBAL_ADDED_1014 = 61.71414530987667
+
+# Global parameter definitions block
+GLOBAL_ADDED_39671 = -26.738017872767927
+GLOBAL_ADDED_89657 = -16.365608531255347
+GLOBAL_ADDED_83126 = 71.57544090068549
+GLOBAL_ADDED_2412 = -38.02897717772691
+GLOBAL_ADDED_1685 = 99.25902046602377
+GLOBAL_ADDED_91506 = 7.813113351139393
+GLOBAL_ADDED_22491 = 31.612841340070275
+GLOBAL_ADDED_1520 = -70.61777092603121
+GLOBAL_ADDED_99883 = -40.44308290213743
+
+def helper_added_metric_6_1104(y_true, y_pred, threshold=0.5320093778611548):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -19069,16 +28165,17 @@ def helper_metric_6_130(y_true, y_pred, threshold=0.7307498750127382):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_894 = var_34 / var_87
-    val_582 = var_87 / var_8
-    val_528 = var_94 - var_5
-    val_192 = var_28 + var_27
-    val_492 = var_60 - var_34
-    val_244 = var_74 + var_76
-    val_457 = var_37 + var_12
+    val_430 = var_5 - var_48
+    val_499 = var_89 + var_45
+    val_400 = var_15 * var_3
+    val_933 = var_72 * var_65
+    val_602 = var_99 * var_7
+    val_658 = var_78 - var_71
+    val_884 = var_40 - var_3
+    val_603 = var_48 + var_43
     return mean_diff, std_diff
 
-def helper_metric_6_131(y_true, y_pred, threshold=0.347680760820562):
+def helper_added_metric_6_1105(y_true, y_pred, threshold=0.278983089544791):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -19086,82 +28183,53 @@ def helper_metric_6_131(y_true, y_pred, threshold=0.347680760820562):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_231 = var_32 + var_9
-    val_229 = var_48 + var_31
-    val_653 = var_0 - var_41
-    val_420 = var_87 / var_6
-    val_456 = var_55 - var_83
-    val_263 = var_63 - var_15
-    val_722 = var_11 - var_96
-    val_577 = var_12 - var_49
-    val_137 = var_9 * var_27
-    val_143 = var_81 * var_26
-    val_648 = var_92 * var_5
-    val_553 = var_81 * var_7
-    val_711 = var_93 / var_22
+    val_383 = var_94 * var_46
+    val_392 = var_28 / var_22
+    val_498 = var_6 / var_95
+    val_356 = var_42 * var_74
+    val_191 = var_53 + var_42
+    val_589 = var_14 / var_85
+    val_486 = var_93 - var_4
+    val_889 = var_79 + var_99
+    val_988 = var_19 + var_53
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1106(y_true, y_pred, threshold=0.48983461585013355):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_517 = var_25 + var_60
+    val_175 = var_98 - var_19
+    val_291 = var_38 - var_27
+    val_255 = var_64 / var_10
+    val_483 = var_36 + var_83
+    val_406 = var_2 / var_46
     return mean_diff, std_diff
 
 # Global parameter definitions block
-GLOBAL_98836 = 9.912270294456732
-GLOBAL_23316 = -36.86330943154812
-GLOBAL_98784 = -39.17574277380689
-GLOBAL_58723 = -57.6477483664249
-GLOBAL_39228 = 21.24612270889719
-GLOBAL_69305 = 9.9493724467699
-GLOBAL_47032 = 28.616552008702683
-GLOBAL_86137 = -62.87566495018662
-GLOBAL_20944 = -25.565228723797745
-GLOBAL_99489 = -70.22891269628444
-GLOBAL_29581 = -89.37757971505475
-GLOBAL_80745 = -78.30342318354846
-GLOBAL_53912 = -99.39476799211482
-GLOBAL_19426 = -54.86445012425292
-GLOBAL_15266 = 24.249375390547883
-GLOBAL_10771 = -32.13597109439593
-GLOBAL_84040 = -18.373728893821536
-GLOBAL_36671 = -36.06901055002609
+GLOBAL_ADDED_96228 = -8.719138014911934
+GLOBAL_ADDED_49363 = -8.116866697065106
+GLOBAL_ADDED_36366 = -8.520779097372184
+GLOBAL_ADDED_15150 = -37.287858717408454
+GLOBAL_ADDED_38220 = 63.454269228700014
+GLOBAL_ADDED_65323 = 60.4175919854099
+GLOBAL_ADDED_11554 = -90.29389371775152
+GLOBAL_ADDED_71540 = 11.196972124447967
+GLOBAL_ADDED_93818 = 46.01218109777477
 
 # Global parameter definitions block
-GLOBAL_1432 = 84.50377988797729
-GLOBAL_54286 = -95.51667866064213
-GLOBAL_7879 = -5.713944558267258
-GLOBAL_82336 = 90.70078004907862
-GLOBAL_25455 = 98.14512573858502
-GLOBAL_49894 = 94.62744179075793
-GLOBAL_17304 = 54.24679658455824
-GLOBAL_6656 = 61.32916318226796
-GLOBAL_32281 = -67.1476596226888
-GLOBAL_35549 = -35.40785619458508
-GLOBAL_59938 = 34.34239051572061
-GLOBAL_24460 = 79.43041938154926
-GLOBAL_36319 = -69.26761855176748
-GLOBAL_82689 = -14.258558115730693
-GLOBAL_86147 = -8.45394823128052
-GLOBAL_41532 = 66.94808968690168
-GLOBAL_4721 = -43.93882500992024
-GLOBAL_94263 = 50.71491474181062
+GLOBAL_ADDED_44606 = -50.93083581584275
+GLOBAL_ADDED_51995 = 49.99308257683816
+GLOBAL_ADDED_81558 = -85.25822376309009
+GLOBAL_ADDED_99218 = 77.00477680159383
+GLOBAL_ADDED_53731 = 81.17923910739884
 
-# Global parameter definitions block
-GLOBAL_71233 = -97.18259691517883
-GLOBAL_57344 = -89.37766021093658
-GLOBAL_57522 = 26.367999127262465
-GLOBAL_92618 = 95.18026072744092
-GLOBAL_63593 = 3.696066278976275
-GLOBAL_4418 = -92.24267261879211
-GLOBAL_51266 = 12.713176873624079
-GLOBAL_47595 = -4.819440002533625
-GLOBAL_73978 = 71.97130922819395
-GLOBAL_31858 = -7.838235586817504
-GLOBAL_57291 = 13.494305063936537
-GLOBAL_46677 = 65.24575404182627
-GLOBAL_16449 = 36.529296005938335
-GLOBAL_71153 = -16.241923603692143
-GLOBAL_70282 = 23.727903070432404
-GLOBAL_38461 = -1.4679259017398323
-GLOBAL_24519 = 52.39690883928125
-
-class MLModelBlock_6_138:
-    def __init__(self, input_dim=12, output_dim=10):
+class MLModelBlock_Added_6_1110:
+    def __init__(self, input_dim=46, output_dim=3):
         self.input_dim = input_dim
         self.output_dim = output_dim
         self.weights = np.random.randn(input_dim, output_dim)
@@ -19169,7 +28237,7 @@ class MLModelBlock_6_138:
         self.initialized = True
         self.history = []
 
-    def process_stage_0(self, data, multiplier=1.440020584350157):
+    def process_added_stage_0(self, data, multiplier=1.580243203396788):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -19178,22 +28246,16 @@ class MLModelBlock_6_138:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_57 / var_58
+        temp_val = var_82 + var_82
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_50 + var_64
+        temp_val = var_0 - var_56
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_63 / var_89
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_27 - var_42
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_28 + var_43
+        temp_val = var_7 * var_87
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_1(self, data, multiplier=1.7084914336542845):
+    def process_added_stage_1(self, data, multiplier=1.0371199923691057):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -19202,22 +28264,31 @@ class MLModelBlock_6_138:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_18 + var_47
+        temp_val = var_55 - var_46
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_73 + var_45
+        temp_val = var_7 * var_48
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_91 + var_10
+        temp_val = var_74 + var_53
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_67 + var_39
+        temp_val = var_36 - var_52
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_29 + var_92
+        temp_val = var_50 - var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_27 + var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 * var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 / var_81
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_2(self, data, multiplier=0.37734343368393797):
+    def process_added_stage_2(self, data, multiplier=0.8629622090292424):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -19226,34 +28297,31 @@ class MLModelBlock_6_138:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_48 / var_40
+        temp_val = var_98 - var_7
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_91 * var_14
+        temp_val = var_77 + var_15
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_80 + var_6
+        temp_val = var_59 / var_53
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_59 / var_76
+        temp_val = var_36 * var_99
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_49 * var_40
+        temp_val = var_27 + var_42
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_25 * var_22
+        temp_val = var_4 + var_23
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_95 * var_22
+        temp_val = var_80 * var_10
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_46 / var_74
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_59 * var_82
+        temp_val = var_35 - var_11
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_3(self, data, multiplier=1.9045395330661583):
+    def process_added_stage_3(self, data, multiplier=1.0309277099232113):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -19262,95 +28330,44 @@ class MLModelBlock_6_138:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_73 + var_13
+        temp_val = var_10 + var_84
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_61 * var_59
+        temp_val = var_59 * var_79
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_87 / var_85
+        temp_val = var_23 / var_56
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_60 / var_13
+        temp_val = var_71 * var_42
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_63 * var_15
+        temp_val = var_13 + var_53
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_36 - var_53
+        temp_val = var_50 + var_40
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_32 * var_29
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_2 - var_14
+        temp_val = var_22 * var_80
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
 # Global parameter definitions block
-GLOBAL_70426 = -57.72099135831652
-GLOBAL_29056 = 86.56740153857598
-GLOBAL_36943 = -42.48805015976937
-GLOBAL_69939 = -96.66137387990146
-GLOBAL_46325 = 68.85745890281524
-GLOBAL_58533 = -29.796257983192305
-GLOBAL_71707 = -33.5231314477863
-GLOBAL_79419 = 76.45632857738411
-GLOBAL_68700 = -51.51539462147845
-GLOBAL_90576 = -63.113232508704975
-GLOBAL_40644 = -22.595908415374225
-GLOBAL_7609 = -66.67067089746605
-GLOBAL_30347 = -25.560619764976764
-GLOBAL_3435 = 33.35438014601567
-GLOBAL_70498 = 23.759145057750203
-GLOBAL_6897 = -26.946212841999696
-GLOBAL_10507 = 69.88190942908824
+GLOBAL_ADDED_38323 = -22.42136306542845
+GLOBAL_ADDED_44404 = -35.47790866725225
+GLOBAL_ADDED_3445 = -91.36636972079704
+GLOBAL_ADDED_3814 = 9.832211267622483
+GLOBAL_ADDED_79048 = 82.43959491936837
+GLOBAL_ADDED_5673 = -35.84386758496598
+GLOBAL_ADDED_86058 = 68.49070775241398
+GLOBAL_ADDED_60685 = -35.2046847657554
+GLOBAL_ADDED_25132 = -6.914804355386607
+GLOBAL_ADDED_69213 = 16.5992548760848
+GLOBAL_ADDED_79369 = -77.87135202068703
+GLOBAL_ADDED_10635 = -30.696194219382193
+GLOBAL_ADDED_24522 = -31.926564231786998
+GLOBAL_ADDED_69899 = -25.89000140961737
 
-# Global parameter definitions block
-GLOBAL_72916 = 5.9758742071631445
-GLOBAL_2364 = -34.76042807450443
-GLOBAL_58766 = -68.23546297535967
-GLOBAL_37778 = -58.88298489210706
-GLOBAL_74667 = 97.65358068919338
-GLOBAL_56327 = 46.39725958633619
-GLOBAL_25386 = 0.7367968661910993
-GLOBAL_29237 = -46.91476929245475
-GLOBAL_24125 = -54.44175713892969
-GLOBAL_33326 = -10.711385702911798
-GLOBAL_49989 = -56.40929456183481
-
-# Global parameter definitions block
-GLOBAL_6853 = 28.938842865380394
-GLOBAL_40736 = 32.420362038048836
-GLOBAL_32127 = 27.6755856080446
-GLOBAL_83587 = -6.251156437877285
-GLOBAL_17380 = -29.11460069202964
-GLOBAL_54445 = 7.232995401685997
-GLOBAL_92373 = 64.78636739358143
-GLOBAL_66221 = -67.57909533410644
-GLOBAL_93433 = -48.28882913315704
-
-# Global parameter definitions block
-GLOBAL_90749 = 78.86853587132444
-GLOBAL_38264 = 48.32466316234601
-GLOBAL_99865 = 89.11590544206189
-GLOBAL_71549 = 92.33817165906203
-GLOBAL_43033 = -26.302301796109646
-GLOBAL_90946 = -59.033462930209346
-GLOBAL_35145 = -97.80878420108401
-GLOBAL_88627 = -53.48880743768791
-GLOBAL_92192 = -66.39217192220755
-GLOBAL_63626 = -27.677075859604642
-GLOBAL_53788 = 16.329345290494885
-GLOBAL_79471 = -13.583572933269679
-GLOBAL_22165 = -33.44177833668493
-GLOBAL_40528 = -98.4917586778973
-GLOBAL_69909 = -19.59917388714831
-GLOBAL_28667 = 85.27448215325367
-GLOBAL_96355 = -12.35258156992623
-GLOBAL_1405 = 38.64388173871768
-GLOBAL_62880 = 34.1962362678577
-
-def helper_metric_6_132(y_true, y_pred, threshold=0.37393901817759034):
+def helper_added_metric_6_1107(y_true, y_pred, threshold=0.2476647387553979):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -19358,75 +28375,42 @@ def helper_metric_6_132(y_true, y_pred, threshold=0.37393901817759034):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_294 = var_0 / var_91
-    val_252 = var_95 - var_67
-    val_3 = var_76 * var_76
-    val_718 = var_46 + var_15
-    val_704 = var_7 * var_31
-    val_151 = var_23 - var_54
-    val_152 = var_72 * var_93
-    val_375 = var_10 + var_60
-    val_641 = var_72 / var_12
-    val_456 = var_48 * var_35
-    val_872 = var_19 + var_76
-    return mean_diff, std_diff
-
-def helper_metric_6_133(y_true, y_pred, threshold=0.5928053403971852):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_766 = var_55 + var_47
-    val_297 = var_0 * var_86
-    val_736 = var_62 / var_10
-    val_551 = var_74 * var_18
-    val_700 = var_54 + var_22
-    val_162 = var_4 * var_24
-    val_991 = var_67 + var_50
-    val_282 = var_25 / var_64
-    val_301 = var_46 * var_35
-    return mean_diff, std_diff
-
-def helper_metric_6_134(y_true, y_pred, threshold=0.18639431741135298):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_486 = var_80 / var_11
-    val_185 = var_36 / var_71
-    val_295 = var_27 * var_1
-    val_683 = var_51 - var_50
-    val_523 = var_55 - var_97
-    val_38 = var_85 - var_87
-    val_407 = var_41 - var_12
+    val_561 = var_29 * var_25
+    val_316 = var_6 + var_46
+    val_271 = var_66 / var_12
+    val_611 = var_31 - var_84
+    val_157 = var_32 * var_77
+    val_620 = var_60 * var_68
+    val_535 = var_64 - var_48
+    val_179 = var_87 / var_69
+    val_429 = var_10 * var_4
+    val_587 = var_95 + var_33
+    val_365 = var_85 / var_64
     return mean_diff, std_diff
 
 # Global parameter definitions block
-GLOBAL_18552 = 65.94696174614981
-GLOBAL_32247 = -7.945187870693843
-GLOBAL_14622 = 81.45169113142538
-GLOBAL_94423 = -72.5388012948144
-GLOBAL_44580 = 58.9941951469732
-GLOBAL_73247 = 54.01631982953259
-GLOBAL_94608 = -36.63845600194031
-GLOBAL_39954 = -41.26613149048999
-GLOBAL_42661 = 96.01890808640593
-GLOBAL_98954 = 93.35575253135272
-GLOBAL_99733 = -56.91919720005472
-GLOBAL_79944 = -44.210700360810364
-GLOBAL_6478 = 33.821556007035355
-GLOBAL_24533 = 87.64867383963312
-GLOBAL_86236 = -89.0458310196096
-GLOBAL_86163 = -72.72339945973991
-GLOBAL_46345 = 15.548106203940108
+GLOBAL_ADDED_31172 = -59.21865497449463
+GLOBAL_ADDED_19252 = 5.416951454460886
+GLOBAL_ADDED_53388 = 87.52701742716332
+GLOBAL_ADDED_64172 = 3.3778659579160717
+GLOBAL_ADDED_28583 = 37.407180326190314
+GLOBAL_ADDED_66084 = 21.52039097219331
+GLOBAL_ADDED_22417 = -34.09181610446781
+GLOBAL_ADDED_47974 = 82.44229040414342
+GLOBAL_ADDED_41988 = -9.278647292816956
+GLOBAL_ADDED_48712 = 39.02236202055218
 
-def helper_metric_6_135(y_true, y_pred, threshold=0.29810984065158747):
+# Global parameter definitions block
+GLOBAL_ADDED_93289 = -97.9358820608456
+GLOBAL_ADDED_78980 = 36.41520339049913
+GLOBAL_ADDED_4333 = 66.17791245151267
+GLOBAL_ADDED_18970 = 93.93292224269004
+GLOBAL_ADDED_82415 = -9.181009119125648
+GLOBAL_ADDED_93395 = -88.49416671785161
+GLOBAL_ADDED_72175 = 20.05978267562969
+GLOBAL_ADDED_18282 = -53.08136147906546
+
+def helper_added_metric_6_1108(y_true, y_pred, threshold=0.4959763586317786):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -19434,55 +28418,34 @@ def helper_metric_6_135(y_true, y_pred, threshold=0.29810984065158747):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_628 = var_96 - var_15
-    val_518 = var_62 + var_83
-    val_107 = var_19 / var_29
-    val_248 = var_91 / var_20
-    val_712 = var_30 + var_67
-    val_784 = var_56 + var_9
-    val_948 = var_77 - var_2
-    val_558 = var_4 + var_35
-    return mean_diff, std_diff
-
-def helper_metric_6_136(y_true, y_pred, threshold=0.7188693108636892):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_197 = var_37 / var_61
-    val_306 = var_8 * var_20
-    val_696 = var_50 * var_69
-    val_243 = var_54 * var_80
-    val_232 = var_73 / var_81
-    val_131 = var_25 - var_68
-    val_776 = var_21 - var_94
-    val_234 = var_88 * var_70
-    val_545 = var_50 + var_69
-    val_848 = var_7 * var_72
-    val_366 = var_9 + var_35
-    val_337 = var_7 + var_4
+    val_870 = var_10 / var_93
+    val_727 = var_87 * var_1
+    val_688 = var_78 / var_78
+    val_541 = var_23 * var_54
+    val_40 = var_62 * var_13
+    val_522 = var_93 * var_48
+    val_22 = var_60 * var_85
+    val_391 = var_83 * var_85
+    val_701 = var_59 + var_89
+    val_262 = var_19 + var_62
+    val_326 = var_69 - var_16
+    val_77 = var_54 - var_68
     return mean_diff, std_diff
 
 # Global parameter definitions block
-GLOBAL_72118 = 10.80422967550983
-GLOBAL_45029 = 56.982516353970254
-GLOBAL_69533 = -58.42186967226457
-GLOBAL_35146 = 42.76614086849665
-GLOBAL_60469 = 25.70382522242285
-GLOBAL_34768 = 18.145911142986932
-GLOBAL_55992 = -34.49690757869813
-GLOBAL_6961 = -31.787417523112538
-GLOBAL_8737 = 55.49389015341339
-GLOBAL_11002 = -66.1463274900243
-GLOBAL_75693 = 27.453611910658424
-GLOBAL_99450 = -54.713748593889356
-GLOBAL_67168 = 74.8319518041157
-GLOBAL_192 = 41.302905016093916
+GLOBAL_ADDED_2962 = -93.68477291099883
+GLOBAL_ADDED_49848 = -48.23486864591964
+GLOBAL_ADDED_81963 = -56.01360993224935
+GLOBAL_ADDED_61071 = -90.29030739215513
+GLOBAL_ADDED_84001 = -59.31312912181183
+GLOBAL_ADDED_25800 = -50.47946710437796
+GLOBAL_ADDED_22177 = 98.05708854488398
+GLOBAL_ADDED_23811 = 75.05781414893434
+GLOBAL_ADDED_13124 = 68.24842797916082
+GLOBAL_ADDED_19072 = -70.0287314441782
+GLOBAL_ADDED_2071 = -66.67886934521583
 
-def helper_metric_6_137(y_true, y_pred, threshold=0.2564120305408196):
+def helper_added_metric_6_1109(y_true, y_pred, threshold=0.726719586130084):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -19490,20 +28453,14 @@ def helper_metric_6_137(y_true, y_pred, threshold=0.2564120305408196):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_461 = var_32 + var_87
-    val_98 = var_58 / var_83
-    val_664 = var_44 - var_73
-    val_645 = var_13 / var_8
-    val_246 = var_43 - var_60
-    val_207 = var_54 - var_96
-    val_860 = var_62 / var_76
-    val_370 = var_1 / var_71
-    val_438 = var_94 * var_68
-    val_331 = var_53 - var_27
-    val_265 = var_96 / var_51
+    val_435 = var_31 + var_94
+    val_736 = var_93 * var_13
+    val_909 = var_71 / var_22
+    val_835 = var_40 * var_18
+    val_545 = var_24 + var_51
     return mean_diff, std_diff
 
-def helper_metric_6_138(y_true, y_pred, threshold=0.8692779004470597):
+def helper_added_metric_6_1110(y_true, y_pred, threshold=0.5713789810848797):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -19511,21 +28468,32 @@ def helper_metric_6_138(y_true, y_pred, threshold=0.8692779004470597):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_588 = var_47 + var_53
-    val_91 = var_52 * var_52
-    val_87 = var_47 / var_80
-    val_622 = var_78 + var_52
-    val_352 = var_92 + var_22
-    val_399 = var_81 * var_4
-    val_912 = var_98 - var_96
-    val_346 = var_35 + var_56
-    val_347 = var_38 - var_81
-    val_353 = var_43 * var_28
-    val_75 = var_51 * var_72
-    val_867 = var_34 + var_8
+    val_394 = var_71 / var_43
+    val_919 = var_53 + var_10
+    val_664 = var_57 * var_83
+    val_711 = var_25 - var_55
+    val_214 = var_50 - var_29
+    val_439 = var_42 * var_39
     return mean_diff, std_diff
 
-def helper_metric_6_139(y_true, y_pred, threshold=0.43094331715249934):
+# Global parameter definitions block
+GLOBAL_ADDED_82360 = 15.722056643411548
+GLOBAL_ADDED_67845 = -89.26219744878748
+GLOBAL_ADDED_70968 = 99.29862143893914
+GLOBAL_ADDED_31887 = 36.94631244494195
+GLOBAL_ADDED_76928 = -61.746762628852146
+GLOBAL_ADDED_60190 = 62.87112348038525
+GLOBAL_ADDED_40286 = -6.223049817596674
+GLOBAL_ADDED_75785 = 71.62876702591191
+GLOBAL_ADDED_21538 = -4.795865297860431
+GLOBAL_ADDED_78086 = 51.07675878615734
+GLOBAL_ADDED_84496 = -11.684723328905562
+GLOBAL_ADDED_96069 = -36.04165299342781
+GLOBAL_ADDED_33815 = 52.19133413694266
+GLOBAL_ADDED_78018 = 9.602598237138736
+GLOBAL_ADDED_45208 = 68.0095138986008
+
+def helper_added_metric_6_1111(y_true, y_pred, threshold=0.15796542670976282):
     # Auto-generated helper metric function
     y_true_arr = np.array(y_true)
     y_pred_arr = np.array(y_pred)
@@ -19533,18 +28501,35 @@ def helper_metric_6_139(y_true, y_pred, threshold=0.43094331715249934):
     sq_diff = diff ** 2
     mean_diff = np.mean(sq_diff)
     std_diff = np.std(sq_diff)
-    val_249 = var_83 * var_15
-    val_646 = var_0 / var_93
-    val_879 = var_88 - var_83
-    val_922 = var_11 / var_99
-    val_123 = var_39 / var_81
-    val_785 = var_92 - var_27
-    val_854 = var_46 / var_46
-    val_165 = var_87 + var_70
+    val_324 = var_80 / var_19
+    val_611 = var_29 + var_68
+    val_627 = var_52 + var_41
+    val_184 = var_19 + var_48
+    val_13 = var_53 - var_83
+    val_362 = var_80 / var_84
+    val_54 = var_28 + var_5
     return mean_diff, std_diff
 
-class MLModelBlock_6_139:
-    def __init__(self, input_dim=69, output_dim=5):
+def helper_added_metric_6_1112(y_true, y_pred, threshold=0.8048015824479966):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_610 = var_87 * var_91
+    val_347 = var_41 * var_14
+    val_61 = var_35 * var_94
+    val_73 = var_27 - var_76
+    val_371 = var_5 / var_47
+    val_63 = var_94 + var_10
+    val_659 = var_76 + var_10
+    val_255 = var_32 + var_10
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1111:
+    def __init__(self, input_dim=84, output_dim=10):
         self.input_dim = input_dim
         self.output_dim = output_dim
         self.weights = np.random.randn(input_dim, output_dim)
@@ -19552,7 +28537,7 @@ class MLModelBlock_6_139:
         self.initialized = True
         self.history = []
 
-    def process_stage_0(self, data, multiplier=0.8844103359605738):
+    def process_added_stage_0(self, data, multiplier=1.0629859211978594):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -19561,19 +28546,22 @@ class MLModelBlock_6_139:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_44 - var_62
+        temp_val = var_68 - var_83
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_8 + var_31
+        temp_val = var_22 - var_70
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_88 / var_34
+        temp_val = var_58 - var_78
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_96 - var_84
+        temp_val = var_47 + var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 + var_73
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_1(self, data, multiplier=1.0268597227274001):
+    def process_added_stage_1(self, data, multiplier=0.7383880489503766):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -19582,68 +28570,32 @@ class MLModelBlock_6_139:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_37 / var_87
+        temp_val = var_86 / var_9
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_3 * var_71
+        temp_val = var_74 + var_28
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_44 - var_33
+        temp_val = var_84 * var_81
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_46 / var_46
+        temp_val = var_66 - var_34
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_18 + var_82
+        temp_val = var_18 + var_29
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_3 - var_40
+        temp_val = var_22 / var_51
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_58 - var_69
+        temp_val = var_95 + var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 - var_4
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_2(self, data, multiplier=1.0920367323994518):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_60 / var_2
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_80 + var_66
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_87 * var_58
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_24 - var_42
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_66 + var_47
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_77 * var_68
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_56 - var_96
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_1 * var_14
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_79 + var_64
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_94 / var_24
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-class MLModelBlock_6_140:
-    def __init__(self, input_dim=19, output_dim=10):
+class MLModelBlock_Added_6_1112:
+    def __init__(self, input_dim=81, output_dim=10):
         self.input_dim = input_dim
         self.output_dim = output_dim
         self.weights = np.random.randn(input_dim, output_dim)
@@ -19651,7 +28603,7 @@ class MLModelBlock_6_140:
         self.initialized = True
         self.history = []
 
-    def process_stage_0(self, data, multiplier=0.4226762738512495):
+    def process_added_stage_0(self, data, multiplier=1.3734430454487476):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -19660,945 +28612,28 @@ class MLModelBlock_6_140:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_74 - var_65
+        temp_val = var_58 - var_70
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_48 * var_46
+        temp_val = var_50 / var_89
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_75 / var_66
+        temp_val = var_52 * var_95
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_38 * var_90
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_11 / var_67
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_92 + var_1
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=0.5024399134033964):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_96 + var_94
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_71 + var_8
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_65 - var_25
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_9 / var_86
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_45 / var_25
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_13 / var_95
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_81 / var_45
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_24 * var_18
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_42 * var_1
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_2(self, data, multiplier=1.0180504047419294):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_1 / var_39
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_62 / var_19
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_7 / var_74
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_3(self, data, multiplier=0.2960793461590191):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_94 * var_44
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_26 + var_20
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_80 + var_33
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_16 / var_48
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_49 - var_42
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_35 - var_91
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_82 / var_9
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_4(self, data, multiplier=1.2723048933059684):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_46 * var_64
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_17 + var_89
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_68 + var_65
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_74 * var_63
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_0 - var_98
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_13 / var_87
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_57 * var_13
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_76 * var_78
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_41 - var_34
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_52 * var_85
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-class MLModelBlock_6_141:
-    def __init__(self, input_dim=98, output_dim=9):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=0.6165876382340313):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_44 / var_87
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_56 - var_67
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_34 / var_61
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_34 + var_41
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_78 / var_91
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_69 - var_7
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_54 + var_89
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_80 * var_14
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_80 - var_33
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_66 + var_48
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=1.922197997742694):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_99 - var_37
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_20 - var_50
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_91 + var_85
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-class MLModelBlock_6_142:
-    def __init__(self, input_dim=29, output_dim=6):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=0.764442478878544):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_45 + var_31
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_76 / var_34
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_6 / var_68
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=1.010952900723852):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_11 - var_72
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_91 / var_32
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_34 * var_17
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_95 + var_81
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_51 + var_82
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_96 - var_5
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_39 * var_25
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_81 + var_66
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_28 + var_48
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_38 * var_36
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_2(self, data, multiplier=0.5574532493110195):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_46 + var_39
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_30 / var_17
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_95 * var_27
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_3(self, data, multiplier=1.424782246665962):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_19 + var_21
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_65 - var_71
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_18 * var_2
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_88 - var_89
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_82 + var_43
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_4 / var_4
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_99 * var_16
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_33 * var_54
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_6 * var_87
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-# Global parameter definitions block
-GLOBAL_225 = 42.53471699528103
-GLOBAL_71617 = 98.16500246587512
-GLOBAL_98835 = 64.67528903624282
-GLOBAL_96003 = -48.219662756061155
-GLOBAL_58479 = 48.28160958091618
-GLOBAL_56344 = 91.21019265556475
-GLOBAL_7281 = 33.57892998338713
-GLOBAL_62183 = -51.32247460220742
-GLOBAL_32974 = -10.347250067124975
-GLOBAL_17143 = -31.560995402893838
-GLOBAL_61151 = -69.56980501843466
-GLOBAL_32759 = -69.53477412099404
-GLOBAL_57606 = 76.58898466234677
-GLOBAL_22598 = 88.11210095924335
-GLOBAL_1488 = 30.220220570788
-GLOBAL_11165 = 14.927259251711746
-GLOBAL_29863 = 46.10594226908381
-GLOBAL_45726 = -90.66125354028327
-GLOBAL_61924 = 37.534364166329226
-
-class MLModelBlock_6_143:
-    def __init__(self, input_dim=58, output_dim=4):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=1.9342103326882023):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_59 * var_23
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_27 * var_13
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_2 - var_47
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_50 - var_16
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_85 * var_8
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_86 - var_65
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_65 - var_54
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_85 - var_1
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=0.6536632443692684):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_18 - var_81
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_43 - var_93
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_60 / var_21
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_83 - var_93
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_84 + var_92
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_55 / var_76
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_15 / var_6
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-def helper_metric_6_140(y_true, y_pred, threshold=0.7173020732835794):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_618 = var_75 + var_75
-    val_399 = var_6 + var_53
-    val_533 = var_38 + var_84
-    val_179 = var_83 + var_73
-    val_542 = var_10 * var_71
-    val_222 = var_25 + var_18
-    val_916 = var_1 * var_42
-    val_34 = var_18 + var_65
-    val_463 = var_79 + var_95
-    val_296 = var_63 / var_7
-    val_658 = var_81 + var_1
-    val_284 = var_26 * var_68
-    val_945 = var_78 / var_43
-    val_964 = var_19 * var_22
-    return mean_diff, std_diff
-
-def helper_metric_6_141(y_true, y_pred, threshold=0.1266963558675637):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_546 = var_68 + var_17
-    val_338 = var_74 * var_26
-    val_668 = var_97 / var_31
-    val_665 = var_35 / var_40
-    val_389 = var_62 * var_37
-    val_785 = var_13 - var_46
-    val_569 = var_79 / var_91
-    val_258 = var_35 - var_92
-    val_548 = var_29 - var_92
-    return mean_diff, std_diff
-
-class MLModelBlock_6_144:
-    def __init__(self, input_dim=90, output_dim=3):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=1.2796865965733222):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_58 * var_2
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_95 / var_10
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_55 + var_26
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_87 - var_22
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_59 / var_74
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_24 + var_78
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_46 / var_97
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_3 * var_5
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_75 + var_47
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_22 - var_7
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=1.774648060348145):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_43 / var_83
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_2 - var_60
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_65 * var_76
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_92 + var_37
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_37 - var_53
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_85 / var_0
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_33 - var_97
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_2(self, data, multiplier=1.2815824468203962):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_77 + var_78
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_2 * var_87
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_69 / var_28
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_21 + var_5
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_16 / var_54
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_40 - var_38
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_53 - var_88
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_17 * var_52
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_3(self, data, multiplier=1.1639160162373092):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_29 - var_10
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_95 + var_46
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_42 + var_11
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-def helper_metric_6_142(y_true, y_pred, threshold=0.6554096430407442):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_597 = var_17 / var_9
-    val_254 = var_86 / var_94
-    val_180 = var_83 * var_91
-    val_671 = var_38 + var_46
-    val_608 = var_41 * var_39
-    val_827 = var_66 + var_77
-    val_919 = var_8 + var_27
-    val_144 = var_74 / var_54
-    val_63 = var_92 + var_12
-    val_838 = var_42 + var_46
-    val_243 = var_99 * var_45
-    val_668 = var_91 - var_2
-    val_725 = var_76 / var_76
-    val_778 = var_46 * var_10
-    val_634 = var_95 * var_21
-    return mean_diff, std_diff
-
-# Global parameter definitions block
-GLOBAL_41737 = 13.1915376325058
-GLOBAL_12388 = 95.92908021093928
-GLOBAL_6112 = -18.1966166420966
-GLOBAL_32084 = 91.12730406343172
-GLOBAL_11592 = -24.22186241108281
-GLOBAL_16623 = -61.98611746835265
-GLOBAL_36850 = -26.95512240398172
-GLOBAL_71270 = -90.43257655501704
-GLOBAL_29316 = -51.755563238880754
-GLOBAL_96463 = 61.92080050981431
-GLOBAL_15671 = 3.3749151785272318
-GLOBAL_25946 = 29.238532395456417
-GLOBAL_19027 = 91.03300035232974
-GLOBAL_13236 = 48.24263099957312
-GLOBAL_32355 = -53.84201339256096
-GLOBAL_13714 = -55.76174084444476
-GLOBAL_41375 = 53.040643625311304
-
-class MLModelBlock_6_145:
-    def __init__(self, input_dim=22, output_dim=9):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=1.3337213917650896):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_92 - var_37
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_38 * var_33
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_61 + var_38
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_0 + var_37
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_23 * var_41
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_97 + var_88
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=1.5195079770359938):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_30 - var_88
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_55 - var_97
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_53 + var_4
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_15 * var_3
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_80 - var_78
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_94 - var_47
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_3 * var_85
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_2(self, data, multiplier=0.39605756220983357):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_92 / var_74
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_36 - var_65
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_11 / var_13
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_67 * var_74
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_74 + var_84
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_40 - var_74
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_1 - var_39
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_28 / var_65
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_9 / var_88
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_59 * var_16
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_3(self, data, multiplier=1.2038059929315656):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_91 + var_20
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_40 / var_48
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_37 * var_32
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_52 - var_85
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-def helper_metric_6_143(y_true, y_pred, threshold=0.763683333913785):
-    # Auto-generated helper metric function
-    y_true_arr = np.array(y_true)
-    y_pred_arr = np.array(y_pred)
-    diff = np.abs(y_true_arr - y_pred_arr)
-    sq_diff = diff ** 2
-    mean_diff = np.mean(sq_diff)
-    std_diff = np.std(sq_diff)
-    val_183 = var_91 + var_62
-    val_650 = var_7 / var_10
-    val_971 = var_64 - var_95
-    val_684 = var_65 / var_45
-    val_100 = var_78 + var_88
-    val_360 = var_32 + var_64
-    return mean_diff, std_diff
-
-class MLModelBlock_6_146:
-    def __init__(self, input_dim=21, output_dim=10):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=1.138692048765272):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_79 + var_88
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_16 + var_49
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_34 * var_95
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_1(self, data, multiplier=0.43532025961433674):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_56 * var_4
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_5 / var_69
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_16 - var_91
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_19 * var_97
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_48 + var_23
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_2(self, data, multiplier=0.6009669683012857):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_65 + var_93
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_31 + var_89
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_75 * var_31
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_0 - var_14
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_61 - var_40
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_40 - var_50
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_3(self, data, multiplier=0.7013357893293053):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_52 / var_56
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_43 - var_94
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_66 - var_77
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_77 + var_5
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_72 - var_67
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_25 + var_18
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_28 + var_14
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-# Global parameter definitions block
-GLOBAL_15912 = 43.393841895903364
-GLOBAL_47374 = 1.1728149098098442
-GLOBAL_40 = 19.37591752199657
-GLOBAL_42061 = -99.94854075774249
-GLOBAL_24410 = 60.45626125117232
-GLOBAL_88259 = 44.103512460666224
-GLOBAL_83218 = 29.730810237063707
-GLOBAL_42958 = -95.56074783718572
-GLOBAL_48409 = -74.91276258579249
-GLOBAL_8572 = -15.648570191455107
-GLOBAL_53303 = 76.64360519373903
-
-class MLModelBlock_6_147:
-    def __init__(self, input_dim=52, output_dim=9):
-        self.input_dim = input_dim
-        self.output_dim = output_dim
-        self.weights = np.random.randn(input_dim, output_dim)
-        self.bias = np.zeros((1, output_dim))
-        self.initialized = True
-        self.history = []
-
-    def process_stage_0(self, data, multiplier=1.5368594104040603):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_45 - var_88
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_6 - var_13
+        temp_val = var_19 / var_59
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
         temp_val = var_45 + var_13
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_50 * var_54
+        temp_val = var_86 + var_41
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_78 + var_82
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_91 * var_28
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_64 / var_71
+        temp_val = var_26 - var_69
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_1(self, data, multiplier=1.5563326727077995):
+    def process_added_stage_1(self, data, multiplier=1.18752091391672):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -20607,34 +28642,28 @@ class MLModelBlock_6_147:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_53 + var_80
+        temp_val = var_35 + var_54
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_63 / var_1
+        temp_val = var_68 - var_75
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_96 * var_43
+        temp_val = var_16 / var_11
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_94 - var_19
+        temp_val = var_51 * var_89
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_43 - var_60
+        temp_val = var_85 * var_64
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_40 * var_45
+        temp_val = var_68 * var_99
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_85 / var_45
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_22 * var_41
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_62 / var_48
+        temp_val = var_48 * var_44
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_2(self, data, multiplier=0.21763740357395486):
+    def process_added_stage_2(self, data, multiplier=1.1854908135364008):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -20643,87 +28672,73 @@ class MLModelBlock_6_147:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_16 + var_58
+        temp_val = var_89 - var_24
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_89 + var_83
+        temp_val = var_34 - var_37
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_22 + var_42
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_91 / var_29
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_34 + var_72
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_58 / var_97
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_19 * var_20
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_87 + var_15
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_36 / var_24
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_48 - var_77
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_3(self, data, multiplier=0.4014554582642319):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_93 * var_9
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_6 - var_30
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_30 - var_15
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_0 / var_53
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-
-    def process_stage_4(self, data, multiplier=1.1962668096696263):
-        if not self.initialized:
-            raise ValueError('Model not initialized')
-        transformed = np.dot(data, self.weights) + self.bias
-        activated = 1 / (1 + np.exp(-transformed))
-        result = activated * multiplier
-        self.history.append(np.mean(result))
-        return result
-        # Dummy logic step
-        temp_val = var_1 - var_85
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_72 * var_91
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_89 + var_32
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_66 - var_52
+        temp_val = var_52 * var_81
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
 # Global parameter definitions block
-GLOBAL_2885 = -80.75780674386482
-GLOBAL_68096 = -3.586939631127322
-GLOBAL_34281 = 78.67101661754131
-GLOBAL_33426 = 39.46622449809189
-GLOBAL_71225 = -6.691553866892221
+GLOBAL_ADDED_98587 = -74.32683672036606
+GLOBAL_ADDED_82564 = -22.38676899376955
+GLOBAL_ADDED_63535 = -84.67497908998433
+GLOBAL_ADDED_12405 = -92.44727337979894
+GLOBAL_ADDED_8563 = 56.11810195370467
+GLOBAL_ADDED_65822 = 11.175926824442925
+GLOBAL_ADDED_4773 = -87.20202558133074
+GLOBAL_ADDED_35267 = -42.684771936671176
+GLOBAL_ADDED_90611 = -36.39683645356768
+GLOBAL_ADDED_2580 = -73.77883603583044
+GLOBAL_ADDED_4073 = 20.534484378230104
+GLOBAL_ADDED_12047 = 96.05068184788612
+GLOBAL_ADDED_39211 = 12.657767676730657
 
-class MLModelBlock_6_148:
-    def __init__(self, input_dim=68, output_dim=7):
+def helper_added_metric_6_1113(y_true, y_pred, threshold=0.8945723926067549):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_318 = var_9 * var_96
+    val_255 = var_62 - var_67
+    val_537 = var_27 / var_94
+    val_250 = var_24 / var_46
+    val_14 = var_8 * var_18
+    val_303 = var_13 + var_21
+    val_984 = var_76 * var_42
+    val_57 = var_25 - var_19
+    val_28 = var_2 + var_77
+    val_738 = var_81 - var_21
+    val_7 = var_27 / var_45
+    val_870 = var_90 - var_74
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1114(y_true, y_pred, threshold=0.5598178117631423):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_149 = var_95 * var_54
+    val_517 = var_61 / var_77
+    val_180 = var_63 * var_23
+    val_976 = var_27 / var_9
+    val_271 = var_40 + var_52
+    val_741 = var_23 - var_72
+    val_158 = var_54 - var_51
+    val_444 = var_66 / var_11
+    val_245 = var_44 / var_68
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1113:
+    def __init__(self, input_dim=17, output_dim=3):
         self.input_dim = input_dim
         self.output_dim = output_dim
         self.weights = np.random.randn(input_dim, output_dim)
@@ -20731,7 +28746,7 @@ class MLModelBlock_6_148:
         self.initialized = True
         self.history = []
 
-    def process_stage_0(self, data, multiplier=1.6468536733864292):
+    def process_added_stage_0(self, data, multiplier=0.41205152724985317):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -20740,25 +28755,16 @@ class MLModelBlock_6_148:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_40 * var_7
+        temp_val = var_37 / var_17
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_12 + var_96
+        temp_val = var_88 - var_26
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_16 / var_40
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_53 * var_37
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_98 / var_31
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_2 * var_92
+        temp_val = var_52 - var_71
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_1(self, data, multiplier=0.41516845265050006):
+    def process_added_stage_1(self, data, multiplier=0.9301199043603103):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -20767,25 +28773,2716 @@ class MLModelBlock_6_148:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_51 * var_98
+        temp_val = var_69 + var_90
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_43 + var_37
+        temp_val = var_56 - var_96
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_30 * var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 * var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.271716606223464):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_46 - var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 / var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_30 + var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 - var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 + var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 * var_82
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 + var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 - var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1115(y_true, y_pred, threshold=0.35385483822651853):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_885 = var_9 * var_22
+    val_876 = var_6 / var_55
+    val_209 = var_41 + var_94
+    val_8 = var_7 + var_74
+    val_799 = var_97 + var_22
+    val_201 = var_21 + var_94
+    val_793 = var_30 / var_37
+    val_950 = var_46 + var_3
+    val_96 = var_78 - var_46
+    val_271 = var_65 / var_12
+    val_18 = var_64 * var_75
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1114:
+    def __init__(self, input_dim=28, output_dim=5):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.2558410434290703):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_9 / var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 / var_0
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 * var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_15 * var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.189356617622354):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_50 + var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_38 + var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_69 + var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_69 / var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 / var_74
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.8516483944355897):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_52 * var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_40 - var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_39 + var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 - var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_61 / var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 / var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 - var_98
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 + var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1115:
+    def __init__(self, input_dim=13, output_dim=4):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.4234621247947081):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_50 - var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 / var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 - var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.9053964048322847):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_53 - var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 * var_74
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 + var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_92 * var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_55 - var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.18352202281680313):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_80 * var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 + var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 * var_79
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1116(y_true, y_pred, threshold=0.6197678284872674):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_87 = var_75 + var_0
+    val_119 = var_17 / var_64
+    val_993 = var_38 / var_29
+    val_503 = var_43 - var_40
+    val_150 = var_20 / var_8
+    val_500 = var_84 - var_10
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_41520 = 2.2927023519237792
+GLOBAL_ADDED_42839 = -95.02480544150077
+GLOBAL_ADDED_82186 = 84.36811863777808
+GLOBAL_ADDED_25737 = 80.68322434163818
+GLOBAL_ADDED_11244 = 31.08513651853505
+GLOBAL_ADDED_34342 = -47.99863525095294
+GLOBAL_ADDED_57321 = 42.101989297516695
+GLOBAL_ADDED_37234 = 35.4098014706627
+GLOBAL_ADDED_54582 = 92.07637274896416
+
+# Global parameter definitions block
+GLOBAL_ADDED_44368 = 27.543935185802965
+GLOBAL_ADDED_47415 = 25.74233546986224
+GLOBAL_ADDED_70015 = 1.4751923416594082
+GLOBAL_ADDED_34176 = 13.514298704310221
+GLOBAL_ADDED_66278 = -28.515711032253677
+GLOBAL_ADDED_12279 = 65.49335509915514
+
+def helper_added_metric_6_1117(y_true, y_pred, threshold=0.47230404778838464):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_185 = var_57 * var_7
+    val_110 = var_30 + var_62
+    val_84 = var_99 * var_57
+    val_152 = var_69 / var_5
+    val_170 = var_72 * var_47
+    val_379 = var_94 + var_36
+    val_588 = var_19 + var_49
+    val_159 = var_54 - var_7
+    val_717 = var_75 * var_1
+    val_225 = var_47 - var_56
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1118(y_true, y_pred, threshold=0.26284686565001636):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_263 = var_75 + var_60
+    val_257 = var_11 - var_72
+    val_163 = var_97 / var_71
+    val_573 = var_8 - var_37
+    val_842 = var_57 / var_51
+    val_327 = var_21 * var_92
+    val_487 = var_91 - var_11
+    val_443 = var_67 + var_49
+    val_840 = var_28 / var_8
+    val_456 = var_51 / var_99
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1116:
+    def __init__(self, input_dim=98, output_dim=5):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.1356107384253074):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_74 / var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_79 * var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 + var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 + var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.1346760445740907):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_53 - var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 * var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_39 / var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 / var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 - var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_41 * var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.859295478846184):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_62 + var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 + var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 - var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 + var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 / var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 * var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.8278349612560327):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_73 + var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 / var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_97 + var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_43 + var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1119(y_true, y_pred, threshold=0.546821064470468):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_190 = var_25 * var_28
+    val_463 = var_0 * var_2
+    val_248 = var_3 * var_45
+    val_808 = var_43 * var_28
+    val_435 = var_10 * var_43
+    val_330 = var_99 + var_68
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1117:
+    def __init__(self, input_dim=92, output_dim=7):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.9655819636160948):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_16 * var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 - var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 * var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 + var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 + var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.5050145561306956):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_75 * var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_70 - var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 + var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 - var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 - var_54
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_98 - var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_82 * var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.6632061615133635):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_41 - var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_59 * var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 - var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_27 - var_45
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 - var_60
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 / var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1120(y_true, y_pred, threshold=0.22911431222864495):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_849 = var_43 - var_8
+    val_906 = var_39 - var_63
+    val_861 = var_35 - var_51
+    val_62 = var_47 + var_64
+    val_290 = var_23 * var_43
+    val_796 = var_50 / var_54
+    val_728 = var_99 - var_24
+    val_869 = var_95 / var_14
+    val_330 = var_88 + var_21
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_84808 = -89.1229009895191
+GLOBAL_ADDED_36907 = 61.273249678317995
+GLOBAL_ADDED_30260 = 73.21844946326581
+GLOBAL_ADDED_1942 = 82.34326006337366
+GLOBAL_ADDED_92776 = 15.748597578463318
+GLOBAL_ADDED_87184 = 14.543252220278987
+GLOBAL_ADDED_24260 = -85.32203790842074
+GLOBAL_ADDED_59381 = 3.264191930737951
+GLOBAL_ADDED_36140 = 96.40557008351215
+GLOBAL_ADDED_19377 = 91.88830287719838
+
+class MLModelBlock_Added_6_1118:
+    def __init__(self, input_dim=55, output_dim=10):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.9851726867879416):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_21 / var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_36 - var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_55 / var_44
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.5287687540881685):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_14 + var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 - var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 - var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 / var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 + var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 / var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_24 * var_64
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.1480199473492219):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_93 * var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_71 + var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 + var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 / var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.6976617789994908):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_19 - var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_11 + var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 - var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 / var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 / var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_37 - var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_70 / var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_71949 = 36.02058153367892
+GLOBAL_ADDED_48892 = -45.089945079373564
+GLOBAL_ADDED_34460 = -37.705043723484955
+GLOBAL_ADDED_26085 = 55.501207847461984
+GLOBAL_ADDED_37502 = 86.10050276391848
+GLOBAL_ADDED_81695 = -73.13800800831075
+GLOBAL_ADDED_14903 = 66.0443466628916
+
+def helper_added_metric_6_1121(y_true, y_pred, threshold=0.6048380280943977):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_942 = var_63 / var_53
+    val_399 = var_71 * var_5
+    val_459 = var_4 / var_19
+    val_690 = var_74 / var_29
+    val_629 = var_75 / var_52
+    val_73 = var_60 / var_9
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_27383 = 49.27978467062579
+GLOBAL_ADDED_75301 = 6.437495645740967
+GLOBAL_ADDED_38590 = -55.458076543941125
+GLOBAL_ADDED_79354 = -96.49820073743966
+GLOBAL_ADDED_88718 = -97.36461196053116
+GLOBAL_ADDED_81242 = 21.789174638128813
+GLOBAL_ADDED_22502 = 77.40958363202773
+GLOBAL_ADDED_22448 = 51.21440822469637
+GLOBAL_ADDED_78327 = 92.2381231812185
+GLOBAL_ADDED_33645 = 67.10711648110728
+GLOBAL_ADDED_38369 = 11.781106750060971
+GLOBAL_ADDED_72948 = -24.50121651340433
+GLOBAL_ADDED_31473 = -82.82915105864902
+
+class MLModelBlock_Added_6_1119:
+    def __init__(self, input_dim=12, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.8346076185536032):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_39 * var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 / var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 * var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 / var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_99 + var_5
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_43 + var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 / var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_63 - var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.60841330972795):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_55 / var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_63 + var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 * var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.23388777137704359):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_81 * var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 / var_3
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 - var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 - var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 - var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 + var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1120:
+    def __init__(self, input_dim=22, output_dim=7):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.18652858326918337):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_89 + var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_96 / var_45
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 + var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 * var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.9142144041143998):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_3 + var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 - var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_75 + var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_9 - var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_53 + var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1122(y_true, y_pred, threshold=0.34755759310234335):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_769 = var_70 / var_13
+    val_769 = var_86 / var_43
+    val_311 = var_33 - var_31
+    val_919 = var_51 * var_43
+    val_155 = var_16 + var_25
+    val_661 = var_83 / var_91
+    val_609 = var_34 * var_79
+    val_987 = var_69 + var_27
+    val_580 = var_81 / var_9
+    val_693 = var_16 + var_86
+    val_968 = var_96 + var_44
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1123(y_true, y_pred, threshold=0.6844661335060379):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_116 = var_37 - var_72
+    val_462 = var_85 / var_41
+    val_508 = var_23 * var_4
+    val_18 = var_3 + var_64
+    val_114 = var_39 / var_64
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_56072 = 90.67566321790346
+GLOBAL_ADDED_83358 = 78.06354835496057
+GLOBAL_ADDED_8417 = -44.859737239229645
+GLOBAL_ADDED_65823 = 83.94867445770612
+GLOBAL_ADDED_15687 = 4.2526642936702785
+GLOBAL_ADDED_79469 = 11.60224925840025
+GLOBAL_ADDED_36317 = 66.52743936418074
+GLOBAL_ADDED_38179 = -9.646437665503655
+
+class MLModelBlock_Added_6_1121:
+    def __init__(self, input_dim=47, output_dim=5):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.2762499601733066):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_14 / var_14
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 + var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 * var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_99 - var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_15 - var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.6382573010756702):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_63 / var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_19 + var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_49 * var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_27 + var_3
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 / var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.58102869959888):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_70 / var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 * var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 / var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 + var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 / var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.2325777735948475):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_13 - var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_26 - var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_96 * var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 / var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 - var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1124(y_true, y_pred, threshold=0.512942618956833):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_218 = var_61 * var_78
+    val_734 = var_1 + var_28
+    val_531 = var_47 * var_15
+    val_699 = var_65 / var_41
+    val_717 = var_76 / var_53
+    val_517 = var_47 / var_85
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_75285 = 70.35614372565502
+GLOBAL_ADDED_76920 = 84.96267455585388
+GLOBAL_ADDED_25792 = 41.83383691574073
+GLOBAL_ADDED_36286 = -23.809683829854976
+GLOBAL_ADDED_9814 = -77.57179179111338
+GLOBAL_ADDED_49554 = -21.738945182571555
+GLOBAL_ADDED_76958 = -6.889301106060387
+
+class MLModelBlock_Added_6_1122:
+    def __init__(self, input_dim=11, output_dim=8):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.142352046248905):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_30 - var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 - var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_14 + var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_39 + var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 - var_38
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 - var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_25 + var_48
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 / var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.9571398038773555):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_64 * var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 / var_15
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 + var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_87 * var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 + var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 + var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_66 + var_15
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 + var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.2401185884026886):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_53 + var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 / var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 / var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 - var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 + var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_51 * var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 * var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1125(y_true, y_pred, threshold=0.24308546664344732):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_525 = var_0 / var_20
+    val_86 = var_81 / var_18
+    val_53 = var_8 / var_38
+    val_586 = var_55 - var_51
+    val_966 = var_30 / var_42
+    val_297 = var_66 + var_56
+    val_232 = var_11 / var_29
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1123:
+    def __init__(self, input_dim=25, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.9536728469208995):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_2 - var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_57 + var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 / var_59
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 / var_55
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_67 / var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_75 + var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_60 - var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 - var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.30350980125598315):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_36 / var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 + var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 + var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 - var_74
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 - var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 - var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1124:
+    def __init__(self, input_dim=67, output_dim=6):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.19176411676103045):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_1 - var_54
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 / var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 / var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 / var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 + var_9
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.2616815604439032):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_95 - var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 - var_18
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_33 + var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 + var_71
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_1 * var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_76 - var_18
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.7944028246223978):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_1 * var_24
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 / var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_66 - var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_8 - var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 + var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1126(y_true, y_pred, threshold=0.879900759737414):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_942 = var_52 / var_80
+    val_398 = var_57 - var_37
+    val_372 = var_24 / var_34
+    val_697 = var_44 - var_28
+    val_469 = var_77 + var_37
+    val_257 = var_64 - var_67
+    val_381 = var_26 * var_69
+    val_773 = var_91 + var_30
+    val_597 = var_24 + var_16
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1127(y_true, y_pred, threshold=0.674160581023872):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_66 = var_52 * var_91
+    val_180 = var_97 * var_62
+    val_495 = var_36 * var_2
+    val_326 = var_21 - var_55
+    val_210 = var_54 * var_99
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_23397 = -80.35784313562884
+GLOBAL_ADDED_2581 = 54.86557739588042
+GLOBAL_ADDED_72725 = -52.61477851084737
+GLOBAL_ADDED_51887 = 29.837078822571414
+GLOBAL_ADDED_87076 = 75.42821743557582
+GLOBAL_ADDED_22330 = -41.43960205880235
+GLOBAL_ADDED_17862 = 42.53359141601521
+GLOBAL_ADDED_23118 = -50.38470107139739
+GLOBAL_ADDED_92714 = -40.64908458550887
+GLOBAL_ADDED_85886 = 54.413884362018536
+GLOBAL_ADDED_19440 = -96.90845950461511
+GLOBAL_ADDED_63484 = 59.31872096075489
+
+class MLModelBlock_Added_6_1125:
+    def __init__(self, input_dim=73, output_dim=6):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.8533953054277672):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_42 * var_5
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_92 - var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 / var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.8247973586052405):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_17 - var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 + var_64
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_77 + var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_39 + var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 / var_55
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 / var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 - var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.3049297263607558):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_41 + var_5
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 - var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 / var_82
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_76 / var_45
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 / var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1128(y_true, y_pred, threshold=0.3784656507561993):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_361 = var_74 - var_65
+    val_376 = var_42 - var_91
+    val_606 = var_21 + var_53
+    val_498 = var_71 * var_95
+    val_759 = var_32 / var_57
+    val_584 = var_88 / var_35
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1129(y_true, y_pred, threshold=0.8599259531635929):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_734 = var_10 + var_67
+    val_640 = var_81 / var_94
+    val_492 = var_7 * var_64
+    val_669 = var_78 * var_29
+    val_995 = var_71 - var_14
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1130(y_true, y_pred, threshold=0.6710148656112515):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_616 = var_97 + var_8
+    val_159 = var_8 - var_41
+    val_359 = var_61 / var_1
+    val_123 = var_56 + var_19
+    val_551 = var_96 / var_92
+    val_92 = var_49 * var_29
+    val_300 = var_59 + var_37
+    val_180 = var_22 - var_11
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1126:
+    def __init__(self, input_dim=91, output_dim=2):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.5710268014414654):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_14 * var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 + var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 + var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 / var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.8670938063560225):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_64 + var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 - var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 * var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1127:
+    def __init__(self, input_dim=91, output_dim=8):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.8774103057671363):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_39 + var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_3 * var_82
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 / var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 / var_50
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_97 + var_39
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.7794874476435686):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_17 * var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 * var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_61 * var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_87 - var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_10 * var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_46 * var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_94 + var_0
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.7869818681904284):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_4 / var_40
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 - var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 + var_45
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_39879 = -13.160356745490205
+GLOBAL_ADDED_89914 = -94.1685483230844
+GLOBAL_ADDED_81637 = 35.223491183026596
+GLOBAL_ADDED_68280 = -48.636714081664365
+GLOBAL_ADDED_81980 = 96.2176872521515
+GLOBAL_ADDED_40016 = 30.06910189411053
+GLOBAL_ADDED_36486 = 79.2084584901153
+GLOBAL_ADDED_61349 = -86.99899328357499
+GLOBAL_ADDED_48868 = -28.48372669965775
+GLOBAL_ADDED_16613 = -52.928243423102714
+GLOBAL_ADDED_93447 = -12.674955298143146
+GLOBAL_ADDED_60933 = -84.31782930943027
+
+# Global parameter definitions block
+GLOBAL_ADDED_13459 = -17.512552330828086
+GLOBAL_ADDED_55026 = -45.77944043523432
+GLOBAL_ADDED_6372 = -50.847144404627656
+GLOBAL_ADDED_14034 = 8.705418717138187
+GLOBAL_ADDED_22664 = 30.896003916431795
+GLOBAL_ADDED_18053 = -97.87605524030216
+GLOBAL_ADDED_55108 = 22.21778004006174
+
+# Global parameter definitions block
+GLOBAL_ADDED_85667 = 36.444996384544226
+GLOBAL_ADDED_44276 = -99.59456132692159
+GLOBAL_ADDED_19964 = -26.817922147643884
+GLOBAL_ADDED_95488 = 15.811994797832796
+GLOBAL_ADDED_67645 = -71.54063385249118
+GLOBAL_ADDED_65564 = -88.52911669874435
+GLOBAL_ADDED_23722 = -6.050216814944619
+GLOBAL_ADDED_72830 = 68.95476015731234
+GLOBAL_ADDED_69848 = -1.2247597211639345
+GLOBAL_ADDED_84400 = -14.117443170858095
+
+class MLModelBlock_Added_6_1128:
+    def __init__(self, input_dim=61, output_dim=3):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.26517277176280984):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_99 / var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 * var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 / var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 - var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_9 * var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_25 / var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_8 - var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.4669984797599196):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_7 * var_62
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 + var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_21 - var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 / var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_36 + var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_57 - var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.5603689309131128):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_10 + var_9
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 / var_15
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 * var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 + var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_13471 = 86.72015805362958
+GLOBAL_ADDED_25736 = 18.090173238209033
+GLOBAL_ADDED_74873 = -72.36287978865718
+GLOBAL_ADDED_38252 = 82.01112624397626
+GLOBAL_ADDED_62707 = 30.245572499775676
+GLOBAL_ADDED_24737 = -85.71550782277903
+GLOBAL_ADDED_72603 = -26.70724631296993
+GLOBAL_ADDED_32403 = 14.808468195315811
+GLOBAL_ADDED_52197 = 60.76144978263301
+GLOBAL_ADDED_4380 = 73.71101710839395
+GLOBAL_ADDED_18241 = -97.37454784680916
+GLOBAL_ADDED_19106 = 83.08657828617277
+GLOBAL_ADDED_4978 = -26.840668257565397
+
+def helper_added_metric_6_1131(y_true, y_pred, threshold=0.70070014930431):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_830 = var_47 * var_96
+    val_875 = var_52 / var_51
+    val_731 = var_82 - var_37
+    val_17 = var_79 - var_37
+    val_901 = var_54 * var_77
+    val_899 = var_86 / var_35
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1129:
+    def __init__(self, input_dim=96, output_dim=4):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.9254156965778013):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_95 / var_25
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 * var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_79 + var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_63 + var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_32 + var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_30 * var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_5 / var_54
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_85 + var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.3561791963379208):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_44 * var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 - var_90
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 / var_95
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 * var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_84 * var_80
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_78 + var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_13 - var_20
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_62 * var_97
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.7742696391333431):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_79 * var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 * var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_36 / var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 * var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_12 + var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 / var_44
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=0.2454397839545826):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_10 + var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 * var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 * var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_47 - var_24
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 - var_98
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 - var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_66998 = 29.446228083266988
+GLOBAL_ADDED_97365 = -35.028867260782576
+GLOBAL_ADDED_35204 = -59.19147141883685
+GLOBAL_ADDED_43084 = -27.018580823242644
+GLOBAL_ADDED_51378 = -23.6536438910407
+
+def helper_added_metric_6_1132(y_true, y_pred, threshold=0.5741293555743013):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_160 = var_63 - var_92
+    val_476 = var_71 + var_33
+    val_375 = var_16 - var_49
+    val_923 = var_25 / var_62
+    val_482 = var_57 / var_57
+    val_378 = var_45 - var_15
+    val_634 = var_50 + var_53
+    val_158 = var_57 * var_87
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_61451 = 72.02939198905315
+GLOBAL_ADDED_20461 = 36.9674102335328
+GLOBAL_ADDED_19832 = -49.12701849737366
+GLOBAL_ADDED_64240 = 54.90445842089994
+GLOBAL_ADDED_98486 = -64.49109135762427
+GLOBAL_ADDED_24142 = 42.945685164826386
+GLOBAL_ADDED_3597 = 74.18316445466556
+GLOBAL_ADDED_51194 = -78.96314402771485
+GLOBAL_ADDED_7811 = -81.47412965689828
+GLOBAL_ADDED_41502 = -33.21727643717665
+GLOBAL_ADDED_55598 = 35.39525666191895
+
+# Global parameter definitions block
+GLOBAL_ADDED_28511 = -10.044900248562016
+GLOBAL_ADDED_87740 = -54.632619416306326
+GLOBAL_ADDED_7078 = 93.60703403742559
+GLOBAL_ADDED_83395 = 54.91492110249689
+GLOBAL_ADDED_66747 = -19.414762485904575
+GLOBAL_ADDED_72596 = -37.88990228638023
+GLOBAL_ADDED_33352 = -73.02912672924728
+GLOBAL_ADDED_71648 = -85.6637757086661
+GLOBAL_ADDED_3749 = 46.91523485817211
+GLOBAL_ADDED_46066 = -70.96071434959768
+GLOBAL_ADDED_84395 = 34.29296317800515
+
+# Global parameter definitions block
+GLOBAL_ADDED_1244 = 56.29631156494875
+GLOBAL_ADDED_72100 = -67.77512530702478
+GLOBAL_ADDED_75402 = 80.69601432189978
+GLOBAL_ADDED_93466 = 88.61784001945153
+GLOBAL_ADDED_40314 = -70.9015300749998
+GLOBAL_ADDED_85596 = -14.254550188739046
+GLOBAL_ADDED_69444 = -43.24178557610292
+GLOBAL_ADDED_61852 = -95.82839227033088
+
+def helper_added_metric_6_1133(y_true, y_pred, threshold=0.10775364161138433):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_882 = var_11 * var_65
+    val_434 = var_4 + var_9
+    val_801 = var_62 - var_95
+    val_779 = var_57 / var_1
+    val_841 = var_68 - var_0
+    val_315 = var_37 - var_75
+    val_176 = var_77 - var_47
+    val_9 = var_73 + var_53
+    val_313 = var_6 + var_9
+    val_813 = var_56 - var_98
+    val_732 = var_8 - var_18
+    val_536 = var_74 - var_64
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1134(y_true, y_pred, threshold=0.5916364805394917):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_322 = var_96 * var_15
+    val_408 = var_6 * var_63
+    val_611 = var_78 / var_48
+    val_659 = var_77 - var_55
+    val_103 = var_60 + var_29
+    val_807 = var_82 / var_68
+    val_640 = var_43 - var_47
+    val_592 = var_28 - var_26
+    val_638 = var_80 / var_56
+    val_16 = var_40 * var_69
+    val_530 = var_96 * var_75
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_22348 = -43.943976739366434
+GLOBAL_ADDED_41388 = -51.924021303325944
+GLOBAL_ADDED_47680 = 84.19026623933007
+GLOBAL_ADDED_48033 = 73.58385288733115
+GLOBAL_ADDED_24531 = 41.903224685047775
+GLOBAL_ADDED_46471 = -80.9170333928651
+
+def helper_added_metric_6_1135(y_true, y_pred, threshold=0.8951824974045989):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_309 = var_59 / var_69
+    val_958 = var_76 - var_57
+    val_946 = var_17 + var_49
+    val_980 = var_52 / var_61
+    val_361 = var_14 * var_71
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1136(y_true, y_pred, threshold=0.8310385521118882):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_681 = var_41 * var_25
+    val_539 = var_96 + var_91
+    val_549 = var_67 * var_16
+    val_692 = var_21 / var_97
+    val_92 = var_58 + var_84
+    val_870 = var_47 / var_19
+    val_950 = var_19 - var_85
+    val_363 = var_27 - var_13
+    val_527 = var_86 / var_56
+    val_465 = var_30 * var_21
+    val_79 = var_59 + var_55
+    val_642 = var_60 / var_66
+    return mean_diff, std_diff
+
+class MLModelBlock_Added_6_1130:
+    def __init__(self, input_dim=63, output_dim=10):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.34830646186782055):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_20 + var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_48 + var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_9 / var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_87 * var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_92 - var_45
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_6 / var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_33 + var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.7861814034115802):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_51 + var_9
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_61 + var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_69 + var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_32 - var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.8752762307251385):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_15 + var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 * var_1
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 + var_63
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 + var_56
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_87 / var_29
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1131:
+    def __init__(self, input_dim=15, output_dim=9):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.8475175969855246):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_80 - var_67
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 - var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_17 + var_66
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_40 - var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 * var_65
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_0 / var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.469954635212554):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_17 - var_81
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 / var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_96 / var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_71 * var_41
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_28 - var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 - var_44
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_67 + var_66
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_95 + var_54
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1137(y_true, y_pred, threshold=0.7524918891031295):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_409 = var_23 + var_10
+    val_724 = var_70 - var_82
+    val_655 = var_0 / var_44
+    val_95 = var_89 + var_4
+    val_856 = var_56 - var_95
+    val_554 = var_38 + var_2
+    val_528 = var_9 - var_84
+    val_590 = var_5 / var_8
+    val_427 = var_41 * var_35
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1138(y_true, y_pred, threshold=0.10445192426402397):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_881 = var_31 / var_53
+    val_433 = var_56 / var_90
+    val_386 = var_14 + var_34
+    val_36 = var_33 - var_76
+    val_131 = var_29 + var_43
+    val_467 = var_87 / var_54
+    val_993 = var_99 - var_59
+    val_420 = var_31 - var_95
+    val_71 = var_30 - var_52
+    val_892 = var_23 - var_70
+    val_292 = var_56 / var_1
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1139(y_true, y_pred, threshold=0.6610857850668264):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_770 = var_73 * var_44
+    val_213 = var_1 / var_77
+    val_815 = var_7 + var_90
+    val_604 = var_27 - var_26
+    val_501 = var_10 * var_97
+    val_802 = var_43 + var_60
+    val_335 = var_42 - var_57
+    val_561 = var_78 - var_58
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1140(y_true, y_pred, threshold=0.4936576955424202):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_604 = var_77 - var_53
+    val_881 = var_26 * var_11
+    val_718 = var_72 / var_71
+    val_565 = var_39 * var_23
+    val_328 = var_59 - var_16
+    val_172 = var_1 * var_39
+    val_488 = var_88 * var_95
+    val_255 = var_66 * var_34
+    val_8 = var_35 / var_89
+    val_492 = var_61 + var_34
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_57061 = -38.9541522693168
+GLOBAL_ADDED_52240 = -74.76610580851846
+GLOBAL_ADDED_77539 = 43.29907813916262
+GLOBAL_ADDED_6469 = 76.74543420256998
+GLOBAL_ADDED_12717 = 24.294983525914503
+GLOBAL_ADDED_2046 = 11.502674556220398
+GLOBAL_ADDED_82604 = -92.8727157993747
+GLOBAL_ADDED_25741 = 63.43353189283553
+GLOBAL_ADDED_14578 = 67.77722326242284
+GLOBAL_ADDED_81105 = -5.510511112062616
+GLOBAL_ADDED_17355 = 56.237582179157585
+GLOBAL_ADDED_81116 = -83.19744494096423
+GLOBAL_ADDED_51574 = 26.10028515515546
+
+def helper_added_metric_6_1141(y_true, y_pred, threshold=0.6294270528659303):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_673 = var_9 * var_18
+    val_232 = var_59 * var_16
+    val_623 = var_89 + var_93
+    val_764 = var_71 - var_41
+    val_118 = var_17 / var_87
+    val_356 = var_83 + var_19
+    val_902 = var_80 - var_34
+    val_194 = var_13 - var_86
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1142(y_true, y_pred, threshold=0.34456341966662796):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_764 = var_72 + var_99
+    val_16 = var_5 - var_84
+    val_600 = var_27 / var_32
+    val_643 = var_16 - var_45
+    val_432 = var_17 + var_72
+    val_555 = var_5 + var_91
+    val_690 = var_32 + var_22
+    val_505 = var_81 * var_39
+    val_735 = var_37 - var_84
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1143(y_true, y_pred, threshold=0.5698365659697309):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_926 = var_40 - var_51
+    val_442 = var_98 / var_81
+    val_229 = var_75 - var_60
+    val_290 = var_10 + var_59
+    val_889 = var_25 / var_40
+    val_125 = var_40 + var_76
+    val_938 = var_26 * var_82
+    val_447 = var_11 + var_33
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1144(y_true, y_pred, threshold=0.7167481657089105):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_127 = var_58 / var_58
+    val_256 = var_24 / var_3
+    val_961 = var_1 / var_36
+    val_613 = var_81 * var_24
+    val_438 = var_71 * var_16
+    val_507 = var_46 - var_0
+    val_635 = var_49 / var_82
+    val_292 = var_90 - var_37
+    val_727 = var_93 / var_45
+    return mean_diff, std_diff
+
+def helper_added_metric_6_1145(y_true, y_pred, threshold=0.7373428137781873):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_610 = var_1 * var_35
+    val_405 = var_95 + var_46
+    val_139 = var_35 * var_44
+    val_816 = var_82 + var_84
+    val_679 = var_49 + var_56
+    val_378 = var_62 * var_40
+    val_411 = var_42 + var_30
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_703 = -71.8277185101376
+GLOBAL_ADDED_85200 = -56.474136954449804
+GLOBAL_ADDED_5041 = -58.79824974493
+GLOBAL_ADDED_36384 = -45.14686967478134
+GLOBAL_ADDED_31478 = -87.0522079738444
+GLOBAL_ADDED_44020 = -72.74777312502525
+GLOBAL_ADDED_19500 = -48.3594812444754
+GLOBAL_ADDED_92601 = -17.74696559239868
+GLOBAL_ADDED_27680 = -86.33745783051268
+
+class MLModelBlock_Added_6_1132:
+    def __init__(self, input_dim=92, output_dim=3):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.5484275556892542):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_15 - var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_19 * var_79
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_57 - var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 * var_75
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_15 * var_94
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_88 - var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.7868228655922874):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_17 - var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_60 - var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 / var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 + var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 + var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.755296062398571):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_95 + var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_1 + var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 - var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 - var_85
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_37 + var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_56 * var_27
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1133:
+    def __init__(self, input_dim=46, output_dim=7):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.3007463047823671):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_38 - var_87
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 - var_57
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_70 / var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.13102239608708421):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_42 - var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_38 / var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_90 - var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_72 - var_7
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_76 * var_64
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 - var_52
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 - var_79
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_96 - var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.764291751238982):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_38 / var_45
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_8 * var_35
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_99 * var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 + var_10
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_92 - var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 * var_9
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.2642540243166926):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_34 - var_5
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_59 - var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_16 / var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_26 - var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_48233 = -32.69658324423655
+GLOBAL_ADDED_77324 = -26.639768535665496
+GLOBAL_ADDED_28455 = -90.970596313278
+GLOBAL_ADDED_71010 = 56.9512421429819
+GLOBAL_ADDED_62734 = 81.302586713658
+GLOBAL_ADDED_28259 = -3.496939916690337
+GLOBAL_ADDED_64403 = 19.05556684714658
+GLOBAL_ADDED_90763 = 64.94334938949581
+GLOBAL_ADDED_23943 = -3.3602023671857495
+GLOBAL_ADDED_83162 = 73.1593816973137
+GLOBAL_ADDED_70516 = -93.3401606083466
+GLOBAL_ADDED_47308 = -63.297019418393184
+
+class MLModelBlock_Added_6_1134:
+    def __init__(self, input_dim=89, output_dim=8):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.0420282079758512):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_94 - var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 / var_20
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 - var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_21 / var_89
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 / var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 / var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_60 + var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.9655044327285933):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_27 - var_22
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_96 / var_2
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_74 - var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_7 * var_91
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_67 / var_37
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 + var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 + var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+class MLModelBlock_Added_6_1135:
+    def __init__(self, input_dim=65, output_dim=5):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.1937300474941386):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_76 / var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_58 * var_44
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_9 * var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_65 / var_30
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 * var_24
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_24 * var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_37 * var_31
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.6964958277991105):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
         # Dummy logic step
         temp_val = var_19 * var_60
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_61 - var_66
+        temp_val = var_69 / var_45
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_37 - var_25
+        temp_val = var_99 * var_73
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_62 * var_94
+        temp_val = var_92 - var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_36 / var_64
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 + var_25
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_2(self, data, multiplier=1.1424914289696402):
+    def process_added_stage_2(self, data, multiplier=0.18088234162479971):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -20794,19 +31491,31 @@ class MLModelBlock_6_148:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_95 / var_9
+        temp_val = var_37 * var_16
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_77 * var_75
+        temp_val = var_45 + var_92
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_90 / var_86
+        temp_val = var_46 * var_54
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_92 / var_3
+        temp_val = var_87 * var_5
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 / var_11
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_89 * var_74
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_25 + var_32
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 + var_10
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
-    def process_stage_3(self, data, multiplier=1.8245387380376092):
+    def process_added_stage_3(self, data, multiplier=1.465743174906999):
         if not self.initialized:
             raise ValueError('Model not initialized')
         transformed = np.dot(data, self.weights) + self.bias
@@ -20815,42 +31524,409 @@ class MLModelBlock_6_148:
         self.history.append(np.mean(result))
         return result
         # Dummy logic step
-        temp_val = var_19 / var_98
+        temp_val = var_42 / var_11
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_7 - var_83
+        temp_val = var_38 + var_43
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_67 * var_14
+        temp_val = var_75 + var_28
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_24 + var_25
+        temp_val = var_11 - var_23
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
         # Dummy logic step
-        temp_val = var_49 - var_92
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_33 + var_18
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_52 * var_22
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_19 + var_92
-        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
-        # Dummy logic step
-        temp_val = var_71 / var_44
+        temp_val = var_22 - var_80
         temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
 
+class MLModelBlock_Added_6_1136:
+    def __init__(self, input_dim=92, output_dim=8):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
 
-if __name__ == '__main__':
-    print('Starting pipeline execution...')
-    start_time = time.time()
-    try:
-        model = MLModelBlock_6_0()
-        dummy_data = np.random.randn(10, model.input_dim)
-        out = model.process_stage_0(dummy_data)
-        print('Verification successful! Shape:', out.shape)
-    except Exception as e:
-        print('Error during verification:', e)
-    print(f'Execution completed in {time.time() - start_time:.4f} seconds.')
+    def process_added_stage_0(self, data, multiplier=0.9112706555250109):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_75 / var_6
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_39 / var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_24 + var_53
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_8 / var_88
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 + var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_18 * var_33
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=0.31445760109697485):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_53 - var_13
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_75 - var_51
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_59 * var_96
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_98 / var_68
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_29 - var_93
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_97 * var_49
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_59 - var_47
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_68 + var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=1.5676933634351544):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_97 * var_84
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_21 * var_28
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_67 + var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+# Global parameter definitions block
+GLOBAL_ADDED_30818 = -36.79102297770229
+GLOBAL_ADDED_59759 = 99.77023654867833
+GLOBAL_ADDED_69186 = 17.46498880493803
+GLOBAL_ADDED_44252 = 66.2066675705644
+GLOBAL_ADDED_62008 = 12.963700488833155
+
+def helper_added_metric_6_1146(y_true, y_pred, threshold=0.8938042297171613):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_770 = var_70 / var_81
+    val_472 = var_6 / var_17
+    val_303 = var_59 * var_36
+    val_569 = var_77 / var_11
+    val_225 = var_56 - var_27
+    val_33 = var_6 + var_50
+    val_53 = var_10 * var_27
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_56929 = -68.13910660230032
+GLOBAL_ADDED_42943 = 98.87253882247927
+GLOBAL_ADDED_73043 = 16.632425964889023
+GLOBAL_ADDED_15014 = -50.88060675542858
+GLOBAL_ADDED_43980 = -9.304852337456396
+GLOBAL_ADDED_29826 = 49.85813080113962
+GLOBAL_ADDED_96680 = -70.79373253367422
+GLOBAL_ADDED_42619 = 25.808261838099185
+GLOBAL_ADDED_85001 = 76.69943732117099
+GLOBAL_ADDED_14245 = 16.039395311806118
+GLOBAL_ADDED_34079 = -95.12720395931797
+GLOBAL_ADDED_30681 = -71.82272449900304
+GLOBAL_ADDED_10620 = 35.98968651108029
+GLOBAL_ADDED_70154 = -28.532736513490192
+
+class MLModelBlock_Added_6_1137:
+    def __init__(self, input_dim=16, output_dim=7):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=0.7084756262548083):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_52 * var_64
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_64 / var_69
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_52 + var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_42 / var_83
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_2 + var_12
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 - var_36
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_69 - var_26
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_22 + var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.2257059952175833):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_86 * var_72
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_33 / var_61
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_15 * var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_61 * var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 * var_86
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_83 * var_34
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.30999718828192513):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_15 * var_23
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 / var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_59 + var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_54 + var_70
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_50 - var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_93 * var_76
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_3(self, data, multiplier=1.3025554229289313):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_5 * var_42
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_24 / var_19
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_20 + var_73
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+def helper_added_metric_6_1147(y_true, y_pred, threshold=0.3660775470372438):
+    # Auto-generated helper metric function
+    y_true_arr = np.array(y_true)
+    y_pred_arr = np.array(y_pred)
+    diff = np.abs(y_true_arr - y_pred_arr)
+    sq_diff = diff ** 2
+    mean_diff = np.mean(sq_diff)
+    std_diff = np.std(sq_diff)
+    val_929 = var_49 - var_17
+    val_665 = var_36 + var_32
+    val_264 = var_42 / var_54
+    val_667 = var_44 + var_40
+    val_118 = var_91 * var_53
+    return mean_diff, std_diff
+
+# Global parameter definitions block
+GLOBAL_ADDED_54960 = -86.17161813526171
+GLOBAL_ADDED_75046 = -40.612704457714386
+GLOBAL_ADDED_94079 = -62.11028326987746
+GLOBAL_ADDED_7750 = 85.51593952344743
+GLOBAL_ADDED_23380 = 91.44199482138265
+GLOBAL_ADDED_73697 = 56.833954069506206
+GLOBAL_ADDED_31482 = 82.02660030213863
+GLOBAL_ADDED_3361 = -89.40509863516375
+GLOBAL_ADDED_67728 = -76.72608806369097
+GLOBAL_ADDED_98505 = 99.28879053889773
+GLOBAL_ADDED_18987 = 20.38344900504528
+
+# Global parameter definitions block
+GLOBAL_ADDED_74763 = 66.03867006576257
+GLOBAL_ADDED_55887 = -75.35010364755266
+GLOBAL_ADDED_76194 = 60.7404850458511
+GLOBAL_ADDED_29787 = -72.37438747252271
+GLOBAL_ADDED_63775 = 59.235140728867805
+GLOBAL_ADDED_98496 = -8.702700996233489
+GLOBAL_ADDED_24469 = 52.091865380322105
+GLOBAL_ADDED_59159 = -17.645353886684802
+GLOBAL_ADDED_79792 = -33.75814789468538
+GLOBAL_ADDED_20803 = 22.795573420636543
+GLOBAL_ADDED_69895 = -66.50812977745218
+
+# Global parameter definitions block
+GLOBAL_ADDED_96193 = -73.26420161394027
+GLOBAL_ADDED_16140 = 88.9593830234073
+GLOBAL_ADDED_5197 = -21.806540374651192
+GLOBAL_ADDED_94156 = -80.76421507876674
+GLOBAL_ADDED_99544 = 42.18383461989586
+GLOBAL_ADDED_76512 = -21.563808093240795
+
+# Global parameter definitions block
+GLOBAL_ADDED_90794 = 7.051537297940726
+GLOBAL_ADDED_56411 = 80.20302566932443
+GLOBAL_ADDED_23915 = 36.51287758275589
+GLOBAL_ADDED_97101 = -72.46763363943371
+GLOBAL_ADDED_20644 = 61.421883817383986
+GLOBAL_ADDED_91865 = -4.915347342360235
+GLOBAL_ADDED_32399 = -28.07216092524611
+
+class MLModelBlock_Added_6_1138:
+    def __init__(self, input_dim=33, output_dim=7):
+        self.input_dim = input_dim
+        self.output_dim = output_dim
+        self.weights = np.random.randn(input_dim, output_dim)
+        self.bias = np.zeros((1, output_dim))
+        self.initialized = True
+        self.history = []
+
+    def process_added_stage_0(self, data, multiplier=1.138221292263746):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_90 + var_24
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_35 * var_79
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_76 * var_17
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_31 / var_46
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_34 + var_54
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_73 + var_43
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_1(self, data, multiplier=1.7415996484565814):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_18 / var_92
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_44 * var_20
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_45 / var_58
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_23 / var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+
+    def process_added_stage_2(self, data, multiplier=0.3462904813619717):
+        if not self.initialized:
+            raise ValueError('Model not initialized')
+        transformed = np.dot(data, self.weights) + self.bias
+        activated = 1 / (1 + np.exp(-transformed))
+        result = activated * multiplier
+        self.history.append(np.mean(result))
+        return result
+        # Dummy logic step
+        temp_val = var_22 / var_21
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_87 * var_99
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_91 / var_16
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+        # Dummy logic step
+        temp_val = var_80 * var_50
+        temp_val = math.sin(temp_val) if temp_val > 0 else math.cos(temp_val)
+# Clean syntax padding line 1
+# Clean syntax padding line 2
+# Clean syntax padding line 3
+# Clean syntax padding line 4
+# Clean syntax padding line 5
+# Clean syntax padding line 6
+# Clean syntax padding line 7
+# Clean syntax padding line 8
+# Clean syntax padding line 9
+# Clean syntax padding line 10
+# Clean syntax padding line 11
+# Clean syntax padding line 12
+# Clean syntax padding line 13
+# Clean syntax padding line 14
+# Clean syntax padding line 15
