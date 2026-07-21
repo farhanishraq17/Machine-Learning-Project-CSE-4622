@@ -1,0 +1,38 @@
+{
+  "task": "rating",
+  "n_folds": 5,
+  "models_ranked": [
+    "LightGBM",
+    "Stacking",
+    "HistGBR",
+    "XGBoost",
+    "LinearSVR",
+    "Ridge",
+    "RandomForest",
+    "KNN"
+  ],
+  "avg_rank": {
+    "LightGBM": 1.2,
+    "Stacking": 2.0,
+    "HistGBR": 2.8,
+    "XGBoost": 4.4,
+    "LinearSVR": 5.2,
+    "Ridge": 5.4,
+    "RandomForest": 7.0,
+    "KNN": 8.0
+  },
+  "friedman": {
+    "stat": 33.19999999999999,
+    "p": 2.429886420436978e-05
+  },
+  "wilcoxon_top2": {
+    "a": "LightGBM",
+    "b": "Stacking",
+    "stat": 1.0,
+    "p": 0.125,
+    "LightGBM_mean": 405.82347155785504,
+    "Stacking_mean": 412.4132063563576
+  },
+  "nemenyi_min_p": 0.0003038636503026604,
+  "cd_diagram": "figures/cd_rating.png"
+}

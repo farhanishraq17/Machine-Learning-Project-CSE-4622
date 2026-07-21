@@ -1,0 +1,36 @@
+{
+  "champion": "LinearSVC (OvR, tfidf_word_12)",
+  "threshold_0.5": {
+    "f1_micro": 0.4044,
+    "f1_macro": 0.2482,
+    "precision_micro": 0.5941,
+    "recall_micro": 0.3065
+  },
+  "threshold_tuned": {
+    "f1_micro": 0.3974,
+    "f1_macro": 0.3405,
+    "precision_micro": 0.3011,
+    "recall_micro": 0.5846
+  },
+  "macro_f1_lift": 0.0923,
+  "macro_f1_all38": {
+    "base": 0.2482,
+    "tuned": 0.3405
+  },
+  "macro_f1_floor15": {
+    "n_tags": 36,
+    "base": 0.262,
+    "tuned": 0.3554
+  },
+  "special_tag": {
+    "tag": "*special",
+    "f1_base": 0.2471,
+    "f1_tuned": 0.3756,
+    "train_support": 389
+  },
+  "iterative_stratification_sanity": {
+    "note": "row-level split (allows duplicate leakage) — reference only; grouped split preferred",
+    "f1_micro": 0.4565,
+    "f1_macro": 0.314
+  }
+}
