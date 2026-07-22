@@ -28,6 +28,24 @@ import metrics as M
 
 
 # ---------------------------------------------------------------- tags thresholds
+def _champion_factory():
+    """Roster champion from the tags leaderboard -> (name, estimator factory, base threshold).
+    LogReg_bal scores are probabilities (base 0.5); LinearSVC margins (base 0.0)."""
+    lb = pd.read_csv(rp(CFG["paths"]["results_dir"], "leaderboard_tags.csv"))
+    name = lb[lb["family"] != "Baseline"].sort_values(
+        "f1_micro_mean", ascending=False).iloc[0]["model"]
+    if name == "LogReg_bal":
+        return name, (lambda: OneVsRestClassifier(
+            LogisticRegression(C=3, max_iter=300, solver="liblinear",
+                               class_weight="balanced"), n_jobs=-1)), 0.5
+    return "LinearSVC", (lambda: OneVsRestClassifier(LinearSVC(C=1), n_jobs=-1)), 0.0
+
+
+def _scores(clf, X):
+    return np.asarray(clf.predict_proba(X), float) if hasattr(clf, "predict_proba") \
+        else np.asarray(clf.decision_function(X), float)
+
+
 def tags_thresholds():
     df = load_task("tags"); s = load_splits("tags")
     tr, te = s["train_idx"], s["test_idx"]
@@ -49,14 +67,16 @@ def tags_thresholds():
     Ytr = mlb.transform(parse_tags(df.iloc[tr]["tags_norm"]))
     Yte = mlb.transform(parse_tags(df.iloc[te]["tags_norm"]))
 
-    # champion-style LinearSVC OvR; scores via decision_function
-    clf_val = OneVsRestClassifier(LinearSVC(C=1), n_jobs=-1).fit(Xfit, Yfit)
-    Sval = clf_val.decision_function(Xval)
+    # thresholds are applied to the ACTUAL roster champion (read from the leaderboard),
+    # so the tuned locked-test number is a headline for the reported model, not a side study
+    champ_name, make_clf, base_thr = _champion_factory()
+    clf_val = make_clf().fit(Xfit, Yfit)
+    Sval = _scores(clf_val, Xval)
     thr = M.tune_label_thresholds(Yval, Sval, steps=CFG["tags"]["threshold_grid_steps"])
 
-    clf = OneVsRestClassifier(LinearSVC(C=1), n_jobs=-1).fit(Xtr_all, Ytr)
-    Ste = clf.decision_function(Xte2)
-    Ypred_05 = (Ste >= 0.0).astype(int)
+    clf = make_clf().fit(Xtr_all, Ytr)
+    Ste = _scores(clf, Xte2)
+    Ypred_05 = (Ste >= base_thr).astype(int)
     Ypred_tuned = M.apply_thresholds(Ste, thr)
 
     base = M.tag_metrics(Yte, Ypred_05, Ste)
@@ -72,7 +92,7 @@ def tags_thresholds():
         return float(M.f1_score(Yte[:, cols], Yp[:, cols], average="macro", zero_division=0))
 
     out = {
-        "champion": "LinearSVC (OvR, tfidf_word_12)",
+        "champion": f"{champ_name} (OvR, tfidf_word_12)",
         "threshold_0.5": {k: round(base[k], 4) for k in ["f1_micro", "f1_macro", "precision_micro", "recall_micro"]},
         "threshold_tuned": {k: round(tuned[k], 4) for k in ["f1_micro", "f1_macro", "precision_micro", "recall_micro"]},
         "macro_f1_lift": round(tuned["f1_macro"] - base["f1_macro"], 4),

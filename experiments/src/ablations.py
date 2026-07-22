@@ -34,8 +34,12 @@ def feature_family_ablation():
     df = load_task("rating"); s = load_splits("rating")
     rows = []
     combos = ["stats", "tfidf_word_12", "tfidf+stats", "lsa+stats", "unified"]
+    # Ridge = linear representative (likes sparse TF-IDF); LightGBM = boosting
+    # representative that ingests sparse natively — HistGBR needs dense input, so on the
+    # 30k-wide TF-IDF sets it is both slow and memory-heavy and adds no insight the
+    # champion LightGBM-unified doesn't already give.
     for feat in combos:
-        for mname, fp in [("Ridge", MR.fp_ridge), ("HistGBR", MR.fp_histgbr)]:
+        for mname, fp in [("Ridge", MR.fp_ridge), ("LightGBM", MR.fp_lightgbm)]:
             spec = {"name": mname, "feat": feat, "fit_predict": fp}
             cv = cv_regression(spec, "rating", df, s)
             a = cv["agg"]
@@ -106,6 +110,24 @@ def w2v_ablation():
     pd.DataFrame(rows).to_csv(rp(RES, "ablation_w2v.csv"), index=False)
 
 
+# ------------------------------------------------- 4b. keyword flags + query_count (tags)
+def keyword_flags_ablation():
+    """P3 — do deterministic algorithm-keyword flags + query_count lift the tag champion?"""
+    df = load_task("tags"); s = load_splits("tags")
+    mlb = MultiLabelBinarizer().fit(parse_tags(df["tags_norm"]))
+    rows = []
+    for feat in ["tfidf_word_12", "tfidf+kw"]:
+        spec = {"name": "LogReg_bal", "feat": feat, "fit_predict": MT.fp_logreg_balanced}
+        a = cv_multilabel(spec, "tags", df, s, mlb)["agg"]
+        rows.append({"model": "LogReg_bal", "feature_set": feat,
+                     "f1_micro": round(a["f1_micro"]["mean"], 4),
+                     "f1_macro": round(a["f1_macro"]["mean"], 4),
+                     "recall_micro": round(a["recall_micro"]["mean"], 4)})
+        print(f"  [keywords] LogReg_bal {feat:14s} microF1={a['f1_micro']['mean']:.4f} "
+              f"macroF1={a['f1_macro']['mean']:.4f}")
+    pd.DataFrame(rows).to_csv(rp(RES, "ablation_keyword_flags.csv"), index=False)
+
+
 # ------------------------------------------------------- 4. tag strategy
 def fp_linsvc_thresholded(Xtr, Ytr, Xev):
     rng = np.random.RandomState(SEED)
@@ -142,3 +164,4 @@ if __name__ == "__main__":
     print("2) tfidf ablation"); tfidf_ablation()
     print("3) w2v ablation"); w2v_ablation()
     print("4) tag-strategy ablation"); tag_strategy_ablation()
+    print("5) keyword-flags ablation"); keyword_flags_ablation()

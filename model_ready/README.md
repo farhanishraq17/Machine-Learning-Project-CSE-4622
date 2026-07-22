@@ -1,13 +1,16 @@
-# Model-Ready Dataset (80:20)
+# Model-Ready Dataset (80:20) — legacy pipeline splits
 
-Built from `../cleaned_dataset.csv`. **No ground truth altered.** Per-task target filtering only, plus removal of 35 fully-redundant exact-duplicate rows (identical statement AND identical labels).
+**Legacy artifact** — these splits feed `../models/pipeline.py` (the initial Phase 2–4 study).
+The current harness in `../experiments/` builds its own splits from `../Dataset/`.
+Built from the cleaned intermediate of the master dataset (now `../Dataset/original/codeforces_master_dataset.csv`).
+**No ground truth altered.** Per-task target filtering only, plus removal of 35 fully-redundant
+exact-duplicate rows (identical statement AND identical labels).
 
 ```
 model_ready/
 ├── rating_regression/   train.csv  test.csv   (target: rating)   8,673 / 2,192
 └── tag_classification/  train.csv  test.csv   (target: tags_norm) 8,792 / 2,203
 ```
-(`val.csv` is a deprecated leftover from an earlier 80/10/10 scheme — ignore/delete it.)
 
 ## What was applied
 1. **Corrected features** — validated recomputed values under clean names (the 38%-wrong original `num_lessequal` is gone).
@@ -23,4 +26,4 @@ model_ready/
 **Target:** `rating` (regression) | `tags_norm` (multi-label, comma-separated)
 
 ## Trained models
-See `../models/` — `pipeline.py` reproduces everything (seed 42), `results_report.md` has all metrics, and `predictions_*_test.csv` hold test-set predictions.
+See `../models/` — `pipeline.py` reproduces the legacy study (seed 42), `results_*.json` hold its metrics, and `predictions_*_test.csv` hold test-set predictions. For the project's final results see `../experiments/RESULTS.md` and `../Report/`.

@@ -30,6 +30,36 @@ from common import CFG, SEED, rp
 
 NUMERIC = CFG["columns"]["numeric"]
 PROC = CFG["columns"]["text_proc"]
+CLEAN = CFG["columns"]["text_clean"]
+
+# Deterministic per-row lexical flags (regex on the clean statement, lowercased).
+# No fitting involved -> leakage-free by construction; used by the tfidf+kw set (§8/P3).
+_KW_PATTERNS = {
+    "kw_graph":       r"graph|vertex|vertices|\bedges?\b",
+    "kw_tree":        r"\btrees?\b|\brooted\b|\bleaf\b|leaves",
+    "kw_string":      r"string|substring|palindrom|prefix|suffix",
+    "kw_geometry":    r"polygon|coordinat|circle|segment|geometr|\bangle\b",
+    "kw_probability": r"probabilit|expected|random",
+    "kw_game":        r"\bgames?\b|player|\bmove\b|optimal",
+    "kw_mod":         r"modulo|\bmod\b|1000000007|998\s?244\s?353",
+    "kw_interactive": r"interactive|interactor|flush",
+    "kw_bitwise":     r"\bxor\b|bitwise|\bmask\b",
+    "kw_permutation": r"permutation",
+    "kw_path":        r"shortest\s+(?:path|distance)|\bpaths?\b",
+    "kw_flow":        r"\bflows?\b|matching",
+    "kw_sorted":      r"\bsort(?:ed|ing)?\b|non-decreasing|non-increasing",
+    "kw_binsearch":   r"binary\s+search",
+    "kw_dp":          r"dynamic\s+programming",
+}
+
+
+def _keywords(df, pos):
+    """15 binary algorithm-keyword flags + log1p(query_count) for the given rows."""
+    texts = df.iloc[pos][CLEAN].fillna("").str.lower()
+    cols = [texts.str.contains(pat, regex=True).astype(np.float32).to_numpy()
+            for pat in _KW_PATTERNS.values()]
+    cols.append(np.log1p(texts.str.count(r"quer").astype(float)).astype(np.float32).to_numpy())
+    return np.column_stack(cols)
 
 
 # ----------------------------------------------------------------- atomic blocks
@@ -120,6 +150,12 @@ def _build(task, df, train_pos, eval_pos, name):
         idf_map = {w: vec.idf_[j] for w, j in vec.vocabulary_.items()}
         return _w2v_tfidf_mean(model, df.iloc[train_pos]["tokens"].tolist(), idf_map), \
                _w2v_tfidf_mean(model, df.iloc[eval_pos]["tokens"].tolist(), idf_map)
+
+    if name == "tfidf+kw":   # word TF-IDF + keyword flags + query_count (§8/P3)
+        Xtr, Xev, _ = tfidf12()
+        Ktr, Kev = _keywords(df, train_pos), _keywords(df, eval_pos)
+        return sp.hstack([Xtr, sp.csr_matrix(Ktr)]).tocsr(), \
+               sp.hstack([Xev, sp.csr_matrix(Kev)]).tocsr()
 
     if name == "tfidf+stats":
         Xtr, Xev, _ = tfidf12()

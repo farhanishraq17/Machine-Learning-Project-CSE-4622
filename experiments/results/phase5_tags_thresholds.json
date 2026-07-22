@@ -1,36 +1,36 @@
 {
-  "champion": "LinearSVC (OvR, tfidf_word_12)",
+  "champion": "LogReg_bal (OvR, tfidf_word_12)",
   "threshold_0.5": {
-    "f1_micro": 0.4044,
-    "f1_macro": 0.2482,
-    "precision_micro": 0.5941,
-    "recall_micro": 0.3065
+    "f1_micro": 0.4837,
+    "f1_macro": 0.3493,
+    "precision_micro": 0.4545,
+    "recall_micro": 0.5169
   },
   "threshold_tuned": {
-    "f1_micro": 0.3974,
-    "f1_macro": 0.3405,
-    "precision_micro": 0.3011,
-    "recall_micro": 0.5846
+    "f1_micro": 0.3964,
+    "f1_macro": 0.3515,
+    "precision_micro": 0.2976,
+    "recall_micro": 0.5933
   },
-  "macro_f1_lift": 0.0923,
+  "macro_f1_lift": 0.0022,
   "macro_f1_all38": {
-    "base": 0.2482,
-    "tuned": 0.3405
+    "base": 0.3493,
+    "tuned": 0.3515
   },
   "macro_f1_floor15": {
     "n_tags": 36,
-    "base": 0.262,
-    "tuned": 0.3554
+    "base": 0.3595,
+    "tuned": 0.3667
   },
   "special_tag": {
     "tag": "*special",
-    "f1_base": 0.2471,
-    "f1_tuned": 0.3756,
+    "f1_base": 0.3871,
+    "f1_tuned": 0.3738,
     "train_support": 389
   },
   "iterative_stratification_sanity": {
     "note": "row-level split (allows duplicate leakage) — reference only; grouped split preferred",
-    "f1_micro": 0.4565,
-    "f1_macro": 0.314
+    "f1_micro": 0.451,
+    "f1_macro": 0.3141
   }
 }

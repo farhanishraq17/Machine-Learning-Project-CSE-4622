@@ -69,6 +69,11 @@ def fp_rf(Xtr, ytr, gtr, Xev):
 
 
 def fp_histgbr(Xtr, ytr, gtr, Xev):
+    # HistGradientBoosting requires dense input; the roster pairs it with the dense
+    # lsa+stats block, but the feature-family ablation feeds it sparse sets too.
+    if sp.issparse(Xtr):
+        Xtr = Xtr.toarray().astype(np.float32, copy=False)
+        Xev = Xev.toarray().astype(np.float32, copy=False)
     m = HistGradientBoostingRegressor(loss="absolute_error", learning_rate=0.05,
                                       max_iter=1500, early_stopping=True, validation_fraction=0.12,
                                       n_iter_no_change=40, random_state=SEED).fit(Xtr, ytr)

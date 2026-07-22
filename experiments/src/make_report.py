@@ -89,6 +89,8 @@ def build():
             if dis:
                 A(f"  - ranking disagreements: " +
                   "; ".join(f"{d['metric']} tops with `{d['this_top']}`" for d in dis))
+        A(f"\n![CD diagram — rating]({FIG}/cd_rating.png)\n")
+        A(f"![CD diagram — tags]({FIG}/cd_tags.png)\n")
         A("\n*(5 folds → low-power omnibus tests; read alongside the effect sizes above.)*\n")
 
     # ---------------- thresholds + ordinal ----------------
@@ -98,7 +100,10 @@ def build():
         b, t = th["threshold_0.5"], th["threshold_tuned"]
         A(f"- **Per-label threshold tuning** ({th['champion']}): macro-F1 "
           f"{b['f1_macro']} → **{t['f1_macro']}** (lift {th['macro_f1_lift']}); "
-          f"micro-F1 {b['f1_micro']} → {t['f1_micro']}; recall_micro {b['recall_micro']} → {t['recall_micro']}.")
+          f"micro-F1 {b['f1_micro']} → {t['f1_micro']}; recall_micro {b['recall_micro']} → {t['recall_micro']}. "
+          "On a class-balanced champion, threshold tuning and class weighting are largely "
+          "substitutes (the big threshold lift only appears on unbalanced models — see the tag-strategy "
+          "ablation and `Report/classification/classification_findings.md` §3); the headline stays the base champion.")
         fl = th["macro_f1_floor15"]
         A(f"- **Rare-tag floor** (≥{CFG['tags']['rare_floor']} train ex., {fl['n_tags']} tags): "
           f"macro-F1 base {fl['base']} → tuned {fl['tuned']} (vs all-38 base {th['macro_f1_all38']['base']}).")
@@ -123,7 +128,8 @@ def build():
         top = pt.head(10); bot = pt[pt["f1"] == 0.0]
         A("Strongest tags:\n"); A(_md_table(top, ["tag", "f1", "precision", "recall", "support"], "{:.3f}"))
         A(f"\nUnrecovered (F1=0): {', '.join('`'+t+'`' for t in bot['tag'])} — the long-tail ceiling.\n")
-        A(f"\nFull per-tag table: `results/per_tag_f1.csv`. Figure: `{FIG}/tags_per_tag_f1.png`.\n")
+        A(f"\n![Per-tag F1 — champion]({FIG}/tags_per_tag_f1.png)\n")
+        A(f"\nFull per-tag table: `results/per_tag_f1.csv`.\n")
 
     # ---------------- ablations ----------------
     A("\n## 6. Ablations (§8)\n")
@@ -131,15 +137,18 @@ def build():
         ("ablation_feature_family.csv", "Feature-family lift", None),
         ("ablation_tfidf.csv", "TF-IDF variants", None),
         ("ablation_w2v.csv", "Word2Vec params (rating, fold-0 probe)", None),
-        ("ablation_tag_strategy.csv", "Tag strategy", None)]:
+        ("ablation_tag_strategy.csv", "Tag strategy", None),
+        ("ablation_keyword_flags.csv", "Keyword flags + query_count (tags champion)", None)]:
         if _exists(fn):
             A(f"\n**{title}** (`results/{fn}`):\n")
             A(_md_table(pd.read_csv(rp(RES, fn)), cols, "{:.4f}"))
 
     # ---------------- figures + repro ----------------
     A("\n## 7. Figures & reproducibility\n")
-    A("Figures in `results/figures/`: `cd_rating.png`, `cd_tags.png`, `rating_residuals.png`, "
-      "`rating_calibration.png`, `rating_stats_importance.png`, `tags_per_tag_f1.png`.\n")
+    A(f"![Rating residuals]({FIG}/rating_residuals.png)\n")
+    A(f"![Rating calibration by band]({FIG}/rating_calibration.png)\n")
+    A(f"![Structural-feature importance]({FIG}/rating_stats_importance.png)\n")
+    A("\nAll figures live in `results/figures/`.\n")
     A("Reproduce all of the above with `python experiments/src/run_experiment.py`. "
       "Library versions in `results/versions.txt`. Interpretability CSVs: "
       "`rating_top_tokens.csv`, `tags_top_tokens_per_tag.csv`, `tags_confusion_pairs.csv`, "
@@ -154,7 +163,7 @@ def build():
 def _refresh_project_report():
     """Update the headline numbers in reports/PROJECT_REPORT.md §10 to the new run,
     with a pointer to experiments/RESULTS.md. Only touches a clearly-marked block."""
-    path = rp("reports", "PROJECT_REPORT.md")
+    path = rp("Report", "PROJECT_REPORT.md")
     if not os.path.exists(path):
         return
     if not (_exists("leaderboard_rating.csv") and _exists("leaderboard_tags.csv")):

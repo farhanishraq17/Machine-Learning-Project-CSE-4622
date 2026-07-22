@@ -1,0 +1,12 @@
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+
+# NOTE: experiments/results/cache/*.joblib feature blocks are intentionally kept
+# (tracked) so re-runs are instant — see CLAUDE.md. Do not ignore them.

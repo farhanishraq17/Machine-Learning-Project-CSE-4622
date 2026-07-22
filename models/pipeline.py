@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 End-to-end reproducible pipeline (Phase 2-4) for the Codeforces rating & tag study.
-Input : ../Kaggle_dataset/codeforces_master_dataset.csv   (the master dataset)
+Input : ../Dataset/original/codeforces_master_dataset.csv   (the master dataset)
 Output: results_*.json, predictions_*_test.csv
 
 Deterministic (seed=42). Requires: pandas numpy scipy scikit-learn lightgbm gensim nltk
@@ -24,7 +24,7 @@ import lightgbm as lgb
 SEED=42
 
 # ---------- load + leakage-safe grouping ----------
-df = pd.read_csv("../Kaggle_dataset/codeforces_master_dataset.csv")
+df = pd.read_csv("../Dataset/original/codeforces_master_dataset.csv")
 df['rating'] = pd.to_numeric(df['rating'], errors='coerce')
 df['tags_norm'] = df['tags_norm'].fillna('')
 df['has_rating'] = df['rating'].notna()

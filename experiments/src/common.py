@@ -5,10 +5,20 @@ Every script imports from here so the evaluation protocol (seed, columns, splits
 is defined exactly once. Run scripts from anywhere; paths resolve to the repo root.
 """
 from __future__ import annotations
-import os, sys, json, subprocess, random
+import os, sys, json, subprocess, random, warnings
 import numpy as np
 import pandas as pd
 import yaml
+
+# Console hygiene: Windows cp1252 stdout renders ± as '�' — force UTF-8; and silence
+# the cosmetic sklearn/LightGBM "X does not have valid feature names" warning flood.
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        try:
+            _stream.reconfigure(encoding="utf-8")
+        except Exception:
+            pass
+warnings.filterwarnings("ignore", message=".*does not have valid feature names.*")
 
 # repo root = two levels up from this file (experiments/src/common.py -> repo root)
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))

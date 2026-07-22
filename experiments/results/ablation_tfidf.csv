@@ -1,0 +1,10 @@
+task,vectorizer,metric,value
+rating,tfidf_word_1,MAE,499.41
+rating,tfidf_word_12,MAE,474.45
+rating,tfidf_char_35,MAE,495.1
+tags,tfidf_word_1,f1_micro,0.3935
+tags,tfidf_word_1,f1_macro,0.2641
+tags,tfidf_word_12,f1_micro,0.4162
+tags,tfidf_word_12,f1_macro,0.272
+tags,tfidf_char_35,f1_micro,0.3954
+tags,tfidf_char_35,f1_macro,0.2685

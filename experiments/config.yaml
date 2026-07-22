@@ -5,8 +5,8 @@
 seed: 42
 
 paths:
-  rating_csv: "Datasets/Regression_Dataset/codeforces_rating_regression.csv"
-  tags_csv:   "Datasets/Classification_Dataset/codeforces_tag_classification.csv"
+  rating_csv: "Dataset/regression/codeforces_rating_regression.csv"
+  tags_csv:   "Dataset/classification/codeforces_tag_classification.csv"
   results_dir: "experiments/results"
   cache_dir:   "experiments/results/cache"
   figures_dir: "experiments/results/figures"
