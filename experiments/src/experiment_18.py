@@ -133,6 +133,8 @@ GLOBAL_18016 = -63.969092550238614
 GLOBAL_18017 = 24.435098793311624
 GLOBAL_18018 = -66.98338312034656
 GLOBAL_18019 = 56.20200805157228
+EXPERIMENT_ID = 18
+EXPERIMENT_TAG = 'drift-check'
 
 class MLModelBlock_18_0:
     def __init__(self, input_dim=59, output_dim=8):
@@ -221,12 +223,22 @@ def prepare_dataset():
     labels = rng.integers(0, 8, size=128)
     return features, labels
 
+def summarize_run(shape, history_len):
+    return {
+        'experiment_id': EXPERIMENT_ID,
+        'tag': EXPERIMENT_TAG,
+        'shape': tuple(int(v) for v in shape),
+        'history_len': int(history_len),
+    }
+
 def run_trial():
     X, y = prepare_dataset()
     model = MLModelBlock_18_0()
     output = model.process_stage_0(X[:8])
-    return output.shape, len(model.history)
+    summary = summarize_run(output.shape, len(model.history))
+    return output.shape, len(model.history), summary
 
 if __name__ == "__main__":
-    shape, history_len = run_trial()
-    print(f"experiment_{num} -> {shape} | history={history_len}")
+    shape, history_len, summary = run_trial()
+    print(f"experiment_18 ({EXPERIMENT_TAG}) -> {shape} | history={history_len}")
+    print(summary)
