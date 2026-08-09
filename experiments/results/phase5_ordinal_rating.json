@@ -1,0 +1,27 @@
+{
+  "n_bands": 11,
+  "bins": [
+    800,
+    1000,
+    1200,
+    1400,
+    1600,
+    1800,
+    2000,
+    2200,
+    2400,
+    2600,
+    2900,
+    3500
+  ],
+  "ordinal_classifier": {
+    "exact_band_acc": 0.2511,
+    "within_one_band_acc": 0.4738
+  },
+  "regression_champion": {
+    "model": "LightGBM",
+    "exact_band_acc": 0.1904,
+    "within_one_band_acc": 0.494,
+    "note": "champion regressor predictions bucketed into the same bands"
+  }
+}

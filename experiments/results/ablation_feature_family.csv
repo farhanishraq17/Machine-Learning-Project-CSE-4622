@@ -1,0 +1,11 @@
+model,feature_set,MAE_mean,MAE_std,R2_mean
+Ridge,stats,491.69,10.79,0.3195
+LightGBM,stats,465.63,8.47,0.3665
+Ridge,tfidf_word_12,474.45,1.92,0.3498
+LightGBM,tfidf_word_12,456.9,6.19,0.3667
+Ridge,tfidf+stats,429.99,9.15,0.4483
+LightGBM,tfidf+stats,404.42,8.77,0.4995
+Ridge,lsa+stats,428.07,9.93,0.457
+LightGBM,lsa+stats,421.66,8.83,0.4675
+Ridge,unified,430.74,10.85,0.434
+LightGBM,unified,405.82,8.46,0.4996

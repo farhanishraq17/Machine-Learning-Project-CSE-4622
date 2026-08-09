@@ -1,0 +1,29 @@
+{
+  "rating": {
+    "Mean_baseline": {
+      "MAE": 608.53,
+      "RMSE": 728.85,
+      "R2": -0.0
+    },
+    "Ridge_unified": {
+      "MAE": 424.69,
+      "RMSE": 530.88,
+      "R2": 0.4695,
+      "best_alpha": 1
+    },
+    "LightGBM_unified": {
+      "MAE": 403.54,
+      "RMSE": 517.41,
+      "R2": 0.496,
+      "best_iter": 608
+    }
+  },
+  "n_drop": 35,
+  "rating_tr": 8673,
+  "rating_te": 2192,
+  "tag_tr": 8792,
+  "tag_te": 2203,
+  "tfidf_dim": 27950,
+  "unified_dim": 28068,
+  "n_labels": 38
+}

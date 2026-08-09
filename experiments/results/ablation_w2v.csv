@@ -1,0 +1,13 @@
+vector_size,algo,pooling,fold0_MAE
+100,skip-gram,mean,521.58
+100,skip-gram,tfidf,537.49
+100,cbow,mean,513.25
+100,cbow,tfidf,524.38
+200,skip-gram,mean,514.06
+200,skip-gram,tfidf,526.42
+200,cbow,mean,509.23
+200,cbow,tfidf,520.85
+300,skip-gram,mean,510.8
+300,skip-gram,tfidf,521.19
+300,cbow,mean,508.45
+300,cbow,tfidf,519.78

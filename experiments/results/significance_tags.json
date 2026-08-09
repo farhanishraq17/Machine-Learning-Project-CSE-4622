@@ -1,0 +1,40 @@
+{
+  "task": "tags",
+  "n_folds": 5,
+  "models_ranked": [
+    "LogReg_bal",
+    "LinearSVC",
+    "ComplementNB",
+    "Chain_LinSVC",
+    "LogReg",
+    "Chain_LogReg",
+    "LightGBM",
+    "RandomForest",
+    "KNN"
+  ],
+  "avg_rank": {
+    "LogReg_bal": 1.0,
+    "LinearSVC": 2.2,
+    "ComplementNB": 2.8,
+    "Chain_LinSVC": 4.0,
+    "LogReg": 5.0,
+    "Chain_LogReg": 6.4,
+    "LightGBM": 6.6,
+    "RandomForest": 8.0,
+    "KNN": 9.0
+  },
+  "friedman": {
+    "stat": 39.46666666666667,
+    "p": 4.026201216187309e-06
+  },
+  "wilcoxon_top2": {
+    "a": "LogReg_bal",
+    "b": "LinearSVC",
+    "stat": 0.0,
+    "p": 0.0625,
+    "LogReg_bal_mean": 0.3507484364962183,
+    "LinearSVC_mean": 0.2720073857612929
+  },
+  "nemenyi_min_p": 0.00013392959188052167,
+  "cd_diagram": "figures/cd_tags.png"
+}

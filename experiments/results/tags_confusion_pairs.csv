@@ -1,0 +1,26 @@
+true_tag,predicted_instead,count
+math,implementation,72
+brute force,greedy,65
+dp,greedy,61
+math,dp,59
+brute force,implementation,59
+implementation,math,58
+implementation,dp,54
+implementation,greedy,54
+math,data structures,49
+greedy,implementation,49
+math,greedy,48
+math,brute force,48
+dp,implementation,46
+math,sortings,45
+brute force,math,45
+implementation,data structures,41
+dp,math,41
+brute force,dp,40
+brute force,sortings,40
+data structures,dp,40
+greedy,dp,40
+dp,binary search,39
+brute force,data structures,39
+constructive algorithms,implementation,39
+math,binary search,38

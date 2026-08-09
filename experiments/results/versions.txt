@@ -1,0 +1,26 @@
+# Environment snapshot for the Codeforces experiment harness
+python: 3.13.3  (Windows 11)
+git_head: 1141f019edbf3629e07b24b590845fff36a18931
+
+# installed library versions
+numpy==2.2.6
+pandas==3.0.4
+scipy==1.16.2
+sklearn==1.9.0
+lightgbm==4.6.0
+xgboost==3.3.0
+catboost==1.2.10
+gensim==4.4.0
+nltk==3.9.3
+matplotlib==3.10.8
+seaborn==0.13.2
+joblib==1.5.3
+scikit_posthocs==0.14.0
+skmultilearn==?
+statsmodels==0.14.6
+
+# feature/analysis capability (probed live)
+gensim_word2vec: AVAILABLE (no LSA fallback needed)
+nemenyi_cd_diagram: scikit_posthocs AVAILABLE
+iterative_stratification: skmultilearn AVAILABLE
+nltk_wordnet: MISSING -> Porter stemming retained (lemmatization not possible offline)
